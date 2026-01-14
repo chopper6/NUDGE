@@ -1,0 +1,10 @@
+NANOG, (KLF4 & !MESP1) | (NANOG & !MESP1) | (OCT4 & !MESP1) | (SOX2 & !MESP1)
+OCT4, (KLF4 & !CM & !MESP1) | (NANOG & !CM & !MESP1) | (OCT4 & !CM & !MESP1) | (SOX2 & !CM & !MESP1)
+SOX2, (KLF4 & !CM & !MESP1) | (NANOG & !CM & !MESP1) | (OCT4 & !CM & !MESP1) | (SOX2 & !CM & !MESP1)
+KLF4, KLF4 & !CM
+Brachyury, Brachyury & !MESP1 & !NANOG & !OCT4 & !SOX2
+MESP1, (Brachyury & !Ripply2) | (MESP1 & !Ripply2)
+Ripply2, MESP1 | Ripply2
+ISL1, (CM & !NANOG & !OCT4 & !SOX2) | (ISL1 & !NANOG & !OCT4 & !SOX2) | (MESP1 & !NANOG & !OCT4 & !SOX2)
+CM, (CM & !NANOG) | (ISL1 & !NANOG) | (MESP1 & !NANOG)
+Y, (!NANOG & !OCT4 & !SOX2 & !KLF4)

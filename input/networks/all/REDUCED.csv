@@ -1,0 +1,117 @@
+11082279.txt,False
+1753781.txt,False
+18194572.txt,False
+19524598.txt,True
+19622164_TGF_beta1.txt,False
+20169167.txt,False
+21450717_model_5_2.txt,False
+21639591.txt,False
+21853041.txt,False
+22192526.txt,False
+22448278.txt,False
+23469179.txt,False
+23630177_metastatic_melanoma.txt,True
+23658556_model_10.txt,True
+23764028.txt,False
+23935937.txt,False
+24069138_threshold.txt,False
+24079299.txt,True
+24376455.txt,True
+25063553_OR_OR.txt,False
+25163068.txt,False
+25189528.txt,False
+25967891.txt,False
+25980672.txt,False
+26346668.txt,False
+26564978.txt,False
+26660865.txt,False
+27138333.txt,False
+27464342_curated_model.txt,False
+27613445.txt,True
+28187161.txt,True
+28381275.txt,False
+28426669_ARF10_greater_ARF5.txt,False
+28455685.txt,False
+29186334.txt,False
+29230182.txt,False
+29237040.txt,False
+29378814.txt,True
+29596489.txt,False
+29632237.txt,False
+30024932.txt,False
+30038409.txt,False
+30104572.txt,False
+30281473.txt,False
+30323768.txt,False
+30518777.txt,False
+30530226.txt,False
+30546316.txt,False
+30953496_as_per_authors.txt,False
+31130988.txt,False
+31516637_model4.txt,True
+31949240.txt,False
+32054948.txt,False
+33780439.txt,False
+35752283.txt,False
+Apoptosis Network_19422837.txt,False
+Arabidopsis thaliana Cell Cycle_26340681.txt,True
+Aurora Kinase A in Neuroblastoma_26616283.txt,True
+B bronchiseptica and T retortaeformis coinfection_22253585.txt,False
+B cell differentiation_26751566.txt,True
+Body Segmentation in Drosophila 2013_23520449.txt,True
+Budding Yeast Cell Cycle 2009_19185585.txt,True
+Budding Yeast Cell Cycle_23049686.txt,True
+CD4 T cell signaling_25538703.txt,True
+CD4+ T Cell Differentiation and Plasticity_26090929.txt,False
+Cell Cycle Transcription by Coupled CDK and Network Oscillators_18463633.txt,False
+Cholesterol Regulatory Pathway_19025648.txt,False
+Colitis-associated colon cancer_26446703.txt,False
+Cortical Area Development_20862356.txt,False
+Death Receptor Signaling_20221256.txt,False
+EGFR & ErbB Signaling_19662154.txt,True
+FA BRCA pathway_22267503.txt,True
+Fanconi anemia and checkpoint recovery_26385365.txt,True
+FGF pathway of Drosophila Signaling Pathways_23868318.txt,False
+fMRI - Regulation of the Lac Operon_25790483.txt,False
+Glucose Repression Signaling 2009_19144179.txt,True
+Guard Cell Abscisic Acid Signaling_16968132.txt,True
+HCC1954 Breast Cell Line Long-term ErbB Network_24970389.txt,False
+HCC1954 Breast Cell Line Short-term ErbB Network_24970389.txt,False
+HGF Signaling in Keratinocytes_22962472.txt,False
+HH Pathway of Drosophila Signaling Pathways_23868318.txt,False
+HIV-1 interactions with T-Cell Signaling Pathway_25431332.txt,False
+Human Gonadal Sex Determination_26573569.txt,False
+IGVH mutations in chronic lymphocytic leukemia_26088082.txt,True
+IL-1 Signaling_21968890.txt,True
+IL-6 Signaling_21968890.txt,True
+Inflammatory Bowel Disease (IBD) Model_29513758.txt,True
+Influenza A Virus Replication Cycle_23081726.txt,False
+Iron acquisition and oxidative stress response in aspergillus fumigatus_25908096.txt,False
+Lac Operon_21563979.txt,True
+Lymphoid and myeloid cell specification and transdifferentiation_28584084.txt,False
+Lymphopoiesis Regulatory Network_26408858.txt,True
+Mammalian Cell Cycle 2006_16873462.txt,True
+Mammalian Cell Cycle_19118495.txt,False
+manual_mod_Treatment of Castration-Resistant Prostate Cancer_28361666.txt,True
+MAPK Cancer Cell Fate Network_24250280.txt,False
+Metabolic Interactions in the Gut Microbiome_26102287.txt,True
+Neurotransmitter Signaling Pathway_17010384.txt,False
+Oxidative Stress Pathway_23134720.txt,True
+PC12 Cell Differentiation_27148350.txt,False
+Predicting Variabilities in Cardiac Gene_26207376.txt,False
+Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.txt,True
+Processing of Spz Network from the Drosophila Signaling Pathway_23868318.txt,False
+Regulation of the L-arabinose operon of Escherichia coli_28639170.txt,False
+Senescence Associated Secretory Phenotype_29206223.txt,False
+Septation Initiation Network_26244885.txt,True
+Signaling in Macrophage Activation_18433497.txt,False
+Stomatal Opening Model_27542373.txt,True
+T Cell Receptor Signaling_17722974.txt,False
+T-Cell Signaling 2006_16464248.txt,False
+T-LGL Survival Network 2011_22102804.txt,False
+TOL Regulatory Network_23171249.txt,False
+Toll Pathway of Drosophila Signaling Pathway_23868318.txt,False
+Tumour Cell Invasion and Migration_26528548.txt,False
+Wg Pathway of Drosophila Signalling Pathways_23868318.txt,False
+Yeast Apoptosis_23233838.txt,True
+fraction reduced,0.3017241379310345

@@ -1,0 +1,11 @@
+Toll,	Spz
+Cactus,	!Slmb | !Pelle
+MyD88,	Toll
+Tube,	MyD88
+Dif,	!Cactus
+Targets,	Dif | Dorsal
+Spz,	!Nec
+Pelle,	Tube
+Dorsal,	!Cactus
+Slmb,	Slmb
+Nec,	Nec

@@ -1,0 +1,43 @@
+EGFR,	EGF
+Shc,	EGFR
+Grb2,	EGFR | Shc
+Pi3k,	Gab1 | EGFR
+Gab1,	Grb2 | Pip3
+Nck,	EGFR
+Sos1,	(Grb2 & !p90rsk) | (Grb2 & !Erk12)
+Pi34p2,	(Pi3k & Ship2 & Pip2 & !Pten)
+Pip3,	(Pi3k & !Ship2 & Pip2 & !Pten)
+Vav2,	(EGFR & Pip3) | (EGFR & Pi34p2)
+Rac1,	Vav2 | Sos1E | !pRacGap1 | RalbP1 | !RhoA
+Sos1E,	(Pip3 & Pi3k & Sos1 & Eps8)
+Akt,	(Pi34p2 & Pdk1 & Mtor & !Pp2a) | (Pip3 & Pdk1 & Mtor & !Pp2a)
+RacGap1,	Akt
+IQGap1,	(Akt & RacGap1)
+pRacGap1,	(RacGap1 & IQGap1)
+RhoA,	!Rac1 | Vav2
+Shp2,	Gab1
+RasGap,	(Gab1 & !Shp2)
+Ras,	(Sos1 & !RasGap)
+Raf1,	(Ras & Csrc) | (Ras & Pak1)
+Mek12,	Raf1 | Mekk1
+Erk12,	Mek12
+P90rsk,	(Erk12 & Pdk1)
+Pak1,	(Rac1 & Nck)
+Abi,	Sos1
+Eps8,	Abi
+Hras,	Sos1
+Ralgds,	Hras
+Rap1a,	Ralgds
+Ralb,	Rap1A
+RalbP1,	Ralb
+Mekk1,	Rac1
+EGF,	EGF
+p90rsk,	p90rsk
+Ship2,	Ship2
+Pip2,	Pip2
+Pten,	Pten
+Pdk1,	Pdk1
+Mtor,	Mtor
+Pp2a,	Pp2a
+Csrc,	Csrc
+Rap1A,	Rap1A

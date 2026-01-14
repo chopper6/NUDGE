@@ -1,0 +1,21 @@
+TNFalpha,	TNFalpha
+IHMTS,	IHMTS
+NFkappaB,	TNFalpha | Tat | Vpr | Nef
+HMTs,	IHMTS | asRNA
+p5LTR,	(NFkB & !HMTs)
+p3LTR,	(NFkB & !HMTs)
+RNAs9kbN,	p5LTR
+vsiRNA,	(!Tat & p5LTR)
+vsaRNA,	p5LTR
+RNAs4kbN,	RNAs9kbN
+RNAs2kbN,	RNAs4kbN
+RNAs2kbC,	(RNAs2kbN & !vsiRNA)
+RNAs4kbC,	(RNAs4kbN & !vsiRNA & Rev)
+RNAs9kbC,	(RNAs9kbN & !vsiRNA & Rev)
+asRNA,	(p3LTR & !vsaRNA)
+Tat,	RNAs2kbC | RNAs4kbC
+Rev,	RNAs2kbC
+Nef,	RNAs2kbC
+Vpr,	RNAs2kbC | RNAs4kbC
+p24Gag,	RNAs9kbC
+NFkB,	NFkB

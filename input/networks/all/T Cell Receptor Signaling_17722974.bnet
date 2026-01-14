@@ -1,0 +1,99 @@
+tcrlig,	tcrlig
+vav1,	xx | (zap70 & sh3bp2)
+lat,	zap70
+pi3k,	(xx & !cblb) | (!cblb & lckp2)
+gap,	unknown_input3
+rac1r,	unknown_input
+Dummy,	(zap70 & plcgb & vav1 & itk & slp76 & !ccblp2)
+ca,	ip3
+pkb,	pdk1
+nfkb,	!ikb
+lckp1,	(!shp1 & cd45 & lckr & cd4 & !csk)
+nfat,	calcin
+bclxl,	!bad
+gadd45,	unknown_input
+bad,	!pkb
+pag,	(fyn & !tcrb)
+ccblp2,	(fyn & ccblr)
+cyc1,	!gsk3
+vav3,	sh3bp2
+sre,	cdc42 | rac1p2
+ikkg,	(card11a & pkcth)
+calcin,	(cam & !calpr1 & !akap79 & !cabin1)
+cabin1,	!camk4
+grb2,	lat
+ship1,	unknown_input2
+plcga,	(zap70 & plcgb & vav1 & itk & slp76 & !ccblp2)
+sh3bp2,	(zap70 & lat)
+shp2,	gab2
+pten,	unknown_input2
+mlk3,	hpk1 | rac1p1
+gsk3,	!pkb
+cd45,	unknown_input
+dag,	(plcga & !dgk)
+bcl10,	unknown_input2
+gab2,	(grb2 & zap70 & lat) | (zap70 & lat & gads)
+erk,	mek
+ap1,	(fos & jun)
+fos,	erk
+cblb,	!cd28
+gads,	lat
+pdk1,	pip3
+itk,	(pip3 & zap70 & slp76)
+ras,	(sos & rasgrp & !gap)
+ikb,	!ikkab
+ccblp1,	(zap70 & ccblr)
+p21c,	!pkb
+tcrp,	(fyn & tcrb) | (tcrb & lckp1)
+rac1p2,	(rac1r & vav3)
+rsk,	erk
+fyn,	(cd45 & lckp1) | (lckr & tcrb)
+hpk1,	lat
+cam,	ca
+cre,	creb
+akap79,	unknown_input2
+p70s,	pdk1
+p38,	(zap70 & !gadd45)
+card11a,	(malt1 & card11 & bcl10)
+pip3,	(pi3k & !pten & !ship1)
+card11,	unknown_input
+ccblr,	unknown_input
+creb,	rsk
+zap70,	(tcrp & abl & !ccblp1)
+jun,	jnk
+camk2,	cam
+jnk,	mekk1 | mkk4
+sos,	grb2
+slp76,	(zap70 & !gab2 & gads)
+mkk4,	mlk3 | mekk1
+cdc42,	unknown_input2
+lckp2,	(lckr & tcrb)
+mekk1,	cdc42 | rac1p2 | hpk1
+lckr,	lckr_input
+plcgb,	lat
+ip3,	plcga
+raf,	ras
+ikkab,	(ikkg & camk2)
+rlk,	lckp1
+fkhr,	!pkb
+cd28,	cd28
+malt1,	unknown_input
+pkcth,	(pdk1 & dag & vav1)
+p27k,	!pkb
+rasgrp,	dag
+mek,	raf
+rac1p1,	(vav1 & rac1r)
+tcrb,	(tcrlig & !ccblp1)
+abl,	fyn | lckp1
+csk,	pag
+xx,	cd28
+shp1,	(!erk & lckp1)
+dgk,	tcrb
+bcat,	!gsk3
+calpr1,	unknown_input2
+camk4,	cam
+unknown_input3,	unknown_input3
+unknown_input,	unknown_input
+cd4,	cd4
+unknown_input2,	unknown_input2
+lckr_input,	lckr_input

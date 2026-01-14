@@ -1,0 +1,4 @@
+numpy
+pyeda
+pyyaml
+networkx

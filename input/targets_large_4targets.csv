@@ -1,0 +1,553 @@
+Network,Target
+19524598.bnet,CARP
+19524598.bnet,!CARP
+19524598.bnet,C8a
+19524598.bnet,!C8a
+19524598.bnet,T2
+19524598.bnet,!T2
+19524598.bnet,NFkB
+19524598.bnet,!NFkB
+21639591.bnet,HOMER
+21639591.bnet,!HOMER
+21639591.bnet,ATP_cyt
+21639591.bnet,!ATP_cyt
+21639591.bnet,CaBP1
+21639591.bnet,!CaBP1
+21639591.bnet,DAG
+21639591.bnet,!DAG
+23169817_high_dna_damage.bnet,pten
+23169817_high_dna_damage.bnet,!pten
+23169817_high_dna_damage.bnet,arf
+23169817_high_dna_damage.bnet,!arf
+23169817_high_dna_damage.bnet,bcl2
+23169817_high_dna_damage.bnet,!bcl2
+23169817_high_dna_damage.bnet,e2f1
+23169817_high_dna_damage.bnet,!e2f1
+23658556_model_10.bnet,IAA5
+23658556_model_10.bnet,!IAA5
+23658556_model_10.bnet,ACR
+23658556_model_10.bnet,!ACR
+23658556_model_10.bnet,JKD
+23658556_model_10.bnet,!JKD
+23658556_model_10.bnet,Auxin
+23658556_model_10.bnet,!Auxin
+23935937.bnet,CMYC
+23935937.bnet,!CMYC
+23935937.bnet,EMT
+23935937.bnet,!EMT
+23935937.bnet,NOTCH_SIGNAL
+23935937.bnet,!NOTCH_SIGNAL
+23935937.bnet,WNT_SIGNAL
+23935937.bnet,!WNT_SIGNAL
+25063553_OR_OR.bnet,pfk2
+25063553_OR_OR.bnet,!pfk2
+25063553_OR_OR.bnet,lgk
+25063553_OR_OR.bnet,!lgk
+25063553_OR_OR.bnet,pepck_c
+25063553_OR_OR.bnet,!pepck_c
+25063553_OR_OR.bnet,fbp2
+25063553_OR_OR.bnet,!fbp2
+25189528.bnet,NOTCH
+25189528.bnet,!NOTCH
+25189528.bnet,cMet
+25189528.bnet,!cMet
+25189528.bnet,EGFR
+25189528.bnet,!EGFR
+25189528.bnet,SNAI2
+25189528.bnet,!SNAI2
+25780058.bnet,ROCK
+25780058.bnet,!ROCK
+25780058.bnet,PTP_EGFR
+25780058.bnet,!PTP_EGFR
+25780058.bnet,Raf
+25780058.bnet,!Raf
+25780058.bnet,p190RhoGEF
+25780058.bnet,!p190RhoGEF
+25967891.bnet,FUL
+25967891.bnet,!FUL
+25967891.bnet,TFL1
+25967891.bnet,!TFL1
+25967891.bnet,FT
+25967891.bnet,!FT
+25967891.bnet,AP2
+25967891.bnet,!AP2
+25980672.bnet,Bcl_2_K
+25980672.bnet,!Bcl_2_K
+25980672.bnet,Bcl_2_M
+25980672.bnet,!Bcl_2_M
+25980672.bnet,JNK_K
+25980672.bnet,!JNK_K
+25980672.bnet,EGFR_K
+25980672.bnet,!EGFR_K
+26564978.bnet,P15
+26564978.bnet,!P15
+26564978.bnet,CDK_4
+26564978.bnet,!CDK_4
+26564978.bnet,P53
+26564978.bnet,!P53
+26564978.bnet,STAT3
+26564978.bnet,!STAT3
+26660865.bnet,IL6_DELTA4_T
+26660865.bnet,!IL6_DELTA4_T
+26660865.bnet,CYCLIN_E_T
+26660865.bnet,!CYCLIN_E_T
+26660865.bnet,STAT1_T
+26660865.bnet,!STAT1_T
+26660865.bnet,PDGF_T
+26660865.bnet,!PDGF_T
+27138333.bnet,P90rsk
+27138333.bnet,!P90rsk
+27138333.bnet,Rap1a
+27138333.bnet,!Rap1a
+27138333.bnet,Pip3
+27138333.bnet,!Pip3
+27138333.bnet,RalbP1
+27138333.bnet,!RalbP1
+27464342_curated_model.bnet,p90Rsk_il
+27464342_curated_model.bnet,!p90Rsk_il
+27464342_curated_model.bnet,IL6_syn
+27464342_curated_model.bnet,!IL6_syn
+27464342_curated_model.bnet,Ccl5_Stat1
+27464342_curated_model.bnet,!Ccl5_Stat1
+27464342_curated_model.bnet,PKC
+27464342_curated_model.bnet,!PKC
+27613445.bnet,G1_S
+27613445.bnet,!G1_S
+27613445.bnet,Senescence
+27613445.bnet,!Senescence
+27613445.bnet,IRS_PIK3CA
+27613445.bnet,!IRS_PIK3CA
+27613445.bnet,p21
+27613445.bnet,!p21
+28187161.bnet,HB8
+28187161.bnet,!HB8
+28187161.bnet,WOX4
+28187161.bnet,!WOX4
+28187161.bnet,DELLA
+28187161.bnet,!DELLA
+28187161.bnet,BZR1
+28187161.bnet,!BZR1
+28381275.bnet,CyclinE
+28381275.bnet,!CyclinE
+28381275.bnet,Wnt
+28381275.bnet,!Wnt
+28381275.bnet,ERK
+28381275.bnet,!ERK
+28381275.bnet,BRCA1
+28381275.bnet,!BRCA1
+28426669_ARF10_greater_ARF5.bnet,MGP
+28426669_ARF10_greater_ARF5.bnet,!MGP
+28426669_ARF10_greater_ARF5.bnet,CLE40
+28426669_ARF10_greater_ARF5.bnet,!CLE40
+28426669_ARF10_greater_ARF5.bnet,MIR166
+28426669_ARF10_greater_ARF5.bnet,!MIR166
+28426669_ARF10_greater_ARF5.bnet,PHB
+28426669_ARF10_greater_ARF5.bnet,!PHB
+28455685.bnet,S6K1
+28455685.bnet,!S6K1
+28455685.bnet,Erk1_2
+28455685.bnet,!Erk1_2
+28455685.bnet,mTORC1
+28455685.bnet,!mTORC1
+28455685.bnet,PIP3
+28455685.bnet,!PIP3
+29186334.bnet,mmcp6
+29186334.bnet,!mmcp6
+29186334.bnet,ccr3
+29186334.bnet,!ccr3
+29186334.bnet,mccpa
+29186334.bnet,!mccpa
+29186334.bnet,fceRIb
+29186334.bnet,!fceRIb
+29230182.bnet,CDC42
+29230182.bnet,!CDC42
+29230182.bnet,Axin2
+29230182.bnet,!Axin2
+29230182.bnet,CyclinD1
+29230182.bnet,!CyclinD1
+29230182.bnet,PDGFB
+29230182.bnet,!PDGFB
+29237040.bnet,CCA
+29237040.bnet,!CCA
+29237040.bnet,Apoptosis
+29237040.bnet,!Apoptosis
+29237040.bnet,Metastasis
+29237040.bnet,!Metastasis
+29237040.bnet,miRNA
+29237040.bnet,!miRNA
+29378814.bnet,Smad7
+29378814.bnet,!Smad7
+29378814.bnet,Fgfr2
+29378814.bnet,!Fgfr2
+29378814.bnet,BMP4
+29378814.bnet,!BMP4
+29378814.bnet,Rex1
+29378814.bnet,!Rex1
+29596489.bnet,TCF
+29596489.bnet,!TCF
+29596489.bnet,GSK3beta
+29596489.bnet,!GSK3beta
+29596489.bnet,mTORC2
+29596489.bnet,!mTORC2
+29596489.bnet,JNK
+29596489.bnet,!JNK
+29632237.bnet,Viacel
+29632237.bnet,!Viacel
+29632237.bnet,PIP3
+29632237.bnet,!PIP3
+29632237.bnet,CYCB
+29632237.bnet,!CYCB
+29632237.bnet,CDK2
+29632237.bnet,!CDK2
+30024932.bnet,G2_M_Arrest
+30024932.bnet,!G2_M_Arrest
+30024932.bnet,Proliferation
+30024932.bnet,!Proliferation
+30024932.bnet,G2_M_Apoptosis
+30024932.bnet,!G2_M_Apoptosis
+30024932.bnet,RB
+30024932.bnet,!RB
+30038409.bnet,HAND1
+30038409.bnet,!HAND1
+30038409.bnet,SALL4
+30038409.bnet,!SALL4
+30038409.bnet,CDK6
+30038409.bnet,!CDK6
+30038409.bnet,ZFHX3
+30038409.bnet,!ZFHX3
+30518777.bnet,KAT1
+30518777.bnet,!KAT1
+30518777.bnet,CLOSURE
+30518777.bnet,!CLOSURE
+30518777.bnet,GTG
+30518777.bnet,!GTG
+30518777.bnet,ROP11
+30518777.bnet,!ROP11
+30953496_as_per_authors.bnet,GLUT4
+30953496_as_per_authors.bnet,!GLUT4
+30953496_as_per_authors.bnet,p38
+30953496_as_per_authors.bnet,!p38
+30953496_as_per_authors.bnet,Apoptosis
+30953496_as_per_authors.bnet,!Apoptosis
+30953496_as_per_authors.bnet,GS
+30953496_as_per_authors.bnet,!GS
+31130988.bnet,NHEJ
+31130988.bnet,!NHEJ
+31130988.bnet,PP2A_B55
+31130988.bnet,!PP2A_B55
+31130988.bnet,R_DSB
+31130988.bnet,!R_DSB
+31130988.bnet,NUC2
+31130988.bnet,!NUC2
+31949240.bnet,Fibrosis
+31949240.bnet,!Fibrosis
+31949240.bnet,NO_availability
+31949240.bnet,!NO_availability
+31949240.bnet,TGF_beta
+31949240.bnet,!TGF_beta
+31949240.bnet,Inflammation
+31949240.bnet,!Inflammation
+32054948.bnet,SIPS
+32054948.bnet,!SIPS
+32054948.bnet,Apoptosis
+32054948.bnet,!Apoptosis
+32054948.bnet,Proliferation
+32054948.bnet,!Proliferation
+32054948.bnet,p53_K
+32054948.bnet,!p53_K
+35752283.bnet,Prop
+35752283.bnet,!Prop
+35752283.bnet,Migs
+35752283.bnet,!Migs
+35752283.bnet,Apos
+35752283.bnet,!Apos
+35752283.bnet,Autp
+35752283.bnet,!Autp
+Apoptosis Network_19422837.bnet,Apoptosis
+Apoptosis Network_19422837.bnet,!Apoptosis
+Apoptosis Network_19422837.bnet,IKK
+Apoptosis Network_19422837.bnet,!IKK
+Apoptosis Network_19422837.bnet,Cas12
+Apoptosis Network_19422837.bnet,!Cas12
+Apoptosis Network_19422837.bnet,NFkB
+Apoptosis Network_19422837.bnet,!NFkB
+Arabidopsis thaliana Cell Cycle_26340681.bnet,KRP1
+Arabidopsis thaliana Cell Cycle_26340681.bnet,!KRP1
+Arabidopsis thaliana Cell Cycle_26340681.bnet,E2Fb
+Arabidopsis thaliana Cell Cycle_26340681.bnet,!E2Fb
+Arabidopsis thaliana Cell Cycle_26340681.bnet,E2Fe
+Arabidopsis thaliana Cell Cycle_26340681.bnet,!E2Fe
+Arabidopsis thaliana Cell Cycle_26340681.bnet,CDKB1_1
+Arabidopsis thaliana Cell Cycle_26340681.bnet,!CDKB1_1
+Aurora Kinase A in Neuroblastoma_26616283.bnet,ENSA
+Aurora Kinase A in Neuroblastoma_26616283.bnet,!ENSA
+Aurora Kinase A in Neuroblastoma_26616283.bnet,CDK1CCNBComplex
+Aurora Kinase A in Neuroblastoma_26616283.bnet,!CDK1CCNBComplex
+Aurora Kinase A in Neuroblastoma_26616283.bnet,STMN
+Aurora Kinase A in Neuroblastoma_26616283.bnet,!STMN
+Aurora Kinase A in Neuroblastoma_26616283.bnet,PP1
+Aurora Kinase A in Neuroblastoma_26616283.bnet,!PP1
+B bronchiseptica and T retortaeformis coinfection_22253585.bnet,DP
+B bronchiseptica and T retortaeformis coinfection_22253585.bnet,!DP
+B bronchiseptica and T retortaeformis coinfection_22253585.bnet,TNE
+B bronchiseptica and T retortaeformis coinfection_22253585.bnet,!TNE
+B bronchiseptica and T retortaeformis coinfection_22253585.bnet,IFNgII
+B bronchiseptica and T retortaeformis coinfection_22253585.bnet,!IFNgII
+B bronchiseptica and T retortaeformis coinfection_22253585.bnet,TEL
+B bronchiseptica and T retortaeformis coinfection_22253585.bnet,!TEL
+Budding Yeast Cell Cycle 2009_19185585.bnet,FEAR
+Budding Yeast Cell Cycle 2009_19185585.bnet,!FEAR
+Budding Yeast Cell Cycle 2009_19185585.bnet,Yhp1
+Budding Yeast Cell Cycle 2009_19185585.bnet,!Yhp1
+Budding Yeast Cell Cycle 2009_19185585.bnet,S
+Budding Yeast Cell Cycle 2009_19185585.bnet,!S
+Budding Yeast Cell Cycle 2009_19185585.bnet,Swi5
+Budding Yeast Cell Cycle 2009_19185585.bnet,!Swi5
+Budding Yeast Cell Cycle_23049686.bnet,Whi5
+Budding Yeast Cell Cycle_23049686.bnet,!Whi5
+Budding Yeast Cell Cycle_23049686.bnet,Cdh1
+Budding Yeast Cell Cycle_23049686.bnet,!Cdh1
+Budding Yeast Cell Cycle_23049686.bnet,Cln2
+Budding Yeast Cell Cycle_23049686.bnet,!Cln2
+Budding Yeast Cell Cycle_23049686.bnet,Cdc14
+Budding Yeast Cell Cycle_23049686.bnet,!Cdc14
+CD4 T cell signaling_25538703.bnet,Cofilin
+CD4 T cell signaling_25538703.bnet,!Cofilin
+CD4 T cell signaling_25538703.bnet,IL17
+CD4 T cell signaling_25538703.bnet,!IL17
+CD4 T cell signaling_25538703.bnet,F_Actin
+CD4 T cell signaling_25538703.bnet,!F_Actin
+CD4 T cell signaling_25538703.bnet,MLC
+CD4 T cell signaling_25538703.bnet,!MLC
+CD4+ T Cell Differentiation and Plasticity_26090929.bnet,BCL6
+CD4+ T Cell Differentiation and Plasticity_26090929.bnet,!BCL6
+CD4+ T Cell Differentiation and Plasticity_26090929.bnet,IL21
+CD4+ T Cell Differentiation and Plasticity_26090929.bnet,!IL21
+CD4+ T Cell Differentiation and Plasticity_26090929.bnet,IL2
+CD4+ T Cell Differentiation and Plasticity_26090929.bnet,!IL2
+CD4+ T Cell Differentiation and Plasticity_26090929.bnet,IL10
+CD4+ T Cell Differentiation and Plasticity_26090929.bnet,!IL10
+Cholesterol Regulatory Pathway_19025648.bnet,Cyp51
+Cholesterol Regulatory Pathway_19025648.bnet,!Cyp51
+Cholesterol Regulatory Pathway_19025648.bnet,Mevalonic_Acid
+Cholesterol Regulatory Pathway_19025648.bnet,!Mevalonic_Acid
+Cholesterol Regulatory Pathway_19025648.bnet,Acetyl_CoA_acetyltransferase_RNA
+Cholesterol Regulatory Pathway_19025648.bnet,!Acetyl_CoA_acetyltransferase_RNA
+Cholesterol Regulatory Pathway_19025648.bnet,HMG_CoA_Reductase_RNA
+Cholesterol Regulatory Pathway_19025648.bnet,!HMG_CoA_Reductase_RNA
+Colitis-associated colon cancer_26446703.bnet,Proliferation
+Colitis-associated colon cancer_26446703.bnet,!Proliferation
+Colitis-associated colon cancer_26446703.bnet,Apoptosis
+Colitis-associated colon cancer_26446703.bnet,!Apoptosis
+Colitis-associated colon cancer_26446703.bnet,PP2A
+Colitis-associated colon cancer_26446703.bnet,!PP2A
+Colitis-associated colon cancer_26446703.bnet,JNK
+Colitis-associated colon cancer_26446703.bnet,!JNK
+Death Receptor Signaling_20221256.bnet,survival
+Death Receptor Signaling_20221256.bnet,!survival
+Death Receptor Signaling_20221256.bnet,NonACD
+Death Receptor Signaling_20221256.bnet,!NonACD
+Death Receptor Signaling_20221256.bnet,apoptosis
+Death Receptor Signaling_20221256.bnet,!apoptosis
+Death Receptor Signaling_20221256.bnet,Cyt_c
+Death Receptor Signaling_20221256.bnet,!Cyt_c
+EGFR & ErbB Signaling_19662154.bnet,cmyc
+EGFR & ErbB Signaling_19662154.bnet,!cmyc
+EGFR & ErbB Signaling_19662154.bnet,pro_apoptotic
+EGFR & ErbB Signaling_19662154.bnet,!pro_apoptotic
+EGFR & ErbB Signaling_19662154.bnet,actinreorg
+EGFR & ErbB Signaling_19662154.bnet,!actinreorg
+EGFR & ErbB Signaling_19662154.bnet,p70s6_2
+EGFR & ErbB Signaling_19662154.bnet,!p70s6_2
+FA BRCA pathway_22267503.bnet,ADD
+FA BRCA pathway_22267503.bnet,!ADD
+FA BRCA pathway_22267503.bnet,XPF
+FA BRCA pathway_22267503.bnet,!XPF
+FA BRCA pathway_22267503.bnet,CHK2
+FA BRCA pathway_22267503.bnet,!CHK2
+FA BRCA pathway_22267503.bnet,RAD51
+FA BRCA pathway_22267503.bnet,!RAD51
+Fanconi anemia and checkpoint recovery_26385365.bnet,NUC1
+Fanconi anemia and checkpoint recovery_26385365.bnet,!NUC1
+Fanconi anemia and checkpoint recovery_26385365.bnet,NUC2
+Fanconi anemia and checkpoint recovery_26385365.bnet,!NUC2
+Fanconi anemia and checkpoint recovery_26385365.bnet,ATR
+Fanconi anemia and checkpoint recovery_26385365.bnet,!ATR
+Fanconi anemia and checkpoint recovery_26385365.bnet,ATM
+Fanconi anemia and checkpoint recovery_26385365.bnet,!ATM
+Guard Cell Abscisic Acid Signaling_16968132.bnet,ROP10
+Guard Cell Abscisic Acid Signaling_16968132.bnet,!ROP10
+Guard Cell Abscisic Acid Signaling_16968132.bnet,Closure
+Guard Cell Abscisic Acid Signaling_16968132.bnet,!Closure
+Guard Cell Abscisic Acid Signaling_16968132.bnet,NOS
+Guard Cell Abscisic Acid Signaling_16968132.bnet,!NOS
+Guard Cell Abscisic Acid Signaling_16968132.bnet,Atrboh
+Guard Cell Abscisic Acid Signaling_16968132.bnet,!Atrboh
+HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,AKT
+HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,!AKT
+HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,GSKa_b
+HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,!GSKa_b
+HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,RPS6
+HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,!RPS6
+HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,cRAF
+HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,!cRAF
+HGF Signaling in Keratinocytes_22962472.bnet,CellMigration
+HGF Signaling in Keratinocytes_22962472.bnet,!CellMigration
+HGF Signaling in Keratinocytes_22962472.bnet,cMYC
+HGF Signaling in Keratinocytes_22962472.bnet,!cMYC
+HGF Signaling in Keratinocytes_22962472.bnet,EGR1
+HGF Signaling in Keratinocytes_22962472.bnet,!EGR1
+HGF Signaling in Keratinocytes_22962472.bnet,Proliferation
+HGF Signaling in Keratinocytes_22962472.bnet,!Proliferation
+HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,PPP2R4_PP2A
+HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,!PPP2R4_PP2A
+HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,CREB
+HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,!CREB
+HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,Ccblp
+HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,!Ccblp
+HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,CYC1
+HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,!CYC1
+Human Gonadal Sex Determination_26573569.bnet,DHH
+Human Gonadal Sex Determination_26573569.bnet,!DHH
+Human Gonadal Sex Determination_26573569.bnet,CTNNB1
+Human Gonadal Sex Determination_26573569.bnet,!CTNNB1
+Human Gonadal Sex Determination_26573569.bnet,FOXL2
+Human Gonadal Sex Determination_26573569.bnet,!FOXL2
+Human Gonadal Sex Determination_26573569.bnet,DKK1
+Human Gonadal Sex Determination_26573569.bnet,!DKK1
+IL-1 Signaling_21968890.bnet,hgf
+IL-1 Signaling_21968890.bnet,!hgf
+IL-1 Signaling_21968890.bnet,cox2
+IL-1 Signaling_21968890.bnet,!cox2
+IL-1 Signaling_21968890.bnet,saa
+IL-1 Signaling_21968890.bnet,!saa
+IL-1 Signaling_21968890.bnet,tdum_mkp1_p38_jnk_erk12
+IL-1 Signaling_21968890.bnet,!tdum_mkp1_p38_jnk_erk12
+IL-6 Signaling_21968890.bnet,tdum_shp2_stat3_py
+IL-6 Signaling_21968890.bnet,!tdum_shp2_stat3_py
+IL-6 Signaling_21968890.bnet,junb
+IL-6 Signaling_21968890.bnet,!junb
+IL-6 Signaling_21968890.bnet,a2m_gfbg
+IL-6 Signaling_21968890.bnet,!a2m_gfbg
+IL-6 Signaling_21968890.bnet,stat1_ta
+IL-6 Signaling_21968890.bnet,!stat1_ta
+Inflammatory Bowel Disease (IBD) Model_29513758.bnet,MMPs
+Inflammatory Bowel Disease (IBD) Model_29513758.bnet,!MMPs
+Inflammatory Bowel Disease (IBD) Model_29513758.bnet,IEC_MICA_Bupregulation
+Inflammatory Bowel Disease (IBD) Model_29513758.bnet,!IEC_MICA_Bupregulation
+Inflammatory Bowel Disease (IBD) Model_29513758.bnet,Th0
+Inflammatory Bowel Disease (IBD) Model_29513758.bnet,!Th0
+Inflammatory Bowel Disease (IBD) Model_29513758.bnet,Treg
+Inflammatory Bowel Disease (IBD) Model_29513758.bnet,!Treg
+Influenza A Virus Replication Cycle_23081726.bnet,M1_M1
+Influenza A Virus Replication Cycle_23081726.bnet,!M1_M1
+Influenza A Virus Replication Cycle_23081726.bnet,Progeny_Virion
+Influenza A Virus Replication Cycle_23081726.bnet,!Progeny_Virion
+Influenza A Virus Replication Cycle_23081726.bnet,mRNA_PB2_cyto
+Influenza A Virus Replication Cycle_23081726.bnet,!mRNA_PB2_cyto
+Influenza A Virus Replication Cycle_23081726.bnet,pro_vRNP_PA_M1_cyto
+Influenza A Virus Replication Cycle_23081726.bnet,!pro_vRNP_PA_M1_cyto
+Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,Foxo1_gene
+Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,!Foxo1_gene
+Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,IL7r_activated
+Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,!IL7r_activated
+Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,Mac1
+Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,!Mac1
+Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,Flt3
+Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,!Flt3
+Lymphopoiesis Regulatory Network_26408858.bnet,ERK
+Lymphopoiesis Regulatory Network_26408858.bnet,!ERK
+Lymphopoiesis Regulatory Network_26408858.bnet,Bcl2
+Lymphopoiesis Regulatory Network_26408858.bnet,!Bcl2
+Lymphopoiesis Regulatory Network_26408858.bnet,Bcl11b
+Lymphopoiesis Regulatory Network_26408858.bnet,!Bcl11b
+Lymphopoiesis Regulatory Network_26408858.bnet,Gzmb
+Lymphopoiesis Regulatory Network_26408858.bnet,!Gzmb
+MAPK Cancer Cell Fate Network_24250280.bnet,Apoptosis
+MAPK Cancer Cell Fate Network_24250280.bnet,!Apoptosis
+MAPK Cancer Cell Fate Network_24250280.bnet,Growth_Arrest
+MAPK Cancer Cell Fate Network_24250280.bnet,!Growth_Arrest
+MAPK Cancer Cell Fate Network_24250280.bnet,Proliferation
+MAPK Cancer Cell Fate Network_24250280.bnet,!Proliferation
+MAPK Cancer Cell Fate Network_24250280.bnet,p14
+MAPK Cancer Cell Fate Network_24250280.bnet,!p14
+Oxidative Stress Pathway_23134720.bnet,Bcl2
+Oxidative Stress Pathway_23134720.bnet,!Bcl2
+Oxidative Stress Pathway_23134720.bnet,Mdm2
+Oxidative Stress Pathway_23134720.bnet,!Mdm2
+Oxidative Stress Pathway_23134720.bnet,ARE
+Oxidative Stress Pathway_23134720.bnet,!ARE
+Oxidative Stress Pathway_23134720.bnet,p53
+Oxidative Stress Pathway_23134720.bnet,!p53
+PC12 Cell Differentiation_27148350.bnet,Maff
+PC12 Cell Differentiation_27148350.bnet,!Maff
+PC12 Cell Differentiation_27148350.bnet,SRF
+PC12 Cell Differentiation_27148350.bnet,!SRF
+PC12 Cell Differentiation_27148350.bnet,MYC
+PC12 Cell Differentiation_27148350.bnet,!MYC
+PC12 Cell Differentiation_27148350.bnet,ZFP36
+PC12 Cell Differentiation_27148350.bnet,!ZFP36
+Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,FoxO3a_M
+Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,!FoxO3a_M
+Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,PI3KAkt_H
+Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,!PI3KAkt_H
+Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,ROS_M
+Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,!ROS_M
+Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,NfkB_M
+Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,!NfkB_M
+Senescence Associated Secretory Phenotype_29206223.bnet,IL6R
+Senescence Associated Secretory Phenotype_29206223.bnet,!IL6R
+Senescence Associated Secretory Phenotype_29206223.bnet,Elk1
+Senescence Associated Secretory Phenotype_29206223.bnet,!Elk1
+Senescence Associated Secretory Phenotype_29206223.bnet,Oncogene
+Senescence Associated Secretory Phenotype_29206223.bnet,!Oncogene
+Senescence Associated Secretory Phenotype_29206223.bnet,p16INK4
+Senescence Associated Secretory Phenotype_29206223.bnet,!p16INK4
+Septation Initiation Network_26244885.bnet,SIP
+Septation Initiation Network_26244885.bnet,!SIP
+Septation Initiation Network_26244885.bnet,flp1
+Septation Initiation Network_26244885.bnet,!flp1
+Septation Initiation Network_26244885.bnet,sid2
+Septation Initiation Network_26244885.bnet,!sid2
+Septation Initiation Network_26244885.bnet,nak1
+Septation Initiation Network_26244885.bnet,!nak1
+Signaling in Macrophage Activation_18433497.bnet,G1P3gene
+Signaling in Macrophage Activation_18433497.bnet,!G1P3gene
+Signaling in Macrophage Activation_18433497.bnet,GBP1gene
+Signaling in Macrophage Activation_18433497.bnet,!GBP1gene
+Signaling in Macrophage Activation_18433497.bnet,SOCS1
+Signaling in Macrophage Activation_18433497.bnet,!SOCS1
+Signaling in Macrophage Activation_18433497.bnet,PSMB9gene
+Signaling in Macrophage Activation_18433497.bnet,!PSMB9gene
+Stomatal Opening Model_27542373.bnet,MCPS
+Stomatal Opening Model_27542373.bnet,!MCPS
+Stomatal Opening Model_27542373.bnet,carbfix
+Stomatal Opening Model_27542373.bnet,!carbfix
+Stomatal Opening Model_27542373.bnet,SO_1
+Stomatal Opening Model_27542373.bnet,!SO_1
+Stomatal Opening Model_27542373.bnet,SO_2
+Stomatal Opening Model_27542373.bnet,!SO_2
+T Cell Receptor Signaling_17722974.bnet,shp2
+T Cell Receptor Signaling_17722974.bnet,!shp2
+T Cell Receptor Signaling_17722974.bnet,p21c
+T Cell Receptor Signaling_17722974.bnet,!p21c
+T Cell Receptor Signaling_17722974.bnet,fkhr
+T Cell Receptor Signaling_17722974.bnet,!fkhr
+T Cell Receptor Signaling_17722974.bnet,Dummy
+T Cell Receptor Signaling_17722974.bnet,!Dummy
+T-LGL Survival Network 2011_22102804.bnet,Cytoskeleton_signaling
+T-LGL Survival Network 2011_22102804.bnet,!Cytoskeleton_signaling
+T-LGL Survival Network 2011_22102804.bnet,Proliferation
+T-LGL Survival Network 2011_22102804.bnet,!Proliferation
+T-LGL Survival Network 2011_22102804.bnet,IL2RBT
+T-LGL Survival Network 2011_22102804.bnet,!IL2RBT
+T-LGL Survival Network 2011_22102804.bnet,RAS
+T-LGL Survival Network 2011_22102804.bnet,!RAS
+Tumour Cell Invasion and Migration_26528548.bnet,Metastasis
+Tumour Cell Invasion and Migration_26528548.bnet,!Metastasis
+Tumour Cell Invasion and Migration_26528548.bnet,Apoptosis
+Tumour Cell Invasion and Migration_26528548.bnet,!Apoptosis
+Tumour Cell Invasion and Migration_26528548.bnet,CellCycleArrest
+Tumour Cell Invasion and Migration_26528548.bnet,!CellCycleArrest
+Tumour Cell Invasion and Migration_26528548.bnet,CDH2
+Tumour Cell Invasion and Migration_26528548.bnet,!CDH2

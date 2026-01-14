@@ -1,0 +1,12 @@
+Lachnospiraceae,	(!Clindamycin & Lachnospiraceae_other) | (Lachnospiraceae & !Clindamycin) | (!Clindamycin & Other)
+Clindamycin,	Clindamycin
+Akkermansia,	Coprobacillus
+Enterobacteriaceae,	Enterobacteriaceae
+Mollicutes,	Mollicutes
+Barnesiella,	(!Clindamycin & Lachnospiraceae_other) | (Lachnospiraceae & !Clindamycin) | (!Clindamycin & Other)
+Lachnospiraceae_other,	(!Clindamycin & Lachnospiraceae_other) | (Lachnospiraceae & !Clindamycin) | (!Clindamycin & Other)
+Enterococcus,	!Coprobacillus | Enterobacteriaceae | Mollicutes | Blautia | Clostridium_difficile
+Clostridium_difficile,	(Clostridium_difficile & !Barnesiella)
+Blautia,	Enterococcus | (Coprobacillus & !Blautia) | (!Coprobacillus & Blautia)
+Other,	(!Clindamycin & Lachnospiraceae_other) | (Lachnospiraceae & !Clindamycin) | (!Clindamycin & Other)
+Coprobacillus,	Coprobacillus

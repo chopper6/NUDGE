@@ -1,0 +1,21 @@
+BRX,	AuxREs | IAA
+NGA1,	!BRX
+BRBiosynth,	BRX | !BZR1
+ARFi,	AUX_IAA | !ARFi
+IAABiosynth,	!ARFi | NGA1
+ARFa,	one
+AUX_IAA,	AuxREs | !SCFTir1
+AuxREs,	!ARFi | ARFa
+IAA,	StimAux | IAABiosynth | !PIN
+PIN,	AuxREs
+SCFTir1,	IAA
+Elongation,	AuxREs | BRREs
+BR,	StimBR | BRBiosynth
+BRI1_BAK1,	BR
+BIN2,	!BRI1_BAK1
+BES1_BZR2,	!BIN2
+BZR1,	!BIN2
+BRREs,	BZR1 | BES1_BZR2
+one,	one
+StimAux,	StimAux
+StimBR,	StimBR

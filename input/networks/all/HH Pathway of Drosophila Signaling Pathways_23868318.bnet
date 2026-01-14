@@ -1,0 +1,24 @@
+Dally,	Ttv
+Ci_rep,	(CK1a & Slmb & Sgg & Pka & Cos & SuFu)
+Smo,	(Gprk2 & !Tow) | (Gprk2 & !Ptc)
+Targets,	(Ci_act & !Ci_rep)
+Hh,	(iHog & Dlp & Rasp & Dally & Boi & Lipophorin & Shf & Disp)
+SuFu,	!Fu
+Dlp,	Ttv
+Ci_act,	!Slmb | !Cos | !SuFu | (!CK1a & !Sgg & !Pka)
+Ptc,	!Hh
+Cos,	!Fu | !Smo
+Fu,	Smo
+Ttv,	Ttv
+CK1a,	CK1a
+Slmb,	Slmb
+Sgg,	Sgg
+Pka,	Pka
+Gprk2,	Gprk2
+Tow,	Tow
+iHog,	iHog
+Rasp,	Rasp
+Boi,	Boi
+Lipophorin,	Lipophorin
+Shf,	Shf
+Disp,	Disp

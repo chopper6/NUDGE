@@ -1,0 +1,24 @@
+BF,	(!Renal_artery_stenosis & !MV_Rarefaction)
+Mild_renal_ischemia,	!BF
+NADPH_oxidase,	(Mild_renal_ischemia & ANG_II_ET_1)
+ANG_II_ET_1,	(!Endothelin_A & More_severe_renal_ischemia) | (Mild_renal_ischemia & !Endothelin_A)
+ROS_Scavenging,	Simvastatin | !NADPH_oxidase
+Ox_LDL,	(!Simvastatin & NADPH_oxidase) | (!Simvastatin & !ROS_Scavenging) | (NFkB & !Simvastatin)
+ROS_Oxidative_stress,	(!Anti_oxidant_administration_Vitamins_C_and_E & !NO_availability) | (!ROS_Scavenging & !Anti_oxidant_administration_Vitamins_C_and_E) | (!Anti_oxidant_administration_Vitamins_C_and_E & TGF_beta)
+NFkB,	(More_severe_renal_ischemia & !Simvastatin & Ox_LDL)
+NO_availability,	Simvastatin | !ROS_Oxidative_stress | VEGF
+VEGF,	!ROS_Oxidative_stress | VEGF_administration
+Angiostatin_endostatin_thrombospondin,	ROS_Oxidative_stress
+Vasoconstriction,	(ANG_II_ET_1 & !NO_availability) | (!NO_availability & Inflammation) | (ANG_II_ET_1 & Inflammation)
+MV_Rarefaction,	(Angiostatin_endostatin_thrombospondin & Vasoconstriction)
+Inflammation,	NFkB | ANG_II_ET_1
+TGF_beta,	Inflammation
+Tubule_interstital_injury_and_glomerulosclerosis,	TIMP_MMPs
+TIMP_MMPs,	(TGF_beta & ROS_Oxidative_stress) | (ANG_II_ET_1 & TGF_beta) | (ANG_II_ET_1 & ROS_Oxidative_stress)
+More_severe_renal_ischemia,	MV_Rarefaction
+Fibrosis,	Tubule_interstital_injury_and_glomerulosclerosis
+Renal_artery_stenosis,	Renal_artery_stenosis
+Endothelin_A,	Endothelin_A
+Simvastatin,	Simvastatin
+Anti_oxidant_administration_Vitamins_C_and_E,	Anti_oxidant_administration_Vitamins_C_and_E
+VEGF_administration,	VEGF_administration

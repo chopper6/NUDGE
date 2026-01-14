@@ -1,0 +1,25 @@
+p38,	AKT | p38
+cJUN,	(cJUN & !GSKa_b)
+BAX,	BAX
+TSC2,	(!ERK1_2 & !AKT & RB & !GSKa_b) | (!ERK1_2 & !AKT & TSC2 & !GSKa_b)
+ERK1_2,	ERK1_2 | ERBB1 | cRAF
+RB,	(p53 & !CyclinB1) | (RB & !CyclinB1)
+RPS6,	p70S6K | RPS6
+PRAS,	(!AKT & cJUN) | (!AKT & PRAS)
+p53,	p38 | p53 | RB | CyclinB1
+cRAF,	(!ERK1_2 & cRAF) | (!ERK1_2 & ERBB2) | (!ERK1_2 & ERBB1)
+AKT,	(!PTEN & CyclinB1) | (!PTEN & ERBB3) | (!PTEN & AKT) | (!PTEN & ERBB1) | (!PTEN & ERBB2)
+FOXO1_3a,	(!AKT & FOXO1_3a)
+CyclinB1,	(!p53 & CyclinB1)
+CyclinD1,	ERK1_2 | AKT | cJUN | p70S6K | CyclinD1
+ERBB3,	(RPS6 & !erlotinib & !pertuzumab) | (!erlotinib & !pertuzumab & stimulus) | (ERBB3 & !erlotinib & !pertuzumab)
+p70S6K,	(!TSC2 & p70S6K & !PRAS) | (ERK1_2 & !TSC2 & !PRAS)
+ERBB1,	(ERBB3 & !erlotinib & !pertuzumab) | (!erlotinib & !pertuzumab & stimulus) | (ERBB1 & !erlotinib & !pertuzumab) | (cJUN & !erlotinib & !pertuzumab)
+GSKa_b,	p53 | GSKa_b
+ERBB2,	(ERBB2 & !erlotinib & !pertuzumab & !trastuzumab) | (!erlotinib & !pertuzumab & stimulus & !trastuzumab)
+Nfkb,	Nfkb
+PTEN,	(!GSKa_b & cRAF) | (PTEN & !GSKa_b)
+erlotinib,	erlotinib
+pertuzumab,	pertuzumab
+stimulus,	stimulus
+trastuzumab,	trastuzumab

@@ -1,0 +1,25 @@
+Senescence,	p16 | (p21 & mTORC1_S6K1)
+G1_S,	(!p21 & CDK2 & E2F1 & Metabolism)
+MAPK,	(!PP2A & GF)
+p16,	(!E2F1 & MAPK & !p53 & !PRC)
+MDM2,	(p16 & !mTORC1_S6K1 & !E2F1 & !MYC) | (AKT & !mTORC1_S6K1 & !E2F1 & !MYC) | (!mTORC1_S6K1 & !E2F1 & p53 & !MYC)
+p53,	!MDM2
+p21,	(!AKT & !MYC & FOXO) | (!AKT & p53 & !MYC)
+AKT,	(!PTEN & !PP2A & CDK2) | (!PTEN & !PP2A & IRS_PIK3CA)
+mTORC1_S6K1,	(!AMPK & !TSC)
+ATP,	Metabolism
+IRS_PIK3CA,	Insulin
+AMPK,	(p53 & !ATP)
+PTEN,	(!AKT & p53)
+TSC,	(!AKT & !MAPK & AMPK)
+MYC,	(mTORC1_S6K1 & E2F1 & MAPK & !p53)
+CDK2,	(!p21 & mTORC1_S6K1 & E2F1) | (!p21 & mTORC1_S6K1 & MYC)
+RB1,	!CDK2
+E2F1,	(E2F1 & MYC & !RB1) | (E2F1 & GF & !RB1)
+PRC,	(!AKT & MYC)
+Metabolism,	(mTORC1_S6K1 & PP1C) | (MAPK & PP1C) | (AKT & MAPK) | (AKT & mTORC1_S6K1)
+PP2A,	!mTORC1_S6K1
+FOXO,	(!AKT & !MAPK & AMPK) | (!AKT & Metabolism & !MAPK) | (!AKT & p16 & !MAPK)
+PP1C,	AKT | MAPK
+GF,	GF
+Insulin,	Insulin

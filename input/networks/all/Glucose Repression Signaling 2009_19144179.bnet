@@ -1,0 +1,73 @@
+Gal3p,	(GAL3 & galactose_int)
+MIG3,	!Rgt1p
+GAL4,	!Mig1p
+SCF_grr1,	GRR1
+Sip4p,	(SIP4 & Snf1p)
+Gal2p,	GAL2
+galactose_int,	(galactose_ext & Gal2p)
+MalRp,	(MALR & maltose_int)
+IDP2,	Cat8p
+HXT3,	!Rgt1p | !Mth1p
+MEL1,	!Mig1p | Gal4p
+JEN1,	Cat8p
+Gal1p,	GAL1
+Rgt2p,	(glucose_ext & RGT2)
+GAL3,	!Mig1p
+SUC2,	(!Mig1p & !Mig2p)
+HXT4,	(!Mig1p & !Mth1p) | (!Rgt1p & !Mig1p)
+Mig2p,	MIG2
+MALR,	!Mig1p
+fourORFs,	!RGT1
+HXT2,	(!Rgt1p & !Mig1p)
+Glc7Reg1,	(glucose_ext & GLC7 & REG1)
+maltose_int,	(maltose_ext & MalTp)
+MTH1,	!Mig1p | !Mig2p
+MDH2,	Cat8p | Sip4p
+GAL5,	Gal4p
+GAL10,	GAL4
+MalTp,	MALT
+Mig3p,	(!Snf1p & MIG3)
+Gal4p,	(GAL4 & !Gal80p)
+SFC1,	Cat8p
+GAL7,	GAL4
+GAL1,	(!Mig1p & Gal4p)
+FBP1,	Cat8p | Sip4p
+Gal11p,	GAL11
+Cat8p,	(Snf1p & CAT8)
+Rgt1p,	(RGT1 & Std1p) | (Mth1p & RGT1)
+CAT8,	!Mig1p
+Mig1p,	(!Snf1p & MIG1)
+Std1p,	(STD1 & !SCF_grr1 & !Rgt2p & !Yck1p & !Snf3p)
+Snf1p,	(SNF1 & SNF4 & !Glc7Reg1)
+Gal80p,	(GAL80 & !Gal3p & !Gal1p)
+HXT5,	!Rgt1p
+HXT8,	!Rgt1p
+Yck1p,	YCK1_2
+PCK1,	Cat8p
+Mth1p,	(!SCF_grr1 & !Rgt2p & !Yck1p & !Snf3p & MTH1)
+ACS1,	Cat8p
+HXT1,	!Rgt1p | (!Mth1p & !Std1p)
+Snf3p,	(glucose_ext & SNF3)
+SIP4,	Cat8p
+MLS1,	Cat8p | Sip4p
+ICL1,	Cat8p | Sip4p
+MALS,	(!Mig1p & MalRp)
+MIG2,	!Rgt1p
+GRR1,	GRR1
+GAL2,	GAL2
+galactose_ext,	galactose_ext
+glucose_ext,	glucose_ext
+RGT2,	RGT2
+RGT1,	RGT1
+GLC7,	GLC7
+REG1,	REG1
+maltose_ext,	maltose_ext
+MALT,	MALT
+GAL11,	GAL11
+MIG1,	MIG1
+STD1,	STD1
+SNF1,	SNF1
+SNF4,	SNF4
+GAL80,	GAL80
+YCK1_2,	YCK1_2
+SNF3,	SNF3

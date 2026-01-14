@@ -1,0 +1,5 @@
+A,	A
+B,	A | B
+C,	(A & D) | (B & C) | (B & D)
+D,	(A & C) | (B & C) | (A & !D) | (B & !D)
+Y,	C & D

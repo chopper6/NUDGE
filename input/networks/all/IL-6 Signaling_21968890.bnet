@@ -1,0 +1,86 @@
+mekk1,	rac1
+anti_apoptotic,	(!gsk3 & !bad & stat3_ta & !casp9)
+irs1_ps,	erk12 | pkcd
+gab1_mem_p,	(gab1_mem & dum_gab1_kin_or_jak1_gab1_mem_p)
+jak1,	(!shp2 & !socs3 & !socs1 & !shp2_a)
+plcg,	gab1_mem_p
+gab1_mem,	grb2_sos | (erk12 & pip3)
+il6rc,	(gp130m & dum_gp80_a_il6rc)
+raf1,	ras
+tdum_socs3_shp2,	socs3
+cebpd,	stat3_ta
+camk24,	cam_ca
+pro_hgf,	cebpb | cebpd
+p38,	mek6
+cmyc,	stat3_ta
+fkhr,	!akt
+gsk3,	!akt
+dum_gp80_a_il6rc,	gp80s_a | gp80m_a
+grb2_sos,	shp2 | il6rc_p
+socs1,	stat3_ta
+dum_pkcd_camk24_stat1_ta,	pkcd | camk24
+erk12,	mek1
+mtorc1,	mtor
+mk2,	p38
+gp80m_a,	il6
+cam_ca,	ca
+akt,	(pdk1 & pip3 & mtorc2 & !ship & !phlpp)
+dum_cebp_saa,	cebpb | cebpd
+tdum_shp2_stat3_py,	shp2 | shp2_a
+cfos,	stat3_ta
+shp2_a,	(shp2 & !ros & gab1_mem_p & !sirp1a)
+a2m_gfbg,	(!nfkb & stat3_ta)
+cebpb,	p38 | stat3_ta
+junb,	stat3_ta
+crp,	(cfos & !nfkb & stat3_ta)
+pkcd,	mek4
+casp9,	!akt
+var_app,	cebpb | cebpd
+tdum_shp2_stat1_py,	shp2 | shp2_a
+stat1_py,	(!shp2 & !shp2_a & il6rc_p & jak1 & !cyt_ptpe)
+pip3,	(pi3k & !pten)
+ras_gap,	(!shp2_a & gab1_mem_p)
+p70s6k,	akt | erk12 | mtorc1
+tdum_shp2_il6rc_p,	shp2 | shp2_a
+mek4,	mekk1
+mek1,	raf1
+saa,	(nfkb & dum_cebp_saa & stat3_ta)
+rac1,	vav
+tdum_socs1_vav,	socs1
+dum_mtorc1_or_pkcd_stat3_ta,	pkcd | mtorc1
+ras,	(grb2_sos & !ras_gap)
+dum_gab1_kin_or_jak1_gab1_mem_p,	jak1 | gab1_kin
+ca,	ip3
+socs3,	erk12 | p38 | nfkb | stat3_ta
+mtorc2,	mtor
+stat3_ta,	(dum_mtorc1_or_pkcd_stat3_ta & stat3_py & !slim & !pias3)
+il6rc_p,	(!shp2 & !shp2_a & jak1 & il6rc)
+pi3k,	ras | (!shp2_a & gab1_mem_p)
+bad,	!akt
+gp130s,	(!mk2 & !camk24)
+pro_proliferative,	erk12 | stat3_ta | camk24 | p70s6k | (!cebpb & !fkhr)
+irs1_py,	(!shp2 & !shp2_a & !irs1_ps)
+shp2,	(!socs3 & !ros & il6rc_p & !sirp1a & jak1)
+gp80s_a,	(il6 & !gp130s)
+dum_il6rc_p_or_grb2_vav,	grb2_sos | il6rc_p
+ir,	(!socs3 & !socs1)
+ip3,	plcg
+stat3_py,	(!shp2 & !shp2_a & il6rc_p & jak1 & !cyt_ptpe)
+stat1_ta,	(!slim & dum_pkcd_camk24_stat1_ta & stat1_py & !pias1)
+vav,	(!socs1 & dum_il6rc_p_or_grb2_vav)
+mek6,	il6rc_p
+gp130m,	gp130m
+mtor,	mtor
+il6,	il6
+pdk1,	pdk1
+ship,	ship
+phlpp,	phlpp
+ros,	ros
+sirp1a,	sirp1a
+nfkb,	nfkb
+cyt_ptpe,	cyt_ptpe
+pten,	pten
+gab1_kin,	gab1_kin
+slim,	slim
+pias3,	pias3
+pias1,	pias1
