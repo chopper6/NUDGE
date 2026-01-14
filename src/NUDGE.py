@@ -18,7 +18,7 @@ def main(param_file):
 
 	params = util.load_yaml(param_file)
 	results = control(params)
-	if params['verbose_poke']:
+	if params['verbose_nudge']:
 		util.pretty_print(results)
 
 #################################################################################

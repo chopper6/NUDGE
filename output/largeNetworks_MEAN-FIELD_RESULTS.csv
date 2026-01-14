@@ -1,0 +1,553 @@
+Network,Target,Controllers,Errors,Minutes
+./input/networks/large11SCC/19524598.bnet,CARP,[['!TNF']],[0.017000000000000015],0.00593
+./input/networks/large11SCC/19524598.bnet,!CARP,[],NA,0.07208
+./input/networks/large11SCC/19524598.bnet,C8a,[],NA,0.07917
+./input/networks/large11SCC/19524598.bnet,!C8a,[['!TNF']],[0.028],0.00521
+./input/networks/large11SCC/19524598.bnet,T2,[],NA,0.07756
+./input/networks/large11SCC/19524598.bnet,!T2,[['!TNF']],[0.0],0.00457
+./input/networks/large11SCC/19524598.bnet,NFkB,[],NA,0.07941
+./input/networks/large11SCC/19524598.bnet,!NFkB,[['!TNF']],[0.0],0.00571
+./input/networks/large11SCC/21639591.bnet,HOMER,"[['!PIP2'], ['!Serotonin']]","[0.0, 0.0]",0.00984
+./input/networks/large11SCC/21639591.bnet,!HOMER,[],NA,0.2046
+./input/networks/large11SCC/21639591.bnet,ATP_cyt,"[['!PIP2'], ['!Serotonin']]","[0.0, 0.0]",0.01004
+./input/networks/large11SCC/21639591.bnet,!ATP_cyt,[],NA,0.21643
+./input/networks/large11SCC/21639591.bnet,CaBP1,[['0']],NA,0.00518
+./input/networks/large11SCC/21639591.bnet,!CaBP1,[['1']],[0.0],0.00403
+./input/networks/large11SCC/21639591.bnet,DAG,"[['PIP2', 'Serotonin']]",[0.0],0.22217
+./input/networks/large11SCC/21639591.bnet,!DAG,"[['!PIP2'], ['!Serotonin']]","[0.0, 0.0]",0.01104
+./input/networks/large11SCC/23169817_high_dna_damage.bnet,pten,[],NA,0.74064
+./input/networks/large11SCC/23169817_high_dna_damage.bnet,!pten,[],NA,0.74081
+./input/networks/large11SCC/23169817_high_dna_damage.bnet,arf,[],NA,0.75977
+./input/networks/large11SCC/23169817_high_dna_damage.bnet,!arf,[],NA,0.72613
+./input/networks/large11SCC/23169817_high_dna_damage.bnet,bcl2,[],NA,0.7451
+./input/networks/large11SCC/23169817_high_dna_damage.bnet,!bcl2,[],NA,0.78151
+./input/networks/large11SCC/23169817_high_dna_damage.bnet,e2f1,[],NA,0.71828
+./input/networks/large11SCC/23169817_high_dna_damage.bnet,!e2f1,[],NA,0.76894
+./input/networks/large11SCC/23658556_model_10.bnet,IAA5,"[['PHB'], ['!Auxin']]","[0.0, 0.0]",0.01306
+./input/networks/large11SCC/23658556_model_10.bnet,!IAA5,[],NA,0.22714
+./input/networks/large11SCC/23658556_model_10.bnet,ACR,[],NA,0.22126
+./input/networks/large11SCC/23658556_model_10.bnet,!ACR,"[['PHB'], ['!Auxin']]","[0.0, 0.0]",0.01449
+./input/networks/large11SCC/23658556_model_10.bnet,JKD,[],NA,0.22726
+./input/networks/large11SCC/23658556_model_10.bnet,!JKD,[],NA,0.22322
+./input/networks/large11SCC/23658556_model_10.bnet,Auxin,[],NA,0.22741
+./input/networks/large11SCC/23658556_model_10.bnet,!Auxin,"[['PHB'], ['!Auxin']]","[0.0, 0.0]",0.01428
+./input/networks/large11SCC/23935937.bnet,CMYC,[['0']],NA,0.0049
+./input/networks/large11SCC/23935937.bnet,!CMYC,[['1']],[0.016],0.00461
+./input/networks/large11SCC/23935937.bnet,EMT,[['0']],NA,0.00497
+./input/networks/large11SCC/23935937.bnet,!EMT,[['1']],[0.0225],0.00439
+./input/networks/large11SCC/23935937.bnet,NOTCH_SIGNAL,[['0']],NA,0.00522
+./input/networks/large11SCC/23935937.bnet,!NOTCH_SIGNAL,[['1']],[0.0135],0.00434
+./input/networks/large11SCC/23935937.bnet,WNT_SIGNAL,[['0']],NA,0.00469
+./input/networks/large11SCC/23935937.bnet,!WNT_SIGNAL,[['1']],[0.0],0.00481
+./input/networks/large11SCC/25063553_OR_OR.bnet,pfk2,[],NA,1.40566
+./input/networks/large11SCC/25063553_OR_OR.bnet,!pfk2,[['!x5p']],[0.0],0.02211
+./input/networks/large11SCC/25063553_OR_OR.bnet,lgk,"[['ins', '!basal_act'], ['basal_act', '!gcg']]","[0.03500000000000003, 0.0]",1.37715
+./input/networks/large11SCC/25063553_OR_OR.bnet,!lgk,[],NA,1.38392
+./input/networks/large11SCC/25063553_OR_OR.bnet,pepck_c,[],NA,1.33939
+./input/networks/large11SCC/25063553_OR_OR.bnet,!pepck_c,"[['ins', '!basal_act'], ['!ins', '!gcg']]","[0.017625, 0.0]",1.38811
+./input/networks/large11SCC/25063553_OR_OR.bnet,fbp2,[],NA,1.37918
+./input/networks/large11SCC/25063553_OR_OR.bnet,!fbp2,"[['x5p'], ['!gcg']]","[0.0, 0.0]",0.01867
+./input/networks/large11SCC/25189528.bnet,NOTCH,[['1']],[0.0],0.00218
+./input/networks/large11SCC/25189528.bnet,!NOTCH,[['0']],NA,0.00311
+./input/networks/large11SCC/25189528.bnet,cMet,[['1']],[0.0],0.00225
+./input/networks/large11SCC/25189528.bnet,!cMet,[['0']],NA,0.00311
+./input/networks/large11SCC/25189528.bnet,EGFR,[['EGF']],[0.0],0.01586
+./input/networks/large11SCC/25189528.bnet,!EGFR,[['!EGF']],[0.0],0.01634
+./input/networks/large11SCC/25189528.bnet,SNAI2,[['1']],[0.0],0.00259
+./input/networks/large11SCC/25189528.bnet,!SNAI2,[['0']],NA,0.00381
+./input/networks/large11SCC/25780058.bnet,ROCK,[],NA,0.38646
+./input/networks/large11SCC/25780058.bnet,!ROCK,[['!EGF']],[0.083],0.01432
+./input/networks/large11SCC/25780058.bnet,PTP_EGFR,[],NA,0.40009
+./input/networks/large11SCC/25780058.bnet,!PTP_EGFR,[['!EGF']],[0.0],0.01433
+./input/networks/large11SCC/25780058.bnet,Raf,[],NA,0.37716
+./input/networks/large11SCC/25780058.bnet,!Raf,[['!EGF']],[0.0],0.01463
+./input/networks/large11SCC/25780058.bnet,p190RhoGEF,[],NA,0.35465
+./input/networks/large11SCC/25780058.bnet,!p190RhoGEF,[['!EGF']],[0.077],0.01347
+./input/networks/large11SCC/25967891.bnet,FUL,[['1']],[0.259],0.00245
+./input/networks/large11SCC/25967891.bnet,!FUL,[['0']],NA,0.00213
+./input/networks/large11SCC/25967891.bnet,TFL1,[['0']],NA,0.00255
+./input/networks/large11SCC/25967891.bnet,!TFL1,[['1']],[0.06],0.00207
+./input/networks/large11SCC/25967891.bnet,FT,[['1']],[0.051000000000000045],0.00257
+./input/networks/large11SCC/25967891.bnet,!FT,[['0']],NA,0.00219
+./input/networks/large11SCC/25967891.bnet,AP2,[['1']],[0.05700000000000005],0.00223
+./input/networks/large11SCC/25967891.bnet,!AP2,[['0']],NA,0.00244
+./input/networks/large11SCC/25980672.bnet,Bcl_2_K,[['!UVB']],[0.0],0.06063
+./input/networks/large11SCC/25980672.bnet,!Bcl_2_K,[],NA,3.53619
+./input/networks/large11SCC/25980672.bnet,Bcl_2_M,[],NA,3.51598
+./input/networks/large11SCC/25980672.bnet,!Bcl_2_M,[['!UVB']],[0.0],0.05418
+./input/networks/large11SCC/25980672.bnet,JNK_K,[],NA,3.5307
+./input/networks/large11SCC/25980672.bnet,!JNK_K,[['!UVB']],[0.0],0.05588
+./input/networks/large11SCC/25980672.bnet,EGFR_K,[],NA,3.49991
+./input/networks/large11SCC/25980672.bnet,!EGFR_K,[['!UVB']],[0.0],0.05689
+./input/networks/large11SCC/26564978.bnet,P15,[['1']],[0.0],0.00679
+./input/networks/large11SCC/26564978.bnet,!P15,[['0']],NA,0.00772
+./input/networks/large11SCC/26564978.bnet,CDK_4,[['1']],[0.0],0.00681
+./input/networks/large11SCC/26564978.bnet,!CDK_4,[['0']],NA,0.00854
+./input/networks/large11SCC/26564978.bnet,P53,[['!MKP']],[0.0],0.1045
+./input/networks/large11SCC/26564978.bnet,!P53,[['MKP']],[1.0],0.10581
+./input/networks/large11SCC/26564978.bnet,STAT3,[['1']],[0.0],0.00684
+./input/networks/large11SCC/26564978.bnet,!STAT3,[['0']],NA,0.00772
+./input/networks/large11SCC/26660865.bnet,IL6_DELTA4_T,[['!FACTOR14']],[0.0],1.15612
+./input/networks/large11SCC/26660865.bnet,!IL6_DELTA4_T,[],NA,1.1512
+./input/networks/large11SCC/26660865.bnet,CYCLIN_E_T,[['1']],[0.0],0.01813
+./input/networks/large11SCC/26660865.bnet,!CYCLIN_E_T,[['0']],NA,0.02032
+./input/networks/large11SCC/26660865.bnet,STAT1_T,[['1']],[0.0],0.01843
+./input/networks/large11SCC/26660865.bnet,!STAT1_T,[['0']],NA,0.01967
+./input/networks/large11SCC/26660865.bnet,PDGF_T,"[['!FACTOR2'], ['!FACTOR1']]","[0.0, 0.0]",1.14617
+./input/networks/large11SCC/26660865.bnet,!PDGF_T,[],NA,1.16236
+./input/networks/large11SCC/27138333.bnet,P90rsk,[['Pdk1']],[0.0],0.00909
+./input/networks/large11SCC/27138333.bnet,!P90rsk,[['!Pdk1']],[0.0],0.00816
+./input/networks/large11SCC/27138333.bnet,Rap1a,"[['EGF', '!p90rsk']]",[0.0],0.36855
+./input/networks/large11SCC/27138333.bnet,!Rap1a,"[['!EGF'], ['p90rsk']]","[0.0, 0.0]",0.00782
+./input/networks/large11SCC/27138333.bnet,Pip3,[],NA,0.38691
+./input/networks/large11SCC/27138333.bnet,!Pip3,"[['!EGF'], ['Ship2'], ['!Pip2'], ['Pten']]","[0.107997, 0.0, 0.0, 0.0]",0.00911
+./input/networks/large11SCC/27138333.bnet,RalbP1,[['Rap1A']],[0.0],0.00839
+./input/networks/large11SCC/27138333.bnet,!RalbP1,[['!Rap1A']],[0.0],0.01074
+./input/networks/large11SCC/27464342_curated_model.bnet,p90Rsk_il,[['IRS1_2']],[0.0],0.05547
+./input/networks/large11SCC/27464342_curated_model.bnet,!p90Rsk_il,[],NA,0.0565
+./input/networks/large11SCC/27464342_curated_model.bnet,IL6_syn,[['0']],NA,0.00305
+./input/networks/large11SCC/27464342_curated_model.bnet,!IL6_syn,[['1']],[0.010913],0.00287
+./input/networks/large11SCC/27464342_curated_model.bnet,Ccl5_Stat1,[],NA,0.05879
+./input/networks/large11SCC/27464342_curated_model.bnet,!Ccl5_Stat1,"[['!hk'], ['!LPS'], ['!hk_medium']]","[0.0, 0.0, 0.018508000000000004]",0.05628
+./input/networks/large11SCC/27464342_curated_model.bnet,PKC,[['IRS1_2']],[0.0],0.05226
+./input/networks/large11SCC/27464342_curated_model.bnet,!PKC,[],NA,0.0543
+./input/networks/large11SCC/27613445.bnet,G1_S,[['0']],NA,0.00134
+./input/networks/large11SCC/27613445.bnet,!G1_S,[['1']],[0.001],0.00143
+./input/networks/large11SCC/27613445.bnet,Senescence,[],NA,0.85185
+./input/networks/large11SCC/27613445.bnet,!Senescence,[],NA,0.8616
+./input/networks/large11SCC/27613445.bnet,IRS_PIK3CA,[['Insulin']],[0.0],0.03252
+./input/networks/large11SCC/27613445.bnet,!IRS_PIK3CA,[['!Insulin']],[0.0],0.03202
+./input/networks/large11SCC/27613445.bnet,p21,[],NA,0.86404
+./input/networks/large11SCC/27613445.bnet,!p21,[],NA,0.87986
+./input/networks/large11SCC/28187161.bnet,HB8,[],NA,0.616
+./input/networks/large11SCC/28187161.bnet,!HB8,[['!BR']],[0.0],0.02036
+./input/networks/large11SCC/28187161.bnet,WOX4,[],NA,0.61447
+./input/networks/large11SCC/28187161.bnet,!WOX4,"[['!ETHL', '!TDIF']]",[0.0],0.6005
+./input/networks/large11SCC/28187161.bnet,DELLA,"[['!GA', '!IAA0']]",[0.0],0.59109
+./input/networks/large11SCC/28187161.bnet,!DELLA,[['GA']],[0.0],0.01699
+./input/networks/large11SCC/28187161.bnet,BZR1,[],NA,0.61677
+./input/networks/large11SCC/28187161.bnet,!BZR1,[['!BR']],[0.0],0.01732
+./input/networks/large11SCC/28381275.bnet,CyclinE,[],NA,0.33516
+./input/networks/large11SCC/28381275.bnet,!CyclinE,[['DNAdamage']],[0.0],0.01331
+./input/networks/large11SCC/28381275.bnet,Wnt,[],NA,0.32478
+./input/networks/large11SCC/28381275.bnet,!Wnt,"[['!EGF', 'DNAdamage']]",[0.0],0.33743
+./input/networks/large11SCC/28381275.bnet,ERK,[],NA,0.33029
+./input/networks/large11SCC/28381275.bnet,!ERK,[['!EGF']],[0.0],0.01174
+./input/networks/large11SCC/28381275.bnet,BRCA1,[],NA,0.31605
+./input/networks/large11SCC/28381275.bnet,!BRCA1,[['DNAdamage']],[0.0],0.0128
+./input/networks/large11SCC/28426669_ARF10_greater_ARF5.bnet,MGP,[['0']],NA,0.00144
+./input/networks/large11SCC/28426669_ARF10_greater_ARF5.bnet,!MGP,[['1']],[0.037],0.00163
+./input/networks/large11SCC/28426669_ARF10_greater_ARF5.bnet,CLE40,"[['!SCR', '!SHR'], ['!SHR', '!JKD']]","[0.0, 0.0]",0.71663
+./input/networks/large11SCC/28426669_ARF10_greater_ARF5.bnet,!CLE40,[['SHR']],[0.0],0.04984
+./input/networks/large11SCC/28426669_ARF10_greater_ARF5.bnet,MIR166,"[['MIR166', '!PHB']]",[0.0],0.6893
+./input/networks/large11SCC/28426669_ARF10_greater_ARF5.bnet,!MIR166,[],NA,0.69068
+./input/networks/large11SCC/28426669_ARF10_greater_ARF5.bnet,PHB,[],NA,0.73496
+./input/networks/large11SCC/28426669_ARF10_greater_ARF5.bnet,!PHB,"[['MIR166', '!PHB']]",[0.0],0.72147
+./input/networks/large11SCC/28455685.bnet,S6K1,[['1']],[0.0],0.0002
+./input/networks/large11SCC/28455685.bnet,!S6K1,[['0']],NA,0.00029
+./input/networks/large11SCC/28455685.bnet,Erk1_2,[],NA,0.06384
+./input/networks/large11SCC/28455685.bnet,!Erk1_2,"[['!EGFR'], ['EGFR']]","[0.0, 0.0]",0.00384
+./input/networks/large11SCC/28455685.bnet,mTORC1,[['1']],[0.0],0.00021
+./input/networks/large11SCC/28455685.bnet,!mTORC1,[['0']],NA,0.00026
+./input/networks/large11SCC/28455685.bnet,PIP3,"[['EGFR', '!PTEN']]",[0.0],0.05742
+./input/networks/large11SCC/28455685.bnet,!PIP3,"[['!EGFR'], ['PTEN']]","[0.0, 0.0]",0.00326
+./input/networks/large11SCC/29186334.bnet,mmcp6,[['1']],[0.132],0.00161
+./input/networks/large11SCC/29186334.bnet,!mmcp6,[['0']],NA,0.00149
+./input/networks/large11SCC/29186334.bnet,ccr3,[['0']],NA,0.00142
+./input/networks/large11SCC/29186334.bnet,!ccr3,[['1']],[0.053],0.0015
+./input/networks/large11SCC/29186334.bnet,mccpa,[['1']],[0.14700000000000002],0.00219
+./input/networks/large11SCC/29186334.bnet,!mccpa,[['0']],NA,0.00119
+./input/networks/large11SCC/29186334.bnet,fceRIb,[['gata1']],[0.0],0.00642
+./input/networks/large11SCC/29186334.bnet,!fceRIb,[['!gata1']],[0.0],0.00552
+./input/networks/large11SCC/29230182.bnet,CDC42,"[['WNT5a'], ['WNT11']]","[0.0, 0.0]",0.04468
+./input/networks/large11SCC/29230182.bnet,!CDC42,[],NA,0.05399
+./input/networks/large11SCC/29230182.bnet,Axin2,[],NA,0.04573
+./input/networks/large11SCC/29230182.bnet,!Axin2,"[['BTrCP'], ['!gSecretase'], ['!ADAM10'], ['!DLL4p'], ['JAGp']]","[0.148, 0.116, 0.115, 0.108, 0.159]",0.0476
+./input/networks/large11SCC/29230182.bnet,CyclinD1,[],NA,0.05333
+./input/networks/large11SCC/29230182.bnet,!CyclinD1,"[['!WNT5a'], ['BTrCP'], ['!gSecretase'], ['!ADAM10'], ['!DLL4p'], ['JAGp']]","[0.092, 0.149, 0.119, 0.136, 0.105, 0.135]",0.05127
+./input/networks/large11SCC/29230182.bnet,PDGFB,[],NA,0.05043
+./input/networks/large11SCC/29230182.bnet,!PDGFB,[],NA,0.048
+./input/networks/large11SCC/29237040.bnet,CCA,"[['!miRNA'], ['!p53'], ['EMTreg'], ['ECMicroenv'], ['!DNAdamage']]","[0.30522000000000005, 0.2955509999999999, 0.329284, 0.446256, 0.571839]",0.01498
+./input/networks/large11SCC/29237040.bnet,!CCA,[],NA,0.24287
+./input/networks/large11SCC/29237040.bnet,Apoptosis,[],NA,0.23019
+./input/networks/large11SCC/29237040.bnet,!Apoptosis,"[['!miRNA'], ['!p53'], ['EMTreg'], ['ECMicroenv'], ['!DNAdamage']]","[0.2335, 0.2245, 0.269, 0.208, 0.0]",0.0157
+./input/networks/large11SCC/29237040.bnet,Metastasis,[['0']],NA,0.00541
+./input/networks/large11SCC/29237040.bnet,!Metastasis,[['1']],[0.107],0.00512
+./input/networks/large11SCC/29237040.bnet,miRNA,[],NA,0.21953
+./input/networks/large11SCC/29237040.bnet,!miRNA,"[['!miRNA'], ['!p53'], ['EMTreg'], ['ECMicroenv'], ['!DNAdamage']]","[0.1595, 0.1625, 0.1835, 0.2265, 0.0]",0.01724
+./input/networks/large11SCC/29378814.bnet,Smad7,[],NA,0.41106
+./input/networks/large11SCC/29378814.bnet,!Smad7,"[['!SignalBMP', 'SignalWNT'], ['!SignalBMP', 'SignalLIF'], ['SignalWNT', 'SignalLIF'], ['SignalLIF', '!SignalPI3K']]","[0.0, 0.0, 0.0345, 0.006]",0.40679
+./input/networks/large11SCC/29378814.bnet,Fgfr2,[],NA,0.39661
+./input/networks/large11SCC/29378814.bnet,!Fgfr2,[['SignalWNT']],[0.055],0.0156
+./input/networks/large11SCC/29378814.bnet,BMP4,[['SignalBMP']],[0.0],0.0154
+./input/networks/large11SCC/29378814.bnet,!BMP4,[],NA,0.4131
+./input/networks/large11SCC/29378814.bnet,Rex1,"[['!SignalBMP', '!SignalERK'], ['SignalWNT', 'SignalLIF']]","[0.11599999999999999, 0.257]",0.38722
+./input/networks/large11SCC/29378814.bnet,!Rex1,"[['!SignalBMP', 'SignalERK']]",[0.1505],0.4036
+./input/networks/large11SCC/29596489.bnet,TCF,[['Wnt']],[0.0],0.00945
+./input/networks/large11SCC/29596489.bnet,!TCF,[],NA,0.21095
+./input/networks/large11SCC/29596489.bnet,GSK3beta,"[['!Wnt', '!IGF']]",[0.0],0.21115
+./input/networks/large11SCC/29596489.bnet,!GSK3beta,[['Wnt']],[0.0],0.00877
+./input/networks/large11SCC/29596489.bnet,mTORC2,[],NA,0.20791
+./input/networks/large11SCC/29596489.bnet,!mTORC2,[['Wnt']],[0.0],0.00905
+./input/networks/large11SCC/29596489.bnet,JNK,"[['Wnt'], ['IGF']]","[0.0, 0.08895399999999998]",0.00972
+./input/networks/large11SCC/29596489.bnet,!JNK,"[['!Wnt', '!IGF']]",[0.0],0.21344
+./input/networks/large11SCC/29632237.bnet,Viacel,[['0']],NA,0.00529
+./input/networks/large11SCC/29632237.bnet,!Viacel,[['1']],[0.0],0.00454
+./input/networks/large11SCC/29632237.bnet,PIP3,[['0']],NA,0.00452
+./input/networks/large11SCC/29632237.bnet,!PIP3,[['1']],[0.0],0.00421
+./input/networks/large11SCC/29632237.bnet,CYCB,[['0']],NA,0.00459
+./input/networks/large11SCC/29632237.bnet,!CYCB,[['1']],[0.0],0.00361
+./input/networks/large11SCC/29632237.bnet,CDK2,[['0']],NA,0.00496
+./input/networks/large11SCC/29632237.bnet,!CDK2,[['1']],[0.0],0.00383
+./input/networks/large11SCC/30024932.bnet,G2_M_Arrest,[],NA,0.16707
+./input/networks/large11SCC/30024932.bnet,!G2_M_Arrest,[['!IR']],[0.0],0.00763
+./input/networks/large11SCC/30024932.bnet,Proliferation,[['!IR']],[0.0],0.00693
+./input/networks/large11SCC/30024932.bnet,!Proliferation,[['IR']],[0.0],0.00707
+./input/networks/large11SCC/30024932.bnet,G2_M_Apoptosis,[],NA,0.17241
+./input/networks/large11SCC/30024932.bnet,!G2_M_Apoptosis,[['!IR']],[0.0],0.00738
+./input/networks/large11SCC/30024932.bnet,RB,[],NA,0.17765
+./input/networks/large11SCC/30024932.bnet,!RB,[['!IR']],[0.0],0.00684
+./input/networks/large11SCC/30038409.bnet,HAND1,[['0']],NA,0.00142
+./input/networks/large11SCC/30038409.bnet,!HAND1,[['1']],[0.0],0.00131
+./input/networks/large11SCC/30038409.bnet,SALL4,[['0']],NA,0.00176
+./input/networks/large11SCC/30038409.bnet,!SALL4,[['1']],[0.8170239999999999],0.00122
+./input/networks/large11SCC/30038409.bnet,CDK6,[['0']],NA,0.0014
+./input/networks/large11SCC/30038409.bnet,!CDK6,[['1']],[0.195],0.0012
+./input/networks/large11SCC/30038409.bnet,ZFHX3,[['1']],[0.803696],0.00147
+./input/networks/large11SCC/30038409.bnet,!ZFHX3,[['0']],NA,0.00121
+./input/networks/large11SCC/30518777.bnet,KAT1,[['0']],NA,0.00399
+./input/networks/large11SCC/30518777.bnet,!KAT1,[['1']],[0.14440000000000003],0.00314
+./input/networks/large11SCC/30518777.bnet,CLOSURE,"[['ABA', 'MRP5'], ['ABA', '!ERA1'], ['ABA', '!ABH1']]","[0.0, 0.0, 0.0]",1.807
+./input/networks/large11SCC/30518777.bnet,!CLOSURE,[['!ABA']],[0.0],0.03374
+./input/networks/large11SCC/30518777.bnet,GTG,[['0']],NA,0.00332
+./input/networks/large11SCC/30518777.bnet,!GTG,[['1']],[0.0],0.00306
+./input/networks/large11SCC/30518777.bnet,ROP11,[['ERA1']],[0.0],0.03283
+./input/networks/large11SCC/30518777.bnet,!ROP11,[['!ERA1']],[0.0],0.03178
+./input/networks/large11SCC/30953496_as_per_authors.bnet,GLUT4,[],NA,15.95412
+./input/networks/large11SCC/30953496_as_per_authors.bnet,!GLUT4,[],NA,15.62988
+./input/networks/large11SCC/30953496_as_per_authors.bnet,p38,[['1']],[0.0],0.00213
+./input/networks/large11SCC/30953496_as_per_authors.bnet,!p38,[['0']],NA,0.00267
+./input/networks/large11SCC/30953496_as_per_authors.bnet,Apoptosis,[['1']],[0.0],0.00208
+./input/networks/large11SCC/30953496_as_per_authors.bnet,!Apoptosis,[['0']],NA,0.00259
+./input/networks/large11SCC/30953496_as_per_authors.bnet,GS,[],NA,15.57566
+./input/networks/large11SCC/30953496_as_per_authors.bnet,!GS,[],NA,16.01633
+./input/networks/large11SCC/31130988.bnet,NHEJ,[['0']],NA,0.01026
+./input/networks/large11SCC/31130988.bnet,!NHEJ,[['1']],[0.0],0.0065
+./input/networks/large11SCC/31130988.bnet,PP2A_B55,[['0']],NA,0.01213
+./input/networks/large11SCC/31130988.bnet,!PP2A_B55,[['1']],[0.0],0.00645
+./input/networks/large11SCC/31130988.bnet,R_DSB,[],NA,0.36643
+./input/networks/large11SCC/31130988.bnet,!R_DSB,"[['NUC1', 'HRR']]",[0.0],0.3831
+./input/networks/large11SCC/31130988.bnet,NUC2,[],NA,0.37388
+./input/networks/large11SCC/31130988.bnet,!NUC2,"[['!ICL'], ['FANCD2I'], ['NUC1'], ['NUC2'], ['DSB'], ['PARP_1'], ['!HRR'], ['!NHEJ'], ['CycB_CDK1']]","[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]",0.01977
+./input/networks/large11SCC/31949240.bnet,Fibrosis,"[['Renal_artery_stenosis', '!Endothelin_A'], ['!Endothelin_A', '!Anti_oxidant_administration_Vitamins_C_and_E']]","[0.0, 0.2611999999999999]",0.19773
+./input/networks/large11SCC/31949240.bnet,!Fibrosis,"[['!Renal_artery_stenosis'], ['Endothelin_A']]","[0.1256, 0.0]",0.0074
+./input/networks/large11SCC/31949240.bnet,NO_availability,"[['!Renal_artery_stenosis'], ['Endothelin_A'], ['Simvastatin'], ['Anti_oxidant_administration_Vitamins_C_and_E'], ['VEGF_administration']]","[0.09199999999999997, 0.08699999999999997, 0.0, 0.0, 0.0]",0.00841
+./input/networks/large11SCC/31949240.bnet,!NO_availability,[],NA,0.1993
+./input/networks/large11SCC/31949240.bnet,TGF_beta,"[['Renal_artery_stenosis', '!Endothelin_A'], ['!Endothelin_A', '!Anti_oxidant_administration_Vitamins_C_and_E']]","[0.0, 0.25359999999999994]",0.17467
+./input/networks/large11SCC/31949240.bnet,!TGF_beta,"[['!Renal_artery_stenosis'], ['Endothelin_A']]","[0.10679999999999999, 0.0]",0.00909
+./input/networks/large11SCC/31949240.bnet,Inflammation,"[['Renal_artery_stenosis', '!Endothelin_A'], ['!Endothelin_A', '!Anti_oxidant_administration_Vitamins_C_and_E']]","[0.0, 0.28400000000000003]",0.19368
+./input/networks/large11SCC/31949240.bnet,!Inflammation,"[['!Renal_artery_stenosis'], ['Endothelin_A']]","[0.11939999999999999, 0.0]",0.00791
+./input/networks/large11SCC/32054948.bnet,SIPS,[],NA,0.4299
+./input/networks/large11SCC/32054948.bnet,!SIPS,[],NA,0.45798
+./input/networks/large11SCC/32054948.bnet,Apoptosis,[],NA,0.45976
+./input/networks/large11SCC/32054948.bnet,!Apoptosis,[],NA,0.42898
+./input/networks/large11SCC/32054948.bnet,Proliferation,[['0']],NA,0.00203
+./input/networks/large11SCC/32054948.bnet,!Proliferation,[['1']],[0.0035],0.00108
+./input/networks/large11SCC/32054948.bnet,p53_K,[],NA,0.45203
+./input/networks/large11SCC/32054948.bnet,!p53_K,[],NA,0.44619
+./input/networks/large11SCC/35752283.bnet,Prop,[],NA,15.21589
+./input/networks/large11SCC/35752283.bnet,!Prop,[['!HER2p']],[0.067434],0.22006
+./input/networks/large11SCC/35752283.bnet,Migs,[],NA,15.37576
+./input/networks/large11SCC/35752283.bnet,!Migs,"[['Thiazolidinedione', 'IFNgamma']]",[0.0],15.36222
+./input/networks/large11SCC/35752283.bnet,Apos,[],NA,15.13093
+./input/networks/large11SCC/35752283.bnet,!Apos,[],NA,15.22655
+./input/networks/large11SCC/35752283.bnet,Autp,[],NA,14.97189
+./input/networks/large11SCC/35752283.bnet,!Autp,[],NA,15.12004
+./input/networks/large11SCC/Apoptosis Network_19422837.bnet,Apoptosis,[],NA,0.8757
+./input/networks/large11SCC/Apoptosis Network_19422837.bnet,!Apoptosis,"[['!TNF'], ['TNF']]","[0.254, 0.257]",0.02323
+./input/networks/large11SCC/Apoptosis Network_19422837.bnet,IKK,[],NA,0.87096
+./input/networks/large11SCC/Apoptosis Network_19422837.bnet,!IKK,"[['!TNF', '!GF']]",[0.0],0.8764
+./input/networks/large11SCC/Apoptosis Network_19422837.bnet,Cas12,[],NA,0.86255
+./input/networks/large11SCC/Apoptosis Network_19422837.bnet,!Cas12,"[['!TNF'], ['TNF']]","[0.264, 0.012244999999999999]",0.02155
+./input/networks/large11SCC/Apoptosis Network_19422837.bnet,NFkB,[],NA,0.87067
+./input/networks/large11SCC/Apoptosis Network_19422837.bnet,!NFkB,[],NA,0.89842
+./input/networks/large11SCC/Arabidopsis thaliana Cell Cycle_26340681.bnet,KRP1,[],NA,0.26472
+./input/networks/large11SCC/Arabidopsis thaliana Cell Cycle_26340681.bnet,!KRP1,[],NA,0.26295
+./input/networks/large11SCC/Arabidopsis thaliana Cell Cycle_26340681.bnet,E2Fb,[],NA,0.28037
+./input/networks/large11SCC/Arabidopsis thaliana Cell Cycle_26340681.bnet,!E2Fb,[],NA,0.27043
+./input/networks/large11SCC/Arabidopsis thaliana Cell Cycle_26340681.bnet,E2Fe,[],NA,0.25162
+./input/networks/large11SCC/Arabidopsis thaliana Cell Cycle_26340681.bnet,!E2Fe,[],NA,0.76942
+./input/networks/large11SCC/Arabidopsis thaliana Cell Cycle_26340681.bnet,CDKB1_1,[],NA,0.27691
+./input/networks/large11SCC/Arabidopsis thaliana Cell Cycle_26340681.bnet,!CDKB1_1,[],NA,0.28498
+./input/networks/large11SCC/Aurora Kinase A in Neuroblastoma_26616283.bnet,ENSA,[],NA,0.27433
+./input/networks/large11SCC/Aurora Kinase A in Neuroblastoma_26616283.bnet,!ENSA,[],NA,0.26957
+./input/networks/large11SCC/Aurora Kinase A in Neuroblastoma_26616283.bnet,CDK1CCNBComplex,[],NA,0.26419
+./input/networks/large11SCC/Aurora Kinase A in Neuroblastoma_26616283.bnet,!CDK1CCNBComplex,[],NA,0.24646
+./input/networks/large11SCC/Aurora Kinase A in Neuroblastoma_26616283.bnet,STMN,[['0']],NA,0.00099
+./input/networks/large11SCC/Aurora Kinase A in Neuroblastoma_26616283.bnet,!STMN,[['1']],[0.209666],0.00096
+./input/networks/large11SCC/Aurora Kinase A in Neuroblastoma_26616283.bnet,PP1,[['0']],NA,0.00144
+./input/networks/large11SCC/Aurora Kinase A in Neuroblastoma_26616283.bnet,!PP1,[['1']],[0.177007],0.00149
+./input/networks/large11SCC/B bronchiseptica and T retortaeformis coinfection_22253585.bnet,DP,[['0']],NA,0.004
+./input/networks/large11SCC/B bronchiseptica and T retortaeformis coinfection_22253585.bnet,!DP,[['1']],[0.0],0.00295
+./input/networks/large11SCC/B bronchiseptica and T retortaeformis coinfection_22253585.bnet,TNE,[],NA,3.29185
+./input/networks/large11SCC/B bronchiseptica and T retortaeformis coinfection_22253585.bnet,!TNE,"[['PIC', 'IS'], ['DCII_Bacterium', 'IS'], ['DCI_Bacterium', 'IS'], ['T0', 'IS'], ['DCI_TRetortaeformis', 'IS'], ['BC_TRetortaeformis', 'IS'], ['DCII_TRetortaeformis', 'IS']]","[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]",3.20174
+./input/networks/large11SCC/B bronchiseptica and T retortaeformis coinfection_22253585.bnet,IFNgII,[],NA,3.25053
+./input/networks/large11SCC/B bronchiseptica and T retortaeformis coinfection_22253585.bnet,!IFNgII,"[['Bb', 'IS'], ['PIC', 'IS'], ['DCII_Bacterium', 'IS'], ['DCI_Bacterium', 'IS'], ['T0', 'IS'], ['DCI_TRetortaeformis', 'IS'], ['BC_TRetortaeformis', 'IS'], ['DCII_TRetortaeformis', 'IS']]","[0.065, 0.022, 0.036, 0.026, 0.036, 0.054, 0.036, 0.036]",3.27382
+./input/networks/large11SCC/B bronchiseptica and T retortaeformis coinfection_22253585.bnet,TEL,"[['Th2II_TRetortaeformis'], ['EL2']]","[0.1885, 0.15000000000000002]",0.06327
+./input/networks/large11SCC/B bronchiseptica and T retortaeformis coinfection_22253585.bnet,!TEL,"[['!Bb', '!IS'], ['PH', '!IS']]","[0.6965, 0.6795]",3.27622
+./input/networks/large11SCC/Budding Yeast Cell Cycle 2009_19185585.bnet,FEAR,[],NA,1.11919
+./input/networks/large11SCC/Budding Yeast Cell Cycle 2009_19185585.bnet,!FEAR,[],NA,1.1191
+./input/networks/large11SCC/Budding Yeast Cell Cycle 2009_19185585.bnet,Yhp1,[],NA,1.09816
+./input/networks/large11SCC/Budding Yeast Cell Cycle 2009_19185585.bnet,!Yhp1,[],NA,1.05668
+./input/networks/large11SCC/Budding Yeast Cell Cycle 2009_19185585.bnet,S,[],NA,1.09713
+./input/networks/large11SCC/Budding Yeast Cell Cycle 2009_19185585.bnet,!S,[],NA,1.07092
+./input/networks/large11SCC/Budding Yeast Cell Cycle 2009_19185585.bnet,Swi5,[],NA,1.10506
+./input/networks/large11SCC/Budding Yeast Cell Cycle 2009_19185585.bnet,!Swi5,[],NA,1.09316
+./input/networks/large11SCC/Budding Yeast Cell Cycle_23049686.bnet,Whi5,"[['!Start'], ['!Size']]","[0.0, 0.1116959999999999]",0.0101
+./input/networks/large11SCC/Budding Yeast Cell Cycle_23049686.bnet,!Whi5,[],NA,0.2105
+./input/networks/large11SCC/Budding Yeast Cell Cycle_23049686.bnet,Cdh1,[['!Start']],[0.19299999999999995],0.01015
+./input/networks/large11SCC/Budding Yeast Cell Cycle_23049686.bnet,!Cdh1,"[['BuddingCP', '!SpindleCP']]",[0.258],0.2146
+./input/networks/large11SCC/Budding Yeast Cell Cycle_23049686.bnet,Cln2,[],NA,0.21458
+./input/networks/large11SCC/Budding Yeast Cell Cycle_23049686.bnet,!Cln2,"[['!Start'], ['!Size']]","[0.0, 0.099619]",0.01032
+./input/networks/large11SCC/Budding Yeast Cell Cycle_23049686.bnet,Cdc14,[['0']],NA,0.00167
+./input/networks/large11SCC/Budding Yeast Cell Cycle_23049686.bnet,!Cdc14,[['1']],[0.020711],0.00089
+./input/networks/large11SCC/CD4 T cell signaling_25538703.bnet,Cofilin,[['0']],NA,0.01082
+./input/networks/large11SCC/CD4 T cell signaling_25538703.bnet,!Cofilin,[['1']],[0.518],0.00725
+./input/networks/large11SCC/CD4 T cell signaling_25538703.bnet,IL17,[],NA,0.1341
+./input/networks/large11SCC/CD4 T cell signaling_25538703.bnet,!IL17,"[['!APC'], ['APC'], ['!TGFB_e']]","[0.0, 0.0, 0.0]",0.13256
+./input/networks/large11SCC/CD4 T cell signaling_25538703.bnet,F_Actin,"[['APC'], ['GalphaS_L'], ['ECM']]","[0.0, 0.05800000000000005, 0.0]",0.12777
+./input/networks/large11SCC/CD4 T cell signaling_25538703.bnet,!F_Actin,[],NA,0.14102
+./input/networks/large11SCC/CD4 T cell signaling_25538703.bnet,MLC,"[['APC'], ['CAV1_ACTIVATOR'], ['ECM'], ['alpha_13L']]","[0.0, 0.0, 0.0, 0.0]",0.13502
+./input/networks/large11SCC/CD4 T cell signaling_25538703.bnet,!MLC,[],NA,0.13834
+./input/networks/large11SCC/CD4+ T Cell Differentiation and Plasticity_26090929.bnet,BCL6,[['0']],NA,0.01062
+./input/networks/large11SCC/CD4+ T Cell Differentiation and Plasticity_26090929.bnet,!BCL6,[['1']],[0.034],0.00649
+./input/networks/large11SCC/CD4+ T Cell Differentiation and Plasticity_26090929.bnet,IL21,[['0']],NA,0.00847
+./input/networks/large11SCC/CD4+ T Cell Differentiation and Plasticity_26090929.bnet,!IL21,[['1']],[0.085],0.00528
+./input/networks/large11SCC/CD4+ T Cell Differentiation and Plasticity_26090929.bnet,IL2,[],NA,0.1112
+./input/networks/large11SCC/CD4+ T Cell Differentiation and Plasticity_26090929.bnet,!IL2,"[['TGFBe'], ['IL4e'], ['!IL2e'], ['IL10e'], ['!IL21e'], ['IFNGe']]","[0.0835, 0.1455, 0.004, 0.0, 0.1145, 0.0775]",0.01416
+./input/networks/large11SCC/CD4+ T Cell Differentiation and Plasticity_26090929.bnet,IL10,"[['TGFBe'], ['IL4e'], ['IL2e'], ['IL10e'], ['!IL21e']]","[0.29200000000000004, 0.356, 0.31999999999999995, 0.0, 0.368]",0.01112
+./input/networks/large11SCC/CD4+ T Cell Differentiation and Plasticity_26090929.bnet,!IL10,"[['!IL10', '!IL10e'], ['!TGFBe', '!IL10e']]","[0.0, 0.18]",0.10785
+./input/networks/large11SCC/Cholesterol Regulatory Pathway_19025648.bnet,Cyp51,"[['!Statins', '!Acetyl_CoA']]",[0.0],0.87668
+./input/networks/large11SCC/Cholesterol Regulatory Pathway_19025648.bnet,!Cyp51,[['Statins']],[0.0],0.02318
+./input/networks/large11SCC/Cholesterol Regulatory Pathway_19025648.bnet,Mevalonic_Acid,[],NA,0.83788
+./input/networks/large11SCC/Cholesterol Regulatory Pathway_19025648.bnet,!Mevalonic_Acid,"[['Statins'], ['!Acetyl_CoA']]","[0.0, 0.0]",0.02503
+./input/networks/large11SCC/Cholesterol Regulatory Pathway_19025648.bnet,Acetyl_CoA_acetyltransferase_RNA,"[['!Statins', '!Acetyl_CoA']]",[0.0],0.86321
+./input/networks/large11SCC/Cholesterol Regulatory Pathway_19025648.bnet,!Acetyl_CoA_acetyltransferase_RNA,[['Statins']],[0.0],0.0247
+./input/networks/large11SCC/Cholesterol Regulatory Pathway_19025648.bnet,HMG_CoA_Reductase_RNA,"[['!Statins', '!Acetyl_CoA']]",[0.0],0.8683
+./input/networks/large11SCC/Cholesterol Regulatory Pathway_19025648.bnet,!HMG_CoA_Reductase_RNA,[['Statins']],[0.0],0.02259
+./input/networks/large11SCC/Colitis-associated colon cancer_26446703.bnet,Proliferation,[],NA,16.96708
+./input/networks/large11SCC/Colitis-associated colon cancer_26446703.bnet,!Proliferation,[],NA,16.78649
+./input/networks/large11SCC/Colitis-associated colon cancer_26446703.bnet,Apoptosis,[['0']],NA,0.003
+./input/networks/large11SCC/Colitis-associated colon cancer_26446703.bnet,!Apoptosis,[['1']],[0.040968000000000004],0.00418
+./input/networks/large11SCC/Colitis-associated colon cancer_26446703.bnet,PP2A,[['0']],NA,0.00261
+./input/networks/large11SCC/Colitis-associated colon cancer_26446703.bnet,!PP2A,[['1']],[0.028673],0.0037
+./input/networks/large11SCC/Colitis-associated colon cancer_26446703.bnet,JNK,[],NA,29.49122
+./input/networks/large11SCC/Colitis-associated colon cancer_26446703.bnet,!JNK,[],NA,43.0909
+./input/networks/large11SCC/Death Receptor Signaling_20221256.bnet,survival,[['0']],NA,0.00147
+./input/networks/large11SCC/Death Receptor Signaling_20221256.bnet,!survival,[['1']],[0.038125],0.0014
+./input/networks/large11SCC/Death Receptor Signaling_20221256.bnet,NonACD,"[['!NFkB'], ['!cIAP'], ['SMAC'], ['!FADD']]","[0.31037499999999996, 0.28025, 0.29862500000000003, 0.40637500000000004]",0.05356
+./input/networks/large11SCC/Death Receptor Signaling_20221256.bnet,!NonACD,[],NA,1.51328
+./input/networks/large11SCC/Death Receptor Signaling_20221256.bnet,apoptosis,[],NA,1.66245
+./input/networks/large11SCC/Death Receptor Signaling_20221256.bnet,!apoptosis,"[['RIP1', '!cIAP'], ['RIP1', '!FADD'], ['!XIAP', '!NFkB'], ['!NFkB', '!RIP1ub'], ['!NFkB', 'BAX'], ['!NFkB', 'MPT'], ['!NFkB', 'RIP1k'], ['!NFkB', 'apoptosome'], ['!NFkB', '!TNFR'], ['NFkB', '!cIAP'], ['!NFkB', '!FADD'], ['!NFkB', '!FASL'], ['!RIP1ub', 'BCL2'], ['!RIP1ub', 'BAX'], ['!RIP1ub', 'MPT'], ['!RIP1ub', 'cIAP'], ['!RIP1ub', 'SMAC'], ['!RIP1ub', '!FADD'], ['cFLIP', '!cIAP'], ['cFLIP', '!FADD'], ['!BCL2', '!IKK'], ['!BCL2', '!FADD'], ['BCL2', '!FADD'], ['!BAX', '!cIAP'], ['!MPT', '!cIAP'], ['MPT', 'SMAC'], ['!IKK', '!cIAP'], ['!IKK', '!FADD'], ['MOMP', '!cIAP'], ['CASP8', '!cIAP'], ['!cIAP', '!SMAC'], ['!cIAP', 'CASP3'], ['!cIAP', '!FADD'], ['cIAP', '!FADD'], ['!cIAP', '!FASL'], ['SMAC', '!FADD'], ['CASP3', '!FADD'], ['!FADD', 'TNF']]","[0.133167, 0.196687, 0.18560200000000002, 0.196582, 0.183009, 0.155119, 0.151034, 0.19631, 0.18137099999999998, 0.15597099999999997, 0.19717300000000001, 0.20267700000000002, 0.18811399999999998, 0.18367899999999998, 0.158916, 0.188765, 0.173725, 0.188388, 0.13930599999999999, 0.183611, 0.16683, 0.18163300000000002, 0.172412, 0.16123, 0.181098, 0.155473, 0.179317, 0.19589499999999999, 0.16194299999999998, 0.16841399999999998, 0.180323, 0.17652800000000002, 0.18687399999999998, 0.192647, 0.205417, 0.182598, 0.18895599999999999, 0.079]",1.66767
+./input/networks/large11SCC/Death Receptor Signaling_20221256.bnet,Cyt_c,"[['!RIP1'], ['RIP1'], ['!NFkB'], ['!RIP1ub'], ['!cFLIP'], ['cFLIP'], ['!BCL2'], ['BCL2'], ['BAX'], ['!MPT'], ['MPT'], ['!IKK'], ['IKK'], ['!MOMP'], ['MOMP'], ['TNFR'], ['!ROS'], ['ROS'], ['!cIAP'], ['cIAP'], ['!SMAC'], ['SMAC'], ['!CASP3'], ['CASP3'], ['!FADD'], ['TNF'], ['FASL']]","[0.28217799999999993, 0.2810790000000001, 0.2248150000000001, 0.23323799999999995, 0.2701379999999999, 0.25762700000000005, 0.23248900000000006, 0.28098, 0.26141100000000006, 0.279173, 0.247255, 0.24249199999999993, 0.324596, 0.2728019999999999, 0.25200100000000003, 0.2765509999999999, 0.28959, 0.247645, 0.22738999999999998, 0.30620500000000006, 0.28820900000000005, 0.24929800000000002, 0.3043870000000001, 0.23069799999999996, 0.36095299999999997, 0.056625000000000036, 0.17946099999999998]",0.05386
+./input/networks/large11SCC/Death Receptor Signaling_20221256.bnet,!Cyt_c,[],NA,1.1962
+./input/networks/large11SCC/EGFR & ErbB Signaling_19662154.bnet,cmyc,[],NA,0.18227
+./input/networks/large11SCC/EGFR & ErbB Signaling_19662154.bnet,!cmyc,"[['!csrc'], ['!pi3kr'], ['!mtorr'], ['!sos1r'], ['!pdk1'], ['pp2a'], ['mkp'], ['pten']]","[0.0145, 0.0, 0.0, 0.016, 0.0, 0.0, 0.0, 0.0]",0.17084
+./input/networks/large11SCC/EGFR & ErbB Signaling_19662154.bnet,pro_apoptotic,"[['!pi3kr'], ['!mtorr'], ['!pdk1'], ['pp2a'], ['pten']]","[0.0, 0.0, 0.0, 0.0, 0.0]",0.16812
+./input/networks/large11SCC/EGFR & ErbB Signaling_19662154.bnet,!pro_apoptotic,[],NA,0.17158
+./input/networks/large11SCC/EGFR & ErbB Signaling_19662154.bnet,actinreorg,[],NA,0.06222
+./input/networks/large11SCC/EGFR & ErbB Signaling_19662154.bnet,!actinreorg,"[['!pi3kr'], ['pten']]","[0.0, 0.0]",0.06684
+./input/networks/large11SCC/EGFR & ErbB Signaling_19662154.bnet,p70s6_2,[],NA,0.06245
+./input/networks/large11SCC/EGFR & ErbB Signaling_19662154.bnet,!p70s6_2,"[['!pi3kr'], ['!mtorr'], ['!pdk1'], ['pp2a'], ['pten']]","[0.0, 0.0, 0.0, 0.0, 0.0]",0.06388
+./input/networks/large11SCC/FA BRCA pathway_22267503.bnet,ADD,[],NA,1.05453
+./input/networks/large11SCC/FA BRCA pathway_22267503.bnet,!ADD,"[['!ICL', 'PCNATLS']]",[0.0],1.08377
+./input/networks/large11SCC/FA BRCA pathway_22267503.bnet,XPF,[['0']],NA,0.00624
+./input/networks/large11SCC/FA BRCA pathway_22267503.bnet,!XPF,[['1']],[0.0],0.00328
+./input/networks/large11SCC/FA BRCA pathway_22267503.bnet,CHK2,[],NA,1.0805
+./input/networks/large11SCC/FA BRCA pathway_22267503.bnet,!CHK2,[],NA,1.0776
+./input/networks/large11SCC/FA BRCA pathway_22267503.bnet,RAD51,[['0']],NA,0.00659
+./input/networks/large11SCC/FA BRCA pathway_22267503.bnet,!RAD51,[['1']],[0.0],0.00328
+./input/networks/large11SCC/Fanconi anemia and checkpoint recovery_26385365.bnet,NUC1,[['0']],NA,0.00321
+./input/networks/large11SCC/Fanconi anemia and checkpoint recovery_26385365.bnet,!NUC1,[['1']],[0.0],0.00338
+./input/networks/large11SCC/Fanconi anemia and checkpoint recovery_26385365.bnet,NUC2,[],NA,0.24638
+./input/networks/large11SCC/Fanconi anemia and checkpoint recovery_26385365.bnet,!NUC2,"[['!ICL'], ['DSB']]","[0.0, 0.0]",0.01649
+./input/networks/large11SCC/Fanconi anemia and checkpoint recovery_26385365.bnet,ATR,[],NA,0.24748
+./input/networks/large11SCC/Fanconi anemia and checkpoint recovery_26385365.bnet,!ATR,"[['!ICL'], ['DSB']]","[0.0, 0.0]",0.01705
+./input/networks/large11SCC/Fanconi anemia and checkpoint recovery_26385365.bnet,ATM,[],NA,0.24565
+./input/networks/large11SCC/Fanconi anemia and checkpoint recovery_26385365.bnet,!ATM,"[['!ICL'], ['DSB']]","[0.0, 0.0]",0.01629
+./input/networks/large11SCC/Guard Cell Abscisic Acid Signaling_16968132.bnet,ROP10,[['ERA1']],[0.0],0.02436
+./input/networks/large11SCC/Guard Cell Abscisic Acid Signaling_16968132.bnet,!ROP10,[['!ERA1']],[0.0],0.02453
+./input/networks/large11SCC/Guard Cell Abscisic Acid Signaling_16968132.bnet,Closure,[],NA,1.36276
+./input/networks/large11SCC/Guard Cell Abscisic Acid Signaling_16968132.bnet,!Closure,[],NA,1.40623
+./input/networks/large11SCC/Guard Cell Abscisic Acid Signaling_16968132.bnet,NOS,[],NA,1.38716
+./input/networks/large11SCC/Guard Cell Abscisic Acid Signaling_16968132.bnet,!NOS,"[['ERA1', 'ABH1']]",[0.20625],1.4184
+./input/networks/large11SCC/Guard Cell Abscisic Acid Signaling_16968132.bnet,Atrboh,[['0']],NA,0.00076
+./input/networks/large11SCC/Guard Cell Abscisic Acid Signaling_16968132.bnet,!Atrboh,[['1']],[0.202],0.00077
+./input/networks/large11SCC/HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,AKT,[['1']],[0.45499999999999996],0.00107
+./input/networks/large11SCC/HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,!AKT,[['0']],NA,0.00241
+./input/networks/large11SCC/HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,GSKa_b,[['1']],[0.0040000000000000036],0.00133
+./input/networks/large11SCC/HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,!GSKa_b,[['0']],NA,0.00176
+./input/networks/large11SCC/HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,RPS6,[['1']],[0.038000000000000034],0.0011
+./input/networks/large11SCC/HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,!RPS6,[['0']],NA,0.00137
+./input/networks/large11SCC/HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,cRAF,[],NA,0.15846
+./input/networks/large11SCC/HCC1954 Breast Cell Line Long-term ErbB Network_24970389.bnet,!cRAF,"[['!ERK1_2'], ['ERK1_2'], ['cRAF'], ['ERBB1'], ['!GSKa_b'], ['!erlotinib'], ['erlotinib'], ['!pertuzumab'], ['pertuzumab'], ['!stimulus'], ['trastuzumab']]","[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]",0.00619
+./input/networks/large11SCC/HGF Signaling in Keratinocytes_22962472.bnet,CellMigration,"[['!PTEN', 'HGF']]",[0.0],2.73976
+./input/networks/large11SCC/HGF Signaling in Keratinocytes_22962472.bnet,!CellMigration,"[['!EGF'], ['PTEN'], ['!HGF'], ['AKAP12']]","[0.27, 0.0, 0.030299, 0.25761]",0.04097
+./input/networks/large11SCC/HGF Signaling in Keratinocytes_22962472.bnet,cMYC,"[['!PTEN', 'HGF']]",[0.0],2.72905
+./input/networks/large11SCC/HGF Signaling in Keratinocytes_22962472.bnet,!cMYC,"[['PTEN'], ['!HGF']]","[0.0, 0.026636000000000003]",0.03828
+./input/networks/large11SCC/HGF Signaling in Keratinocytes_22962472.bnet,EGR1,"[['!PTEN', 'HGF']]",[0.0],2.75996
+./input/networks/large11SCC/HGF Signaling in Keratinocytes_22962472.bnet,!EGR1,"[['PTEN'], ['!HGF']]","[0.0, 0.021355000000000002]",0.03699
+./input/networks/large11SCC/HGF Signaling in Keratinocytes_22962472.bnet,Proliferation,[],NA,2.78977
+./input/networks/large11SCC/HGF Signaling in Keratinocytes_22962472.bnet,!Proliferation,"[['PTEN'], ['!HGF']]","[0.0, 0.011290000000000001]",0.03336
+./input/networks/large11SCC/HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,PPP2R4_PP2A,[['1']],[0.0],0.00594
+./input/networks/large11SCC/HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,!PPP2R4_PP2A,[['0']],NA,0.00759
+./input/networks/large11SCC/HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,CREB,[['1']],[0.0],0.00589
+./input/networks/large11SCC/HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,!CREB,[['0']],NA,0.0202
+./input/networks/large11SCC/HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,Ccblp,[['1']],[0.0],0.01528
+./input/networks/large11SCC/HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,!Ccblp,[['0']],NA,0.02106
+./input/networks/large11SCC/HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,CYC1,[],NA,1.17605
+./input/networks/large11SCC/HIV-1 interactions with T-Cell Signaling Pathway_25431332.bnet,!CYC1,[],NA,1.19114
+./input/networks/large11SCC/Human Gonadal Sex Determination_26573569.bnet,DHH,[['1']],[0.517],0.00789
+./input/networks/large11SCC/Human Gonadal Sex Determination_26573569.bnet,!DHH,[['0']],NA,0.00758
+./input/networks/large11SCC/Human Gonadal Sex Determination_26573569.bnet,CTNNB1,[['0']],NA,0.00849
+./input/networks/large11SCC/Human Gonadal Sex Determination_26573569.bnet,!CTNNB1,[['1']],[0.536],0.00798
+./input/networks/large11SCC/Human Gonadal Sex Determination_26573569.bnet,FOXL2,[['0']],NA,0.00816
+./input/networks/large11SCC/Human Gonadal Sex Determination_26573569.bnet,!FOXL2,[['1']],[0.509],0.00326
+./input/networks/large11SCC/Human Gonadal Sex Determination_26573569.bnet,DKK1,[['1']],[0.499],0.00265
+./input/networks/large11SCC/Human Gonadal Sex Determination_26573569.bnet,!DKK1,[['0']],NA,0.00308
+./input/networks/large11SCC/IL-1 Signaling_21968890.bnet,hgf,[['0']],NA,0.00232
+./input/networks/large11SCC/IL-1 Signaling_21968890.bnet,!hgf,[['1']],[0.0],0.00149
+./input/networks/large11SCC/IL-1 Signaling_21968890.bnet,cox2,[],NA,0.04262
+./input/networks/large11SCC/IL-1 Signaling_21968890.bnet,!cox2,"[['smyd88'], ['!sil1r12'], ['sil1r12']]","[0.0, 0.0, 0.0]",0.03656
+./input/networks/large11SCC/IL-1 Signaling_21968890.bnet,saa,[['0']],NA,0.00233
+./input/networks/large11SCC/IL-1 Signaling_21968890.bnet,!saa,[['1']],[0.0],0.00213
+./input/networks/large11SCC/IL-1 Signaling_21968890.bnet,tdum_mkp1_p38_jnk_erk12,[],NA,0.0421
+./input/networks/large11SCC/IL-1 Signaling_21968890.bnet,!tdum_mkp1_p38_jnk_erk12,"[['smyd88'], ['!sil1r12'], ['sil1r12']]","[0.0, 0.0, 0.0]",0.03224
+./input/networks/large11SCC/IL-6 Signaling_21968890.bnet,tdum_shp2_stat3_py,[],NA,4.25329
+./input/networks/large11SCC/IL-6 Signaling_21968890.bnet,!tdum_shp2_stat3_py,"[['!gp130m'], ['!il6'], ['ros'], ['sirp1a'], ['nfkb']]","[0.0, 0.0, 0.0, 0.0, 0.0]",0.05094
+./input/networks/large11SCC/IL-6 Signaling_21968890.bnet,junb,[],NA,4.29406
+./input/networks/large11SCC/IL-6 Signaling_21968890.bnet,!junb,"[['!gp130m'], ['!il6'], ['nfkb'], ['cyt_ptpe'], ['slim'], ['pias3']]","[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]",0.04589
+./input/networks/large11SCC/IL-6 Signaling_21968890.bnet,a2m_gfbg,[],NA,4.24934
+./input/networks/large11SCC/IL-6 Signaling_21968890.bnet,!a2m_gfbg,"[['!gp130m'], ['!mtor'], ['!il6'], ['nfkb'], ['cyt_ptpe'], ['slim'], ['pias3']]","[0.0, 0.001686, 0.0, 0.0, 0.0, 0.0, 0.0]",0.04452
+./input/networks/large11SCC/IL-6 Signaling_21968890.bnet,stat1_ta,[],NA,4.17026
+./input/networks/large11SCC/IL-6 Signaling_21968890.bnet,!stat1_ta,"[['!gp130m'], ['!il6'], ['nfkb'], ['cyt_ptpe'], ['slim'], ['pias1']]","[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]",0.05533
+./input/networks/large11SCC/Inflammatory Bowel Disease (IBD) Model_29513758.bnet,MMPs,[],NA,6.48723
+./input/networks/large11SCC/Inflammatory Bowel Disease (IBD) Model_29513758.bnet,!MMPs,[],NA,6.66847
+./input/networks/large11SCC/Inflammatory Bowel Disease (IBD) Model_29513758.bnet,IEC_MICA_Bupregulation,[],NA,6.55925
+./input/networks/large11SCC/Inflammatory Bowel Disease (IBD) Model_29513758.bnet,!IEC_MICA_Bupregulation,[],NA,6.61174
+./input/networks/large11SCC/Inflammatory Bowel Disease (IBD) Model_29513758.bnet,Th0,[],NA,6.60339
+./input/networks/large11SCC/Inflammatory Bowel Disease (IBD) Model_29513758.bnet,!Th0,[],NA,6.59789
+./input/networks/large11SCC/Inflammatory Bowel Disease (IBD) Model_29513758.bnet,Treg,[],NA,6.5692
+./input/networks/large11SCC/Inflammatory Bowel Disease (IBD) Model_29513758.bnet,!Treg,[],NA,6.65529
+./input/networks/large11SCC/Influenza A Virus Replication Cycle_23081726.bnet,M1_M1,[['0']],NA,0.00608
+./input/networks/large11SCC/Influenza A Virus Replication Cycle_23081726.bnet,!M1_M1,[['1']],[0.0],0.00524
+./input/networks/large11SCC/Influenza A Virus Replication Cycle_23081726.bnet,Progeny_Virion,[['0']],NA,0.00448
+./input/networks/large11SCC/Influenza A Virus Replication Cycle_23081726.bnet,!Progeny_Virion,[['1']],[0.0],0.00499
+./input/networks/large11SCC/Influenza A Virus Replication Cycle_23081726.bnet,mRNA_PB2_cyto,[['0']],NA,0.00667
+./input/networks/large11SCC/Influenza A Virus Replication Cycle_23081726.bnet,!mRNA_PB2_cyto,[['1']],[0.0],0.00535
+./input/networks/large11SCC/Influenza A Virus Replication Cycle_23081726.bnet,pro_vRNP_PA_M1_cyto,[['0']],NA,0.00504
+./input/networks/large11SCC/Influenza A Virus Replication Cycle_23081726.bnet,!pro_vRNP_PA_M1_cyto,[['1']],[0.0],0.00433
+./input/networks/large11SCC/Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,Foxo1_gene,[['0']],NA,0.00252
+./input/networks/large11SCC/Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,!Foxo1_gene,[['1']],[0.079],0.00248
+./input/networks/large11SCC/Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,IL7r_activated,[['0']],NA,0.00298
+./input/networks/large11SCC/Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,!IL7r_activated,[['1']],[0.041],0.00381
+./input/networks/large11SCC/Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,Mac1,[['0']],NA,0.00274
+./input/networks/large11SCC/Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,!Mac1,[['1']],[0.079],0.00393
+./input/networks/large11SCC/Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,Flt3,[['0']],NA,0.00264
+./input/networks/large11SCC/Lymphoid and myeloid cell specification and transdifferentiation_28584084.bnet,!Flt3,[['1']],[0.089],0.00261
+./input/networks/large11SCC/Lymphopoiesis Regulatory Network_26408858.bnet,ERK,"[['BCR'], ['Hoxa9'], ['Flt3L']]","[0.0, 0.0, 0.0]",0.03656
+./input/networks/large11SCC/Lymphopoiesis Regulatory Network_26408858.bnet,!ERK,[],NA,2.41345
+./input/networks/large11SCC/Lymphopoiesis Regulatory Network_26408858.bnet,Bcl2,[['0']],NA,0.00605
+./input/networks/large11SCC/Lymphopoiesis Regulatory Network_26408858.bnet,!Bcl2,[['1']],[0.1565],0.00678
+./input/networks/large11SCC/Lymphopoiesis Regulatory Network_26408858.bnet,Bcl11b,[['Dll1']],[0.0],0.03218
+./input/networks/large11SCC/Lymphopoiesis Regulatory Network_26408858.bnet,!Bcl11b,[['!Dll1']],[0.0],0.03352
+./input/networks/large11SCC/Lymphopoiesis Regulatory Network_26408858.bnet,Gzmb,[['0']],NA,0.00512
+./input/networks/large11SCC/Lymphopoiesis Regulatory Network_26408858.bnet,!Gzmb,[['1']],[0.0],0.0053
+./input/networks/large11SCC/MAPK Cancer Cell Fate Network_24250280.bnet,Apoptosis,"[['TGFBR_stimulus', 'DNA_damage']]",[0.0],2.59701
+./input/networks/large11SCC/MAPK Cancer Cell Fate Network_24250280.bnet,!Apoptosis,"[['!TGFBR_stimulus', '!DNA_damage']]",[0.0],2.63925
+./input/networks/large11SCC/MAPK Cancer Cell Fate Network_24250280.bnet,Growth_Arrest,"[['p53', 'DNA_damage'], ['!MSK', 'DNA_damage'], ['!DUSP1', 'DNA_damage'], ['TGFBR', 'DNA_damage'], ['p38', 'DNA_damage'], ['!CREB', 'DNA_damage'], ['MTK1', 'DNA_damage'], ['SMAD', 'DNA_damage'], ['EGFR_stimulus', 'DNA_damage'], ['TGFBR_stimulus', 'DNA_damage'], ['DNA_damage', 'FGFR3_stimulus']]","[0.041749999999999954, 0.03849999999999998, 0.03949999999999998, 0.03600000000000003, 0.039000000000000035, 0.03674999999999995, 0.048250000000000015, 0.038000000000000034, 0.0, 0.0, 0.0010000000000000009]",2.61785
+./input/networks/large11SCC/MAPK Cancer Cell Fate Network_24250280.bnet,!Growth_Arrest,[],NA,2.57452
+./input/networks/large11SCC/MAPK Cancer Cell Fate Network_24250280.bnet,Proliferation,[],NA,2.72681
+./input/networks/large11SCC/MAPK Cancer Cell Fate Network_24250280.bnet,!Proliferation,"[['TGFBR_stimulus'], ['DNA_damage']]","[0.0, 0.003875]",0.04635
+./input/networks/large11SCC/MAPK Cancer Cell Fate Network_24250280.bnet,p14,"[['p53', 'DNA_damage'], ['!MSK', 'DNA_damage'], ['!DUSP1', 'DNA_damage'], ['!TGFBR', 'DNA_damage'], ['TGFBR', 'DNA_damage'], ['MAP3K1_3', 'DNA_damage'], ['TAOK', 'DNA_damage'], ['!CREB', 'DNA_damage'], ['TAK1', 'DNA_damage'], ['MTK1', 'DNA_damage'], ['SMAD', 'DNA_damage'], ['EGFR_stimulus', 'DNA_damage'], ['TGFBR_stimulus', 'DNA_damage'], ['DNA_damage', 'FGFR3_stimulus']]","[0.01924999999999999, 0.018750000000000044, 0.020499999999999963, 0.028249999999999997, 0.019000000000000017, 0.022499999999999964, 0.02475000000000005, 0.021499999999999964, 0.026249999999999996, 0.026000000000000023, 0.01749999999999996, 0.0, 0.0, 0.0004999999999999449]",2.67101
+./input/networks/large11SCC/MAPK Cancer Cell Fate Network_24250280.bnet,!p14,[],NA,2.68203
+./input/networks/large11SCC/Oxidative Stress Pathway_23134720.bnet,Bcl2,[],NA,0.22093
+./input/networks/large11SCC/Oxidative Stress Pathway_23134720.bnet,!Bcl2,[['!Stress']],[0.0],0.00935
+./input/networks/large11SCC/Oxidative Stress Pathway_23134720.bnet,Mdm2,[],NA,0.21286
+./input/networks/large11SCC/Oxidative Stress Pathway_23134720.bnet,!Mdm2,[['!Stress']],[0.0],0.00824
+./input/networks/large11SCC/Oxidative Stress Pathway_23134720.bnet,ARE,[],NA,0.21155
+./input/networks/large11SCC/Oxidative Stress Pathway_23134720.bnet,!ARE,[['!Stress']],[0.0],0.0103
+./input/networks/large11SCC/Oxidative Stress Pathway_23134720.bnet,p53,[],NA,0.21772
+./input/networks/large11SCC/Oxidative Stress Pathway_23134720.bnet,!p53,[['!Stress']],[0.0],0.00893
+./input/networks/large11SCC/PC12 Cell Differentiation_27148350.bnet,Maff,[['1']],[0.0],0.00094
+./input/networks/large11SCC/PC12 Cell Differentiation_27148350.bnet,!Maff,[['0']],NA,0.00064
+./input/networks/large11SCC/PC12 Cell Differentiation_27148350.bnet,SRF,[['1']],[0.0],0.00057
+./input/networks/large11SCC/PC12 Cell Differentiation_27148350.bnet,!SRF,[['0']],NA,0.00057
+./input/networks/large11SCC/PC12 Cell Differentiation_27148350.bnet,MYC,[['1']],[0.0],0.00087
+./input/networks/large11SCC/PC12 Cell Differentiation_27148350.bnet,!MYC,[['0']],NA,0.00065
+./input/networks/large11SCC/PC12 Cell Differentiation_27148350.bnet,ZFP36,[['1']],[0.0],0.00083
+./input/networks/large11SCC/PC12 Cell Differentiation_27148350.bnet,!ZFP36,[['0']],NA,0.00064
+./input/networks/large11SCC/Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,FoxO3a_M,[],NA,0.90621
+./input/networks/large11SCC/Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,!FoxO3a_M,"[['!lTLR'], ['lTLR']]","[0.0, 0.0]",0.03665
+./input/networks/large11SCC/Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,PI3KAkt_H,[['lTLR']],[0.0],0.03865
+./input/networks/large11SCC/Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,!PI3KAkt_H,"[['!lTLR', '!Cx43_M']]",[0.157],0.95547
+./input/networks/large11SCC/Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,ROS_M,[],NA,0.88675
+./input/networks/large11SCC/Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,!ROS_M,"[['!lTLR'], ['lTLR']]","[0.0, 0.0]",0.03438
+./input/networks/large11SCC/Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,NfkB_M,[['lTLR']],[0.0],0.03741
+./input/networks/large11SCC/Pro-inflammatory Tumor Microenvironment in Acute Lymphoblastic Leukemia_27594840.bnet,!NfkB_M,[['!lTLR']],[0.16],0.03583
+./input/networks/large11SCC/Senescence Associated Secretory Phenotype_29206223.bnet,IL6R,[['1']],[0.351],0.00124
+./input/networks/large11SCC/Senescence Associated Secretory Phenotype_29206223.bnet,!IL6R,[['0']],NA,0.00117
+./input/networks/large11SCC/Senescence Associated Secretory Phenotype_29206223.bnet,Elk1,[['1']],[0.32699999999999996],0.00117
+./input/networks/large11SCC/Senescence Associated Secretory Phenotype_29206223.bnet,!Elk1,[['0']],NA,0.00079
+./input/networks/large11SCC/Senescence Associated Secretory Phenotype_29206223.bnet,Oncogene,[['1']],[0.22749200000000003],0.00095
+./input/networks/large11SCC/Senescence Associated Secretory Phenotype_29206223.bnet,!Oncogene,[['0']],NA,0.00086
+./input/networks/large11SCC/Senescence Associated Secretory Phenotype_29206223.bnet,p16INK4,[['1']],[0.19746000000000008],0.00124
+./input/networks/large11SCC/Senescence Associated Secretory Phenotype_29206223.bnet,!p16INK4,[['0']],NA,0.00089
+./input/networks/large11SCC/Septation Initiation Network_26244885.bnet,SIP,"[['cdk_H', '!ppc89'], ['cdk_H', '!cdk_0']]","[0.0, 0.0]",3.15632
+./input/networks/large11SCC/Septation Initiation Network_26244885.bnet,!SIP,[['!cdk_H']],[0.0],0.10364
+./input/networks/large11SCC/Septation Initiation Network_26244885.bnet,flp1,"[['!cdk_H', 'cdk_0'], ['!cdk_H', 'sid2_mob1']]","[0.0, 0.0]",3.19962
+./input/networks/large11SCC/Septation Initiation Network_26244885.bnet,!flp1,[['cdk_H']],[0.0],0.10813
+./input/networks/large11SCC/Septation Initiation Network_26244885.bnet,sid2,"[['cdk_H'], ['!cdk_L']]","[0.36350000000000005, 0.16600000000000004]",0.10789
+./input/networks/large11SCC/Septation Initiation Network_26244885.bnet,!sid2,"[['cdk_H', '!ppc89']]",[0.2735],3.22631
+./input/networks/large11SCC/Septation Initiation Network_26244885.bnet,nak1,"[['cdk_H'], ['!cdk_L']]","[0.18300000000000005, 0.06599999999999995]",0.09931
+./input/networks/large11SCC/Septation Initiation Network_26244885.bnet,!nak1,[],NA,3.1959
+./input/networks/large11SCC/Signaling in Macrophage Activation_18433497.bnet,G1P3gene,"[['IRF1_IRF1_Activator'], ['IRF2_Activator']]","[0.0, 0.0]",0.22594
+./input/networks/large11SCC/Signaling in Macrophage Activation_18433497.bnet,!G1P3gene,[],NA,0.22421
+./input/networks/large11SCC/Signaling in Macrophage Activation_18433497.bnet,GBP1gene,"[['IRF1_IRF1_Activator'], ['IRF2_Activator']]","[0.0, 0.0]",0.23351
+./input/networks/large11SCC/Signaling in Macrophage Activation_18433497.bnet,!GBP1gene,[],NA,0.22741
+./input/networks/large11SCC/Signaling in Macrophage Activation_18433497.bnet,SOCS1,[['External_Activator']],[0.0],0.22095
+./input/networks/large11SCC/Signaling in Macrophage Activation_18433497.bnet,!SOCS1,[['!External_Activator']],[0.0],0.22942
+./input/networks/large11SCC/Signaling in Macrophage Activation_18433497.bnet,PSMB9gene,"[['IRF1_IRF1_Activator'], ['IRF2_Activator']]","[0.0, 0.0]",0.2353
+./input/networks/large11SCC/Signaling in Macrophage Activation_18433497.bnet,!PSMB9gene,[],NA,0.23072
+./input/networks/large11SCC/Stomatal Opening Model_27542373.bnet,MCPS,[],NA,0.6133
+./input/networks/large11SCC/Stomatal Opening Model_27542373.bnet,!MCPS,[['!CO2']],[0.0],0.0194
+./input/networks/large11SCC/Stomatal Opening Model_27542373.bnet,carbfix,"[['BL', 'CO2'], ['CO2', 'RL']]","[0.0, 0.0]",0.62472
+./input/networks/large11SCC/Stomatal Opening Model_27542373.bnet,!carbfix,[['!CO2']],[0.0],0.0195
+./input/networks/large11SCC/Stomatal Opening Model_27542373.bnet,SO_1,[],NA,0.5912
+./input/networks/large11SCC/Stomatal Opening Model_27542373.bnet,!SO_1,"[['!BL'], ['CO2']]","[0.132, 0.125]",0.02077
+./input/networks/large11SCC/Stomatal Opening Model_27542373.bnet,SO_2,[],NA,0.63461
+./input/networks/large11SCC/Stomatal Opening Model_27542373.bnet,!SO_2,"[['!BL', '!ABA'], ['!BL', 'ABA'], ['CO2', '!ABA'], ['CO2', 'ABA']]","[0.0, 0.0, 0.118, 0.0]",0.60694
+./input/networks/large11SCC/T Cell Receptor Signaling_17722974.bnet,shp2,[['0']],NA,0.00148
+./input/networks/large11SCC/T Cell Receptor Signaling_17722974.bnet,!shp2,[['1']],[0.124],0.00129
+./input/networks/large11SCC/T Cell Receptor Signaling_17722974.bnet,p21c,"[['!cd28'], ['unknown_input2']]","[0.0, 0.0]",0.02562
+./input/networks/large11SCC/T Cell Receptor Signaling_17722974.bnet,!p21c,"[['cd28', '!unknown_input2']]",[0.0],2.60234
+./input/networks/large11SCC/T Cell Receptor Signaling_17722974.bnet,fkhr,"[['!cd28'], ['unknown_input2']]","[0.0, 0.0]",0.02392
+./input/networks/large11SCC/T Cell Receptor Signaling_17722974.bnet,!fkhr,"[['cd28', '!unknown_input2']]",[0.0],2.73439
+./input/networks/large11SCC/T Cell Receptor Signaling_17722974.bnet,Dummy,[['0']],NA,0.00202
+./input/networks/large11SCC/T Cell Receptor Signaling_17722974.bnet,!Dummy,[['1']],[0.0],0.00128
+./input/networks/large11SCC/T-LGL Survival Network 2011_22102804.bnet,Cytoskeleton_signaling,[],NA,0.48185
+./input/networks/large11SCC/T-LGL Survival Network 2011_22102804.bnet,!Cytoskeleton_signaling,"[['DISC'], ['Apoptosis'], ['Caspase'], ['!Stimuli']]","[0.0, 0.0, 0.0, 0.001]",0.01172
+./input/networks/large11SCC/T-LGL Survival Network 2011_22102804.bnet,Proliferation,[['0']],NA,0.00551
+./input/networks/large11SCC/T-LGL Survival Network 2011_22102804.bnet,!Proliferation,[['1']],[0.0],0.00481
+./input/networks/large11SCC/T-LGL Survival Network 2011_22102804.bnet,IL2RBT,[['0']],NA,0.0045
+./input/networks/large11SCC/T-LGL Survival Network 2011_22102804.bnet,!IL2RBT,[['1']],[0.0],0.00382
+./input/networks/large11SCC/T-LGL Survival Network 2011_22102804.bnet,RAS,[],NA,0.48597
+./input/networks/large11SCC/T-LGL Survival Network 2011_22102804.bnet,!RAS,"[['DISC'], ['Apoptosis'], ['Caspase'], ['!PDGF']]","[0.0, 0.0, 0.0, 0.0]",0.012
+./input/networks/large11SCC/Tumour Cell Invasion and Migration_26528548.bnet,Metastasis,[['ECM']],[0.41200000000000003],0.03303
+./input/networks/large11SCC/Tumour Cell Invasion and Migration_26528548.bnet,!Metastasis,[['!ECM']],[0.0],0.03743
+./input/networks/large11SCC/Tumour Cell Invasion and Migration_26528548.bnet,Apoptosis,[['0']],NA,0.01309
+./input/networks/large11SCC/Tumour Cell Invasion and Migration_26528548.bnet,!Apoptosis,[['1']],[0.14],0.01267
+./input/networks/large11SCC/Tumour Cell Invasion and Migration_26528548.bnet,CellCycleArrest,[['1']],[0.3365],0.01354
+./input/networks/large11SCC/Tumour Cell Invasion and Migration_26528548.bnet,!CellCycleArrest,[['0']],NA,0.01854
+./input/networks/large11SCC/Tumour Cell Invasion and Migration_26528548.bnet,CDH2,[['1']],[0.42600000000000005],0.0121
+./input/networks/large11SCC/Tumour Cell Invasion and Migration_26528548.bnet,!CDH2,[['0']],NA,0.01231

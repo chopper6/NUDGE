@@ -33,7 +33,7 @@ def core_loop(params, F, fn, fn_prev):
 
 def step(params, F, fn, fn_prev, r):
 	update(params, r, fn, fn_prev)
-	print("at step",r+1,'fn=',fn)
+	#print("at step",r+1,'fn=',fn)
 	fn = substitute(fn, F)
 	fn = logic.reduce(params, fn)
 	found = check_if_terminal(fn, fn_prev, params, r)
@@ -77,7 +77,7 @@ def build_target_function(params, F):
 	fn = logic.str_to_fn('(' + params['target'] + ')')
 	for node in fn.support:
 		assert(str(node) in F.keys()) # all nodes in output function must be in the network
-	fn_prev = [None for _ in range(params['max_cycle_length'])]		
+	fn_prev = [None for _ in range(params['max_recursion'])]		
 
 	if params['approx'] and params['approx_orig_fns']:
 		fn = logic.reduce(params, fn)
@@ -139,7 +139,7 @@ def check_if_terminal(fn, fn_prev, params, r):
 		if params['verbose_rsc']:
 			print("Found fixed-point terminal logic at step",r)
 		return True
-	for i in range(1,params['max_cycle_length']):
+	for i in range(1,params['max_recursion']):
 		if fn.equivalent(fn_prev[i]):		#fn==fn_prev[i] can miss if two functions are reduced differently
 			if params['verbose_rsc']:
 				print("Found cyclic terminal logic at step",r,"with cycle length",i+1)
@@ -151,7 +151,7 @@ def check_if_terminal(fn, fn_prev, params, r):
 def build_final_logic(fn, fn_prev, params):
 	if fn.equivalent(fn_prev[0]) or fn.equivalent(1) or fn.equivalent(0):
 		return [fn]
-	for i in range(1,params['max_cycle_length']):
+	for i in range(1,params['max_recursion']):
 		if fn.equivalent(fn_prev[i]):		#fn==fn_prev[i] can miss if two functions are reduced differently
 			final_logic = []
 			for j in range(i+1):

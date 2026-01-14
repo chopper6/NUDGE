@@ -4,7 +4,7 @@
 # remove robustness tests from here (unintuitive)
 
 # RSC parameters
-network_file: "./input/networks/test/1.bnet"  #30546316.bnet (macrophage), 29186334.bnet" #all/Stomatal Opening Model_27542373.bnet"                      # network path
+network_file: "./input/networks/toy.bnet"  #30546316.bnet (macrophage), 29186334.bnet" #all/Stomatal Opening Model_27542373.bnet"                      # network path
 target: "Y" #"!ccr3, MCPS"  # either diving and no errors, or not dividing                                          # target node, use '!' to drive it to 0
 use_mutations: false                                # apply mutations to network
 mutations: {}                                         # dictionary of mutations, setting A=1 would be {'A':1}
@@ -15,30 +15,25 @@ approx: true                                     # approximate POKE, otherwise e
 max_variables: 12                           # if recursion would have more than max_variables, remove a variable
 max_initial_variables: 7
 max_recursion: 100
-max_cycle_length: 100
 activity_samples: 100                                 # number of rows of truth table to use to estimate activity
 approx_orig_fns: true
 
 
-# POKE parameters
-verbose_poke: true                                    # print extra information about controllers
-complement_constrain: false
+# NUDGE parameters
+verbose_nudge: true                                    # print extra information about controllers
 ensemble_repeats: 8
 analysis_order: 3                          # highest order considered for robustness and mechanism
 measure_robustness: 1                       # compare all POKE controllers vs robust controllers, instead of comparing to other methods
 find_mechanism: 1
-use_timeout: False
-timeout : .5                                 # minutes to wait before re-attempting with fewer variables (if approx)
 controller: 'IL4_e' #'IC_e & LPS_e'                                # can be a single node 'A' or multiple like 'A & B', note that '|' (or) is not supported
 
 # BATCH parameters
-network_dir: "./input/networks/temp/"              # networks from here, overrides 'network_file'
-targets_csv: "./input/targets_exNets.csv"               # targets from here, overrides 'target'
+network_dir: "./input/networks/large/"              # networks from here, overrides 'network_file'
+targets_csv: "./input/targets_all_4targets.csv"               # targets from here, overrides 'target'
 output_folder: "./output/"
-cutoff: 0        
-skip_reduced_networks: False                                     # max of this many nets from network_dir, set to 0 to ignore
+cutoff: 0                                          # max of this many nets from network_dir, set to 0 to ignore
 
-include_POKE: 1                                       # include POKE method
+include_NUDGE: 1                                       # include POKE method
 
 include_MONTE_CARLO: 1                             # include monte carlo method (direct simulation)
 max_monte_carlo_controllers: 1                        # maybe rm pair implmtn? 
