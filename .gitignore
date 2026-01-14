@@ -6,8 +6,6 @@ __pycache__/
 # Virtual environments
 .venv/
 venv/
-poke_early/
-.poke_early/
 ENV/
 
 # Jupyter notebooks
@@ -21,4 +19,7 @@ Thumbs.db
 *.log
 
 # Output
-output/"Figure_4 copy.ipynb" 
+output/
+
+# Params files
+input/*.yaml

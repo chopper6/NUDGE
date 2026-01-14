@@ -151,7 +151,7 @@ class Net:
             if i > 1000000:
                 sys.exit("infinite loop in build_Fmapd_and_A")
 
-        thread_dtype = cp.uint8 if (self.params['num_samples'] < 254 and self.num_clauses < 254) else (cp.uint16 if (self.params['num_samples'] < 65533 and self.num_clauses < 65533) else cp.uint32)
+        thread_dtype = util.get_uint_dtype(max(self.params['num_samples'],self.num_clauses))
         clauses_to_threads = cp.array(clauses_to_threads, dtype=thread_dtype)
         threads_to_nodes = cp.array(threads_to_nodes, dtype=bool)
         self.Fmapd = {'nodes_to_clauses': nodes_to_clauses, 'clauses_to_threads': clauses_to_threads, 'threads_to_nodes': threads_to_nodes}
