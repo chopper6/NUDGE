@@ -111,7 +111,7 @@ class Net:
             self.num_clauses += len(numbered)
 
         make_square_clauses(self, nodes_to_clauses)
-        nodes_to_clauses = cp.array(nodes_to_clauses, dtype=get_index_dtype(self.n))
+        nodes_to_clauses = cp.array(nodes_to_clauses, dtype=cp.uint16)
         if self.num_clauses > 0:
             assert nodes_to_clauses.shape == (self.num_clauses, self.max_literals)
 
@@ -151,7 +151,7 @@ class Net:
             if i > 1000000:
                 sys.exit("infinite loop in build_Fmapd_and_A")
 
-        thread_dtype = util.get_uint_dtype(max(self.params['num_samples'],self.num_clauses))
+        thread_dtype = cp.uint16
         clauses_to_threads = cp.array(clauses_to_threads, dtype=thread_dtype)
         threads_to_nodes = cp.array(threads_to_nodes, dtype=bool)
         self.Fmapd = {'nodes_to_clauses': nodes_to_clauses, 'clauses_to_threads': clauses_to_threads, 'threads_to_nodes': threads_to_nodes}
@@ -217,11 +217,6 @@ def make_square_clauses(self_net, nodes_to_clauses):
     for clause in nodes_to_clauses:
         while len(clause) < self_net.max_literals:
             clause.append(clause[-1] if clause else 0)
-
-def get_index_dtype(max_n):
-    if max_n < 256: return cp.uint8
-    if max_n < 65536: return cp.uint16
-    return cp.uint32
 
 def read_line(file, loop):
     line = file.readline()

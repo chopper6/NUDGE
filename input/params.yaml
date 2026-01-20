@@ -13,7 +13,7 @@ print_freq: 10                                        # how many time steps betw
 
 approx: true                                     # approximate POKE, otherwise exact POKE
 max_variables: 12                           # if recursion would have more than max_variables, remove a variable
-max_initial_variables: 7
+max_initial_variables: 8
 max_recursion: 100
 activity_samples: 100                                 # number of rows of truth table to use to estimate activity
 approx_orig_fns: true
@@ -21,16 +21,17 @@ approx_orig_fns: true
 
 # NUDGE parameters
 verbose_nudge: true                                    # print extra information about controllers
-ensemble_repeats: 8
+ensemble_repeats: 2
 analysis_order: 3                          # highest order considered for robustness and mechanism
-measure_robustness: 1                       # compare all POKE controllers vs robust controllers, instead of comparing to other methods
-find_mechanism: 1
+measure_robustness: 0                       # compare all POKE controllers vs robust controllers, instead of comparing to other methods
+find_mechanism: 0
 controller: 'IL4_e' #'IC_e & LPS_e'                                # can be a single node 'A' or multiple like 'A & B', note that '|' (or) is not supported
 
 # BATCH parameters
 network_dir: "./input/networks/large/"              # networks from here, overrides 'network_file'
-targets_csv: "./input/targets_all_4targets.csv"               # targets from here, overrides 'target'
+targets_csv: "./input/targets_large_4targets.csv"               # targets from here, overrides 'target'
 output_folder: "./output/"
+skip_reduced_networks: False                    # skip networks with in-degree > max_initial_variables
 cutoff: 0                                          # max of this many nets from network_dir, set to 0 to ignore
 
 include_NUDGE: 1                                       # include POKE method

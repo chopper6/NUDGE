@@ -33,16 +33,13 @@ def main(param_file, run_title):
 def init(params, run_title):
 	tstart = timer()
 	data = {}
-	if params['measure_robustness']:
-		params['methods'] = ['NUDGE','NUDGE_ROBUST']
-		data['NUDGE Errors'], data['NUDGE_ROBUST Errors'] = [], []
-		data['robustness'] = {} 
-	else:
-		params['methods'] = []
-		for k in ['NUDGE','LDOI','MEAN-FIELD','MONTE_CARLO']:
-			if params['include_'+k]:
-				params['methods'] += [k]
-				data[k + ' Errors'] = []
+	params['measure_robustness'] = False 
+	params['find_mechanism'] = False
+	params['methods'] = []
+	for k in ['NUDGE','LDOI','MEAN-FIELD','MONTE_CARLO']:
+		if params['include_'+k]:
+			params['methods'] += [k]
+			data[k + ' Errors'] = []
 	init_csvs(params, run_title)
 	files = load_network_folder(params)
 	targets = load_network_targets(params['targets_csv'])
@@ -128,7 +125,6 @@ def find_controllers(params, name, G, F, data):
 	name = name.upper()
 	tstart = timer()
 	if name == 'NUDGE':
-		params['find_mechanism'] = False
 		result = NUDGE.control(params, F=F)
 		controllers = result['best controllers']
 		skip = (controllers[0] == ['0'])
@@ -233,11 +229,6 @@ def init_csvs(params, run_title):
 		if (os.path.exists(params['csv_file_'+name])) and (run_title.lower() != 'debug'):
 			sys.exit("CSV files already exist, change run name.\n")
 		util.init_csv(params['csv_file_'+name], headers)
-
-	if params['measure_robustness']:
-		robutness_headers = ['Network','Target','All Controllers','Minimal Controllers','Relative Heights','Robust Controllers','Robustness Matters','Robustness Reliable']
-		params['csv_file_robustness'] = params['output_folder'] + '/' + run_title + '_' + 'robustness.csv'
-		util.init_csv(params['csv_file_robustness'], robutness_headers)
 
 
 def write_to_csv_and_data(params, data, controllers, name, errors, time):

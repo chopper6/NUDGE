@@ -23,15 +23,16 @@ COLORS = ['#56B4E9','#009E73','#E69F00','#D55E00']
 FONTSMALL, FONTMED, FONTLARGE = 18, 24, 32
 CIRCLE_ORDER = ["C", "A", "B"]
 
-FILETYPE= 'png'
+FILETYPE= 'tif'
+DPI = 500
 
 BASE_DIR = './output/'
-BASE_STR = 'large_12max_noTimeout_100maxRecEns8_MF100_longSimsx1000'
+BASE_STR = 'again'
 OUTPUT_DIR = os.path.join(BASE_DIR, 'img')
 
 CSVS = {
     'IBMFA':       os.path.join(BASE_DIR, BASE_STR + '_MEAN-FIELD_RESULTS.csv'),
-    'NUDGE':        os.path.join(BASE_DIR, BASE_STR + '_POKE_RESULTS.csv'),
+    'NUDGE':        os.path.join(BASE_DIR, BASE_STR + '_NUDGE_RESULTS.csv'),
     'LDOI':        os.path.join(BASE_DIR, BASE_STR + '_LDOI_RESULTS.csv'),
     'MC':          os.path.join(BASE_DIR, BASE_STR + '_MONTE_CARLO_RESULTS.csv'),
 }
@@ -124,6 +125,8 @@ def std_violin(features, labels, ylabel, minorgrid=False, alpha=1, gridalpha=.4,
         means.append(m); lows.append(lo); q1s.append(q1); meds.append(med); q3s.append(q3); highs.append(hi)
     inds = np.arange(1, len(features) + 1)
     print('\t',labels,'have means',means)
+    non0 = [(np.array(features[i])<.01).mean() for i in range(len(features))]
+    print("\tfraction 0:", non0)
     plt.scatter(inds, means, marker='o', color='red', s=400, zorder=3)
     plt.vlines(inds, q1s, q3s, color='k', lw=16)
     plt.vlines(inds, lows, highs, color='k', lw=4)
@@ -1037,7 +1040,7 @@ def proportional_venn3(region_avgs, output_png_prefix,
         os.makedirs(outdir, exist_ok=True)
 
     outpath = os.path.join(OUTPUT_DIR, "{}_{}.{}".format(output_png_prefix, util.timestamp(),FILETYPE))
-    plt.savefig(outpath, dpi=220, bbox_inches="tight")
+    plt.savefig(outpath, dpi=DPI, bbox_inches="tight")
     plt.clf()
     plt.close()
 
@@ -1338,7 +1341,7 @@ def proportional_venn4(region_avgs, output_png_prefix, labels=("A","B","C","D"),
         os.makedirs(outdir, exist_ok=True)
 
     outpath = os.path.join(OUTPUT_DIR, "{}_{}.{}".format(output_png_prefix, util.timestamp(),FILETYPE))
-    plt.savefig(outpath, dpi=200, bbox_inches="tight")
+    plt.savefig(outpath, dpi=500, bbox_inches="tight")
     plt.clf()
     plt.close()
 

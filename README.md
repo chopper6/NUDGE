@@ -1,12 +1,6 @@
-TODO: 
-- change prints to file logging, including running just RSC or just NUDGE
-- later: add relv data used in figures to output, and img folder (force add to git)
-- double check no f-string usage (else py 3.6+)
-- for Ferio: putting up notebook for results, so that reader can follow the process in a clearer context
-
 # NUDGE: Natural Dynamics Control of Gene Regulatory Networks
 
-[general description]
+Identifies single-time interventions from Boolean network models to ensure a desired phenotype while preserving natural regulatory dynamics.
 
 ## Installation
 
@@ -29,7 +23,7 @@ Logs terminal logic of a node, which maps initial states to the state of that no
 
 Usage: `python src/RSC.py PARAM_FILE`
 
-Output: [currently print, will change to file output]
+Output: prints to command line
 
 example PARAM_FILE: /input/params.yaml
 
@@ -42,7 +36,7 @@ Finds ephemeral controllers for a node, distinguishes minimal robust controllers
 
 Usage: `python src/NUDGE.py PARAM_FILE`
 
-Output: [currently print a dict, will change to file output?]
+Output: prints to command line
 
 Parameter file is the same as the previous case, except both "RSC parameters" and "NUDGE parameters" are used.
 
@@ -50,7 +44,6 @@ Parameter file is the same as the previous case, except both "RSC parameters" an
 ### Batch
 
 Compares NUDGE with other methods on a batch of networks. 
-[specify figure 2 ect]
 
 Usage: `python src/batch.py PARAM_FILE RUN_TITLE`
 
@@ -68,20 +61,14 @@ Usage: `python src/analyze.py PARAM_FILE`
 
 ### Plotting
 
-[need to update this]
-
 Usage: `python src/plot.py PLOT_TITLE`
 
 Output: violin plots of error and time, and venn diagram of controllers found
 
 Where PLOT_TITLE is any valid string that will be included in the output files, and existing names can be reused.
-[also add a few to params?]
 
 
 ### Preprocessing 
 
 Usage: `python plot.py PLOT_TITLE [sort | targets]`
 
-The sorts networks 
-
-[TODO: a little preprocessing like target selection]
