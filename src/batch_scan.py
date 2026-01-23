@@ -425,7 +425,7 @@ def size_bucket(n_valid: int) -> str:
     return "4+"
 
 
-def make_scatter_plot(batch_summaries, out_prefix):
+def make_scatter_plot(batch_summaries, out_folder, out_prefix):
     """
     x: mean_neo (%)   y: mean_deleterious (%)   size+color by n_valid bucket
     """
@@ -486,8 +486,8 @@ def make_scatter_plot(batch_summaries, out_prefix):
     ax.legend(loc="best", frameon=True)
 
     plt.tight_layout()
-    fig.savefig(f"{out_prefix}_batch_scatter.png", dpi=300, bbox_inches="tight")
-    fig.savefig(f"{out_prefix}_batch_scatter.svg", bbox_inches="tight")
+    fig.savefig(f"./{out_folder}/img/{out_prefix}_batch_scatter.png", dpi=300, bbox_inches="tight")
+    fig.savefig(f"./{out_folder}/img/{out_prefix}_batch_scatter.svg", bbox_inches="tight")
     plt.close(fig)
 
 
@@ -529,7 +529,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--params", required=True, help="Path to params.yaml")
     ap.add_argument("--bnet_folder", required=True, help="Folder containing .bnet files")
-    ap.add_argument("--out_prefix", default="batch", help="Prefix for output files")
+    ap.add_argument("--out_folder", default="output", help="Folder to store the outputs")
+    ap.add_argument("--out_prefix", default="batch_warped", help="Prefix for output files")
     ap.add_argument("--eps_change", type=float, default=1e-2, help="Threshold for neo change in avg vs avg2")
     ap.add_argument("--eps_pinned", type=float, default=1e-3, help="Threshold for pinned (deleterious) detection")
     ap.add_argument("--assume_doubled", type=int, default=1, help="1 if nodeNums is 2x vs matrices due to '!X' nodes")
@@ -594,11 +595,11 @@ def main():
                     print(f"  mean neo = NaN   mean deleterious = NaN   time={dt:.1f}s")
 
     # Save PKL (full raw)
-    pkl_path = f"{args.out_prefix}_batch_results.pkl"
+    pkl_path = f"./{args.out_folder}/{args.out_prefix}_batch_results.pkl"
     save_pkl(batch_summaries, pkl_path)
 
     # Scatter plot (summary)
-    make_scatter_plot(batch_summaries, args.out_prefix)
+    make_scatter_plot(batch_summaries, args.out_folder, args.out_prefix)
 
     if args.verbose:
         dt_all = time.time() - t_all0
