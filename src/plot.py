@@ -18,7 +18,7 @@ import networkx as nx
 BASE_DIR = './output/'    # where to find the batch output files
 BASE_STR = 'batch'          # common beginning of each batch file, corresponding to the RUN_TITLE of the batch run
 OUTPUT_DIR = os.path.join(BASE_DIR, 'img') # output directory to put the images into
-FILETYPE= 'tif'             # typically 'png','svg', or 'tif'
+FILETYPE= 'png'             # typically 'png','svg', or 'tif'
 DPI = 500                   # output resolution
 
 
