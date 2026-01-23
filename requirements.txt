@@ -2,3 +2,4 @@ numpy
 pyeda
 pyyaml
 networkx
+matplotlib

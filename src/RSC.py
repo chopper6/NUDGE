@@ -61,11 +61,11 @@ def load_F(params):
 			val = val.replace('\t','')
 			assert(k not in F.keys() and '!' + k not in F.keys())
 			
-			if params['approx'] and params['approx_orig_fns']:
+			if params['approx'] and params['approx_init_fns']:
 				fn = logic.str_to_fn(val)
-				if logic.fn_too_complex(params, fn, max_vars=params['max_initial_variables']):
+				if logic.fn_too_complex(params, fn, max_vars=params['max_init_variables']):
 					reduced = True
-				fn = logic.reduce(params, fn, max_vars=params['max_initial_variables'])
+				fn = logic.reduce(params, fn, max_vars=params['max_init_variables'])
 				val = logic.fn_to_str(fn)
 			update_F(params, F, k, val)
 
@@ -79,7 +79,7 @@ def build_target_function(params, F):
 		assert(str(node) in F.keys()) # all nodes in output function must be in the network
 	fn_prev = [None for _ in range(params['max_recursion'])]		
 
-	if params['approx'] and params['approx_orig_fns']:
+	if params['approx'] and params['approx_init_fns']:
 		fn = logic.reduce(params, fn)
 		# TODO: warn if original target function is reduced!
 	return fn, fn_prev

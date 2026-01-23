@@ -1,4 +1,6 @@
 
+###########################################################
+
 import csv, sys, ast, os, math
 from collections import defaultdict
 import util
@@ -7,6 +9,20 @@ from matplotlib import rcParams, cm, pyplot as plt
 from matplotlib.patches import Patch
 import matplotlib.ticker as mticker
 import networkx as nx
+
+
+###########################################################
+
+# INPUT/OUTPUT parameters
+
+BASE_DIR = './output/'    # where to find the batch output files
+BASE_STR = 'batch'          # common beginning of each batch file, corresponding to the RUN_TITLE of the batch run
+OUTPUT_DIR = os.path.join(BASE_DIR, 'img') # output directory to put the images into
+FILETYPE= 'tif'             # typically 'png','svg', or 'tif'
+DPI = 500                   # output resolution
+
+
+###########################################################
 
 # Styling 
 rcParams['font.family'] = 'serif'
@@ -23,12 +39,6 @@ COLORS = ['#56B4E9','#009E73','#E69F00','#D55E00']
 FONTSMALL, FONTMED, FONTLARGE = 18, 24, 32
 CIRCLE_ORDER = ["C", "A", "B"]
 
-FILETYPE= 'tif'
-DPI = 500
-
-BASE_DIR = './output/'
-BASE_STR = 'again'
-OUTPUT_DIR = os.path.join(BASE_DIR, 'img')
 
 CSVS = {
     'IBMFA':       os.path.join(BASE_DIR, BASE_STR + '_MEAN-FIELD_RESULTS.csv'),
@@ -38,8 +48,6 @@ CSVS = {
 }
 
 # Filters
-USE_SUBSET = False
-SUBSET_DIR = './models/metaAnalysis_10IO/nonOscil_z1000_01thresh/'
 ERR_THRESH = 0
 CONSTRAIN_BY_ERROR = True
 ONLY_SOLO_CONTROLLERS = False
@@ -52,8 +60,6 @@ def plot_error_results(csvs, output_dir, run_title):
 
 def load_error_data(csvs):
     data = {}
-    if USE_SUBSET:
-        valid_networks = [f for f in os.listdir(SUBSET_DIR) if os.path.isfile(os.path.join(SUBSET_DIR, f))]
     for k, path in csvs.items():
         if path is None:
             continue
@@ -62,11 +68,10 @@ def load_error_data(csvs):
             reader = csv.DictReader(f)
             for row in reader:
                 network_name = row['Network'].split('/')[-1]
-                if (not USE_SUBSET) or (network_name in valid_networks):
-                    if row['Errors'] != 'NA':
-                        errs = np.array(ast.literal_eval(row['Errors']), float)
-                        data[k]['Error'].append(float(np.mean(errs)))
-                    data[k]['Minutes'].append(float(row['Minutes']))
+                if row['Errors'] != 'NA':
+                    errs = np.array(ast.literal_eval(row['Errors']), float)
+                    data[k]['Error'].append(float(np.mean(errs)))
+                data[k]['Minutes'].append(float(row['Minutes']))
     return data
 
 def violins(data, key, output_dir, run_title, swap_keys=False):
@@ -84,12 +89,6 @@ def violins(data, key, output_dir, run_title, swap_keys=False):
     elif key == 'Minutes':
         ylabel = 'Time (minutes)'
         logy=True
-    elif key in 'fraction_exact_found':
-        ylabel = 'Single Node Controllers Found'
-    elif key in 'fraction_found':
-        ylabel = 'Single Node Controllers Found (SUBSETS)'
-    elif key == 'avg_size':
-        ylabel = 'Solo Controller Size'
     else:
         ylabel = key
     print('\n\n',"plotting key",key)
@@ -458,58 +457,6 @@ def return_only_solo_controllers(controllers):
     else:
         return solos
 
-def print_poke_uniques(controllers, errors):
-    """
-    Print MINIMAL controllers that NUDGE finds which BOTH LDOI and IBMFA do not find.
-    Ignores Monte-Carlo entirely.
-    """
-    common_pairs = network_and_target_in_all(controllers, 'NUDGE', 'LDOI', 'IBMFA')
-    if not common_pairs:
-        print("No common (network,target) across NUDGE, LDOI, IBMFA.")
-        return
-
-    def set_size(s):
-        empty_size=0
-        if s == [] or s == ['1']:
-            return empty_size
-        if isinstance(s, dict):
-            if s == {} or s == {'1': 1}:
-                return empty_size
-            return len(s)
-        try:
-            return len(s)
-        except TypeError:
-            return 1
-
-    total_uniques = 0
-
-    for (network, target) in sorted(common_pairs):
-        poke_all = trim_by_error(controllers, errors, 'NUDGE',       network, target)
-        ldoi_all = trim_by_error(controllers, errors, 'LDOI',       network, target)
-        mean_all = trim_by_error(controllers, errors, 'IBMFA', network, target)
-
-        all_sets = [s for s in (poke_all + ldoi_all + mean_all) if s != ['0']]
-        if not all_sets:
-            continue
-        global_min = min(set_size(s) for s in all_sets)
-
-        poke_min   = min_size_sets(poke_all,           force_min_size=global_min)
-        others_min = min_size_sets(ldoi_all + mean_all, force_min_size=global_min)
-
-        uniques = sorted(
-            list(poke_min - others_min),
-            key=lambda s: (len(s), sorted(s))
-        )
-
-        if uniques:
-            total_uniques += len(uniques)
-            print("[NUDGE unique vs BOTH LDOI and IBMFA] Network={} Target={}:".format(network, target))
-            for u in uniques:
-                print("   ", sorted(list(u)))
-
-    if total_uniques == 0:
-        print("No NUDGE-unique controllers against both LDOI and IBMFA.")
-
 def mechanism_graph(params, G):
     cfg = {
         "node_size": params.get("node_size", 1000),
@@ -701,112 +648,6 @@ def nx_plot(G):
     plt.show()
     plt.clf()
     plt.close()
-
-
-
-########################################################################################
-
-def plot_MCcoverageTest(data, methods, title):
-    for k in data.keys():
-        if k not in ['uncontrollable_found','controllable_found','trivially_controllable_found']:
-            violins(data, k, OUTPUT_DIR, title +'_'+k, swap_keys=True) 
-
-def MCcoverageTest():
-    controllers, errors = load_controllers_and_errors(CSVS)
-
-    methods = list(CSVS.keys())
-    methods.remove('MC')
-    fraction_found, avg_size, fraction_exact_found, controllable_found, uncontrollable_found, trivially_controllable_found, controllability = [{k:[] for k in methods} for _ in range(7)]
-    for k in methods:
-        for network in controllers['MC'].keys():
-            this_network_found = 0
-            this_network_size = 0
-            this_network_exact_found = 0
-            num_found_checked, num_size_checked = 0, 0
-
-            this_cf, this_uf, this_tf = 0,0,0
-            num_c, num_u, num_t = 0,0,0
-            this_cb, num_cb = 0,0
-
-            for target in controllers['MC'][network].keys():
-                if network in controllers[k].keys() and target in controllers[k][network].keys():
-                    mc_cnts = trim_by_error(controllers, errors, 'MC', network, target)
-                    other_cnts = trim_by_error(controllers, errors, k, network, target)
-                    #if ('23935937' in network) and (target == '!NOTCH_SIGNAL') and (k=='NUDGE'):
-                    #    print("\tMc cnts=",mc_cnts,'\n\t',k,'=',other_cnts)
-                    if (len(mc_cnts) > 0) and (mc_cnts[0] not in [['0'],['1']]): 
-                        num_found_checked += 1
-                        found_for_target = 0
-                        avg_size_for_target = 0
-                        exact_found_for_target = 0
-                        for cnt in mc_cnts:
-
-                            if has_controller(other_cnts, cnt):
-                                found_for_target += 1 
-                                this_avg_size = calc_avg_size(other_cnts, cnt)
-                                avg_size_for_target += this_avg_size
-                                if this_avg_size == 1:
-                                    exact_found_for_target += 1
-                        this_network_found += found_for_target / len(mc_cnts)
-                        this_network_exact_found += exact_found_for_target/ len(mc_cnts)
-                        if found_for_target > 0:
-                            this_network_size += avg_size_for_target/found_for_target
-                            num_size_checked += 1
-
-                    # whether or not matches MC is the error in controllability case
-                    mc_cnts = controllers['MC'][network][target]
-                    other_cnts = controllers[k][network][target]
-                    if (len(mc_cnts) > 0):
-                        num_cb += 1
-                        if mc_cnts[0] == ['0']: # uncontrollable
-                            num_u += 1
-                            if (len(other_cnts) > 0) and  (other_cnts[0] == ['0']):
-                                this_uf += 1
-                                this_cb += 1
-                        else: # controllable
-                            num_c += 1
-                            if (len(other_cnts) > 0) and  (other_cnts[0] != ['0']):
-                                this_cf += 1
-                                this_cb += 1
-
-                        if mc_cnts[0] == ['1']: # trivially controllable
-                            num_t += 1
-                            if (len(other_cnts) > 0) and  (other_cnts[0] == ['1']):
-                                this_tf += 1
-            
-            if num_cb > 0:
-                controllability[k] += [this_cb / num_cb]
-            if num_u > 0:
-                uncontrollable_found[k] += [this_uf / num_u]
-            if num_c > 0:
-                controllable_found[k] += [this_cf / num_c]
-            if num_t > 0:
-                trivially_controllable_found[k] += [this_tf / num_t]
-
-            if num_found_checked > 0:
-                fraction_found[k] += [this_network_found/num_found_checked]
-                fraction_exact_found[k] += [this_network_exact_found/num_found_checked]
-            if num_size_checked > 0:
-                avg_size[k] += [this_network_size/num_size_checked]
-
-    data = {
-        'fraction_found': fraction_found,
-        'avg_size': avg_size,
-        'fraction_exact_found': fraction_exact_found,
-        'uncontrollable_found': uncontrollable_found,
-        'controllable_found': controllable_found,
-        'trivially_controllable_found': trivially_controllable_found,
-        'controllability':controllability,
-    }
-    return data
-                   
-def has_controller(controllers, controller):
-    return any(set(controller).issubset(cnt) for cnt in controllers)
-
-def calc_avg_size(controllers, controller):
-    matches = [cnt for cnt in controllers if set(controller).issubset(cnt)]
-    avg_size = sum(len(cnt) for cnt in matches) / len(matches) 
-    return avg_size
 
 ###############################################################################################################################
 
@@ -1132,233 +973,15 @@ def venn3_methods_compare(controllers, errors, title, output_dir, methods,
     region_avgs = {name: region_totals[name] / num_pairs_counted for name in region_names}
     return region_avgs
 
-
-###############################################################################################
-
-def proportional_venn4(region_avgs, output_png_prefix, labels=("A","B","C","D"),
-                       color_indices=(0,1,2,3), tiny_threshold=0.005,  # hide <0.5%
-                       grid_res=400):
-    """
-    Draw an approximate 4-set Euler diagram from region fractions (region_avgs)
-    collected as in venn4_methods_compare(). Regions are:
-      A,B,C,D, AB,AC,AD, BC,BD,CD, ABC,ABD,ACD,BCD, ABCD
-    Values should sum to ~1.0; we rescale internally to sum to 1.0.
-    Only non-zero regions >= tiny_threshold are labeled.
-    """
-
-    # --- 1) Normalize and unpack regions (ensure all 15 keys exist) ---
-    all_regions = ["A","B","C","D",
-                   "AB","AC","AD","BC","BD","CD",
-                   "ABC","ABD","ACD","BCD","ABCD"]
-    reg = {k: float(region_avgs.get(k, 0.0)) for k in all_regions}
-    total = sum(reg.values()) or 1.0
-    for k in all_regions:
-        reg[k] /= total
-
-    # --- 2) Target set areas and pairwise overlaps (include higher-order overlaps) ---
-    def set_total(name):
-        # Sum all regions that include the set letter
-        return sum(v for k, v in reg.items() if name in k)
-
-    SA, SB, SC, SD = (set_total("A"), set_total("B"), set_total("C"), set_total("D"))
-
-    def pair_total(x, y):
-        return sum(v for k, v in reg.items() if x in k and y in k)
-
-    TAB = pair_total("A","B")
-    TAC = pair_total("A","C")
-    TAD = pair_total("A","D")
-    TBC = pair_total("B","C")
-    TBD = pair_total("B","D")
-    TCD = pair_total("C","D")
-
-    # Scale areas to a convenient canvas area (e.g., 100.0)
-    AREA_SCALE = 100.0
-    SA *= AREA_SCALE; SB *= AREA_SCALE; SC *= AREA_SCALE; SD *= AREA_SCALE
-    TAB *= AREA_SCALE; TAC *= AREA_SCALE; TAD *= AREA_SCALE
-    TBC *= AREA_SCALE; TBD *= AREA_SCALE; TCD *= AREA_SCALE
-
-    # Radii from set areas
-    def radius_from_area(a):
-        return math.sqrt(max(a, 0.0) / math.pi)
-
-    rA, rB, rC, rD = (radius_from_area(SA), radius_from_area(SB),
-                      radius_from_area(SC), radius_from_area(SD))
-
-    # --- 3) Circle-circle intersection area helper ---
-    def circ_intersection_area(d, r1, r2):
-        d = float(d)
-        if d >= r1 + r2: return 0.0
-        if d <= abs(r1 - r2): return math.pi * min(r1, r2)**2
-        # Lens area
-        a1 = r1*r1 * math.acos((d*d + r1*r1 - r2*r2) / (2*d*r1))
-        a2 = r2*r2 * math.acos((d*d + r2*r2 - r1*r1) / (2*d*r2))
-        a3 = 0.5 * math.sqrt(max(0.0, (-d+r1+r2)*(d+r1-r2)*(d-r1+r2)*(d+r1+r2)))
-        return a1 + a2 - a3
-
-    # --- 4) Place circles: initial layout and tiny grid search to match pair overlaps ---
-    # Layout: A(-dx,0), B(+dx,0), C(0,+dy), D(0,-dy); also allow small per-circle tweaks.
-    # We'll grid-search dx,dy scale to best match pair targets.
-    def pair_error(dx, dy):
-        # centers
-        Ax, Ay = -dx, 0.0
-        Bx, By = +dx, 0.0
-        Cx, Cy = 0.0, +dy
-        Dx, Dy = 0.0, -dy
-        # distances
-        dAB = math.hypot(Ax-Bx, Ay-By)
-        dAC = math.hypot(Ax-Cx, Ay-Cy)
-        dAD = math.hypot(Ax-Dx, Ay-Dy)
-        dBC = math.hypot(Bx-Cx, By-Cy)
-        dBD = math.hypot(Bx-Dx, By-Dy)
-        dCD = math.hypot(Cx-Dx, Cy-Dy)
-        # areas predicted
-        pAB = circ_intersection_area(dAB, rA, rB)
-        pAC = circ_intersection_area(dAC, rA, rC)
-        pAD = circ_intersection_area(dAD, rA, rD)
-        pBC = circ_intersection_area(dBC, rB, rC)
-        pBD = circ_intersection_area(dBD, rB, rD)
-        pCD = circ_intersection_area(dCD, rC, rD)
-        # MSE across pairs (avoid overweighting zero targets)
-        err  = (pAB - TAB)**2 + (pAC - TAC)**2 + (pAD - TAD)**2
-        err += (pBC - TBC)**2 + (pBD - TBD)**2 + (pCD - TCD)**2
-        return err
-
-    # Choose reasonable search ranges based on radii
-    base = max(rA, rB, rC, rD, 1.0)
-    dx_vals = np.linspace(0.4*base, 2.5*base, 36)
-    dy_vals = np.linspace(0.4*base, 2.5*base, 36)
-
-    best = (None, float("inf"))
-    for dx in dx_vals:
-        for dy in dy_vals:
-            e = pair_error(dx, dy)
-            if e < best[1]:
-                best = ((dx, dy), e)
-
-    (dx, dy), _ = best
-
-    # Final centers
-    centers = {
-        "A": np.array([-dx, 0.0]),
-        "B": np.array([+dx, 0.0]),
-        "C": np.array([0.0, +dy]),
-        "D": np.array([0.0, -dy]),
-    }
-    radii = {"A": rA, "B": rB, "C": rC, "D": rD}
-
-    # --- 5) Grid-sample to find centroids for each region for labeling ---
-    # Bounding box
-    RMAX = max(radii.values()) + max(dx, dy) + 1.0
-    xmin, xmax = -RMAX, +RMAX
-    ymin, ymax = -RMAX, +RMAX
-
-    X = np.linspace(xmin, xmax, grid_res)
-    Y = np.linspace(ymin, ymax, grid_res)
-    xx, yy = np.meshgrid(X, Y)
-    points = np.stack([xx, yy], axis=-1)  # (H,W,2)
-
-    # Masks for each set
-    def inside(name):
-        c = centers[name]
-        r = radii[name]
-        return ((xx - c[0])**2 + (yy - c[1])**2) <= (r*r + 1e-9)
-
-    M = {s: inside(s) for s in ["A","B","C","D"]}
-
-    # Build masks for each region name
-    def region_mask(code):
-        need = set(code)
-        # included sets must be True; excluded must be False
-        mask = np.ones_like(xx, dtype=bool)
-        for s in ["A","B","C","D"]:
-            if s in need:
-                mask &= M[s]
-            else:
-                mask &= ~M[s]
-        return mask
-
-    region_masks = {k: region_mask(k) for k in all_regions}
-
-    # For centroid, use the sampler points of the region; compute mean of coordinates
-    def centroid_of_mask(mask):
-        idx = np.argwhere(mask)
-        if idx.size == 0:
-            return None
-        # idx gives [row, col] -> map to X,Y
-        ys = Y[idx[:, 0]]
-        xs = X[idx[:, 1]]
-        return np.array([xs.mean(), ys.mean()])
-
-    centroids = {k: centroid_of_mask(m) for k, m in region_masks.items()}
-
-    # --- 6) Plot ---
-    fig, ax = plt.subplots(figsize=(16, 10))
-    colors = tuple(COLORS[i] for i in color_indices)
-
-    # Draw circles
-    circ = {
-        "A": plt.Circle(centers["A"], rA, alpha=0.45, color=colors[0]),
-        "B": plt.Circle(centers["B"], rB, alpha=0.45, color=colors[1]),
-        "C": plt.Circle(centers["C"], rC, alpha=0.45, color=colors[2]),
-        "D": plt.Circle(centers["D"], rD, alpha=0.45, color=colors[3]),
-    }
-    for c in circ.values():
-        ax.add_artist(c)
-
-    # Set labels for sets near their circle tops
-    def label_circle_top(name, text):
-        cx, cy = centers[name]
-        r = radii[name]
-        ax.text(cx, cy + r + 0.12*RMAX, text, ha="center", va="bottom", fontsize=20)
-
-    handles = [
-        Patch(facecolor=colors[0], alpha=0.45, label=labels[0]),
-        Patch(facecolor=colors[1], alpha=0.45, label=labels[1]),
-        Patch(facecolor=colors[2], alpha=0.45, label=labels[2]),
-        Patch(facecolor=colors[3], alpha=0.45, label=labels[3]),
-    ]
-    ax.legend(handles=handles, loc="upper right", frameon=False, fontsize=FONTSMALL)
-
-    # Label non-zero, non-tiny regions with their percentage
-    for k in all_regions:
-        v = reg[k]  # fraction of total
-        if v <= tiny_threshold or v <= 0.0:
-            continue
-        ct = centroids.get(k, None)
-        if ct is None:
-            continue
-        ax.text(ct[0], ct[1], "{:.0f}%".format(v*100.0), ha="center", va="center", fontsize=FONTSMALL)
-
-    ax.set_xlim(xmin, xmax)
-    ax.set_ylim(ymin, ymax*1.05)
-    ax.set_aspect('equal', 'box')
-    ax.axis("off")
-
-    # Ensure directory exists
-    outdir = os.path.dirname(output_png_prefix)
-    if outdir and not os.path.isdir(outdir):
-        os.makedirs(outdir, exist_ok=True)
-
-    outpath = os.path.join(OUTPUT_DIR, "{}_{}.{}".format(output_png_prefix, util.timestamp(),FILETYPE))
-    plt.savefig(outpath, dpi=500, bbox_inches="tight")
-    plt.clf()
-    plt.close()
-
 ###############################################################################
 
-def main(choice):
-    if choice.lower() == 'batch':
+def main():
         title=BASE_STR
-
-        #plot_error_results(CSVS, OUTPUT_DIR, title)
 
         controllers, errors = load_controllers_and_errors(CSVS)
         color_indices = (0,1,2)
         methods = list(CSVS.keys())
-        methods.remove('MC')
-        data = MCcoverageTest()
-        plot_MCcoverageTest(data, methods, title)    
+        methods.remove('MC')   
 
         controllers.pop('MC', None)
         errors.pop('MC', None)
@@ -1368,21 +991,14 @@ def main(choice):
             proportional_venn3(region_avgs, title, labels=methods, color_indices=color_indices, tiny_threshold=0.01, grid_res=400)
 
         plot_error_results(CSVS, OUTPUT_DIR, title)
-        #print_poke_uniques(controllers, errors)
 
-    elif choice.lower() == 'mechanism':
-        assert(0) # in progress
-        plot_mechanism()
-
-    else:
-        sys.exit("Unrecognized last argument " + str(choice) + ", should be 'batch' or 'mechanism'")
 
 ####################################################################
 
 if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        sys.exit("Usage: python NUDGE_plots.py [batch | mechanism]")
-    main(sys.argv[1])
+    if len(sys.argv) != 1:
+        sys.exit("Usage: python NUDGE_plots.py")
+    main()
 
 
 

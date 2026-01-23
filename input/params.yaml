@@ -1,52 +1,50 @@
-# TODO: 
-# for targets: maybe seperately specify desired value in {0,1}?
-# later: instead of approx, method in ['approx','exact','auto']
-# remove robustness tests from here (unintuitive)
+# parameters for NUDGE
 
 # RSC parameters
-network_file: "./input/networks/toy.bnet"  #30546316.bnet (macrophage), 29186334.bnet" #all/Stomatal Opening Model_27542373.bnet"                      # network path
-target: "Y" #"!ccr3, MCPS"  # either diving and no errors, or not dividing                                          # target node, use '!' to drive it to 0
-use_mutations: false                                # apply mutations to network
-mutations: {}                                         # dictionary of mutations, setting A=1 would be {'A':1}
-verbose_rsc: false                                    # print extra information about terminal logic
-print_freq: 10                                        # how many time steps between prints, if verbose
+network_file: "./input/networks/toy.bnet"     # network path
+target: "Y"                                   # target node, 'X' denotes a desired phenotype of X=1, '!X' denotes a desired phenotype of X=0. Functions are also acceptable: (X & !Y) | Z.
+use_mutations: false                          # apply mutations to network
+mutations: {}                                 # dictionary of mutations, setting A=1 would be {'A':1}
+verbose_rsc: false                            # print extra information about terminal logic
+print_freq: 10                                # how many time steps between prints, if verbose
+max_recursion: 100                            # maximum RSC steps before there is assumed to be no controller
 
-approx: true                                     # approximate POKE, otherwise exact POKE
-max_variables: 12                           # if recursion would have more than max_variables, remove a variable
-max_initial_variables: 8
-max_recursion: 100
-activity_samples: 100                                 # number of rows of truth table to use to estimate activity
-approx_orig_fns: true
+approx: true                                  # approximate RSC, otherwise exact RSC
+max_variables: 12                             # if recursion would have more than max_variables, remove a variable (if approx is True)
+approx_init_fns: true                         # nodes with more variables will have their functions approximated before RSC begins (if approx is True)
+max_init_variables: 8                         # max_variables specifically for original functions (if approx_init_fns is True and approx is True)
+activity_samples: 100                         # number of rows of truth table to use to estimate activity (if approx is True)
 
 
 # NUDGE parameters
-verbose_nudge: true                                    # print extra information about controllers
-ensemble_repeats: 2
-analysis_order: 3                          # highest order considered for robustness and mechanism
-measure_robustness: 0                       # compare all POKE controllers vs robust controllers, instead of comparing to other methods
-find_mechanism: 0
-controller: 'IL4_e' #'IC_e & LPS_e'                                # can be a single node 'A' or multiple like 'A & B', note that '|' (or) is not supported
+verbose_nudge: true                           # print extra information about controllers
+ensemble_repeats: 8                           # conjunction of multiple RSC runs to increase approximation confidence
+analysis_order: 3                             # highest order considered for robustness and mechanism
+measure_robustness: true                      # compare all NUDGE controllers vs robust controllers, instead of comparing to other methods
+find_mechanism: true                          # find the mechanism behind the chosen or most robust controller
+plot_mechanism: true                          # visualize the mechanism (if find_mechanism is True)
+controller: 'A'                               # chosen controller (only for analyze.py), can be a single node 'A' or '!A' or multiple like 'A & B', but '|' (or) is not supported
 
 # BATCH parameters
-network_dir: "./input/networks/large/"              # networks from here, overrides 'network_file'
-targets_csv: "./input/targets_large_4targets.csv"               # targets from here, overrides 'target'
-output_folder: "./output/"
-skip_reduced_networks: False                    # skip networks with in-degree > max_initial_variables
-cutoff: 0                                          # max of this many nets from network_dir, set to 0 to ignore
+network_dir: "./input/networks/large/"              # path to networks folder, overrides 'network_file'
+targets_csv: "./input/targets_large_4targets.csv"   # path to targets file, overrides 'target'
+output_folder: "./output/"                          # path to output folder
+skip_reduced_networks: False                        # skip networks with in-degree > max_initial_variables
+cutoff: 0                                           # max of this many nets from network_dir, set to 0 to ignore
 
-include_NUDGE: 1                                       # include POKE method
+include_NUDGE: 1                                    # include NUDGE method (for batch run)
 
-include_MONTE_CARLO: 1                             # include monte carlo method (direct simulation)
-max_monte_carlo_controllers: 1                        # maybe rm pair implmtn? 
-monte_carlo_samples: 1000                              # number of samples used for validation and monte_carlo method
-monte_carlo_time_steps: 1000                          # time steps used for validation and monte_carlo method
+include_MONTE_CARLO: 1                              # include monte carlo method (for batch run; direct simulation)
+max_monte_carlo_controllers: 1                      # max number of nodes to consider (may be exceedingly slow if > 1)
+monte_carlo_samples: 1000                           # number of samples (initial random states) used for monte_carlo method
+monte_carlo_time_steps: 1000                        # time steps used for monte_carlo method
 
-include_LDOI: 1                                      # include LDOI method
-trim_ldoi: 1                                          # use POKE to trim the initial functions for LDOI
-ldoi_pair_cap: 64                                    # maximum nodes to consider all pairs with ldoi
+include_LDOI: 1                                     # include LDOI method (for batch run)
+trim_ldoi: 1                                        # use NUDGE to trim the initial functions for LDOI
+ldoi_pair_cap: 64                                   # maximum nodes to check pairs in parallel, otherwise sequentially checks pairs
 
-include_MEAN-FIELD: 1                                # include meanfield method
-trim_mf: 1                                            # use POKE to trim the initial functions for LDOI
-mf_pair_cap: 100                                       # maximum nodes to consider all pairs with meanfield
-meanfield_epsilon: .001                               # smallest change to before assume converged
-meanfield_time_steps: 100                             # number of times to iterate meanfield if don't converge
+include_MEAN-FIELD: 1                               # include meanfield method (for batch run)
+trim_mf: 1                                          # use NUDGE to trim the initial functions for LDOI
+mf_pair_cap: 100                                    # maximum nodes to consider all pairs with meanfield
+meanfield_epsilon: .001                             # stop if all nodes change by less than this in one iteration
+meanfield_time_steps: 100                           # number of times to iterate meanfield if doesn't converge by meanfield_epsilon

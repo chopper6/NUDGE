@@ -22,7 +22,7 @@ def robustness_and_mechanism(params, F, terminal_logic):
 		mechanism_data = {}
 		for controller in best_controllers:
 			cnt_name = logic.F_to_str([controller]).replace('(','').replace(')','')
-			mechanism_data[cnt_name] = mechanism.find_mechanism(params, F, controllers, controller, cnt_fns, drives_self_driven, self_driven)
+			mechanism_data[cnt_name] = mechanism.find_mechanism(params, F, controllers, controller, cnt_fns, drives_self_driven, self_driven, plot_it=params['plot_mechanism'])
 	else:
 		mechanism_data = None
 
