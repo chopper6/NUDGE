@@ -1,6 +1,6 @@
 # NUDGE: Natural Dynamics Control of Gene Regulatory Networks
 
-Identifies single-time interventions from Boolean network models to ensure a desired phenotype while preserving natural regulatory dynamics.
+Identifies single-time interventions from Boolean network models to ensure a desired phenotype while preserving natural regulatory dynamics. Free to use, modify, and distribute as per MIT license, please cite or acknowledge this work if you use it.
 
 ## Installation
 
@@ -51,6 +51,7 @@ Output: csv for the controllers found by each method in output folder, and a pic
 
 Parameter file is the same as the previous cases, and all parameters are used. RUN_TITLE is any valid string, and will be included in all output files. RUN_TITLE cannot be used if an output already exists with that name, except for 'debug'.
 
+
 ### Analyze
 
 Detailed analysis of a controller specified in PARAM_FILE 'controller', in terms of robustness (if PARAM_FILE specifies 'include robustness'), and its mechanism of action (if PARAM_FILE specifies 'find_mechanism'). 
@@ -71,18 +72,3 @@ Where PLOT_TITLE is any valid string that will be included in the output files, 
 
 Usage: `python plot.py PLOT_TITLE [sort | targets]`
 
-### Batch Analysis for Wrapped Dynamics
-
-Analyze deleterious effects and emergence of de novo attractors on a batch of networks
-
-Usage: `python src/batch_scan.py --params PARAM_FILE --bnet_folder FOLDER_OF_NETWORKS`
-
-Output: pkl file of deleterious effects and emergence of de novo attractors for each network and scatter plot
-
-
-### Information on notebook
-
-If you prefer to look the results from Jupyter notebook, we have provided two notebook that we used to generate our results (Fig. 4 to Fig. 6):
-
-1. You can check Fig. 4A to 4D, Fig. 5A to 5D , and Fig. 6A to 6C generation in notebook file named Figure4to6.ipynb 
-2. You can check Fig. 4E, Fig. 5E , and Fig. 6D generation in notebook file named WrappedDynamicsExample_Figure4to6.ipynb
