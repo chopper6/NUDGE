@@ -1,0 +1,10 @@
+mir_17_92, !Myc | E2F
+Myc, E2F
+Cdk2_CyclinE, !Cdk2_CyclinE | !p27 | Cdc25a | E2F | Myc
+P27, !Cdk2_CyclinE | p27
+pRb, !Cdk2_CyclinE | Cdk4_CyclinD | pRb
+Cdk4_CyclinD, !zero
+Cdc25a, (!Cdk2_CyclinE & !Myc) | E2F
+E2F, (!mir_17_92 & E2F & Myc) | (!mir_17_92 & pRb)
+p27, !p27
+zero, zero

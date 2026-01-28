@@ -1,0 +1,33 @@
+Runx1, !Egr1
+Ebf1, Cebpa
+E2A_gene, E2A_gene | Mac1_gene
+Egr1, (!IL7r_activated & !Pax5_protein_active & Runx1) | !Id2
+Cd19, Mef2c
+IL7r_activated, !Ebf1_gene | !Gfi1
+CD19_gene, Csf1r_activated | Foxo1_gene
+Spi1, (!Csf1r_activated & !Mef2c & !Pax5_gene & !Spi1_2) | (!Csf1r_activated & !Pax5_gene & Cebpa & Mac1 & Pax5_protein_active) | (!Csf1r_activated & !Spi1_2 & Pax5_protein_active) | (!Ebf1_gene & Cebpa) | (!Spi1_2 & Egr1)
+Ikzf1, !Foxo1_gene | Mac1_gene
+Pax5_gene, !Spi1_2 | E2A_protein_active | Ebf1_gene
+Cebpa, !Csf1 | !Spi1
+Foxo1_gene, !Cebpb | !E2A_protein_active | Id2
+Spi1_2, (!Mac1 & !Pax5 & !Spi1_2) | (!Mac1 & CD19_gene) | Csf1r_activated
+Cebpb, !Cebpa_gene | (Csf1 & E2A_gene)
+E2A_protein_active, Flt3 | Spi1_2
+Ebf1_gene, (!Mef2c & Ikzf1 & Mac1) | Ebf1 | (Ets1 & Ikzf1) | (Gfi1 & Mac1) | (IL7r_activated & Mac1)
+IL7r, (!Cebpb & IL7r_activated) | (!Pax5_gene & Cd19 & Csf1 & IL7r_activated) | (IL7r_activated & Pax5)
+Mac1_gene, Cebpa_gene
+Flt3, !Spi1_2 | E2A | Mef2c
+Cebpa_gene, E2A_protein_active | Mef2c | Runx1
+Gfi1, !IL7r_activated | Ets1 | Foxo1_gene | Ikzf1
+Pax5, Cebpb
+Foxo1, !Ebf1_gene
+Id2, (!Csf1 & !Egr1) | (!Csf1 & !Id2) | (!Egr1 & !Ets1) | Cebpb
+E2A, Ebf1
+Mef2c, (!Cebpb & !Mac1) | (!Mac1 & !Mef2c)
+Csf1r_activated, (!Cebpa & IL7r)
+Csf1r, !Cebpb | !IL7r
+Mac1, Flt3
+Pax5_protein_active, !Cebpa_gene | Mac1_gene
+Ets1, !Egr1
+IL7, !Pax5_protein_active
+Csf1, !Egr1

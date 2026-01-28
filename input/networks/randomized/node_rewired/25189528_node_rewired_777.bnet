@@ -1,0 +1,69 @@
+AXIN2, PI3K | ILK
+SNAI1, (GSK3b & Dest_compl) | (GSK3b & AXIN2 & b_catenin_nuc)
+bTrCP, AXIN2 | TCF_LEF
+MEK, (! b_catenin_nuc & E_cadherin)
+HIF1a, (! Dest_compl & ! E_cadherin & ! b_catenin_memb) | (! SUFU & ! Dest_compl & ! b_catenin_memb)
+b_catenin_nuc, ! Csn
+SUFU, TCF_LEF
+ZEB1, TGFbR | CHD1L
+E_cadherin, ERK
+TGFb, HGF | CD44
+SRC, NOTCH_ic
+cMet, NFkB
+EGFR, RAS
+SMO, Frizzled
+TCF_LEF, (b_catenin_memb & ! TWIST1) | (b_catenin_memb & ! SNAI2) | (b_catenin_memb & ! ZEB2) | (b_catenin_memb & ! FOXC2) | (b_catenin_memb & ! HEY1) | (b_catenin_memb & ! ZEB1) | (! SNAI1 & b_catenin_memb)
+NOTCH_ic, EGF
+Csl, c_fos
+RKIP, ! E_cadherin | EMT
+PAK1, MEK
+Dest_compl, FGF
+IKKa, SNAI1 | TWIST1 | Goosecoid
+GLI, Wnt
+RAS, SMO
+LOXL23, ! SUFU | TCF_LEF
+Csn, (! ERK & ! DSH & ! AKT) | (! Dest_compl & ! DSH & ! AKT) | (! Csn & ! DSH & ! AKT)
+TWIST1, Csl | SMAD
+SNAI2, Hypoxia
+STAT, IGF1
+EGR1, AKT
+miR200, SMAD
+ILK, TCF_LEF | SMAD
+Hypoxia, STAT
+SHH, HIF1a
+HGF, RAF | ! RKIP
+TGFbR, (! SNAI1 & ! ZEB1 & ! ZEB2)
+PDGFR, IKKa
+ZEB2, DELTA | Jagged
+LIV1, NOTCH
+Frizzled, CDC42
+ERK, ! SHH
+PI3K, PDGF
+DSH, RAS
+FUS, RAS
+GSK3b, ! GSK3b | TCF_LEF | SOS_GRB2 | SRC
+EGF, ! SNAI1 | ! ERK
+NFkB, SMAD | GLI
+b_catenin_memb, b_catenin_nuc | ERK | TWIST1 | SNAI2
+EMT, (TGFbR & ! ZEB2) | (ERK & ! ZEB2) | (TGFbR & ZEB1) | (ERK & ZEB1)
+CD44, ! Patched
+AKT, PAK1 | ! GSK3b | Goosecoid | Csl | SMAD | GLI | LOXL23 | LIV1 | EGR1 | ! bTrCP
+RAF, (! ERK & PDGFR) | (TGFbR & ! ERK) | (! ERK & cMet) | (! ERK & EGFR) | (! ERK & FGFR) | (! ERK & IGF1R)
+CHD1L, PDGFR | cMet | FGFR | IGF1R | EGFR
+HEY1, SRC
+DELTA, ! FUS
+SOS_GRB2, b_catenin_nuc
+Jagged, SNAI1 | TWIST1 | Goosecoid | GLI
+FOXC2, TGFb
+IGF1, NFkB | SNAI1 | TCF_LEF | Goosecoid | HIF1a
+PDGF, GLI
+CDC42, (HIF1a & ! miR200) | (Goosecoid & ! miR200) | (SNAI1 & ! miR200)
+IGF1R, (HIF1a & ! miR200) | (Goosecoid & ! miR200) | (SNAI1 & ! miR200)
+Patched, CHD1L
+FGFR, HGF
+c_fos, EGF
+Goosecoid, FGF
+NOTCH, Goosecoid
+SMAD, Hypoxia
+FGF, IGF1
+Wnt, PDGF

@@ -1,0 +1,47 @@
+PERFOR, (!IL18 & MDP)
+Th2upregulation, !IFNg | GRANZB
+IL15, (!IL17 & !Th0 & IEC_MICA_Bupregulation & IFNg) | (!IL17 & !Th1 & IL12) | (!Th0 & !Th1 & IFNg & IL12) | (!Th1 & IEC_MICA_Bupregulation)
+IL23, (!IEC_MICA_B & IL22) | !IL17
+CD8_NKG2D, (!IL6 & !TGFb & IL22) | (!IL6 & !Th17_M & IEC_MICA_B & NFkB) | (!IL6 & !Th17_M & NFkB & NK_NKG2D & PGN) | (!TGFb & !Th17_M & IL22 & NK_NKG2D) | (!TGFb & IEC_MICA_B & NFkB & NK_NKG2D) | (!TGFb & IL22 & NFkB & NK_NKG2D & PGN)
+Th2, (!DC & !IL4 & !MDP & !TNFa & IEC_MICA_Bupregulation & Th1) | (!DC & !IL4 & !TGFb & CD4_NKG2D & NK_NKG2D) | (!DC & !IL4 & !TNFa & CD4_NKG2D & IEC_MICA_Bupregulation & MACR) | (!DC & !TGFb & IEC_MICA_Bupregulation & MACR) | (!IL4 & IEC_MICA_Bupregulation & NK_NKG2D & Th1)
+Treg, (!CD4_NKG2D & !DC & !IEC_ULPB1_6 & !IL21 & Th17_M) | (!CD4_NKG2D & !FIBROBLAST & !IEC_ULPB1_6 & !IL1b & IL2) | (!CD4_NKG2D & !FIBROBLAST & !IL1b & !IL21 & Th17_M) | (!CD4_NKG2D & !FIBROBLAST & IL2 & Th17_M & Th2upregulation) | (!CD4_NKG2D & !IEC_ULPB1_6 & !IL21 & Th17_M & Th2upregulation) | (!FIBROBLAST & !IL1b & Th2upregulation) | (!IL1b & !Th2 & IL2) | (!IL1b & !Th2 & Th2upregulation)
+IL1b, (!GRANZB & !IEC_ULPB1_6) | (!IL15 & !PERFOR) | (!IL15 & IL21) | MDP
+TLR2, !PERFOR
+Th17, (!GRANZB & !IEC_ULPB1_6 & !IL10 & Th1 & Th2upregulation) | (!GRANZB & !IEC_ULPB1_6 & IEC_MICA_Bupregulation & MACR) | (!GRANZB & !IEC_ULPB1_6 & MACR & Th2upregulation) | (!GRANZB & !IL10 & IEC_MICA_Bupregulation) | (!GRANZB & !Th17_M & IEC_MICA_Bupregulation & IL21 & MACR & Th1) | (!GRANZB & !Th17_M & IEC_MICA_Bupregulation & IL21 & PGN & Th1) | (!GRANZB & !Th17_M & IEC_MICA_Bupregulation & MACR & Th2upregulation) | (!IEC_ULPB1_6 & !Th17_M & MACR & PGN & Th1) | (!IEC_ULPB1_6 & !Th17_M & PGN & Th2upregulation) | (!IL10 & !Th17_M) | (!IL10 & IEC_MICA_Bupregulation & IL21) | (!IL10 & IL21 & Th2upregulation) | (IEC_MICA_Bupregulation & IL21 & Th1 & Th2upregulation) | (IL21 & MACR & PGN & Th2upregulation)
+IL6, (!DC & !IL18 & !IL22 & !NOD2 & !TGFb & IFNg) | (!DC & !IL22 & !LPS & !NOD2 & IFNg) | (!DC & !IL22 & !NOD2 & !TGFb & !Th0_M & !Th2) | (!IL18 & !NOD2 & !TGFb & !Th0_M & !Th2 & IFNg)
+IEC_ULPB1_6, !IL15 | (!IL22 & !MACR) | Th1
+FIBROBLAST, (!FIBROBLAST & !IL2 & !NK_NKG2D & IL18) | (!FIBROBLAST & !MMPs & !NK_NKG2D & IL23) | (!FIBROBLAST & !MMPs & IL18 & IL22 & IL23) | (!IL2 & IL23) | TLR2
+NFkB, (IEC_ULPB1_6 & TGFb) | TLR4
+NK, (!IL2 & IFNg) | (!Th0 & !Th1 & IFNg & TLR4) | (!Th1 & !Th2) | Th0_M
+Th0_M, !IL15 | !MDP | !NK | PERFOR
+LPS, (!CD8_NKG2D & IL13) | !IL18
+NK_NKG2D, (!CD4_NKG2D & !DC & !IL13 & !TLR4 & !TNFa & NFkB) | (!CD4_NKG2D & !GRANZB & !IL13 & !TLR4 & !TNFa & NFkB) | (!DC & !GRANZB & !TNFa & NFkB) | (!DC & !IL13 & DEF & FIBROBLAST) | (!DC & DEF & NFkB) | (!GRANZB & !IL13 & !TLR4 & DEF & FIBROBLAST)
+CD4_NKG2Dupregulation, !FIBROBLAST | CD8_NKG2D | Th2upregulation
+MMPs, (!IL12 & !Th2) | (!IL12 & FIBROBLAST & TGFb) | (!LPS & !Th2 & FIBROBLAST) | !Th2upregulation
+IEC_MICA_B, (!CD4_NKG2D & !CD4_NKG2Dupregulation & !IL12 & !IL22) | (!CD4_NKG2D & !CD4_NKG2Dupregulation & !IL12 & Th2) | (!CD4_NKG2D & !FIBROBLAST) | (!CD4_NKG2D & !IL12 & IL18) | (!IL22 & IL18 & Th2)
+DEF, !Treg | IL12 | IL2
+CD4_NKG2D, (!DEF & !TLR4 & !Th17 & IL10 & IL12 & NFkB) | (!DEF & !Th17 & IL12 & NFkB & Th17_M) | (!DEF & IL12 & IL6 & NFkB) | (!LPS & !TLR4 & !Th17 & IL10 & NFkB) | (!LPS & !TLR4 & !Th17 & IL12 & IL6 & NFkB) | (!LPS & !Th17 & IL10 & IL6 & Th17_M) | (!LPS & IL12 & Th17_M) | (!TLR4 & !Th17 & GRANZB & IL12 & IL6) | (!Th17 & GRANZB & IL12 & IL6 & Th17_M)
+IL12, (!FIBROBLAST & !MACR & !Treg & Th17) | (!FIBROBLAST & !Th17_M & !Treg & Th17) | (!FIBROBLAST & IL15) | !IL6 | (!MACR & !Th17_M) | (!Treg & IL15)
+IL21, (!NK_NKG2D & IL6) | (!NK_NKG2D & LPS) | !Th0_M | !Th2 | IEC_MICA_B
+IEC_MICA_Bupregulation, NK_NKG2D | Th0_M
+DC, (!IEC_MICA_B & !IL4 & !Th17 & IEC_MICA_Bupregulation & IL22)
+IFNg, (!DEF & !FIBROBLAST & !IEC_MICA_B & !IEC_MICA_Bupregulation & GRANZB & IL17 & LPS & MACR & MDP & Th17_M & Treg) | (!DEF & !FIBROBLAST & !IEC_MICA_B & !IL13 & CD4_NKG2D & GRANZB & IL21 & IL23 & LPS & MACR & TLR4 & Treg) | (!DEF & !FIBROBLAST & !Th1 & IL12 & IL17 & IL23 & MACR & TLR4 & Treg) | (!DEF & !IEC_MICA_B & !IEC_MICA_Bupregulation & !PERFOR & !Th1 & IL12 & IL21 & LPS & TLR4) | (!DEF & !IEC_MICA_B & !IEC_MICA_Bupregulation & !PERFOR & CD4_NKG2D & GRANZB & IL17 & LPS & MACR & TLR4 & Th17_M) | (!DEF & !IEC_MICA_B & !IEC_MICA_Bupregulation & !PERFOR & IL12 & IL17 & LPS & Th17_M) | (!DEF & !IEC_MICA_B & !IEC_MICA_Bupregulation & !Th1 & IL17 & IL21 & IL23 & LPS & MDP & Th17_M & Treg) | (!DEF & !IEC_MICA_B & !PERFOR & !Th1 & CD4_NKG2D & GRANZB & IL17 & LPS & MACR & MDP & Th17_M) | (!DEF & !IEC_MICA_Bupregulation & !IL13 & !PERFOR & CD4_NKG2D & IL17 & IL23 & MACR & MDP & TLR4 & Th17_M) | (!FIBROBLAST & !IEC_MICA_Bupregulation & !IL13 & CD4_NKG2D & GRANZB & IL12 & IL17 & IL23 & TLR4 & Th17_M & Treg) | (!FIBROBLAST & !PERFOR & !Th1 & CD4_NKG2D & IL12 & IL21 & LPS & MACR & MDP & TLR4) | (!FIBROBLAST & !Th1 & CD4_NKG2D & IL12 & IL21 & IL23 & LPS & MACR & Th17_M & Treg) | (!IEC_MICA_B & !IL13 & !Th1 & CD4_NKG2D & GRANZB & IL23 & Treg) | (!IEC_MICA_B & !IL13 & !Th1 & GRANZB & IL12 & IL17 & IL21 & LPS & MACR & TLR4 & Treg) | (!IEC_MICA_B & !PERFOR & !Th1 & CD4_NKG2D & GRANZB & IL21 & LPS & MACR & TLR4 & Th17_M) | (!IEC_MICA_Bupregulation & !PERFOR & !Th1 & GRANZB & IL12 & IL17 & LPS & MDP & TLR4) | (!IL13 & !Th1 & CD4_NKG2D & GRANZB & IL12 & IL17 & MACR & MDP & Treg)
+TNFa, (!CD4_NKG2D & !DC & !FIBROBLAST & !IL15 & !IL22upregulation & !NK_NKG2D & CD8_NKG2D & GRANZB & IEC_ULPB1_6 & IFNg & IL2 & TGFb) | (!CD4_NKG2D & !DC & !FIBROBLAST & !IL22upregulation & !MACR & !NK_NKG2D & !Th0 & CD8_NKG2D & IFNg & IL17) | (!CD4_NKG2D & !DC & !IL15 & !IL22upregulation & !IL23 & !MACR & !PGN & !TLR2 & !Th0 & GRANZB & IEC_ULPB1_6 & IFNg & IL2 & IL6) | (!CD4_NKG2D & !DC & !IL15 & !TLR2 & CD8_NKG2D & IEC_ULPB1_6 & IFNg & IL1b & IL2 & IL6 & TGFb) | (!CD4_NKG2D & !IL15 & !IL23 & !MACR & !PGN & !TLR2 & CD8_NKG2D & GRANZB & IEC_ULPB1_6 & IFNg & IL6 & TGFb) | (!CD4_NKG2D & !IL22upregulation & !IL23 & !PGN & !Th0 & CD8_NKG2D & IEC_ULPB1_6 & IFNg & IL17 & IL1b & TGFb) | (!DC & !FIBROBLAST & !IL22upregulation & !PGN & !TLR2 & IEC_ULPB1_6 & IFNg & IL1b & IL2 & IL6 & TGFb) | (!DC & !IL15 & !IL22upregulation & !IL23 & !TLR2 & CD8_NKG2D & GRANZB & IEC_ULPB1_6 & IFNg & IL17 & IL1b & TGFb) | (!DC & !IL23 & !NK_NKG2D & IL2 & TGFb) | (!FIBROBLAST & !IL15 & !IL23 & !NK_NKG2D & !PGN & !Th0 & GRANZB & IEC_ULPB1_6 & IL17 & IL1b & IL2 & IL6 & TGFb) | (!FIBROBLAST & !IL15 & !MACR & !PGN & IEC_ULPB1_6) | (!FIBROBLAST & !IL22upregulation & !PGN & CD8_NKG2D & IEC_ULPB1_6 & IFNg & IL2 & IL6) | (!IL23 & !NK_NKG2D & !TLR2 & GRANZB & IL1b & IL6)
+IL13, !Th0_M
+IL18, IL21 | (IL4 & Th1) | (Th1 & Th17_M)
+TLR4, IL13
+NOD2, !TNFa
+Th1, (!DC & !FIBROBLAST & !Th2 & DEF & IEC_MICA_B & IEC_ULPB1_6 & IL22upregulation & PERFOR & Th0) | (!DC & !TLR4 & !Th2 & TLR2) | (!DC & GRANZB & IEC_MICA_B & IEC_ULPB1_6 & IL22upregulation & PERFOR & Th0) | (!FIBROBLAST & !TLR4 & !Th2 & IEC_ULPB1_6 & IL22upregulation & PERFOR & TLR2 & Th0)
+IL22upregulation, (!MACR & NK) | (!MMPs & NK)
+IL10, (!IL10 & !TNFa & NK_NKG2D & TLR4) | (!IL17 & !IL18 & !IL1b & !TNFa & DEF & TLR4) | (!IL1b & !TNFa & DEF & TLR2) | (!IL1b & !Th1 & TLR4) | (!TNFa & !Th1 & DEF & TLR2 & TLR4)
+PGN, !IL21 | !Th0_M | IEC_MICA_B
+MACR, (!IEC_MICA_Bupregulation & TLR2) | (!IL6 & !MMPs & TGFb) | (!IL6 & IEC_ULPB1_6 & TGFb & TLR2) | (!MMPs & IEC_ULPB1_6 & TGFb) | (!MMPs & TLR2 & Th0)
+TGFb, (!Th0_M & Treg)
+GRANZB, (!MDP & !NOD2 & !TGFb & NK_NKG2D) | (!MDP & !NOD2 & IL15) | (!MDP & !TGFb & IL15) | (!MDP & IL10) | (!NOD2 & !TGFb & IL15) | (!TGFb & IL10 & NK_NKG2D)
+MDP, (!IL2 & !IL6 & MACR)
+IL22, (!IL4 & !MDP & MMPs) | (!IL4 & !Th17 & !Th17_M & IEC_MICA_B) | (!IL4 & !Th17_M & IEC_MICA_B & MMPs) | (!IL4 & !Th17_M & NFkB) | (!MDP & !Th17_M & IL18 & NFkB) | (!MDP & MMPs & NFkB) | !TNFa | (!Th17_M & IL1b & MMPs & NFkB)
+Th17_M, (!IEC_ULPB1_6 & !IL18 & !IL4 & IEC_MICA_Bupregulation) | (!IEC_ULPB1_6 & !IL18 & IEC_MICA_Bupregulation & IL12) | (!IEC_ULPB1_6 & !IL1b & !MDP & DC & IEC_MICA_Bupregulation & IL17) | (!IEC_ULPB1_6 & !IL1b & IEC_MICA_Bupregulation & IL12) | (!IEC_ULPB1_6 & !IL4 & IL12) | (!IL1b & !IL4 & !MDP & IEC_MICA_Bupregulation) | (!IL1b & !IL4 & DC & IL12)
+IL4, IEC_ULPB1_6
+IL17, (!IEC_MICA_Bupregulation & !IEC_ULPB1_6 & !IL1b & IL10) | (!IEC_MICA_Bupregulation & !IL1b & !PGN & !Th0 & Th17) | (!IEC_MICA_Bupregulation & !NFkB & !PGN & IL13) | (!IEC_MICA_Bupregulation & !NFkB & !Th0 & IL13 & TNFa & Th17) | (!IEC_ULPB1_6 & !IL1b & MDP & TNFa & Th17) | (!IEC_ULPB1_6 & !PGN) | (!IEC_ULPB1_6 & IL13 & TNFa)
+IL2, (!TNFa & IL2 & IL23 & LPS) | (!TNFa & TLR2) | (!Th0 & IL2) | (!Th0 & LPS) | (!Th0 & TLR2) | (IL2 & IL23 & TLR2) | (IL23 & LPS & TLR2)
+Th0, (!IL18 & IL17 & Th17)

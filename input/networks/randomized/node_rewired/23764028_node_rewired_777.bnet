@@ -1,0 +1,5 @@
+TGF_beta1, (TGF_beta1 & ! MEK_ERK)
+RNS, AsNOS
+AsNOS, RNS
+MEK_ERK, TGF_beta1
+ERK, MEK_ERK

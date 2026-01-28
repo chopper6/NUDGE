@@ -1,0 +1,15 @@
+Tbx1, !Bmp2
+Fgf8, !Foxc1_2 | Nkx2_5 | exogen_BMP2_II
+Tbx5, (!Bmp2 & !Nkx2_5 & Fgf8 & canWnt) | (!Nkx2_5 & Fgf8 & exogen_BMP2_I & exogen_BMP2_II)
+exogen_CanWnt_II, !Tbx5
+Nkx2_5, (!Foxc1_2 & !Isl1) | (!Foxc1_2 & !exogen_CanWnt_I) | (!Isl1 & Mesp1) | (!Isl1 & exogen_CanWnt_II) | (!Nkx2_5 & !canWnt & !exogen_CanWnt_I & Mesp1) | (!canWnt & Mesp1 & exogen_CanWnt_II)
+Foxc1_2, Tbx5 | exogen_BMP2_I
+Bmp2, (Isl1 & exogen_BMP2_II)
+GATAs, (!Dkk1 & Bmp2) | (Bmp2 & Isl1)
+Mesp1, !Nkx2_5 | GATAs
+canWnt, !Bmp2
+exogen_CanWnt_I, !Bmp2
+Isl1, (!Isl1 & !canWnt) | (!Isl1 & exogen_BMP2_II) | Dkk1 | Mesp1
+Dkk1, !Bmp2 | (Mesp1 & canWnt)
+exogen_BMP2_II, GATAs
+exogen_BMP2_I, !Tbx1

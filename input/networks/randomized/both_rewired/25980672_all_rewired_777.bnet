@@ -1,0 +1,62 @@
+IL_1_K, !IL_1_K | MC1R_M
+PTEN_K, (!ASK1_K & !PI3K_K & !SG_K) | (!MEK_M & !PI3K_K) | (!MEK_M & !SG_K)
+EGFR_K, !MSK_M | !SG_M
+PI3K_K, b_catenin_K
+ASK1_K, !MC1R_M | (!PDK1_M & GSK3b_K)
+SG_K, !ASK1_M | PTEN_K
+PDK1_K, (!SG_K & cAMP_M)
+MKK6_K, !Melanin
+MKK4_K, (!GSK3b_M & RSK_K)
+Ras_K, !p53_M
+Akt_K, !JNK_K
+p38_K, !SG_K
+JNK_K, !PI3K_K
+Raf_K, (MEK_K & p53_M)
+GSK3b_K, !p38_M
+b_catenin_K, !MEK_M
+MEK_K, GSK3b_M
+MDM2_K, PTEN_K
+NFAT_K, MC1R_M
+COX2_K, (ASK1_K & p38_K) | (MKK6_M & p38_K) | (MKK6_M & p38_M)
+ERK_K, !MC1R_M | ASK1_M
+p53_K, CREB_M | MKK6_K | p53_K
+RSK_K, !PI3K_K
+Bcl_2_K, (!IL_1_K & !JNK_K & !PKA_M & !Raf_M & Bcl_2_M) | (!IL_1_K & !JNK_K & Bcl_2_M & PI3K_M & cAMP_M) | (!PKA_M & CREB_M & PI3K_M & cAMP_M) | (!Raf_M & Bcl_2_M & CREB_M & PI3K_M)
+ET_1_K, !PKA_M | PDK1_M
+SCF_K, !AC_M | !PDE_M
+a_MSH_K, PDK1_K
+PGE2_K, !ASK1_M | !CREB_M
+ETR_M, !c_Kit_M
+c_Kit_M, b_catenin_M
+MC1R_M, MDM2_M
+EP4_M, ERK_M
+PKC_M, JNK_K
+SG_M, !SG_M | !a_MSH_K
+AC_M, PGE2_K
+ASK1_M, !JNK_K
+PI3K_M, !GSK3b_K | !Raf_K | !p38_K
+Ras_M, ASK1_K | Raf_K
+cAMP_M, (!MKK4_M & COX2_K) | (Akt_K & COX2_K)
+MKK4_M, MITFmRNA_M | PTEN_K
+PDK1_M, MEK_M
+Raf_M, !Bcl_2_M | Raf_M
+PKA_M, SG_K
+MKK6_M, ASK1_M
+Akt_M, NFAT_K
+MEK_M, PDK1_M
+PDE_M, IL_1_K
+p38_M, !ASK1_M
+GSK3b_M, NFAT_K
+ERK_M, (!AC_M & PKA_M)
+MSK_M, (MDM2_K & PKC_M)
+JNK_M, MC1R_M
+MDM2_M, !MITFprotein_M
+RSK_M, !Ras_K
+p53_M, !MKK4_M | (!PKA_M & Akt_K)
+b_catenin_M, !MEK_M
+CREB_M, (!Akt_K & !PKC_M) | (!Akt_K & ET_1_K)
+Bcl_2_M, (!Bcl_2_M & !JNK_M & !MSK_M & !Ras_K & MKK6_K & b_catenin_K) | (!Bcl_2_M & !JNK_M & !PGE2_K & GSK3b_K & Raf_K) | (!Bcl_2_M & !PGE2_K & COX2_K & b_catenin_K) | (!Bcl_2_M & !Ras_K & COX2_K & b_catenin_K) | (!JNK_M & !Ras_K & Raf_K) | (!MSK_M & GSK3b_K & Raf_K & b_catenin_K) | (!Ras_K & Raf_K & b_catenin_K) | (MKK6_K & Raf_K)
+MITFmRNA_M, !ETR_M | PI3K_M
+MITFprotein_M, !EP4_M | Akt_K
+Melanin, SG_K
+UVB, !CREB_M

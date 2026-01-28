@@ -1,0 +1,18 @@
+Clb5, (!B & !Swi5)
+Cdh1, (!B & !SMBF & CKI) | (!Cln2 & CKI)
+SMBF, !Clb2 | (!Cln2 & Cdc20) | CD
+Cdc20, !S | Cdc14 | Cdh1
+Cln2, !B
+FEAR, !M
+M, !Cdh1 | !SMBF | Cdc20 | Cln2
+CKI, Cdc14 | Cdc20 | (FEAR & Swi5) | (M & MEN) | (M & Swi5)
+Cdc14, B | S
+SFF, (!S & !Yhp1 & MEN) | (!S & B & SFF) | (!Yhp1 & B) | (B & FEAR & MEN)
+B, (!Swi5 & CD & S) | (!Swi5 & MEN & S)
+Swi5, (!Clb2 & Cdh1) | Yhp1
+MEN, !Cdh1 | M
+CD, (!Cdh1 & !MEN) | (!M & !MEN & Cdc14)
+Clb2, (!Cln3 & !Swi5 & Cdc20) | (!Cln3 & SMBF) | !SFF | Clb5
+Yhp1, !MEN
+Cln3, Clb2
+S, (!S & CD & SMBF) | (CD & CKI & SMBF)

@@ -1,0 +1,86 @@
+cam_ca, rac1
+camk24, (! gsk3 & ! bad & stat3_ta & ! casp9)
+tdum_socs1_vav, erk12 | pkcd
+gab1_mem, (gab1_mem & dum_gab1_kin_or_jak1_gab1_mem_p)
+gab1_mem_p, (! shp2 & ! socs3 & ! socs1 & ! shp2_a)
+tdum_socs3_shp2, gab1_mem_p
+mtorc2, grb2_sos | (erk12 & pip3)
+ship, (gp130m & dum_gp80_a_il6rc)
+pkcd, ras
+mek1, socs3
+pten, stat3_ta
+tdum_shp2_stat1_py, cam_ca
+junb, cebpb | cebpd
+stat3_ta, mek6
+irs1_ps, stat3_ta
+dum_mtorc1_or_pkcd_stat3_ta, ! akt
+slim, ! akt
+rac1, gp80s_a | gp80m_a
+gp80s_a, shp2 | il6rc_p
+pdk1, stat3_ta
+pi3k, pkcd | camk24
+cfos, mek1
+akt, mtor
+shp2, p38
+ip3, il6
+dum_gab1_kin_or_jak1_gab1_mem_p, ca
+casp9, (pdk1 & pip3 & mtorc2 & ! ship & ! phlpp)
+bad, cebpb | cebpd
+gsk3, shp2 | shp2_a
+dum_pkcd_camk24_stat1_ta, stat3_ta
+p38, (shp2 & ! ros & gab1_mem_p & ! sirp1a)
+ras, (! nfkb & stat3_ta)
+irs1_py, p38 | stat3_ta
+var_app, stat3_ta
+fkhr, (cfos & ! nfkb & stat3_ta)
+ir, mek4
+nfkb, ! akt
+il6rc, cebpb | cebpd
+jak1, shp2 | shp2_a
+ras_gap, (! shp2 & ! shp2_a & il6rc_p & jak1 & ! cyt_ptpe)
+dum_il6rc_p_or_grb2_vav, (pi3k & ! pten)
+mtorc1, (! shp2_a & gab1_mem_p)
+erk12, akt | erk12 | mtorc1
+mek6, shp2 | shp2_a
+raf1, mekk1
+p70s6k, raf1
+plcg, (nfkb & dum_cebp_saa & stat3_ta)
+ca, vav
+anti_apoptotic, socs1
+il6rc_p, pkcd | mtorc1
+pias1, (grb2_sos & ! ras_gap)
+mek4, jak1 | gab1_kin
+ros, ip3
+vav, erk12 | p38 | nfkb | stat3_ta
+sirp1a, mtor
+grb2_sos, (dum_mtorc1_or_pkcd_stat3_ta & stat3_py & ! slim & ! pias3)
+mk2, (! shp2 & ! shp2_a & jak1 & il6rc)
+socs1, ras | (! shp2_a & gab1_mem_p)
+dum_gp80_a_il6rc, ! akt
+il6, (! mk2 & ! camk24)
+gp130s, erk12 | stat3_ta | camk24 | p70s6k | (! cebpb & ! fkhr)
+gab1_kin, (! shp2 & ! shp2_a & ! irs1_ps)
+stat3_py, (! socs3 & ! ros & il6rc_p & ! sirp1a & jak1)
+pro_hgf, (il6 & ! gp130s)
+cebpb, grb2_sos | il6rc_p
+a2m_gfbg, (! socs3 & ! socs1)
+crp, plcg
+pro_proliferative, (! shp2 & ! shp2_a & il6rc_p & jak1 & ! cyt_ptpe)
+phlpp, (! slim & dum_pkcd_camk24_stat1_ta & stat1_py & ! pias1)
+mekk1, (! socs1 & dum_il6rc_p_or_grb2_vav)
+cmyc, il6rc_p
+tdum_shp2_stat3_py, gp130m
+gp80m_a, mtor
+pip3, il6
+gp130m, pdk1
+cebpd, ship
+stat1_py, phlpp
+cyt_ptpe, ros
+pias3, sirp1a
+tdum_shp2_il6rc_p, nfkb
+shp2_a, cyt_ptpe
+dum_cebp_saa, pten
+saa, gab1_kin
+socs3, slim
+stat1_ta, pias3
+mtor, pias1

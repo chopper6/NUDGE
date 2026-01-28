@@ -1,0 +1,12 @@
+Lachnospiraceae, !Clostridium_difficile | (!Enterobacteriaceae & Akkermansia & Blautia)
+Clindamycin, !Barnesiella
+Akkermansia, !Enterococcus
+Enterobacteriaceae, !Other
+Mollicutes, Lachnospiraceae
+Barnesiella, (!Blautia & Coprobacillus) | Clindamycin | Lachnospiraceae
+Lachnospiraceae_other, !Clostridium_difficile | (!Coprobacillus & Other) | !Enterobacteriaceae
+Enterococcus, (!Akkermansia & !Barnesiella) | (!Barnesiella & Enterococcus) | !Blautia | Other
+Clostridium_difficile, !Clindamycin | !Enterococcus
+Blautia, (!Coprobacillus & Other) | Blautia
+Other, (!Blautia & Akkermansia) | (Akkermansia & Clostridium_difficile) | Lachnospiraceae
+Coprobacillus, Lachnospiraceae

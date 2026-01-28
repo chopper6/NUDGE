@@ -1,0 +1,17 @@
+HH_protein, hh
+EN_protein, !en
+WG_protein, !wg
+CIR, !CI_protein | !PTC_protein | !hh_external
+PTC_protein, !ptc | PTC_protein | hh_external
+ci, EN_protein
+en, !SLP | !WG_external
+PH, PTC_protein | hh_external
+wg, (!CIA & !SLP) | (!SLP & CIR) | (!SLP & wg)
+ptc, !CIA | !EN_protein | CIR
+hh, (CIR & EN_protein)
+SMO, !hh_external | PTC_protein
+CI_protein, ci
+CIA, (!CI_protein & PTC_protein & hh_external)
+hh_external, hh_external
+WG_external, WG_external
+SLP, SLP

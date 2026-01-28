@@ -1,0 +1,34 @@
+Glucose, ! Glucose
+PmrA, ! Mlc
+Magnesium, SirA_BarA | HilD | HilC | RtsA | (Fur & ! CsrA & ! HilE)
+HilA, HilD | HilC | RtsA
+SciS, HilD | HilC | RtsA
+Calcium, (HilD & RtsA & ! PhoP & IHF) | (HilD & HilC & ! PhoP & ! H_NS) | (SirA_BarA & HilD & HilC & ! PhoP) | (HilD & HilC & ! PhoP & IHF) | (SirA_BarA & HilD & RtsA & ! PhoP) | (HilD & RtsA & ! PhoP & ! H_NS)
+Stationary_phase, (Osmolarity & Stationary_phase)
+RtsA, (! Glucose & Osmolarity)
+Iron, SirA_BarA
+HilE, ! CsrBC
+PhoP, Iron
+H_NS, ! HilD | ! Fur | ! PhoP | ! IHF | ! SlyA
+HilC, ! Magnesium
+Fur, (! Osmolarity & ! Calcium)
+MviA, (HilD & OmpR) | (PhoP & ! H_NS & OmpR) | (PhoP & SlyA & OmpR) | (! H_NS & SlyA & OmpR)
+SirA_BarA, Stationary_phase
+SsrAB, Osmolarity
+SPI_2, ! EnvZ
+TSSS, ! EnvZ
+EnvZ, (! PhoP & H_NS)
+VrgS, (YfhA & ! MviA)
+IHF, PhoP
+OmpR, (RcsB & PmrA)
+YfhA, PmrA
+HilD, (RcsB & PmrA)
+Fis, HilA
+SlyA, (SsrAB & Fis) | (SlyA & SsrAB)
+Osmolarity, (SciS & SciG & VrgS)
+CsrBC, Glucose
+SciG, Osmolarity
+SPI_1, Stationary_phase
+Mlc, Iron
+RcsB, Magnesium
+CsrA, Calcium

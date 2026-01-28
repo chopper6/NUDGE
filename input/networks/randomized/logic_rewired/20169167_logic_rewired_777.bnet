@@ -1,0 +1,7 @@
+RpoN, !GacSGacA
+HrpRS, (!HrpA & HrpV) | GacSGacA
+HrpV, (!HrpG & !RpoN) | (!RpoN & HrpL)
+HrpA, !HrpL
+HrpG, HrpL
+HrpL, (HrpRS & RpoN)
+GacSGacA, GacSGacA

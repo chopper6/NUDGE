@@ -1,0 +1,32 @@
+EMT, !SMAD | !miR203
+p21, (!DNAdamage & !ECM & SMAD) | (!DNAdamage & !ECM & VIM & ZEB1) | (!ECM & DKK1 & ZEB1) | (!ERK & DKK1 & NICD) | (!ERK & NICD & SMAD) | (NICD & SMAD & VIM)
+p53, (!p21 & !p63 & AKT2 & VIM) | (!p21 & CDH2 & DKK1 & ECM) | (!p63 & DKK1) | (!p63 & ECM & TGFbeta) | (AKT2 & DKK1 & VIM)
+p63, (!ECM & AKT2 & EMT & SNAI2) | (!miR203 & EMT & Migration)
+NICD, (!CellCycleArrest & !ZEB1 & p73) | (!CellCycleArrest & CTNNB1 & miR203 & p73) | (!ZEB1 & ECM)
+Invasion, (!CellCycleArrest & !ZEB2 & TWIST1)
+AKT2, (!Apoptosis & !p63) | (!Apoptosis & AKT1) | (!SMAD & !miR34 & !p63 & TGFbeta) | (!SMAD & !p63 & p21)
+AKT1, (!NICD & AKT2 & CDH1 & CTNNB1 & miR203 & miR34) | (!p21 & AKT2 & miR203) | (!p21 & miR34) | ZEB2
+miR200, (!CTNNB1 & !p63) | (!DKK1 & Invasion & miR200) | !NICD | !VIM | (!p63 & Invasion) | (!p63 & miR200) | (Apoptosis & Invasion) | (Apoptosis & miR200)
+miR34, !Migration | (!p21 & NICD) | (AKT1 & ERK & ZEB1) | (AKT1 & TWIST1 & ZEB1 & ZEB2)
+Metastasis, CDH1
+SNAI1, (!ECM & !NICD & !miR200 & CDH1 & miR203) | ZEB1
+VIM, !ECM | !SNAI2
+ZEB2, (!SNAI1 & !p53 & CTNNB1 & SNAI2 & ZEB1) | (!p73 & CTNNB1 & SNAI2 & ZEB1)
+ZEB1, !AKT1 | (!CTNNB1 & !VIM) | !CellCycleArrest | !DNAdamage | (!VIM & GF)
+TGFbeta, (!ECM & EMT) | Metastasis
+CDH2, p53
+DKK1, (Metastasis & TWIST1)
+TWIST1, CTNNB1 | VIM | ZEB1
+ERK, !ECM | !VIM | (!miR203 & ZEB2) | (CDH1 & ZEB2)
+SMAD, (!Apoptosis & !ECM) | (!Apoptosis & !p73)
+CellCycleArrest, (!CDH1 & p53) | (SNAI1 & p21 & p53) | (VIM & p73) | (p53 & p73)
+miR203, !Migration | !TGFbeta | miR203 | p21
+Apoptosis, (!CTNNB1 & !CellCycleArrest & !Invasion & ERK & miR203) | (!CTNNB1 & !CellCycleArrest & NICD & miR203) | (!CTNNB1 & !Migration & ERK) | (!CTNNB1 & !Migration & NICD & miR203) | (!CTNNB1 & NICD & SMAD) | (!CellCycleArrest & !Invasion & !Migration & NICD & miR203) | (!CellCycleArrest & ERK & NICD & miR203)
+SNAI2, (!EMT & !GF & !ZEB1 & CTNNB1) | (!EMT & !GF & !ZEB1 & ECM) | (!ZEB1 & ECM & p63)
+GF, !ECM | !p53 | TWIST1
+CDH1, (!AKT1 & !CellCycleArrest & !TWIST1) | (!AKT1 & !TGFbeta & miR34) | (!CellCycleArrest & miR34) | (!TWIST1 & miR34) | !ZEB1
+Migration, (!EMT & !NICD & !SMAD & AKT1) | (!EMT & !NICD & !TGFbeta & !TWIST1 & AKT2) | (!EMT & !SMAD & !TWIST1 & SNAI2) | (!EMT & !TGFbeta & !TWIST1 & AKT1 & AKT2 & SNAI2)
+p73, !CTNNB1 | (!Metastasis & !TGFbeta) | (!Metastasis & !p63) | (!ZEB2 & !p63)
+CTNNB1, (!AKT1 & !DKK1 & !GF & p53) | (!AKT1 & !ECM & !NICD) | (!AKT1 & !TWIST1 & SNAI2) | (!DKK1 & !GF & !NICD & SNAI2) | (!ECM & !NICD & p53)
+DNAdamage, !ZEB1
+ECM, !GF

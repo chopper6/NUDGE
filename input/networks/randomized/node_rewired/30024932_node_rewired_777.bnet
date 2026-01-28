@@ -1,0 +1,21 @@
+E2F1, (IR & ! Wip1) | (E2F1 & IR)
+p53_Arrest, IR
+G2_M_Apoptosis, IR
+Proliferation, E2F1 | ! miR_449a
+miR_449a, (ATM & ! Mdm2) | (E2F1 & Fourteen_3_3s & ! Mdm2) | (ATR & ! Mdm2)
+Wip1, (! ATM & ! ATR & ! Wip1) | (! ATM & ! ATR & RB) | (! ATM & ! ATR & p53_MAIN)
+p53_MAIN, (! p53_INP1 & ! p53_Killer & ! Sirt_1) | (p53_MAIN & ! p53_Killer & ! Sirt_1)
+IR, (! Wip1 & p53_MAIN & ! p53_Arrest) | (p53_MAIN & ! Sirt_1 & ! p53_Arrest)
+c_Myc, p53_Killer | p53_Arrest
+Mdm2, p53_Arrest
+ATM, (! c_Myc & ! Mdm2 & p53_Killer) | (! c_Myc & ! Mdm2 & p53_Arrest)
+ATR, p53_Killer | p53_Arrest
+G2_M_Arrest, (E2F1 & ! miR_449a) | (! miR_449a & ! RB)
+p21, c_Myc | Cdc25ABC | (ATM & ATR & ! miR_449a & ! RB) | (! RB & ! Sirt_1)
+RB, (! Mdm2 & ! Sirt_1 & ! Cdc25ABC)
+Sirt_1, (! ATM & c_Myc & ! ATR & ! Fourteen_3_3s) | (! ATM & ! ATR & ! miR_449a & ! Fourteen_3_3s)
+Cdc2_CycB, Cdc25ABC | (! p21 & ! Fourteen_3_3s)
+p53_INP1, (E2F1 & ! p53_MAIN) | (! p53_MAIN & Cdc2_CycB)
+Cdc25ABC, p21 | Fourteen_3_3s
+Fourteen_3_3s, p53_Killer
+p53_Killer, IR

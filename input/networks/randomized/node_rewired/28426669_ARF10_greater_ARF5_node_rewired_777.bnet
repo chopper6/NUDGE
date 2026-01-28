@@ -1,0 +1,16 @@
+SCR, ! SHR | (! ARF & PHB)
+JKD, (! SCR & CK)
+MIR166, (ARR1 & ! AUX)
+WOX5, ! AUX
+ARR1, ! AUXIAA
+ARF10, (! SHR & ! AUXIAA)
+ARF5, (! SHR & ! AUXIAA & ! SHY2)
+ARF, WOX5 | AUX
+AUXIAA, (SHR & SCR & JKD)
+PHB, SHR | (SCR & JKD)
+CLE40, ! PHB | (SHR & SCR & ! CK)
+AUX, ! MIR166
+MGP, (SHR & SCR & ! PHB)
+CK, (SHR & SCR & ! WOX5)
+SHY2, (SHR & SCR & ! ARF10 & ARF5 & ! CLE40)
+SHR, ! SHR

@@ -1,0 +1,14 @@
+SHR, !SHR | CYA | PHB
+SCR, (!JKD & !SYS)
+JKD, JKD | (MGP & PHB) | (MGP & SYS)
+MGP, (!SYS & !WOX5) | (!WOX5 & MGP) | JKD
+miRNA165, !SYS | !miRNA165
+PHB, !CYA | !miRNA165
+Auxin, !Auxin | !PHB
+IAA5, Auxin
+WOX5, !CYA | !MGP | !PYI5
+CLE, (!SHR & CLE) | IAA5
+ACR, CLE
+SYS, !SCR | SHR
+CYA, !ACR | !CLE
+PYI5, !IAA5 | !PHB

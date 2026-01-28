@@ -1,0 +1,36 @@
+Activin_A_Nodal, !Dusp6 | (!Pecam1 & Esrrb) | EpiTFs | SignalACT
+BMP4, (!BMP4 & !Mycn) | (!BMP4 & SignalLIF) | (Fgf4 & SignalLIF)
+Dnmt3b, (!Cdx2 & !Oct4) | !Klf4 | !SignalFGF | Lrh1
+EpiTFs, (!Myc & Gata6 & Rex1) | (Gata6 & Gcnf & Klf4) | (Rex1 & Sox2)
+Esrrb, (!EpiTFs & SignalFGF & Sox2) | (!Lrh1 & Sox2) | Klf4 | (Myc & SignalFGF & Sox2)
+Fgfr2, !Lefty1 | (Activin_A_Nodal & Fgf4) | Klf4 | SignalBMP
+Gata6, (!Lrh1 & Cdx2 & SignalERK) | (!Lrh1 & Pecam1) | !SignalLIF
+Gbx2, !BMP4 | !Lefty1 | !Oct4 | Gata6 | Gbx2 | Mycn
+Gcnf, (!Lrh1 & Activin_A_Nodal) | Smad6
+Jarid2, (SignalACT & SignalPI3K)
+Klf4, (!Fgfr2 & Pecam1 & Tcf3) | (!Klf4 & Oct4 & Pecam1 & Rex1 & Tcf3) | (!Klf4 & Pecam1 & SignalBMP) | (!SignalFGF & Rex1) | (!SignalFGF & Tcf3) | (Rex1 & SignalBMP)
+Nanog, (!Fgfr2 & !SignalACT & Sox2 & Tcf3) | (!Fgfr2 & !SignalBMP & Jarid2) | (!Fgfr2 & !SignalERK & !Tbx3 & Sox2) | (!Pecam1 & !SignalERK) | (!SignalACT & !SignalBMP & Jarid2 & Tcf3) | (!SignalERK & Jarid2 & Sox2) | (!SignalERK & Sox2 & Tcf3)
+Oct4, (!Esrrb & !Pecam1) | (!Esrrb & Activin_A_Nodal & SignalACT & SignalFGF) | (!Mycn & !Pecam1 & Oct4 & SignalACT & SignalERK) | (!Mycn & Activin_A_Nodal & Jarid2 & Oct4 & SignalACT & SignalERK & SignalFGF) | (!Pecam1 & Activin_A_Nodal & Jarid2 & SignalFGF)
+Smad6, !Cdx2 | !Myc | SignalFGF
+Smad7, !Gcnf | (!Klf4 & BMP4 & Lrh1) | (!Nanog & !Pecam1) | (!Nanog & Lrh1 & SignalBMP)
+Sox2, !Fgfr2 | (!Lefty1 & !Tcf3)
+Tcf3, !Cdx2 | !Pitx2 | Dusp6
+Cdx2, (!Fgfr2 & Oct4 & SignalBMP)
+Dusp6, Smad6
+Fgf4, (!Fgfr2 & !SignalACT) | (!Fgfr2 & Esrrb) | !Klf2
+Klf2, (!Sox2 & Gcnf) | (!Sox2 & SignalBMP) | (Gcnf & SignalPI3K) | SignalERK
+Lefty1, (!Esrrb & !Gata6 & !Tcf3 & Gcnf & Klf2 & Smad6) | (!Esrrb & Gcnf & Klf2 & Pecam1) | (!Oct4 & Pecam1 & Smad6)
+Lrh1, Activin_A_Nodal | Fgfr2 | Lefty1 | Lrh1 | Smad6
+Mycn, (Rex1 & Sox2) | SignalBMP
+Pitx2, (!Esrrb & !Gata6 & Pitx2) | (!Gata6 & Activin_A_Nodal) | Cdx2
+Tbx3, (!Cdx2 & Mycn) | !Dnmt3b | (!Fgf4 & SignalLIF) | Klf4 | Lrh1
+Myc, (!Gata6 & !Lefty1 & Dusp6 & Rex1 & SignalERK & SignalWNT)
+Pecam1, !Cdx2 | !Nanog | !SignalWNT
+Rex1, (!Fgf4 & !Pitx2 & EpiTFs) | (!Fgf4 & Gbx2 & SignalFGF) | (!Pitx2 & Gbx2 & Sox2) | (SignalFGF & Sox2)
+SignalACT, !EpiTFs
+SignalBMP, Lefty1
+SignalWNT, Activin_A_Nodal
+SignalFGF, !Gbx2
+SignalERK, !Mycn
+SignalLIF, Tbx3
+SignalPI3K, SignalFGF

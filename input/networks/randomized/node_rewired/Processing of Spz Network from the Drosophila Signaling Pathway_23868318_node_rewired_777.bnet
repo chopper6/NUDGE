@@ -1,0 +1,24 @@
+DV_patterning, ModSP
+Fungi, Ndl
+Pipe, (Viru_Fact & ! Nec)
+Snk, Easter | Psh | Spirit | Sphinx | Spd
+DAP, (Snk & Pipe)
+Spirit, GramP_Bact | Fungi
+PGRP_SA, Fungi
+Spd, DV_patterning
+Easter, Grass
+Spz, Gd
+Viru_Fact, Grass
+GramN_Bact, GramP_Bact
+ModSP, GNBP1 | PGRP_SD | GNBP3 | PGRP_SA
+GramP_Bact, GramP_Bact
+PGRP_SD, GramN_Bact
+SPE, Grass
+Grass, DAP
+Psh, SPE
+GNBP3, Nec
+Gd, Pipe
+GNBP1, GramP_Bact
+Sphinx, Fungi
+Nec, DV_patterning
+Ndl, GramN_Bact

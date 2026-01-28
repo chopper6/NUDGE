@@ -1,0 +1,73 @@
+SDP1, SOD2
+CDC48, DNA_Frag
+NDI1, !SDP1
+MT_ALT, (!MT_Frag & !PKA & POR1_2) | (!MT_Frag & !YCA1 & POR1_2) | (!PKA & !YCA1 & POR1_2)
+MEC1, ROS_CYT
+YCA1, (!CAMP & !RedActinDyn & NDI1 & RLM1) | (!RedActinDyn & H2O2 & NDI1 & Salt) | (H2O2 & PTP3) | (NDI1 & RLM1 & Salt)
+DesCyclinCCDK8, SOD1
+Apoptosis, (!CPR3 & !ESP1 & !STE20_NUC & !YCA1 & CytC_CYT & FIS1) | (!CPR3 & !ESP1 & !STE20_NUC & !YCA1 & CytC_CYT & MCD1_MT) | (!CPR3 & !ESP1 & !STE20_NUC & !YCA1 & HK & MCD1_MT) | (!CPR3 & !NUC1_NUC & !RedActinDyn & !STE20_NUC & CytC_CYT & FIS1 & MG2) | (!CPR3 & !NUC1_NUC & !YCA1 & FIS1 & HK & MG2) | (!CPR3 & !RedActinDyn & FIS1 & HK) | (!NUC1_NUC & !RedActinDyn & CytC_CYT & MCD1_MT) | (!STE20_NUC & !YCA1 & FIS1 & MG2) | (CytC_CYT & HK & MG2)
+SVF1, SNO1
+PTP3, Protosom
+SOD2, !PTP2
+POR1_2, MDV1
+BIR1, DRE2_TAH18
+DRE2_TAH18, !CDC6
+STM1_NUC, !NMA111_NUC | !Stress
+RLM1, !SLT2 | Heat
+SLT2, (!CU2 & !DNA_Frag) | (!CU2 & ROS_MT) | (!DNA_Frag & HOG1_Dep) | (!DNA_Frag & MEC1)
+MCD1_MT, !FIS1
+FIS1, !STM1_CYT
+DNA_Frag, AIF1_NUC | NUC1_NUC
+CAMP, !SVF1 | Salt
+KAP123, !YCA1
+STE20_CYT, SNO1
+SOD1, MCD1_MT
+HOG1, (BIR1 & H2O2) | (EMC4 & H2O2)
+AdenylateCyclase, !STE20_NUC | HOS3
+ROS_CYT, (!DRE2_TAH18 & !ESP1 & !MAPK & !PKA & H2B & Heat & NMA111_NUC) | (!DRE2_TAH18 & !ESP1 & !PKA & !STM1_CYT) | (!ESP1 & !MAPK & !STM1_CYT & Adozelesin & DesCyclinCCDK8 & NMA111_NUC & ROS_MT) | (!ESP1 & !PKA & !STM1_CYT & Adozelesin & DesCyclinCCDK8 & MSN2_4 & NMA111_NUC & ROS_MT) | (!MAPK & !PKA & !STM1_CYT & Adozelesin & DesCyclinCCDK8 & Heat & MSN2_4) | (!MAPK & !PKA & !STM1_CYT & MSN2_4 & NMA111_NUC & ROS_MT) | (Adozelesin & H2B & Heat & MSN2_4 & NMA111_NUC & ROS_MT) | (DesCyclinCCDK8 & H2B & NMA111_NUC)
+Tat_D, SVF1
+HOS3, Heat
+FVY10, PTP2
+MDV1, BIR1
+NMA111_NUC, Salt
+PTP2, !Mating
+CytC_MT, !CDC48 | !HOS3
+EMC4, SRO7
+H2B, (!AceticAcid & !SOD1) | (!MCD1_NUC & !NDI1 & !SOD1) | Salt
+ROS_MT, !CU2 | !PTP3
+PKA, !ROS_CYT | RPD3
+CytC_CYT, (HOG1 & MT_Frag)
+MT_Frag, (!NUC1_NUC & !SOD1) | (!NUC1_NUC & PTP3) | (!SOD1 & H2O2 & PTP3) | RLM1
+MSN2_4, !PKA
+STM1_CYT, !MT_ALT
+NUC1_NUC, STM1_CYT
+ESP1, MDV1
+RAS2, !SNO1 | SOD2
+MMI1, !MDV1
+HOG1_Dep, !RedActinDyn
+NMA111_CYT, !PTP2
+NUC1_MT, ROS_CYT
+RPD3, NDI1
+AIF1_MT, !MSN2_4
+TOR1, !HOG1_Dep
+MCD1_NUC, !CAMP
+AIF1_NUC, MAPK
+CDC6, !MCD1_MT
+Protosom, NDI1
+MAPK, !Tat_D
+STE20_NUC, STE20_CYT
+SNO1, AdenylateCyclase
+SRO7, SVF1
+HK, !PTP3
+AbnormalTelomer, TOR1
+RedActinDyn, !CAMP
+Salt, MCD1_NUC
+CU2, HK
+CPR3, AIF1_MT
+H2O2, !Heat
+AceticAcid, !HOS3
+Stress, !CU2
+Heat, CytC_MT
+MG2, !AdenylateCyclase
+Adozelesin, FVY10
+Mating, !SOD2

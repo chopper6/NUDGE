@@ -1,0 +1,26 @@
+ICL, !ICL | (!NUC2 & NUC1)
+FAcore, (ATR & FAcore) | (ATR & ICL & PLK1) | (FAcore & PLK1) | (PLK1 & RNF4)
+FANCD2I, (!ATM & !ATR) | (!ATR & !FAcore) | (!FAcore & FANCD2I)
+NUC1, (!ICL & !PARP_1) | (!PARP_1 & FANCD2I) | DSB
+RNF4, !FAcore | !ICL
+NUC2, (!R_DSB & PLK1) | ICL | NUC1 | RNF4
+DSB, (!DSB & !ICL) | (!ICL & !NHEJ & NUC2) | (!NHEJ & NUC1)
+PARP_1, (!DSB & !KU_53BP1) | (!KU_53BP1 & R_DSB) | !gH2AX
+R_DSB, (!HRR & DSB & R_DSB) | (!ICL & DSB & R_DSB) | NUC1
+HRR, (!ATM & !CycB_CDK1 & PLK1) | (!CycB_CDK1 & gH2AX) | R_DSB
+KU_53BP1, (!PARP_1 & DSB)
+NHEJ, (ATM & CycB_CDK1 & PLK1) | (ATM & DSB & KU_53BP1) | (ATM & DSB & PLK1) | (CycB_CDK1 & DSB & KU_53BP1) | (CycB_CDK1 & KU_53BP1 & PLK1)
+gH2AX, (!DSB & !PP2A_B55 & !gH2AX & ATM & KU_53BP1) | (!DSB & !PP2A_B55 & ATR & KU_53BP1 & R_DSB) | (!DSB & !gH2AX & ATM & R_DSB) | (!PP2A_B55 & !WIP1) | (!PP2A_B55 & !gH2AX & ATR & R_DSB) | (!WIP1 & !gH2AX & ATR)
+ATR, (!ICL & !PLK1 & WIP1) | (!ICL & KU_53BP1) | ATM
+ATM, (!NUC1 & !PP2A_B55 & FAcore & R_DSB) | (!NUC1 & ATR & DSB & WIP1) | (!PP2A_B55 & ATR & DSB & FAcore & R_DSB) | (!PP2A_B55 & DSB & FAcore & KU_53BP1 & WIP1) | (ATR & PLK1 & R_DSB) | (DSB & FAcore & PLK1) | (FAcore & KU_53BP1 & PLK1) | (FAcore & PLK1 & WIP1) | (FAcore & R_DSB & WIP1)
+MYT1, !ATM | !CDC25 | !CycB_CDK1 | !PLK1 | ATR
+WEE1, (!ATM & !CDC25 & ATR) | (!ATM & !CDC25 & PP2A_B55) | (!ATM & CycB_CDK1) | (!CDC25 & !PLK1)
+p53, (!ATM & !WIP1 & ATR) | (!PLK1 & !WIP1 & ATR) | (!PLK1 & CDK1_AurA)
+p21, !p53
+PP2A_B55, ATM | (ATR & CycB_CDK1)
+WIP1, !p53
+CDK1_AurA, (!ATM & !ATR & !WEE1 & CDC25 & PP2A_B55) | (!ATM & !MYT1 & !WEE1 & CDC25 & PP2A_B55) | (!ATM & !MYT1 & !p21) | (!ATM & !p21 & CycB_CDK1 & PP2A_B55)
+PLK1, (!ATM & !CDK1_AurA & !ICL & ATR) | (!ATM & !CycB_CDK1 & ATR) | (!CycB_CDK1 & !FAcore) | !MYT1 | WEE1
+CDC25, (!CycB_CDK1 & !WEE1 & ATR) | !PLK1 | (!PP2A_B55 & ATM) | (!PP2A_B55 & CDK1_AurA) | (!WEE1 & CDK1_AurA) | (ATR & CDK1_AurA) | MYT1
+CycB_CDK1, (!CDC25 & !CDK1_AurA & p21) | (!CDC25 & CycB_CDK1) | (!CDC25 & Plk1 & p21)
+Plk1, Plk1

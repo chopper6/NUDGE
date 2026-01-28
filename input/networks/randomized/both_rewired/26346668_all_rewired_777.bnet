@@ -1,0 +1,30 @@
+Integrin, !Grb_2_Sos | !MEK1_2
+RTK, !MEKK
+PLC, !Apoptosis
+Grb_2_Sos, !Bad | !Flow
+FAK, !ERK1_2
+Src, NO
+PKC, !Raf_1
+Ras, !Ras
+Rho, RTK
+PI3K, !PI3K | Bad
+MEKK, !Src | Caspase_3
+ROCK, !ROCK
+Rac, !ASK1 | Apoptosis
+Raf_1, !Rac | Proliferation | eNOS
+MEK1_2, !Integrin | MEKK
+Akt, FAK
+MEK4, !Akt
+Actin, (!FAK & eNOS)
+ERK1_2, !Cadherin
+eNOS, Caspase_3
+JNK, !Cadherin | PKC
+NO, !Actin
+ASK1, !Caspase_3
+Caspase_3, MEK4
+Bad, !Rac
+Proliferation, !Apoptosis
+Apoptosis, (!MEK1_2 & !MEK4) | (!MEK4 & !ROCK)
+Migration, Rac
+Cadherin, !JNK
+Flow, Apoptosis

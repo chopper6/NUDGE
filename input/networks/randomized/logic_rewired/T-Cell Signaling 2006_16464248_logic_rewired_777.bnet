@@ -1,0 +1,40 @@
+Lck, !CD8 | CD45 | PAGCsk
+ZAP70, !cCbl | Lck | TCRphos
+Itk, SLP76 | ZAP70
+SEK, PKCth
+RasGRP1, !PKCth | DAG
+SLP76, Gads
+CREB, Rsk
+Rlk, !Lck
+ERK, !MEK
+Gads, LAT
+IkB, IKKbeta
+Ca, !IP3
+Ras, Grb2Sos | RasGRP1
+IP3, PLCg_act
+PAGCsk, !Fyn
+JNK, SEK
+Jun, JNK
+Fos, ERK
+TCRphos, Fyn
+TCRbind, !TCRlig | cCbl
+NFAT, Calcin
+Raf, Ras
+PKCth, !DAG
+Grb2Sos, LAT
+AP1, !Fos | Jun
+PLCg_act, !Itk | (!ZAP70 & PLCg_bind) | (PLCg_bind & SLP76) | Rlk
+cCbl, !ZAP70
+IKKbeta, !PKCth
+LAT, !ZAP70
+Nfkb, !IkB
+PLCg_bind, !LAT
+Fyn, (!CD45 & Lck & TCRbind)
+Calcin, Ca
+DAG, PLCg_act
+MEK, !Raf
+Rsk, ERK
+CRE, !CREB
+CD45, !CD45
+CD8, CD8
+TCRlig, TCRlig

@@ -1,0 +1,62 @@
+NFAT_K, (! Melanin & UVB)
+ET_1_K, (! UVB & ! Akt_K & ! ERK_K) | (Melanin & ! Akt_K & ! ERK_K)
+p53_K, (! Melanin & UVB)
+ETR_M, EGFR_K
+EGFR_K, (! Melanin & UVB & ! Akt_K)
+cAMP_M, (! ERK_K & EGFR_K)
+PTEN_K, (! PTEN_K & PI3K_K)
+MKK6_M, ASK1_K
+AC_M, (! Akt_K & ASK1_K)
+RSK_M, SG_K
+PDK1_M, PDK1_K
+EP4_M, MKK6_K
+SG_M, MKK4_K
+Bcl_2_K, (! Akt_K & Ras_K)
+GSK3b_K, ! Akt_K
+Raf_K, ! GSK3b_K
+JNK_M, Raf_K
+MITFprotein_M, Akt_K
+PDK1_K, ! GSK3b_K
+RSK_K, (! GSK3b_K & b_catenin_K) | (! GSK3b_K & NFAT_K) | (! GSK3b_K & p38_K)
+GSK3b_M, (! p38_K & MEK_K)
+SCF_K, (p38_K & ! MDM2_K) | (ERK_K & ! MDM2_K)
+ASK1_K, ERK_K
+SG_K, (Akt_K & ! p38_K & ! p53_K & ! JNK_K) | (ERK_K & ! p38_K & ! p53_K & ! JNK_K) | (GSK3b_K & ! p38_K & ! p53_K & ! JNK_K) | (! p38_K & RSK_K & ! p53_K & ! JNK_K) | (b_catenin_K & ! p38_K & ! p53_K & ! JNK_K)
+Ras_K, p53_K | IL_1_K
+PI3K_M, p53_K | IL_1_K
+ERK_K, p53_K
+MKK4_M, (IL_1_K & COX2_K)
+p38_K, ET_1_K
+p53_M, SCF_K
+Ras_M, a_MSH_K
+PI3K_K, PGE2_K
+MDM2_K, ETR_M
+MC1R_M, (c_Kit_M & ! ERK_M)
+IL_1_K, MC1R_M
+MSK_M, ! Akt_M
+a_MSH_K, (! cAMP_M & Ras_M) | (! cAMP_M & PKC_M)
+MKK4_K, cAMP_M | SG_M
+MEK_M, (! PDE_M & EP4_M) | (! PDE_M & AC_M)
+PKC_M, (! Akt_M & ASK1_M)
+Melanin, PI3K_M
+PGE2_K, PKC_M | Ras_M
+PDE_M, cAMP_M
+MDM2_M, ASK1_M
+Raf_M, PDK1_M
+JNK_K, Raf_M
+p38_M, PKA_M
+CREB_M, MKK6_M
+MEK_K, ! Akt_M
+COX2_K, (MEK_M & ! p38_M)
+c_Kit_M, ERK_M | p38_M
+ASK1_M, MKK4_M
+MITFmRNA_M, Akt_M
+Akt_M, ERK_M
+MKK6_K, (p38_M & ! MDM2_M & ! MITFprotein_M)
+b_catenin_K, ! GSK3b_M
+ERK_M, Akt_M | PKA_M | MSK_M
+b_catenin_M, (! p38_M & RSK_M & ! p53_M & ! JNK_M) | (! p38_M & CREB_M & ! p53_M & ! JNK_M) | (ERK_M & ! p38_M & ! p53_M & ! JNK_M) | (Akt_M & ! p38_M & ! p53_M & ! JNK_M) | (! p38_M & b_catenin_M & ! p53_M & ! JNK_M) | (! p38_M & MITFprotein_M & ! p53_M & ! JNK_M) | (! p38_M & GSK3b_M & ! p53_M & ! JNK_M)
+Bcl_2_M, (CREB_M & b_catenin_M)
+PKA_M, (ERK_M & MITFmRNA_M)
+Akt_K, MITFprotein_M
+UVB, UVB

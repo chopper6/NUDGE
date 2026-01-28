@@ -1,0 +1,23 @@
+axin, !JNK | !mTORC2
+GSK3beta, !Rac | Akt | TSC2
+DC, !TSC2 | S6K
+beta_catenin, !MEKK1
+TCF, !GSK3beta | DC | MEKK1
+FoxO, !S6K | JNK
+Rho, (!FoxO & !JNK) | (!FoxO & mTORC2) | Ras | S6K
+Rac, !ERK | !Rho | !S6K | mTORC2
+MEKK1, !ERK | !Raf
+JNK, !PKC | JNK
+PKC, !mTORC2 | Raf | TSC2
+IRS, (!IRS & axin) | !TSC2
+PI3K, !Rac | DC | TCF
+Akt, !Rho | S6K
+TSC2, (!ERK & S6K) | (S6K & beta_catenin)
+mTORC1, !Rho
+S6K, !GSK3beta | ERK
+Ras, !IGF | !mTORC2
+Raf, !mTORC1 | DC | IRS
+ERK, Ras
+mTORC2, !GSK3beta | (!Ras & FoxO) | (!Rho & FoxO)
+Wnt, IGF
+IGF, PI3K

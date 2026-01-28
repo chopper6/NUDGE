@@ -1,0 +1,25 @@
+PLC_beta, HTR
+cAMP, !HTR
+DAG, (!PIP2 & PLC_gamma) | !PLC_beta
+PLC_gamma, !HTR
+IP3, (!PIP2 & PLC_gamma) | PLC_beta
+PKC, (!Ca2plus & !Ca2plus_ER_high & !DAG) | Ca2plus_ER_low
+PKA, cAMP
+TRPC3, (!DAG & CAM & HOMER) | (!PKC & HOMER & IP3R_low) | (!PKC & HOMER & PLC_gamma) | (!PKC & IP3R_low & PLC_gamma)
+HOMER, IP3R_low
+Ca2plus_ER_high, IP3R_high
+Ca2plus_ER_low, IP3R_low
+CAM, !Ca2plus | (!Ca2plus_ER_high & !Ca2plus_ER_low)
+SERCA, !Ca2plus_ER_low | Ca2plus | Ca2plus_ER_high
+CaBP1, Ca2plus_ER_high | DANGER
+ATP_cyt, SERCA
+CamKII, !CAM
+IP3R_low, (!CaBP1 & !DANGER & !GB3 & !PKA & !PKC & ATP_cyt) | (!CaBP1 & !DANGER & !IRBIT & ATP_cyt) | (!CaBP1 & !GB3 & !IRBIT & !PKC & CamKII & IP3) | (!CaBP1 & !PKC & ATP_cyt & CamKII) | (!PKA & !PKC & ATP_cyt & IP3)
+IP3R_high, (!ATP_cyt & !CaBP1 & !IRBIT & !PKC & PKA) | (!ATP_cyt & !DANGER & !PKC & GB3 & PKA) | (!ATP_cyt & !IRBIT & GB3 & IP3 & PKA) | (!CaBP1 & !DANGER & !PKC & GB3) | (!DANGER & !IRBIT & GB3 & IP3 & PKA) | (!IRBIT & !PKC & IP3)
+DANGER, !HTR
+GB3, !HTR
+HTR, Serotonin
+IRBIT, !CamKII
+Ca2plus, !TRPC3
+PIP2, !PIP2
+Serotonin, !Serotonin

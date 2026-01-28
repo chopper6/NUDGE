@@ -1,0 +1,73 @@
+SDP1, MSN2_4
+CDC48, !HK
+NDI1, HK
+MT_ALT, (!MMI1 & PKA) | (!MT_Frag & !RAS2) | (!RAS2 & PKA)
+MEC1, AbnormalTelomer
+YCA1, (!CytC_CYT & !MEC1 & MT_Frag & ROS_CYT & RedActinDyn) | (!CytC_CYT & Salt) | (!SRO7 & ROS_CYT & Salt)
+DesCyclinCCDK8, !SLT2
+Apoptosis, (!BIR1 & !CPR3 & !DNA_Frag & !H2O2 & !ROS_CYT & !YCA1 & AceticAcid & CU2) | (!BIR1 & !CPR3 & AceticAcid & CU2 & POR1_2) | (!BIR1 & !DNA_Frag & !ROS_CYT & !YCA1 & SNO1) | (!BIR1 & !YCA1 & AceticAcid & POR1_2 & SNO1) | (!CPR3 & !DNA_Frag & !H2O2 & !YCA1 & AceticAcid & CU2 & FVY10) | (!CPR3 & !DNA_Frag & !H2O2 & POR1_2 & SNO1) | (!CPR3 & !H2O2 & !ROS_CYT & CU2 & FVY10 & POR1_2) | (!CPR3 & !H2O2 & AceticAcid & CU2 & POR1_2) | (!DNA_Frag & !H2O2 & !YCA1 & AceticAcid & FVY10 & POR1_2 & SNO1)
+SVF1, HK
+PTP3, HOG1_Dep
+SOD2, !HK
+POR1_2, !HK
+BIR1, NMA111_NUC
+DRE2_TAH18, !HK
+STM1_NUC, !Protosom | !STM1_CYT
+RLM1, !HOG1 | !SLT2
+SLT2, (!Heat & PTP2 & SDP1) | (PTP2 & RLM1 & SDP1 & Stress)
+MCD1_MT, !HK
+FIS1, HK
+DNA_Frag, (!STM1_NUC & Tat_D)
+CAMP, (!AdenylateCyclase & !TOR1)
+KAP123, !NUC1_MT
+STE20_CYT, MAPK
+SOD1, Heat
+HOG1, !PTP2 | !PTP3 | !Stress
+AdenylateCyclase, (!RAS2 & !Stress)
+ROS_CYT, (!ESP1 & !Salt & H2O2 & RedActinDyn) | (!ESP1 & DesCyclinCCDK8 & NDI1) | (!RAS2 & !Salt & CDC48 & EMC4 & RedActinDyn & SVF1) | (!Salt & AceticAcid & CDC48 & DesCyclinCCDK8 & RedActinDyn & SOD1 & SVF1)
+Tat_D, MG2
+HOS3, H2O2
+FVY10, !HK
+MDV1, HK
+NMA111_NUC, !NMA111_CYT
+PTP2, !RLM1
+CytC_MT, !AceticAcid | !MCD1_MT
+EMC4, !HK
+H2B, (!HOS3 & AIF1_NUC & NUC1_NUC) | (AIF1_NUC & STE20_NUC) | (NUC1_NUC & RPD3) | (NUC1_NUC & STE20_NUC)
+ROS_MT, !NDI1 | SOD2
+PKA, Heat | RAS2
+CytC_CYT, !CDC48 | CytC_MT
+MT_Frag, (!DRE2_TAH18 & !H2O2) | (!DRE2_TAH18 & FIS1) | !MDV1 | MT_ALT
+MSN2_4, PKA
+STM1_CYT, !HK
+NUC1_NUC, !KAP123
+ESP1, !H2O2
+RAS2, !RedActinDyn | TOR1
+MMI1, HK
+HOG1_Dep, HOG1
+NMA111_CYT, !Heat
+NUC1_MT, H2O2
+RPD3, !Stress
+AIF1_MT, HK
+TOR1, Stress
+MCD1_NUC, !ESP1
+AIF1_NUC, AIF1_MT
+CDC6, !Adozelesin
+Protosom, CDC6
+MAPK, !Mating
+STE20_NUC, STE20_CYT
+SNO1, !HK
+SRO7, HK
+HK, !HK
+AbnormalTelomer, AbnormalTelomer
+RedActinDyn, RedActinDyn
+Salt, Salt
+CU2, !CU2
+CPR3, !CPR3
+H2O2, !H2O2
+AceticAcid, AceticAcid
+Stress, Stress
+Heat, !Heat
+MG2, !MG2
+Adozelesin, !Adozelesin
+Mating, !Mating

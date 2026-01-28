@@ -1,0 +1,95 @@
+pIKB, pNFkB
+Cas9, ! Cas3
+TRAF3, Bort | (TNFa & TNFaR)
+Chk2, ! TRAF3
+FLIP, (! SHP1 & IL6 & gp130)
+Viacel, (! SHP1 & IL6 & gp130)
+JAK1, AKT | (NIK & RIP) | (ATM & ROS & DNAdam)
+MYC, IKK
+JAK2, ! GSK3b | pIKB | pSTAT3
+PTEN, pNFkB
+Bcl2, ! Bort
+Cytc, (! p53 & pSTAT3 & ! Smac) | (! p53 & pNFkB & ! Smac)
+BAX, (! BAD & ! p53 & ! BAX & pNFkB) | (! BAD & ! p53 & ! BAX & pSTAT3)
+gp130, (! BAD & ! p53 & pSTAT3) | (! BAD & ! p53 & pNFkB)
+IL6, (! GSK3b & cMAF) | (! GSK3b & P90RSK) | (! GSK3b & AKT) | (! GSK3b & ERK) | (! GSK3b & MYC)
+FasR, MYC
+CDK2, (p53 & ! ATM & ! ATR) | (AKT & ! ATM & ! ATR)
+ATR, (pSTAT3 & ! BLIMP1) | (ERK & ! BLIMP1) | (IRF4 & ! BLIMP1) | (MEKK & ! BLIMP1)
+Rheb, ! CAS3
+RAS, (! JNK & JAK2 & STAT3 & JAK1)
+IKK, mTORC2
+Chk1, IRS | (IL6 & gp130)
+CYCB, (PI3K & ! PTEN)
+Cdc25BC, (CDK4 & CDK6)
+P90RSK, TNFaR
+cMAF, SHP1 | IRS | (IL6 & gp130)
+PIP3, RAS
+CYCE, RAF
+JNK, MEK1
+XIAP, MEK1
+RAC, MAPK
+IGF1, (! p27 & ! p21 & CYCE & Cdc25A)
+pNFkB, (! p27 & ! p21 & Cdc25A & CYCD)
+FasL, CYCD
+Apo, pRB
+CDK4, cMAF
+Fas, PI3K
+CDK1, mTORC2
+Smac, Rheb
+p53, mTORC1
+Prot, (IGF1 & IGF1R) | (! JNK & ! P70S6K) | (IGF1R & IL6 & gp130)
+CYCD, ! TSC
+TSC, ERK
+BLIMP1, (! Chk1 & ! Chk2)
+BclxL, ! Chk2
+mTORC2, (! p27 & ! p21 & Cdc25BC)
+DNAPK, CDK1
+pRB, ! GSK3b
+mTORC1, MYC | pNFkB | IRF4
+MEKK, pSTAT3
+MEK1, (Proliferation & ! Apo)
+ROS, ! AKT
+BID, (! ERK & ! AKT & ! P90RSK & STRESS) | (GSK3b & ! ERK & ! AKT & ! P90RSK)
+Cdc25A, (! AKT & ! P90RSK & ! P70S6K)
+NIK, DNAdam
+CLPARP, ATR
+PI3K, ATM
+GSK3b, (STRESS & ! MnSOD2) | (! MnSOD2 & MITO)
+DEPTOR, (pNFkB & ROS)
+MEKK2, (IRF4 & ! Bcl6)
+cJun, cJun | FasR
+MITO, p53 | FasL
+MAPK, JNK | (! AKT & ! P90RSK & ! P70S6K)
+DNAdam, ! CIAP
+SGK1, p53
+IRF4, (p53 & ! CDK4) | (! AKT & p53) | (p53 & ! MYC) | (p53 & ! Bcl6)
+Cas3, (p53 & ! MYC) | (p53 & ! MDM) | (p53 & ! CDK4) | (! AKT & p53) | (p53 & ! Bcl6)
+SHP1, STRESS
+ATM, RAC
+AKT, MEKK2
+pSTAT3, (MKK4 & ! Prot)
+TNFa, Cas3 | ROS | STRESS
+STAT3, Cas3 | DNAdam
+CIAP, ATM | ATR
+Bcl6, (Chk1 & ! MDM) | (! Prot & Chk2) | (JNK & ! Bcl6) | (! MDM & DNAPK) | (Chk1 & ! Bcl6) | (JNK & ! Prot) | (! Prot & DNAPK) | (Chk2 & ! MDM) | (Chk2 & ! Bcl6) | (! Prot & Chk1) | (! Bcl6 & DNAPK) | (JNK & ! MDM)
+Proliferation, JNK
+ERK, (p53 & ! Bcl6 & ! BclxL) | (! Bcl6 & BID & ! BclxL)
+IRS, (! BclxL & Fas & ! Bcl2) | (! BclxL & Cas8 & ! Bcl2) | (STRESS & ! BclxL & ! Bcl2)
+RAF, ! FLIP | (FasR & FasL)
+MKK4, BAX | ROS
+MnSOD2, MITO
+PRAS40, MITO
+p21, (Cytc & ! XIAP)
+BAD, (! XIAP & Cas9) | (Cas8 & ! XIAP)
+TNFaR, Cas3
+P70S6K, ROS | DNAdam | ! Prot
+Bort, CLPARP
+MDM, Bort
+IGF1R, TNFa
+RIP, TNFaR
+Cas8, SHP1
+CDK6, CAS3
+STRESS, IGF1
+p27, IGF1R
+CAS3, Fas

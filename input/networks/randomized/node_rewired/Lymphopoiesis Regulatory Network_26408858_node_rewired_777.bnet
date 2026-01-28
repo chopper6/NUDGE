@@ -1,0 +1,81 @@
+BCR, NFkB
+SMAD2, (IL12 & ! STAT6)
+AKT, (! STAT3 & ! GATA3 & Foxp3 & ! RORgt & ! Tbet) | (! STAT3 & ! GATA3 & SMAD3 & ! RORgt & ! Tbet) | (! STAT3 & SMAD2 & ! GATA3 & ! RORgt & ! Tbet)
+IL7, BCR | Flt3
+Pax5, TCR
+Runx3, Irf4
+IL7R, (Tbet & Runx3) | (IL27R & Runx3)
+SMAD3, JAK3 | IL10R | IL21R | IL23R
+IL10, (Runx1 & ! Runx3)
+Gfi1, TNFR2
+NFAT, IL21
+IL12R, RORgt
+Flt3, Ikaros
+Bcl6, (TGFbR & ! AKT)
+Dll1, (GATA3 & ! STAT1)
+GATA3, IFNgR
+Ebf1, IL27
+STAT1, (! STAT3 & STAT4) | (! STAT3 & EOMES) | (! STAT3 & IRAK) | (! STAT3 & Tbet)
+Bcl11b, IL23
+Bcl2, Dll1
+JAK3, (NFkB & Ebf1 & ! Flt3) | (Blimp1 & Ebf1 & ! Flt3)
+TNFR2, (STAT6 & ! Runx1 & ! Foxp3 & ! RORgt & ! Tbet & ! HEB) | (! Runx1 & ! Foxp3 & ! RORgt & ! Tbet & TCF1 & ! HEB) | (GATA3 & ! Runx1 & ! Foxp3 & ! RORgt & ! Tbet & ! HEB)
+IL2, Notch1
+IL4R, IFNb
+TCR, IL10
+IL10R, EOMES
+IL27R, (STAT3 & SMAD2) | (! GATA3 & ! Foxp3 & RORgt & ! Tbet)
+STAT4, (Foxp3 & B9)
+HEB, STAT5 | FR4
+Hoxa9, IFNg
+IL23R, IL18R
+TGFb, (STAT5 & CD8) | (! CD4 & CD8 & ! ThPOK)
+Bach2, (! Bcl6 & ! Pax5 & Irf4 & ! Bach2)
+IFNgR, RORgt
+STAT5, Notch1
+IL23, (! Blimp1 & ! Irf4 & IL21R & Ebf1)
+STAT3, (! TCR & Runx1 & ! Runx3 & ! Notch1 & ! ThPOK)
+CD4, RORgt
+IL2R, (JAK3 & ! SOCS1) | (IL2R & ! SOCS1)
+XBP1, (! TCR & ! Ebf1 & Notch1 & ! ThPOK) | (! TCR & ! Ebf1 & Runx3 & ! ThPOK) | (! TCR & ! Ebf1 & CD8 & ! ThPOK)
+IFNg, (! STAT6 & IL18)
+Runx1, (STAT5 & ! Blimp1 & ! Irf4 & Ebf1 & ! ThPOK) | (! Blimp1 & ! Irf4 & Ebf1 & ! Flt3 & ! ThPOK)
+TGFbR, Bcl6 | Pax5
+IL12, IL4R
+IL6R, TGFbR
+IL6, EOMES
+IL18R, TGFb
+FR4, BCR
+Prf1, (! TCR & IL7)
+Flt3L, TCR | GATA3 | Foxp3 | RORgt | ThPOK | (Tbet & ! Runx3) | (CD4 & ! CD8)
+RORgt, (IL12R & ! GATA3)
+NFkB, IL2
+ERK, IL6
+EOMES, (! Pax5 & Hoxa9) | (! Pax5 & Flt3L)
+TCF1, (CD4 & ! Ebf1 & ! Runx3) | (! Ebf1 & ! Runx3 & ThPOK) | (! Ebf1 & ! Runx3 & Notch1)
+PU1, (IL4 & ! SOCS1)
+STAT6, JAK1 | IL27R | IFNbR
+CD8, Blimp1
+IL21R, PU1
+SOCS1, TNFa
+IRAK, (! Notch1 & IL7R) | (IL6R & ! Notch1)
+IL18, Pax5
+Blimp1, Foxp3
+Notch1, (TCF1 & Notch1)
+B9, STAT1 | Tbet
+Gzmb, (! GATA3 & STAT1 & ! Foxp3 & ! RORgt) | (! GATA3 & ! Foxp3 & ! RORgt & Tbet)
+Tbet, GATA3
+IFNbR, IL12
+Helios, BCR
+Ikaros, TCR
+JAK1, IL21
+Foxp3, IL27
+CD19, IL23
+ThPOK, Dll1
+Irf4, IFNb
+TNFa, B9
+IL4, IL18
+IL27, IL7
+IFNb, IL2
+IL21, Hoxa9
+IL17, Flt3L

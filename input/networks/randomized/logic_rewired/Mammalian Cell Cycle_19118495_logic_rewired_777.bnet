@@ -1,0 +1,20 @@
+ERa, (!Akt1 & !MEK1)
+p21, !Akt1 | !CDK4 | !ERa | !cMYC
+CDK6, CycD1
+ErbB3, EGF
+ErbB2_3, !ErbB2 | ErbB3
+pRB, !CDK6 | CDK4
+CDK2, (!CycE1 & !p27 & p21)
+ErbB2, EGF
+Akt1, (!ErbB1_2 & !ErbB1_3 & !ErbB2_3 & ErbB1 & IGF1R)
+CycD1, (!Akt1 & ERa) | (!Akt1 & MEK1) | !cMYC
+MEK1, (!ErbB1_3 & !ErbB2_3) | (!ErbB1_3 & ErbB1_2) | (!ErbB2_3 & IGF1R) | (ErbB1 & ErbB1_2)
+IGF1R, (!ErbB2_3 & Akt1) | (!ErbB2_3 & ERa)
+ErbB1_2, (!ErbB1 & ErbB2)
+CycE1, !cMYC
+cMYC, (!MEK1 & Akt1) | (!MEK1 & ERa) | (Akt1 & ERa)
+CDK4, !CycD1 | p21 | p27
+p27, (!CDK2 & cMYC) | !CDK4 | (Akt1 & ERa)
+ErbB1, !EGF
+ErbB1_3, !ErbB1 | !ErbB3
+EGF, EGF

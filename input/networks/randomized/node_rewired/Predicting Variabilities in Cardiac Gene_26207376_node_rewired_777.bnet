@@ -1,0 +1,15 @@
+exogen_BMP2_II, Foxc1_2
+exogen_BMP2_I, (Tbx1 & ! Mesp1) | (Foxc1_2 & ! Mesp1)
+Fgf8, (! Tbx1 & Mesp1 & ! canWnt) | (! Tbx1 & Tbx5 & ! canWnt) | (! Tbx1 & ! Dkk1 & ! canWnt & Nkx2_5)
+Bmp2, exogen_CanWnt_I
+Tbx1, Tbx1 | Tbx5 | (Mesp1 & Dkk1) | (GATAs & Isl1) | (GATAs & Bmp2)
+Foxc1_2, (canWnt & exogen_CanWnt_II)
+exogen_CanWnt_II, (! canWnt & exogen_BMP2_II)
+Mesp1, Mesp1 | Tbx5 | Nkx2_5
+exogen_CanWnt_I, (canWnt & ! exogen_BMP2_II)
+Isl1, exogen_CanWnt_II
+Nkx2_5, exogen_CanWnt_I
+canWnt, Fgf8 | Tbx1 | Mesp1 | (canWnt & exogen_CanWnt_II)
+Tbx5, Mesp1 | (canWnt & ! exogen_BMP2_II)
+Dkk1, exogen_BMP2_I
+GATAs, exogen_BMP2_I

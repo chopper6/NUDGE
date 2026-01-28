@@ -1,0 +1,60 @@
+FasT, CTLA4 | IAP
+DISC, !BID | !CREB | !RAS | CTLA4 | PLCG1 | TBET
+LCK, (!IFNGT & Fas & sFas) | (Ceramide & sFas) | (Cytoskeleton_signaling & sFas)
+GAP, (!BclxL & !Ceramide & !TPL2 & LCK) | (!Ceramide & !SMAD & !TPL2) | (!SMAD & !TPL2 & CREB)
+S1P, !ERK | BclxL | IL2
+Apoptosis, !Apoptosis | !IL2RA
+SPHK1, !IAP | PDGF
+PDGFR, !FLIP | (!TCR & GPCR)
+Proliferation, !TPL2 | BID | SOCS
+IL2RB, (!Cytoskeleton_signaling & !PDGF & !Stimuli2) | (!RAS & !Stimuli2)
+RAS, (!FLIP & STAT3) | GPCR | PI3K
+SOCS, !DISC | !P27 | Apoptosis | FYN
+Ceramide, (!FYN & PDGF) | !LCK
+BclxL, (BID & ERK & Stimuli) | (BID & FasL & TAX) | (FasL & P2)
+IFNGT, !IAP | !JAK | BID | SMAD
+RANTES, CTLA4 | ZAP70
+IL2RBT, !Caspase | !Stimuli2 | IL2RA
+PLCG1, LCK | NFAT | Proliferation
+GZMB, !A20 | (!Cytoskeleton_signaling & !JAK) | !Proliferation
+sFas, (!IL2RB & !Stimuli2) | TBET
+IAP, GZMB | (PDGF & Proliferation)
+IL2RAT, !Apoptosis | !IL2RBT | !PDGF | !SPHK1
+Cytoskeleton_signaling, (!MCL1 & MEK)
+JAK, (!IFNG & !PI3K & !TNF & Cytoskeleton_signaling & Fas) | (!IFNG & !PI3K & DISC) | (!IFNG & !SPHK1 & Cytoskeleton_signaling) | (!PI3K & !SPHK1 & !TNF) | (!PI3K & Cytoskeleton_signaling & DISC) | (!SPHK1 & !TNF & Fas) | (!SPHK1 & Cytoskeleton_signaling & DISC) | (!TNF & DISC) | (Cytoskeleton_signaling & DISC & Fas)
+SMAD, (!Caspase & !GPCR)
+FasL, (!IL2RA & GRB2 & PI3K & SPHK1) | P27
+FYN, !DISC | !TCR | Proliferation
+Caspase, (!Cytoskeleton_signaling & !RANTES & Ceramide & FLIP & Stimuli2) | (!RANTES & CREB & FLIP & Stimuli2)
+GPCR, !GPCR | !sFas
+GRB2, (!FLIP & CTLA4) | (CTLA4 & MEK)
+CREB, Apoptosis | IL2RA | PLCG1
+MEK, !ZAP70 | FasT
+P27, FYN | STAT3
+IFNG, (!CREB & !CTLA4 & !FYN & Stimuli) | (!CREB & !CTLA4 & FasL & Stimuli) | (!CREB & !FYN & !TNF & FasL & Stimuli) | (!CTLA4 & !TNF & Stimuli) | (!CTLA4 & Ceramide)
+ZAP70, !IL15 | (Fas & P27)
+NFKB, (!TRADD & IL2) | (!TRADD & LCK) | (!TRADD & STAT3) | (DISC & FasL) | (DISC & IL2 & LCK) | (FasL & IL2) | (LCK & STAT3)
+FLIP, (!ERK & MEK) | (!Proliferation & !TRADD) | (!Proliferation & MEK & SPHK1)
+IL2RA, (!FasL & !PDGF & sFas) | (!PDGF & Stimuli)
+STAT3, (!CTLA4 & FLIP)
+TNF, !P2 | BclxL
+Fas, (!A20 & !GPCR) | (!A20 & IL2) | ERK
+TPL2, (!DISC & RAS) | (!NFKB & RAS) | (!TRADD & RAS)
+PI3K, (!GPCR & MEK) | !Stimuli
+P2, !IFNG | !NFAT | !PI3K | CREB
+TRADD, !GRB2 | (!TAX & CTLA4) | Cytoskeleton_signaling
+BID, (!Apoptosis & !RANTES & TBET) | (!Apoptosis & PDGF) | (!RANTES & IL2RB) | (IL2RB & PDGF) | (PDGF & TBET)
+MCL1, (!P2 & IL2RB & Stimuli) | (!P2 & TBET) | !Proliferation | (S1P & TBET)
+ERK, !IL2RA | !S1P | FasL
+NFAT, (!PDGF & IFNGT)
+IL2, !CTLA4 | !P2 | (!sFas & ERK & STAT3)
+TBET, !BID | !Caspase | Stimuli
+A20, !GAP | ZAP70
+CTLA4, (!FasT & TNF)
+TCR, !SMAD | FasL | IL2RAT
+CD45, !TAX
+IL15, NFKB
+PDGF, !IL2RAT
+Stimuli, !NFKB
+TAX, !MEK
+Stimuli2, DISC

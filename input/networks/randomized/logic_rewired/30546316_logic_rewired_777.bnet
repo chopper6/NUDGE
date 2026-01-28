@@ -1,0 +1,30 @@
+IFNgR, !IFNb | IFNg_e
+CSF2Ra, GM_CSF_e
+IL1R, (!IL1b & IL1b_e)
+TLR4, FcgR | LPS_e
+FcgR, !LPS_e | IC_e
+IL4Ra, IL4_e
+IL10R, (!IL10_out & IL10_e)
+STAT1, !IFNgR | !STAT3 | SOCS1
+STAT5, CSF2Ra | IRF4 | STAT3
+NF_kB, (!IL1R & !PPARg & KLF4) | (!IL1R & !TLR4 & STAT3) | (!PPARg & !TLR4 & FcgR & STAT3) | (!PPARg & !TLR4 & KLF4 & STAT3) | (!PPARg & FcgR & KLF4)
+PPARg, IL4Ra | PPARg
+STAT6, !STAT6 | IL4Ra
+JMJD3, !JMJD3 | IL4Ra
+STAT3, !FcgR | (!PPARg & !STAT3) | (!STAT3 & IL10R)
+IRF3, TLR4
+ERK, !ERK | FcgR
+KLF4, STAT6
+SOCS1, !STAT6
+IRF4, JMJD3
+IL1b, NF_kB
+IFNb, IRF3
+IL12_out, (!STAT1 & NF_kB) | (NF_kB & STAT5)
+IL10_out, !ERK | (!JMJD3 & !PPARg & !STAT6) | (!STAT6 & STAT3)
+IFNg_e, IFNg_e
+GM_CSF_e, !GM_CSF_e
+IL1b_e, !IL1b_e
+LPS_e, !LPS_e
+IC_e, !IC_e
+IL4_e, IL4_e
+IL10_e, !IL10_e

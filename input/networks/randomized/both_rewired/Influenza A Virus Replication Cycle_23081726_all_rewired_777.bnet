@@ -1,0 +1,131 @@
+cRNA_HA, !PB1_PA_cyto | HA_cyto | (Viral_Dose & vRNA_NP_M1)
+vRNA_PB2_M1, (!temp_vRNP_HA_nuc & vRNA_NA)
+pro_vRNP_PB2_M1_cyto, !cRNA_NS | !vRNA_PA_M1 | vRNA_HA_M1
+mRNA_NS1_nuc, cRNA_HA
+cRNA_NA, !PI3K | (!vRNA_NA & PIP3) | HA_cyto
+vRNA_PA, !mRNA_NP_cyto
+mRNA_NA_nuc, pro_vRNP_M_M1_cyto
+par_vRNP_NA_cyto, !Methyl_Beta_Cyclodextrin
+IVA_SialicAcid_CCV, !vRNA_PB2_M1
+NS2_cyto, !par_vRNP_PB1_cyto
+par_vRNP_PB2_cyto, !par_vRNP_HA_cyto
+pro_vRNP_M_M1_nuc, (!pro_vRNP_NA_M1_cyto & vRNA_PA_M1) | (!pro_vRNP_NS_M1_cyto & NP_nuc) | (!pro_vRNP_NS_M1_cyto & cRNP_PA & vRNA_PA_M1) | (NP_nuc & cRNP_PA & vRNA_PA_M1)
+cRNP_HA, !Raf | !Viral_Dose | !cRNA_PB1 | !cRNP_PB1
+cRNP_PB2, (!ERK & !Methyl_Beta_Cyclodextrin) | !mRNA_NP_cyto | IVA_LE
+temp_vRNP_NA_nuc, !PB1_Inhibitor | !mRNA_HA_cyto | !mRNA_M1_cyto | !pro_vRNP_NS_M1_nuc | pro_vRNP_PB1_M1_cyto
+mRNA_HA_nuc, pro_vRNP_PB1_M1_cyto
+PIP3, mRNA_M2_nuc
+PI3K, !NP_cyto | PB1_Inhibitor | vRNA_HA_M1
+mRNA_PB1_nuc, vRNA_PB2_M1
+Raf, !par_vRNP_NS_cyto | mRNA_NS1_cyto
+cRNA_NP, (!NP_cyto & mRNA_NS1_cyto) | (!PA_cyto & mRNA_NS1_cyto) | !vRNA_NP_M1
+pro_vRNP_PB1_M1_cyto, !cRNA_PA | IVA_EE | vRNA_PB1_M1
+PB1_cyto, !IVA_EE | pro_vRNP_PA_M1_cyto
+temp_vRNP_HA_nuc, (!cRNA_NA & mRNA_HA_cyto) | (!pro_vRNP_PB1_M1_nuc & mRNA_PB2_nuc & par_vRNP_PB1_cyto)
+par_vRNP_NS_cyto, Wortmannin
+MEK, !NS1_cyto | !pro_vRNP_NA_M1_nuc
+pro_vRNP_HA_M1_cyto, !pro_vRNP_NS_M1_cyto | !vRNA_PA | mRNA_NP_nuc
+NA_cyto, PB2_nuc
+vRNA_HA_M1, (!temp_vRNP_PA_nuc & mRNA_NA_nuc)
+mRNA_HA_cyto, vRNA_HA_M1
+cRNA_M, !vRNA_NA | (!vRNA_NS_M1 & vRNA_NP_M1) | NP_nuc
+vRNA_HA, pro_vRNP_NA_M1_nuc
+PA_cyto, !mRNA_NS2_cyto
+pro_vRNP_PB2_M1_nuc, !HA_LipidRafts | (!PB2_nuc & cRNP_HA) | !RTK_Inhibitor | (!pro_vRNP_HA_M1_nuc & cRNP_HA)
+mRNA_PB2_nuc, IVA_HA1_HA2
+RTK, !vRNA_PB2_M1 | cRNP_M | mRNA_HA_cyto
+NS2_CellularFactor, pro_vRNP_PB2_M1_cyto
+M1_nuc, IVA_SialicAcid_CCP
+HA_cyto, mRNA_M2_nuc
+NP_cyto, PB1_Inhibitor
+PB1_PA_cyto, !PIP2 | mRNA_M1_cyto | vRNA_HA_M1
+cRNA_NS, (!HA_cyto & mRNA_NS2_nuc) | (!Infected & !cRNA_NS) | (!cRNA_NS & mRNA_NS2_nuc)
+vRNA_PB1_M1, !PIP2 | mRNA_PA_nuc
+par_vRNP_PA_cyto, !cRNA_PB1
+vRNA_PB2, pro_vRNP_HA_M1_cyto
+ERK, temp_vRNP_M_nuc
+mRNA_M1_nuc, !mRNA_NS1_cyto
+cRNA_PA, !M2_cyto | !vRNA_PB1_M1 | (PB1_PA_nuc & PB2_cyto)
+Progeny_Virion, (!NS2_cyto & !PB1_Inhibitor & !cRNP_PB1 & !mRNA_M1_nuc & !par_vRNP_M_cyto) | (!PB1_Inhibitor & !U0126 & !vRNA_M_M1 & temp_vRNP_PA_nuc & vRNA_NP) | (!PB1_Inhibitor & !cRNP_PB1 & !mRNA_M1_nuc & vRNA_NP) | (!PB1_Inhibitor & !par_vRNP_M_cyto & !par_vRNP_PA_cyto & !vRNA_M_M1) | (!U0126 & !cRNP_PB1 & !mRNA_M1_nuc & !vRNA_M_M1 & temp_vRNP_PA_nuc & temp_vRNP_PB2_nuc) | (!cRNP_PB1 & !mRNA_M1_nuc & !par_vRNP_M_cyto & !vRNA_M_M1 & temp_vRNP_PA_nuc & vRNA_NP) | (!mRNA_M1_nuc & !par_vRNP_PA_cyto & vRNA_NP)
+pro_vRNP_M_M1_cyto, !HA_LipidRafts | (!temp_vRNP_NS_nuc & mRNA_PA_cyto)
+Infected, !M2_cyto | !NA_cyto
+vRNA_NP_M1, !Neuraminidase_inhibitor | PIP3
+pro_vRNP_NP_M1_cyto, !par_vRNP_NS_cyto | !vRNA_M_M1 | temp_vRNP_PB2_nuc
+IVA_ME, !mRNA_NA_nuc
+mRNA_M2_cyto, !vRNA_NP
+mRNA_M1_cyto, !mRNA_NS2_cyto
+mRNA_PA_cyto, cRNP_PB1
+cRNP_PB1, (!Progeny_Virion & Viral_Dose & pro_vRNP_PB1_M1_cyto & temp_vRNP_NA_nuc)
+cRNP_NA, !cRNP_PB2 | !mRNA_PA_nuc | !mRNA_PB1_cyto | pro_vRNP_PB2_M1_cyto
+mRNA_NS2_nuc, vRNA_NP_M1
+vRNA_NS, !vRNA_HA
+vRNA_NA, mRNA_NS2_nuc
+cRNP_NP, (!ERK & PB1_PA_nuc & pro_vRNP_M_M1_cyto) | (!ERK & cRNA_HA) | (PB1_PA_nuc & cRNA_HA) | (cRNA_HA & pro_vRNP_M_M1_cyto)
+temp_vRNP_PB1_nuc, (!MEK & vRNA_HA_M1 & vRNA_NP) | par_vRNP_NP_cyto | vRNA_NA_M1
+pro_vRNP_NA_M1_nuc, !Bisindolylmaleimide_I | !cRNP_NP | !pro_vRNP_PB1_M1_nuc | cRNA_HA | pro_vRNP_M_M1_cyto
+pro_vRNP_PA_M1_nuc, (!par_vRNP_NA_cyto & !vRNA_PB1_M1 & vRNA_PB2_M1) | (!vRNA_PB1_M1 & temp_vRNP_PB1_nuc) | Viral_Dose
+pro_vRNP_NP_M1_nuc, !IVA_SialicAcid | (!mRNA_NP_nuc & !par_vRNP_HA_cyto) | (!mRNA_NP_nuc & cRNP_NA) | (!par_vRNP_HA_cyto & cRNP_NA) | (HA_LipidRafts & cRNP_NA)
+vRNA_NA_M1, !M1_M1 | vRNA_PA
+PB1_PA_nuc, mRNA_M2_nuc
+mRNA_NP_cyto, par_vRNP_NA_cyto
+M2_cyto, !U0126
+cRNP_NS, (!NP_cyto & !pro_vRNP_NA_M1_cyto & !vRNA_NA_M1) | (!pro_vRNP_NA_M1_cyto & mRNA_NS2_cyto)
+pro_vRNP_NS_M1_cyto, (!NP_nuc & pro_vRNP_NP_M1_cyto) | (mRNA_PA_cyto & pro_vRNP_NP_M1_cyto)
+cRNP_PA, !MEK | (!cRNP_HA & mRNA_NS1_nuc & temp_vRNP_M_nuc)
+IVA_SialicAcid_CCP, !PB1_PA_cyto
+par_vRNP_HA_cyto, IVA_ME
+pro_vRNP_PB1_M1_nuc, !Infected | !cRNA_NS | !cRNA_PB2 | !pro_vRNP_PB2_M1_nuc | vRNA_NA_M1
+M1_M1, (!temp_vRNP_NA_nuc & !vRNA_NA_M1 & PI3K & mRNA_NS2_nuc) | (!temp_vRNP_NA_nuc & IVA_HA1_HA2 & M2_inhibitor & mRNA_NS2_nuc) | (!temp_vRNP_NA_nuc & M2_inhibitor & NS2_cyto & PI3K & mRNA_NS2_nuc) | (!vRNA_NA_M1 & !vRNA_NS_M1 & mRNA_NS2_nuc) | (!vRNA_NS_M1 & PI3K) | (ERK & PI3K)
+pro_vRNP_NS_M1_nuc, (!cRNA_PA & !mRNA_NS2_cyto & pro_vRNP_HA_M1_cyto & pro_vRNP_NP_M1_cyto) | (!cRNA_PA & mRNA_HA_nuc & pro_vRNP_HA_M1_cyto)
+mRNA_NP_nuc, Neuraminidase_inhibitor
+NS1_cyto, !cRNP_PA
+NA_LipidRafts, (!vRNA_PA_M1 & IVA_EE) | vRNA_HA | vRNA_PB2_M1
+IVA_SialicAcid, !cRNA_PB2 | mRNA_NA_nuc
+HA_LipidRafts, M1_M1 | M2_cyto
+pro_vRNP_HA_M1_nuc, (!HA_cyto & !vRNA_NP_M1 & pro_vRNP_M_M1_nuc) | (!HA_cyto & temp_vRNP_PB2_nuc) | (!cRNA_PB1 & pro_vRNP_M_M1_nuc & temp_vRNP_PB2_nuc)
+mRNA_NA_cyto, mRNA_NA_cyto
+PKC, !IVA_SialicAcid_CCP | !PIP3 | cRNP_PB1
+par_vRNP_NP_cyto, !M2_inhibitor
+IVA_LE, (!PIP3 & M2_cyto) | pro_vRNP_NA_M1_nuc
+mRNA_M2_nuc, pro_vRNP_PB2_M1_cyto
+cRNP_M, !IVA_LE | (!M1_nuc & !temp_vRNP_HA_nuc) | !pro_vRNP_NS_M1_cyto
+mRNA_NS1_cyto, !PIP2
+mRNA_PB1_cyto, !mRNA_NA_cyto
+cRNA_PB1, !NP_cyto | !mRNA_NA_cyto | !vRNA_NA | PB2_nuc
+par_vRNP_M_cyto, pro_vRNP_NA_M1_cyto
+cRNA_PB2, (NP_cyto & cRNA_PB1 & vRNA_PA) | vRNA_HA
+M1_cyto, !cRNA_HA
+vRNA_PA_M1, pro_vRNP_PA_M1_nuc | temp_vRNP_PA_nuc
+temp_vRNP_NP_nuc, (!PA_cyto & !cRNA_PB1 & !vRNA_PA & mRNA_NS1_nuc) | (!PA_cyto & !vRNA_PA & NA_cyto) | (!cRNA_PB1 & NA_cyto & mRNA_NS1_nuc)
+NP_nuc, pro_vRNP_M_M1_nuc
+vRNA_M_M1, !RTK | !Raf
+IVA_HA1_HA2, !par_vRNP_NS_cyto
+vRNA_M, !pro_vRNP_PB2_M1_cyto
+mRNA_NS2_cyto, vRNA_HA_M1
+pro_vRNP_NA_M1_cyto, (!PKC & !vRNA_NA_M1) | cRNP_PB2
+PIP2, !ERK
+IVA_EE, (!vRNA_NS_M1 & IVA_HA1_HA2)
+vRNA_PB1, !IVA_LE
+mRNA_PB2_cyto, IVA_SialicAcid_CCV
+mRNA_PA_nuc, !PB2_cyto
+temp_vRNP_NS_nuc, !NS2_CellularFactor | !RTK | !cRNP_NA | !cRNP_PA | PB1_cyto
+PB2_cyto, HA_cyto
+pro_vRNP_PA_M1_cyto, (!M2_inhibitor & !vRNA_M) | PB1_PA_cyto
+temp_vRNP_M_nuc, (!Wortmannin & !cRNP_NS) | (!cRNP_NS & !mRNA_M2_nuc) | mRNA_NS1_nuc | vRNA_PB2_M1
+par_vRNP_PB1_cyto, cRNP_PB1
+temp_vRNP_PA_nuc, (!par_vRNP_NS_cyto & cRNP_PA) | (!par_vRNP_NS_cyto & vRNA_PA) | ERK | PB1_PA_Interface_Inhibitor | (cRNP_PA & vRNA_PA)
+temp_vRNP_PB2_nuc, !IVA_LE | !PB1_Inhibitor | (!mRNA_HA_nuc & !vRNA_NA) | !mRNA_PA_cyto
+vRNA_NS_M1, !vRNA_PA_M1 | cRNP_PB1
+vRNA_NP, !temp_vRNP_PB2_nuc
+PB2_nuc, !cRNP_M
+Wortmannin, vRNA_PB1_M1
+PB1_Inhibitor, par_vRNP_PA_cyto
+U0126, IVA_SialicAcid_CCP
+RTK_Inhibitor, par_vRNP_M_cyto
+Methyl_Beta_Cyclodextrin, par_vRNP_NP_cyto
+PB1_PA_Interface_Inhibitor, !mRNA_NS2_cyto
+Neuraminidase_inhibitor, !PB2_nuc
+HA_SialicAcid_Affinity, !Wortmannin
+Bisindolylmaleimide_I, !pro_vRNP_NS_M1_cyto
+M2_inhibitor, !NS1_cyto
+Viral_Dose, !PIP3

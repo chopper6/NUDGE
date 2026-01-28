@@ -1,0 +1,9 @@
+Snai2, !ESE2 | NFkB | Snai2
+ESE2, (ESE2 & NFkB) | Snai2
+NFkB, !p16 | (ESE2 & NFkB & Snai2)
+p16, !p16 | !p53 | E2F | Snai2 | TELasa
+p53, !Snai2 | (!p16 & NFkB) | TELasa
+Cyclin, !NFkB | (ESE2 & Snai2) | (ESE2 & p16) | (Snai2 & p16)
+TELasa, !ESE2
+Rb, !p16 | !p53
+E2F, !Rb | Snai2 | p53

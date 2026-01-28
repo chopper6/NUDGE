@@ -1,0 +1,18 @@
+TGFB, (!IL10 & !IL4) | !IL9 | IL21e
+IL4, (!GATA3 & !TGFBe) | (!GATA3 & IL10) | !IL21 | (!TGFBe & IFNG & IL21e) | (!TGFBe & IL10) | (IFNG & RORGT)
+IL2, !BCL6 | (!GATA3 & !IFNGe) | (!GATA3 & !IL4 & FOXP3) | !IL21
+FOXP3, (!BCL6 & !FOXP3 & !IL4) | (!BCL6 & TBET) | (!FOXP3 & !IL4 & IL2)
+IL9, (!FOXP3 & !IL4 & IL21) | (!FOXP3 & GATA3) | (!IL4 & GATA3 & IL21) | (!IL4 & GATA3 & IL2e) | TBET
+RORGT, (!IL2e & FOXP3 & TGFB) | (!IL2e & IL21e) | (FOXP3 & IFNG) | (IFNG & IL21) | (IFNG & IL21e & TGFB)
+IL10, (!FOXP3 & !IL10e & !RORGT) | (!FOXP3 & !IL21 & !RORGT) | GATA3 | IL21e
+BCL6, !IFNG | !IFNGe | !RORGT | IL9
+TBET, (!GATA3 & !IL4 & !IL9) | (!GATA3 & !IL9 & IFNG) | (!GATA3 & IFNG & IL21) | (!IL4 & IL10e & IL2 & IL21)
+IL21, (!FOXP3 & !IL10 & !IL2e & RORGT) | (!FOXP3 & !IL10 & TGFBe) | (!FOXP3 & IL2) | (!FOXP3 & IL21 & RORGT) | (!IL10 & !IL2e & IL2 & TBET & TGFBe) | (!IL10 & IL2 & RORGT & TBET & TGFBe) | (IFNG & RORGT)
+GATA3, (!FOXP3 & !IL4e & !RORGT & IL4) | (!FOXP3 & !IL4e & IL10) | (!IL4e & !RORGT & IL10) | (!RORGT & IFNGe & IL10 & IL4) | (!RORGT & IL10 & IL21) | GATA3
+IFNG, (!BCL6 & !IL10 & !IL9 & !TGFB & IL4e) | (!BCL6 & !IL10e & IFNGe & IL2e) | (!BCL6 & !IL10e & IL2e & IL4e) | (!IL10 & !TGFB & IFNG & IFNGe) | (!IL10 & !TGFB & IFNGe & IL2e) | (!IL10e & !TGFB) | (!IL9 & IFNGe) | FOXP3
+TGFBe, !IL2
+IL4e, !IL4
+IL2e, IL2
+IL10e, !IFNG
+IL21e, !RORGT
+IFNGe, !TGFBe

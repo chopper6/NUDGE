@@ -1,0 +1,141 @@
+DAG, (! KLF2 & FOXO1) | (AP1 & ! KLF2) | (! KLF2 & HIF1) | (ETS & ! KLF2)
+Calcium, Integrin | ANG1 | ANG2
+TRPV4, (KLF2 & ANG1 & ! ANG2 & TIE1) | (ETS & ANG1 & ! ANG2 & TIE1) | (ANG1 & ! ANG2 & TIE1 & ! VEPTP)
+ENG, HIF2a
+VEGFR11, KLF2
+Lactate, ! mir126
+NRARP, ! mir126
+sFRP1, SPRED1
+CyclinD1, ShearStress
+ART1, ShearStress
+TSC, (ShearStress & ! cGMP)
+VEPTP, (ETS & TIE2) | (ETS & ShearStress)
+TIE1, ShearStress
+FZD6, ShearStress
+VEGFCDp, (SRC & ETS) | (FAK & ETS) | (Actin & ETS) | (ETS & VEPTP)
+ETS, FYN | Actin | V_Ecadherin
+JNK, PECAM1
+CLK4, SRC | Integrin
+Axin2, FAK | TSAd | GqG11
+SPRED1, TIE2 | V_Ecadherin | AXL | ! PI3KR2
+KLF2, PIP3
+SMAD2, (! AKT & AMPK)
+ANG1, SRC
+WNT7a, (PI3K & ! PTEN)
+BMP10, ! TSC
+PIP3, TSAd
+cGMP, VEGFR22 | VEGFR23
+PDGFB, CSL | RHO
+NOTCH, (BMP10 & ACVR2A) | (BMP10 & BMPRII) | (BMP9 & BMPRII) | (BMP9 & ACVR2A) | (TGFB1 & TGFBRII) | (TGFB1 & BMPRII) | (BMP10 & TGFBRII) | (TGFB1 & ACVR2A) | (BMP9 & TGFBRII)
+PKC, TGFB1 | BMP9 | BMP10
+ALK1, (BMP9 & TGFBRII)
+LRP56, BMP9
+NAD, FOXO1 | SMAD2
+RHO, ALK1
+ADAM10, TRAF6
+NFAT, (NO & sGC)
+FZD45, AKT | SIRT1
+RHEB2, Calmodulin | eNOS
+HIF2a, IP3 | TRPV4 | PIEZO1
+NO, Calcium
+FOXO1, Calmodulin
+WNT11, Calcineurin
+VEGFAxxx, ERK
+TSAd, SHP2 | ALK1 | ! NF1
+Calmodulin, (RAS & ! AKT) | (! AKT & PKCB2)
+SRP55, RAF1 | FRS2a
+NICD, MEK | VEGFR33
+VEGFAxxxd, DSH | VEGFR22 | VEGFR33 | FZD45
+NRP1, PLCg
+PIEZO1, PLCg
+TAK1, (DAG & Calcium)
+NF1, (! AKT & AMPATP) | (! AKT & ! Oxygen)
+ACVR2A, AMPK | RHEB2
+FYN, (SIRT1 & mTOR & ! PHDs)
+Notch4, (! AKT & SIRT1)
+AMPK, ! NAD
+TGFB1, AMPK
+AP1, CSL
+ALK5, (SMAD4 & ALK1 & ! SMAD6 & ! NRP1 & ENG)
+BMP9, (SMAD4 & ! SMAD6 & ! NRP1 & ALK5 & BG)
+SMAD4, ! Oxygen
+FGF, (Oxygen & ! Lactate)
+ERK, SIRT1 | ! Oxygen
+TRAF6, (SIRT1 & ! NICD)
+SHP2, (HIF1 & NAD) | (HIF2a & NAD) | (FOXO1 & NAD)
+CSL, WNT5a
+PlGF, (DSH & ROR) | (RAC1 & DSH)
+HIF1, JNK
+FRS2a, WNT5a
+SMAD1, WNT5a | WNT11
+CDC42, (DSH & FZD6)
+GqG11, DSH | FZD6
+AXL, DAAM1
+SIRT1, NRP1 | DAAM1
+Actin, (WNT7a & ! sFRP1)
+AKT, WNT7a
+VEGFCD, (WNT7a & ! DKK1)
+Bcatenin, (! DSH & ! LRP56)
+TIE2, LEF1
+AMPATP, (! GSK3B & ! BTrCP)
+VEGFR12, ! Bcatenin
+RAC1, (Bcatenin & ! GROUCHO & NRARP) | (LEF1 & Bcatenin & ! GROUCHO)
+V_Ecadherin, (LEF1 & Bcatenin)
+DSH, FGF
+ANG2, FGFR2
+PLCg, Bcatenin | SMAD1
+Integrin, ETS | CSL
+VEGFR1s, FZD6 | (LRP56 & FZD47) | (FZD45 & ROR)
+LEF1, ETS
+DAAM1, (Notch4 & gSecretase & ADAM10 & DLL4p & ! JAGp)
+GROUCHO, (NOTCH & ! NRARP)
+Oxygen, NICD
+p38MAPK, CSL
+PTEN, CSL | (SMAD2 & ! SIRT1 & ! LSD1) | (! SIRT1 & SMAD1 & ! LSD1)
+BTrCP, Lactate | (! HEY1 & ETS)
+DLL4p, CSL | (ETS & ! NFAT) | (! NFAT & HIF1)
+Vegfr1, (PlGF & Vegfr1)
+sGC, Vegfr1
+LSD1, (Vegfr1 & Vegfr2)
+WNT5a, IGF
+gSecretase, PKC
+VegfA, VEGFAxxxP | (! VEGFR1s & ! VEGFR12 & ! VEGFR11 & VegfA & ART1 & ASFSF2)
+Calcineurin, DAG | SRC | TAK1
+Vegfr2, p38MAPK
+VEGFAxxxP, p38MAPK
+PI3K, CLK4 | CLK1
+BG, (VegfA & SRP55)
+PI3KR2, (! VEPTP & Vegfr2 & VEGFAxxx & ! VEGFAxxxd) | (! VEPTP & Vegfr2 & VEGFCDp & ! VEGFAxxxd) | (PECAM1 & Vegfr2)
+VEGFR23, CSL
+JAGp, (Vegfr2 & VEGFAxxx & VEGFR3) | (Vegfr2 & VEGFCDp & VEGFR3) | (PECAM1 & Vegfr2 & VEGFR3)
+PECAM1, (VEGFR3 & VEGFCD) | (VEGFCDp & VEGFR3) | (PECAM1 & VEGFR3)
+CLK1, VEGFR22
+JAGa, NFAT | STAT3 | KLF2 | HIF1 | FOXO1 | Lactate
+SRC, (ETS & VEGFCDp) | (! CSL & VEGFAxxx) | (ETS & VEGFAxxx) | (! CSL & VEGFCDp)
+VEGFR3, ANG1
+BMPRII, ShearStress
+ASFSF2, BMP10
+VEGFR33, ACVR2A
+eNOS, BMPRII
+FGFR2, BMP9
+PKCB2, TGFB1
+ShearStress, TGFBRII
+mTOR, sGC
+FAK, AMPATP
+SMAD6, Oxygen
+VEGFR22, SMAD4
+DLL4a, WNT5a
+HEY1, WNT11
+mir126, sFRP1
+RAF1, DKK1
+ROR, BTrCP
+GSK3B, FGF
+MEK, gSecretase
+FZD47, ADAM10
+PHDs, DLL4p
+RAS, JAGp
+DKK1, PlGF
+IGF, IGF
+STAT3, VEGFAxxxP
+IP3, VEGFCDp
+TGFBRII, VEGFCD

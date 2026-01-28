@@ -1,0 +1,20 @@
+cAMP_PKA, pH
+HAG_transcription, Rim8
+Nrg1_HAGs, (Temperature & ! Farnesol)
+hyphal_initiation, Cyr1
+Temperature, Efg1_T
+hyphal_maintenance, Brg1 | ! Efg1_active
+HDACs, (cAMP_PKA & Efg1) | (ESCRT & Efg1)
+Brg1, hyphal_initiation | (! Brg1 & ! Efg1_active & ! Ume6) | (! Brg1 & ! ESCRT & ! cAMP_PKA & ! Ume6)
+Farnesol, (NRG1_T & ! HDACs) | (NRG1_T & HATs)
+Efg1, ! Nrg1_at_HAGs
+pH, Brg1
+Efg1_active, (Efg1_active & ! HDACs)
+Cyr1, (Brg1 & ! Nrg1_HAGs)
+HATs, hyphal_initiation | (Brg1 & HATs & ! Nrg1_at_HAGs)
+NRG1_T, (Ume6 & ! Nrg1_at_HAGs) | (Brg1 & ! Nrg1_at_HAGs)
+Ume6, (Ume6 & hyphal_initiation & ! Nrg1_HAGs)
+Nrg1_at_HAGs, pH
+ESCRT, Temperature
+Efg1_T, Farnesol
+Rim8, Nrg1_HAGs

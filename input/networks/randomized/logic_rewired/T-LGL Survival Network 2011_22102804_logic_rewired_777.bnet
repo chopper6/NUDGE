@@ -1,0 +1,60 @@
+FasT, !NFKB | Apoptosis
+DISC, !Apoptosis | !Ceramide | !FLIP | !FasT | !IL2 | Fas
+LCK, !Apoptosis | !IL2RB | !TCR | CD45 | ZAP70
+GAP, (!PDGFR & IL15 & IL2) | (Apoptosis & IL15) | GAP | RAS
+S1P, (!SPHK1 & Apoptosis) | (!SPHK1 & Ceramide)
+Apoptosis, !Apoptosis | Caspase
+SPHK1, (!PDGFR & Apoptosis)
+PDGFR, !PDGF | Apoptosis | S1P
+Proliferation, !Apoptosis | (!P27 & !STAT3)
+IL2RB, !Apoptosis | !IL2 | IL15 | IL2RBT
+RAS, !Apoptosis | GAP | GRB2 | PLCG1
+SOCS, !IL15 | (!JAK & Apoptosis) | IL2
+Ceramide, (!Apoptosis & !Fas) | (!Apoptosis & !S1P)
+BclxL, (!Apoptosis & !STAT3 & GZMB) | (!BID & !STAT3) | (!BID & NFKB) | (!STAT3 & NFKB) | DISC
+IFNGT, (!Apoptosis & !TBET) | (!Apoptosis & NFAT) | !STAT3 | (!TBET & NFAT)
+RANTES, (!Apoptosis & NFKB)
+IL2RBT, !ERK | !TBET | Apoptosis
+PLCG1, Apoptosis | GRB2 | PDGFR
+GZMB, !CREB | !TBET | Apoptosis | IFNG
+sFas, !Apoptosis | (FasT & S1P)
+IAP, Apoptosis | BID | NFKB
+IL2RAT, (!IL2 & !NFKB) | Apoptosis | STAT3
+Cytoskeleton_signaling, !Apoptosis | FYN
+JAK, (!Apoptosis & !IFNG & RANTES) | (!Apoptosis & !IL2RA) | !CD45 | (!IL2RA & RANTES) | !IL2RB | SOCS
+SMAD, Apoptosis | GPCR
+FasL, !NFKB | (!STAT3 & ERK) | Apoptosis | NFAT
+FYN, (!IL2RB & !TCR) | (!IL2RB & Apoptosis)
+Caspase, (!DISC & Apoptosis & IAP) | (!DISC & BID & IAP) | (Apoptosis & IAP & TRADD) | GZMB
+GPCR, !Apoptosis | !S1P
+GRB2, (!IL2RB & !ZAP70 & Apoptosis)
+CREB, (!ERK & !IFNG & Apoptosis)
+MEK, !Apoptosis | !RAS
+P27, !STAT3 | Apoptosis
+IFNG, (!Apoptosis & IL15 & SMAD) | (!IL2 & !Stimuli) | (!IL2 & IL15 & SMAD) | (!Stimuli & P2) | IFNGT
+ZAP70, (!FYN & !LCK & Apoptosis)
+NFKB, (!IAP & !PI3K & Apoptosis & FLIP) | (!IAP & Apoptosis & TPL2) | (!PI3K & FLIP & TPL2) | (Apoptosis & TPL2 & TRADD)
+FLIP, !NFKB | Apoptosis | CREB | DISC | IFNG
+IL2RA, !IL2RA | Apoptosis | IL2 | IL2RAT
+STAT3, !Apoptosis | JAK
+TNF, (Apoptosis & NFKB)
+Fas, (!Apoptosis & !FasT) | !FasL | sFas
+TPL2, !PI3K | (!TNF & Apoptosis) | TAX
+PI3K, (!Apoptosis & RAS) | PDGFR
+P2, (!Stimuli2 & Apoptosis & P2) | (!Stimuli2 & IFNG)
+TRADD, !A20 | !IAP | !TNF | Apoptosis
+BID, (!Apoptosis & !MCL1) | !BclxL | (!Caspase & !GZMB) | (!GZMB & !MCL1)
+MCL1, !Apoptosis | !DISC | !IL2RB | (NFKB & STAT3) | PI3K
+ERK, Apoptosis | MEK | PI3K
+NFAT, (Apoptosis & PI3K)
+IL2, (!STAT3 & !TBET) | (!STAT3 & Apoptosis & NFKB) | (!TBET & NFAT)
+TBET, (!JAK & Apoptosis & TBET)
+A20, !Apoptosis | !NFKB
+CTLA4, !Apoptosis | !TCR
+TCR, (!CTLA4 & Apoptosis) | (!Stimuli & Apoptosis)
+CD45, CD45
+IL15, !IL15
+PDGF, !PDGF
+Stimuli, Stimuli
+TAX, !TAX
+Stimuli2, !Stimuli2

@@ -1,0 +1,30 @@
+Integrin, !Flow | Cadherin
+RTK, !Flow
+PLC, !RTK
+Grb_2_Sos, !Src | RTK
+FAK, !Integrin
+Src, FAK
+PKC, PLC
+Ras, !Grb_2_Sos
+Rho, !FAK
+PI3K, Ras | Src
+MEKK, !Rho | Ras
+ROCK, !Rho
+Rac, !Rho | PI3K
+Raf_1, !PKC | !Ras | PI3K
+MEK1_2, (!Rac & Raf_1)
+Akt, !PI3K
+MEK4, MEKK
+Actin, !ROCK | Rac
+ERK1_2, !MEK1_2
+eNOS, !Akt
+JNK, !ASK1 | MEK4
+NO, eNOS
+ASK1, !NO
+Caspase_3, !NO
+Bad, Akt
+Proliferation, ERK1_2
+Apoptosis, !JNK | Bad | Caspase_3
+Migration, !Actin
+Cadherin, Cadherin
+Flow, !Flow

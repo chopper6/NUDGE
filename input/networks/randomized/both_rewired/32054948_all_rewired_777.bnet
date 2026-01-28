@@ -1,0 +1,27 @@
+ATM, (ATM & Mdm2 & PUMA) | (Apoptosis & Mdm2)
+miR_34a, !Mdm2 | BCL2
+miR_16, (!Caspase3 & E2F1 & p53_INP1) | (!p53_A & E2F1 & p53_INP1)
+HDAC1, (!ATM & !Mdm2 & !p53)
+c_Myc, (!p21 & Sirt_1) | DNA_damage | miR_16
+p53, (!Apoptosis & !RB) | BAX
+Mdm2, (!CDK2_CycE & !RB) | (!CDK2_CycE & HDAC1)
+p53_A, (!p53_K & Cdc25A & Proliferation) | (!p53_K & DNA_damage) | (Cdc25A & DNA_damage & Proliferation)
+p53_K, (Cdc25A & DNA_damage & E2F1 & miR_34a)
+Sirt_1, E2F1 | PUMA | Sirt_1
+p53_INP1, !E2F1 | Apoptosis
+Wip1, (HDAC1 & Mdm2)
+p21, (!BMI1 & !Caspase3) | (!BMI1 & p53_K) | (!Caspase3 & DNA_damage & p53_K) | HDAC1
+Cdc25A, DNA_damage | c_Myc
+CDK46_CycD, !Mdm2 | !PUMA | !miR_34a | p53_A
+CDK2_CycE, (!PUMA & !p53 & miR_16) | (!PUMA & CDK46_CycD) | (!p53 & CDK46_CycD & miR_16) | DNA_damage
+RB, !BMI1 | Caspase3
+PUMA, p53_A
+BCL2, RB | p21 | p53_K
+BAX, (!miR_16 & Caspase3) | (BCL2 & Caspase3)
+E2F1, !DNA_damage | !E2F1 | !Sirt_1 | !c_Myc | !miR_16 | Mdm2
+BMI1, !BMI1 | Proliferation | p53_K
+Caspase3, BMI1 | PUMA | p21
+Proliferation, !E2F1
+SIPS, !miR_16 | p21
+Apoptosis, p53_INP1
+DNA_damage, !p53_INP1

@@ -1,0 +1,20 @@
+Cdc20, (FEAR & MEN)
+SMBF, ! Start | (! Cln2 & ! Cln3)
+MEN, (Cdc14 & ! Clb2 & SFF & ! Swi5)
+Sic1, Cdc14 | (! Clb2 & ! Cln2 & ! Clb5)
+Yhp1, (Cdc14 & Swi5) | (Cdc14 & Sic1) | (! Cdc14 & ! Clb2 & ! Cln2 & ! Clb5)
+Swe1, Cdc20
+BuddingCP, (! Cdc20 & SFF & ! Swe1) | (SFF & ! Cdh1 & ! Swe1) | (! Cdc20 & ! Cdh1 & ! Sic1 & ! Swe1)
+Start, (! Yhp1 & Size)
+Whi5, (SMBF & ! Cdc20 & ! Sic1)
+SpindleCP, SMBF
+FEAR, ! BuddingCP
+Cdh1, (Clb2 & FEAR)
+SFF, (Clb2 & SFF & SpindleCP)
+Clb5, (Start & SMBF)
+Cln2, (! Clb2 & ! Whi5)
+Size, Clb2
+Swi5, Start
+Clb2, Size
+Cln3, BuddingCP
+Cdc14, SpindleCP

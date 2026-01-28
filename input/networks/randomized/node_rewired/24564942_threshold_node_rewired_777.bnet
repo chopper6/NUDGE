@@ -1,0 +1,8 @@
+cdc_25_1, (cdc_25_1 & ! lin_35_efl_1_dpl_1 & ! cki1 & cdk2_cyclinE) | (cdc_25_1 & ! cul1_lin23 & ! cki1 & cdk2_cyclinE) | (! cul1_lin23 & ! lin_35_efl_1_dpl_1 & ! cki1 & cdk2_cyclinE) | (cdc_25_1 & ! cul1_lin23 & ! lin_35_efl_1_dpl_1 & cdk2_cyclinE) | (cdc_25_1 & ! cul1_lin23 & ! lin_35_efl_1_dpl_1 & ! cki1)
+cdc14_fzy1, (cdc_25_1 & ! cul1_lin23)
+cdk1_cyclinB, cdk2_cyclinE
+cki1, (cul1_lin23 & ! cdk2_cyclinE) | (lin_35_efl_1_dpl_1 & ! cdk2_cyclinE) | (cul1_lin23 & lin_35_efl_1_dpl_1)
+cdk2_cyclinE, (lin_35_efl_1_dpl_1 & cdk1_cyclinB & ! fzr_1 & ! cdc14_fzy1) | (lin_35_efl_1_dpl_1 & ! cki1 & cdk1_cyclinB & ! fzr_1) | (cdc_25_1 & lin_35_efl_1_dpl_1 & cdk1_cyclinB & ! cdc14_fzy1) | (cdc_25_1 & lin_35_efl_1_dpl_1 & ! cki1 & ! cdc14_fzy1) | (lin_35_efl_1_dpl_1 & ! cki1 & ! fzr_1 & ! cdc14_fzy1) | (cdc_25_1 & lin_35_efl_1_dpl_1 & ! cki1 & ! fzr_1) | (cdc_25_1 & lin_35_efl_1_dpl_1 & ! fzr_1 & ! cdc14_fzy1) | (cdc_25_1 & ! cki1 & cdk1_cyclinB & ! fzr_1) | (! cki1 & cdk1_cyclinB & ! fzr_1 & ! cdc14_fzy1) | (cdc_25_1 & lin_35_efl_1_dpl_1 & ! cki1 & cdk1_cyclinB) | (cdc_25_1 & cdk1_cyclinB & ! fzr_1 & ! cdc14_fzy1) | (cdc_25_1 & ! cki1 & cdk1_cyclinB & ! cdc14_fzy1) | (cdc_25_1 & ! cki1 & ! fzr_1 & ! cdc14_fzy1) | (lin_35_efl_1_dpl_1 & ! cki1 & cdk1_cyclinB & ! cdc14_fzy1) | (cdc_25_1 & lin_35_efl_1_dpl_1 & cdk1_cyclinB & ! fzr_1)
+lin_35_efl_1_dpl_1, cdc14_fzy1
+fzr_1, (! cdk2_cyclinE & cdc14_fzy1) | (! cdk2_cyclinE & cdk1_cyclinB) | (cdk1_cyclinB & cdc14_fzy1)
+cul1_lin23, fzr_1 | cdc14_fzy1

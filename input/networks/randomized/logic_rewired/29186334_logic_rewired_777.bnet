@@ -1,0 +1,29 @@
+cebpa, !mitf | cebpa
+cebpb, stat5
+cjun, !cebpa
+egr, gfi1 | pu1
+gfi1, !cebpa | !egr
+gata1, !gata1
+gata2, !gata2 | (gata1 & stat5)
+mitf, (cebpa & ckit)
+pu1, (!gfi1 & !runx1) | (!gfi1 & cebpa & pu1) | (!gfi1 & cjun) | (!runx1 & cebpa & pu1) | (!runx1 & cjun & pu1)
+runx1, (!pu1 & gata2) | (!runx1 & gata2)
+cmyb, !pu1 | cebpa
+scl, (!gata1 & scl)
+il3ra, !gata1 | gata2
+stat5, !jak2
+jak2, !bc | !gmcsfr | il3ra
+bc, (!pu1 & cebpa)
+mcsfr, !cjun | (!gata1 & !runx1) | (!gata1 & gata2) | (!runx1 & gata2) | (gata2 & pu1)
+gmcsfr, !pu1 | runx1
+gcsfr, cebpa | pu1
+ne, !cebpa | (!cmyb & !gata1) | (!gata1 & !pu1) | (!gata1 & egr) | !gata2
+mpo, !cebpa | !egr | !gata1 | !gata2 | pu1
+lf, (!gata1 & !gata2 & egr) | (!gata2 & cebpa)
+mbp, (!cebpb & !gata1 & gfi1) | (!cebpb & !gata2 & gfi1) | (!cebpb & cebpa & gcsfr) | (!gata1 & gcsfr & gfi1) | (!gata1 & pu1) | (!gata2 & cebpa & gfi1)
+mmcp6, (cjun & ckit) | (cjun & mitf)
+mccpa, (ckit & gata2) | (ckit & mitf)
+ckit, !gata2 | !mitf | !scl | gata1
+fceRIb, !gata1
+fceRIa, !gata2 | gata1 | pu1
+ccr3, !gata1 | !runx1 | cebpa | pu1

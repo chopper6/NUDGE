@@ -1,0 +1,16 @@
+Phospholipase_C, Phospholipase_C
+Calcium, !Adenylate_cyclase | Dopamine
+Protein_Kinase_A, Dopamine_Receptor_1
+Glutamate_Receptor, (!Glutamate & Phospholipase_C) | !Packaging_Proteins
+Exocytosis, !Exocytosis
+Tryosine_hydroxylase, !Exocytosis
+Dopamine, Dopamine | Tryosine_hydroxylase
+Adenylate_cyclase, !Protein_Phosphatase_1 | Glutamate_Receptor
+Dopamine_Receptor_1, Calcium
+Dopamine_Receptor_2, !Adenylate_cyclase
+Calcineurin, !Adenylate_cyclase
+Protein_Phosphatase_1, Dopamine_Receptor_2
+Glutamate, !Packaging_Proteins
+Packaging_Proteins, !Protein_Phosphatase_1
+COMT, !Dopamine_Receptor_2
+DARPP32, Calcium | Dopamine_Receptor_2

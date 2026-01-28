@@ -1,0 +1,136 @@
+gp120, !CD45 | !MAPK14_p38 | ITK
+BAD, !zero
+B_arrestin, !protease
+WASP, CDC42 | LCP2_SLP76 | NCK
+nucleocapsid, !DLGH1
+PLCB, !tat | Gby
+MAP3K1_Mekk1, (!RAC & CDC42 & MAP4K1_Hpk1)
+CYC1, GSK3
+LCK, (!CD45 & !gp120 & gp160) | (!CD45 & !gp120 & tat) | (!CD45 & CD4 & gp160 & tat) | (!PTPN6_SHP1 & !gp120) | (!PTPN6_SHP1 & CSK & gp160) | (!gp120 & CSK & gp160 & tat)
+AC, gp41
+CDKN1A_p21, (!tat & gp120) | (!vpr & gp120)
+Cam, Ca2plus
+NCF1, !PKCB_D
+PDPK1, PIP3
+PKA, cAMP
+PLCy1, !LCK | !gp120 | LAT | tat
+FOS, !MAPK1_3_Erk
+vif, MAPK1_3_Erk
+ROCK, !RHOA
+RHOA, VAV1
+Ca2plus, !IP3
+MAP3K7_TAK1, (!PKCth & MAP4K1_Hpk1) | (!gp41 & MAP4K1_Hpk1)
+CDC42, !RAP | VAV1
+RAC, (!DOCK2_CRK_ELMO1 & !P_REX1) | (!P_REX1 & !VAV1 & PRKCZPar3Tiam1)
+CBLB, !CTLA4 | (!nef & LCK) | (!nef & ZAP70)
+CaN, !Cam
+MAP3K8_COT, AKT
+GRAP2_GADS, CD28 | LAT
+CARMA1BCL10MALT1, PKCth
+ITK, !CD28 | LCK | (LCP2_SLP76 & PIP3) | ZAP70
+CD28, (!vpr & gp41 & nef)
+RAF, (!CD4 & !nef) | (!nef & LCK & gp120) | (!nef & RAS) | (LCK & RAS)
+SOS, GRB2 | RASGRP1
+DOCK2_CRK_ELMO1, !Src | !nef
+PPP2R4_PP2A, CTLA4
+PIP2, !PIP3 | PTEN
+PAK, (!CDC42 & NCK & RAC) | !nef
+Ccblp, FYN
+CRK, ZAP70
+nef, !PKA | LCP2_SLP76
+MAP2K1_2_MEK1_2, !RAF
+P_REX1, Gby | PIP3
+TCR, (!LCK & !nucleocapsid) | FYN | antigen
+PI3K, (!Gby & !LAT & !PTPN6_SHP1 & CD4 & LCK & Src & nef & tat) | (!Gby & !PTPN6_SHP1 & !gp160 & ICOS) | (!Gby & CBLB & ICOS & LCK & nef) | (!LAT & !PTPN11_SHP2 & !PTPN6_SHP1 & !ZAP70 & CBLB & CD28 & CD4 & LCK & Src & nef & tat) | (!LAT & !PTPN11_SHP2 & !PTPN6_SHP1 & !gp160 & CBLB & Src & nef & tat) | (!LAT & !ZAP70 & CBL & CD28 & LCK & Src & tat) | (!PTPN11_SHP2 & !PTPN6_SHP1 & !gp160 & CBL & CBLB & LCK & nef) | (!PTPN11_SHP2 & !ZAP70 & !gp160 & CBL & CBLB & LCK)
+CTLA4, vpr
+CTNNB1_bcat, (!GSK3 & vpu)
+FOXO3, !AKT
+PKCth, (!DAG & !VAV3 & AKT) | (!PDPK1 & !VAV3 & VAV1 & gp160) | (AKT & VAV1)
+CCR5_CXCR4, !Chemokine | (!gp120 & !gp41)
+RAS, !LAT | (!RASGRP1 & !SOS) | (!SHC & !SOS) | (!SHC & GRB2)
+GRK, GRKL
+SIT1, !FYN | LCK
+NCK, !TCR
+FYN, !LCK | (!gp120 & CD45) | (!gp120 & TCR) | (CD45 & TCR)
+matrix, (!PAK & MAPK1_3_Erk & PKCth & nef) | (!PAK & PKCB_D & PRKCZ) | (MAPK1_3_Erk & PRKCZ) | (PKCB_D & PKCth) | (PKCth & PRKCZ)
+PKCB_D, (!VAV1 & PDPK1) | (!VAV1 & VAV3) | (!VAV1 & gp160) | DAG | (PDPK1 & gp160)
+Gby, GaiGby
+IKB, IKBNFKB | Ikkb_Ikky_Ikka | vpu
+CREB, !RPS6KA1_RSK
+API, !FOS | JUN
+BCL2L1, BAD
+cAMP, !AC | matrix
+p6, !MAPK1_3_Erk
+JUN, MAPK8_JNK
+CD4, !gp160 | vif
+capsid, PKA | STAT
+Gai, !GaiGby
+vpr, PKA
+rt, (!MAPK1_3_Erk & !PKCB_D) | (!PKCB_D & MAP2K1_2_MEK1_2) | (NFAT & PRKCZ) | PKCth
+NFKB, (IKBNFKB & protease) | Ikkb_Ikky_Ikka
+AKT, PDPK1 | PIP3
+IP3, !PIP2 | !PLCB | !PLCy1 | nef
+DAG, !PLCy1 | PIP2 | PLCB
+NFAT, !CaN | PXN
+PIP3, !PI3K | !PIP2
+MAPK1_3_Erk, MAP2K1_2_MEK1_2 | PRKCZ
+PTK2B_Pyk2, !Src | FYN
+Ikkb_Ikky_Ikka, (!MAP3K14_NIK & !nef) | (!MAP3K7_TAK1 & !nef) | CARMA1BCL10MALT1
+STAT, !JAK3 | tat
+SHC, (!Src & TCR) | !tat
+gp160, !DLGH1
+DNA, !STAT | (NFAT & NFKB)
+MAP2K7_MKK7, MAP3K7_TAK1
+MAPK14_p38, !DLGH1 | ZAP70
+RASGRP2, !Ca2plus | (!DAG & PKCB_D)
+ABL, FYN | LCK
+MAP2K4_Mkk4, MAP3K1_Mekk1 | MAP3K1_Mlk3 | MAP3K7_TAK1
+PRKCZ, (PIP3 & gp160)
+rev, !MAPK1_3_Erk
+GaiGby, B_arrestin | CCR5_CXCR4 | GRK
+GRB2, !CD28 | !LAT | SHC
+Rik, !LCK | CD28
+RAP, !RASGRP2
+RASGRP1, (!DAG & PKCth)
+PTEN, !CBLB | !RHOA | tat
+MAPK8_JNK, !MAP2K7_MKK7 | MAP2K4_Mkk4 | MAP3K1_Mekk1
+JAK3, !CCR5_CXCR4
+CBL, !ZAP70 | PTEN
+VAV3, (!ITK & !LAT & !nef) | (!LAT & !SH3BP2 & !nef)
+NOX4, !NCF1
+PRKCZPar3Tiam1, CDC42
+RPS6KA1_RSK, MAPK1_3_Erk
+PAG, !TCR | FYN
+GSK3, AKT
+SH3BP2, (!ZAP70 & LAT)
+LCP2_SLP76, (!GRAP2_GADS & !gp120) | !LCK | ZAP70
+PTK2, (!CD4 & !tat & gp120) | (!CD4 & Src)
+ZAP70, (!LCK & !TCR & ABL) | (!TCR & ABL & gp120)
+Src, Gai | PTK2B_Pyk2
+MAP4K1_Hpk1, (!CRK & !GRAP2_GADS) | (!CRK & CRKL) | LAT
+VAV1, (!CD28 & !ITK) | (!CD28 & !SH3BP2 & LAT) | (!ITK & !SH3BP2) | (!ITK & LAT & nef) | ZAP70
+CSK, !PAG
+Sre, !RAC | CDC42
+in, CDKN1A_p21
+GAB2, (!GRB2 & LAT) | GRAP2_GADS | ZAP70
+PTPN11_SHP2, !CTLA4 | !PDCD1_PD1 | GAB2
+DGK, !TCR
+MAP3K14_NIK, MAP3K8_COT | tat
+PXN, (MAPK8_JNK & Src)
+protease, !PKCB_D | !PKCth | PRKCZ
+PTPN6_SHP1, (!CTLA4 & LCK) | PDCD1_PD1
+LAT, LCK | ZAP70 | gp120
+tat, (!PKCth & !PRKCZ) | (!nef & IKB)
+MAP3K1_Mlk3, (!MAP4K1_Hpk1 & CDC42) | (CDC42 & RAC)
+CD45, CD45
+zero, zero
+DLGH1, !DLGH1
+gp41, !gp41
+antigen, antigen
+ICOS, !ICOS
+vpu, !vpu
+Chemokine, Chemokine
+GRKL, GRKL
+IKBNFKB, IKBNFKB
+CRKL, CRKL
+PDCD1_PD1, !PDCD1_PD1

@@ -1,0 +1,23 @@
+GADD45beta, Cdc25ABC
+ATM_ATR, !GADD45beta
+CHEK1_CHEK2, p14ARF
+p53, (!p14ARF & Proliferation) | p16INK4a
+SMAD2_3, SMAD2_3
+PTEN, PI3K_AKT
+p15INK4b, BCL2
+p14ARF, (E2F1 & p38MAPK)
+PI3K_AKT, (!Apoptosis & CdkCyclin)
+BCL2, SMAD2_3
+Mdm2, !Apoptosis | CdkCyclin
+p38MAPK, !PI3K_AKT | !Proliferation
+p16INK4a, !Mdm2
+p21, !BCL2 | !CHEK1_CHEK2 | Cdc25ABC
+pRB, PI3K_AKT
+E2F1, Mdm2 | p38MAPK
+CdkCyclin, !p14ARF | !pRB | Damage | Mdm2
+Cdc25ABC, !CHEK1_CHEK2 | p14ARF
+Cell_Cycle_Arrest, !p38MAPK | Cdc25ABC
+Proliferation, !p21 | PI3K_AKT
+Apoptosis, !ATM_ATR | !CdkCyclin
+TGFbeta, !GADD45beta
+Damage, Cell_Cycle_Arrest

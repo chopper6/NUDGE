@@ -1,0 +1,118 @@
+upa, !tollip | il1a
+mk2, !mek7
+inos, !dum_cebp_saa | !nik
+jnk, (!mekk3 & !p105_degr)
+pi3k, !pip3 | !sil1r_ap
+saa, (hgf & jnk)
+ikkab_nemo, !ikkaa | !upa | pellino
+il6, (!dum_irak1_or_2_traf6_ub & cjun) | (!sil1r_ap & cjun) | ikkaa | il1a | pro_il1b
+ikka_a, !dum_cebp_saa | !ttp
+irak1c, !irak1c | mek7
+mkp1, dum_mek3_or_4_or_6_nuc_p38
+nfkb, (!inos & !irak2) | (!irak2 & il1b)
+p105, !tdum_mkp1_p38_jnk_erk12
+dum_irak1_or_2_traf6_ub, !nfkb | cox2
+tdum_a20_traf6_ub, ikka
+akt, (ikkab_nemo & pten) | lbp
+ikkaa_nemo, !dum_cebp_il1ra | ksrp
+dum_il1_r2, !sil1r12 | il1ra
+irak1_ub, !il1r1 | !traf6_ub
+irak2, (!akt & !p50) | (!akt & cebpb) | mek4
+mekk3, !mek3 | tollip
+mek4, !cjun | !nemo
+ikkaa, !irak2
+dum_cebp_pro_il1b, !irak4 | !mek6
+tollip, !ck2
+lbp, !dum_ikkab_nemo_akt_or_ck2_p65 | !dum_irak1_or_2_traf6_ub
+dum_il1_r1, !cjun_gene | msk1
+tpl2, (!mek3 & !tdum_a20_traf6_ub) | (!mek3 & dum_ikkab_nemo_akt_or_ck2_p65) | (!tdum_a20_traf6_ub & dum_ikkab_nemo_akt_or_ck2_p65) | (dum_ikkab_nemo_akt_or_ck2_p65 & p105)
+il1b_new, (!il1r2 & !nc_nfkb_pathway)
+dum_tak1_tab_or_mekk3_ikkb_a, !ikkbb_nemo | !pi3k | !socs1
+cebpb, !dum_mek3_or_4_or_6_nuc_p38 | sap1
+tdum_mkp1_p38_jnk_erk12, !pro_hgf
+p105_degr, !tdum_il1ra_ilr12
+tdum_irak1c_irak12, !tpl2_degr
+mek3, !atf2 | pi3k
+cjun, !mek1 | !tdum_tpl2_degr_tp2
+myd88, !dum_cebp_cox2
+ikba, !nc_nfkb_pathway | !tdum_a20_traf6_ub | pro_il1b
+tak1_tab, !il1a | !tak1_tab | irakm | pro_il1b
+mek6, !ikba | !smyd88
+nik, ccl2
+tdum_hsp27_ps_traf6_ub, !dum_tak1_tab_or_mekk3_ikkb_a
+irak4, (!mkp1 & !tdum_a20_traf6_ub)
+tdum_cyt_p38_tak1_tab, !cjun
+ccl2, (!ikkbb_nemo & !pi3k & !sil1r_ap) | (!pi3k & !saa)
+il1r1, !p65 | atf2
+cebpd, cebpb | ck2 | mek1
+ros, (!mek4 & il1r1)
+cyt_p38, !atf2 | !cjun
+tdum_il1ra_ilr12, !pellino
+il1a, !dum_cebp_il1ra
+traf6_ub, !dum_mek3_or_4_or_6_nuc_p38 | !nc_nfkb_pathway | !pro_hgf | !tdum_a20_traf6_ub | ikba_diss
+a20, ros
+il1b, pro_hgf
+nc_nfkb_pathway, !ikkaa | mtorc2
+p65, ros | tdum_a20_traf6_ub
+hgf, !tak1_tab | dum_tak1_tab_or_mekk3_ikkb_a
+erk12, !upa | tdum_il1ra_ilr12
+traf6, p50
+dum_mek3_or_4_or_6_nuc_p38, !akt | !irak1 | ap1
+dum_ikkab_nemo_akt_or_ck2_p65, irak4 | pdk1 | pro_hgf
+ikba_diss, !mk2
+ikba_degr, !ikka_a | !irak4 | !tak1_tab | ck2
+gsk3, !cjun
+mek7, !p65 | mekk3
+nalp_infl, !cfos
+cfos, !jnk | ikkaa_nemo
+dum_cebp_saa, cyt_p38 | mek1
+il8, !cebpb | !cyt_p38 | (!elk1 & !pro_hgf) | gsk3
+msk1, !cebpd | !cjun_gene
+cjun_gene, elk1
+ap1, !dum_cebp_cox2 | !ikkb_a | ttp
+tdum_il1r2_il1rc, pellino
+ikkb_a, mk2 | nemo
+atf2, !akt | irakm | p50
+dum_cebp_il1ra, (hsp27_ps & mk2)
+dum_sap1_or_elk_cfos, !il1r2 | !sap1
+il1r2, !lbp | !pten
+elk1, ikba_diss | (socs3 & ttp)
+irs1_ps, !nalp_infl | hgf | tdum_il1r2_il1rc
+ikkbb_nemo, (!abin2 & dum_ikkab_or_ikkbb_nemo_ikkb_a)
+mek1, !ikkbb_nemo
+p50, ttp
+il1rc, dum_il1_r2 | (irakm & traf6_ub)
+pro_il1b, (!il1rc & mtorc2) | (!il1rc & socs1) | (irak1c & mtorc2 & socs1)
+irak1, (!dum_il1_r2 & atf2) | (!dum_il1_r2 & dum_cebp_cox2) | !ikba_diss | jnk
+sap1, !inos | !myd88 | ksrp
+nuc_p38, !inos | !irak4
+tpl2_degr, socs1
+hnf4a, (!mek6 & il6)
+pro_hgf, !tdum_a20_traf6_ub | msk1
+hsp27_ps, traf6
+sil1r_ap, sil1r_ap
+ksrp, cebpd
+pellino, !mk2 | tdum_tpl2_degr_tp2
+dum_mek4_or_7_jnk, dum_il1_r1 | dum_mek4_or_7_jnk
+dum_ikkab_or_ikkbb_nemo_ikkb_a, !il1r2 | ccl2
+tdum_tpl2_degr_tp2, !traf6
+ttp, !ikkab_nemo
+pip3, (!irak4 & dum_il1_r1)
+il1ra, (!nuc_p38 & p50) | (!nuc_p38 & sil1r_ap)
+dum_cebp_cox2, !ap1 | il1ra
+nemo, !hsp27_ps
+cox2, (!ikkb_a & !nalp_infl) | (!ikkb_a & !trika1) | (!ikkb_a & il1b) | (!trika1 & il1b)
+ikka, il1r2
+ikkb, tollip
+pdk1, !traf6
+mtorc2, p50
+trika1, hgf
+abin2, !p50
+src, !irs1_ps
+smyd88, ikkbb_nemo
+ck2, gsk3
+sil1r12, !p105
+socs3, hsp27_ps
+socs1, !mek7
+irakm, !dum_sap1_or_elk_cfos
+pten, ikka

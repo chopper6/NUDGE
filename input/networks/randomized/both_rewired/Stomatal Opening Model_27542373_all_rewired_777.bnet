@@ -1,0 +1,49 @@
+PP1cc_2, !Kout | !PK_3 | CaIc | Cac_high
+Kv, !ABA
+carbfix_high, !Ci_sup | !HATPase_3 | SO_1
+sucrose, HATPase_1 | ROS
+Kin, (!CO2_high & !FFA & !MCPS_high & HATPase_3) | (!CaATPase & !FFA & !MCPS_high) | (!CaATPase & HATPase_1 & HATPase_3)
+PLD, !HATPase_2 | !sucrose
+PLA2, !AnionCh_high | !FFA | Kin
+Kout, (!AnionCh_high & !FFA & !HATPase_1 & !PLA2 & Ci) | (!AnionCh_high & !PLA2 & CaIc & Ci & HATPase_2)
+Cac, !ABI1 | (!CO2_high & !PMV_neg) | PP1cc_3
+PK_2, (!PLC & !PP1cc_2) | !carbfix | (PMV_neg & carbfix_high)
+FFA, !carbfix
+HATPase_3, (!AnionCh_high & !FFA & !PK_1 & PP1cc_3 & phph_high) | (!AnionCh_high & !PK_1 & Kout & PP1cc_3 & phph_high) | (!FFA & !KEV & !PK_1) | (Kout & PP1cc_1)
+KEV, !PMV_pos | !phot1_complex
+Kc, (!Cac_high & !PLA2 & ABI1 & PK_1 & phph_high) | (!Cac_high & !PLC & !PP1cc_2) | (!Cac_high & !PP1cc_2 & ABI1 & phph_high) | (!Cac_high & !PP1cc_2 & PK_1 & ROS) | (!Cac_high & ABI1 & ROS & phph_high) | (!PLA2 & !PLC)
+SO_2, !AnionCh_high | Kv | PK_1
+NO, CaIc | HATPase_3
+CaR, CaIc | PK_1
+PLD_high, (Kout & SO_1)
+HATPase_2, (!CaIc & !Kout & !PLC & !phot1_complex) | (!CaIc & !Kout & !PLD & !PP1cc_3) | (!CaIc & !PP1cc_3 & !carbfix & FFA) | (!Kout & !PLD & !phot1_complex) | (!Kout & !phot1_complex & FFA) | (!PLC & !PLD & !PP1cc_3) | (!PLC & !PLD & FFA)
+ROS, (!Ci & !HATPase_3) | !MCPS
+SO_3, (!AnionCh_high & HATPase_3)
+PMV_neg, (!CO2 & !HATPase_1 & !PP1cc_2 & Kv) | (!CO2 & !phph & phph_high) | (!FFA & !NO & Kv & phph_high) | (!NO & !phph) | (!PP1cc_2 & !phph & Kv & phph_high)
+MCPS, !phot1_complex | !phph | KEV | PMV_neg
+AnionCh_high, (!HATPase_2 & CO2) | (!SO_2 & Cac & Kc)
+SO_1, !PMV_neg | SO_2
+phph, AnionCh_high | PMV_neg
+AnionCh, !PK_3 | !PLC | (ABA & Kv) | (Kv & PK_2 & PLD_high) | (PLD_high & PMV_pos)
+PLC, !HATPase_1 | !PP1cc_1 | FFA
+ABI1, RL
+PP1cc_1, ABA | PMV_pos
+Cac_high, (!CO2 & HATPase_3) | CO2_high | KEV
+Ci, !ABA | !CaATPase | !PLC | phot1_complex
+phot1_complex, !HATPase_2
+PK_1, (!ABI1 & !phot1_complex) | !PMV_neg | Kin | PK_3
+HATPase_1, (!CO2 & !PLA2 & MCPS & carbfix) | (!FFA & !Kv & !PLA2) | (!FFA & !Kv & MCPS) | (!FFA & !PLA2 & MCPS) | (!Kv & carbfix) | PLC
+PP1cc_3, !HATPase_3 | PK_1 | PMV_pos | ROS
+PK_3, (!ABA & CO2) | (!Cac & !SO_2 & CO2) | PLA2
+MCPS_high, (!PP1cc_3 & PLC) | (!phph_high & PLC) | MCPS_high
+CaIc, !HATPase_3 | !sucrose
+phph_high, CO2_high | Kout
+carbfix, !PP1cc_1 | !carbfix_high | PLD
+Ci_sup, (!SO_2 & MCPS) | (!SO_2 & PLC) | (Ci_sup & MCPS)
+CaATPase, !Kin
+PMV_pos, (!KEV & !RL & !SO_1 & CaR & HATPase_1 & PLD) | (!KEV & !RL & HATPase_3) | (!KEV & !SO_1 & !SO_3 & CaR & HATPase_1 & PLD) | (!RL & !SO_1 & !SO_3 & CaR & HATPase_1 & PLD) | (!RL & !SO_1 & HATPase_3 & PLD)
+BL, PK_3
+CO2, CO2_high
+ABA, Ci
+RL, !PK_3
+CO2_high, PK_2

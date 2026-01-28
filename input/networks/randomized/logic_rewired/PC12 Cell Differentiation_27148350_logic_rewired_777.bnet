@@ -1,0 +1,62 @@
+ERK, !MEK
+Dusp6, ETS1
+ECM, !Mmp3_10
+BTG2, (!AKT & JNK)
+Fosl1, !AKT | (ERK & JNK)
+MKK7, !MEKK1
+Mmp3_10, !Plasmin
+Plasmin, uPA_PLAT
+PI3K, TrkA
+Npy, !AP1
+RAS, SOS
+MSK1_2, ERK | P38
+KLF2, (!AKT & JNK) | (ERK & JNK)
+AKT, PI3K
+uPA_PLAT, !uPAR
+FOS, (AKT & JNK) | ERK
+JNK, (MEKK4 & MKK7)
+GRB2, !SHC
+SHC, !TrkA | FAK
+MKK6, MEKK4
+DAG, PLC
+FRS2, TrkA
+JUNB, !JNK | AKT | ERK
+ETS1, ERK | JNK
+Egr1, (!AKT & ERK & JNK)
+RAC1, RAS
+ATF2, !JNK | ERK | P38
+ZFP36, !JNK | ERK
+PKC, !DAG | Ca2plus
+P53, (!AKT & !ERK) | (!ERK & JNK)
+MEKK4, RAC1
+KLF6, !JNK | P53
+RAF, (!RAS & PKC)
+KLF4, AKT | ERK | JNK
+Itga1, ECM
+Mapk3k, !MEKK4
+G_i_o, NPYY1
+ARC, !CREB | !Egr1
+SOS, !GRB2
+CITED2, (!CREB & ERK) | (!CREB & P53)
+AP1, (!FOS & !JUND) | !Fosl1 | !JUNB
+KLF10, (!AKT & !JNK) | (!JNK & ERK)
+MEKK1, !RAC1
+PLC, (!G_i_o & !TrkA)
+MYC, (!ERK & JNK) | (AKT & JNK)
+SRF, RSK
+JUND, (!JNK & ERK)
+NPYY1, Npy
+P38, (!MKK6 & !Mapk3k)
+FAK, Itga1 | RAP1
+KLF5, (!AKT & !P53) | ERK
+uPAR, AP1
+Stat3, !ERK | JNK
+Maff, (ATF2 & ERK) | (ATF2 & JNK)
+Ca2plus, PLC
+TrkA, NGF
+CREB, (!AKT & !MSK1_2) | RSK
+RAP1, !C3G
+C3G, !FRS2
+MEK, (!RAF & MEKK1)
+RSK, !ERK
+NGF, !NGF

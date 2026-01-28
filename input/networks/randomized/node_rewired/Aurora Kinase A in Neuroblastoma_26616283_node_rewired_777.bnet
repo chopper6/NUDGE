@@ -1,0 +1,23 @@
+CDK1CCNBComplex, AURKAActive
+AURKAActive, (SpindleAssembly & ! CentrosomeMat)
+AJUBA, ! PP2A
+PLK1, (! AURKAActive & ! Cytokinesis & ! CDK1CCNBComplex)
+Cytokinesis, PLK1
+STMNCanAct, (! PP2A & CDK1CCNBComplex)
+MT, AURKAActive
+GSK3B, (GSK3B & ! PLK1) | (GSK3B & ! Cytokinesis)
+GWL_MASTL, GWL_MASTL
+hCPEB, (! AURKAActive & AURKAPresent & AJUBA & NEDD9) | (! AURKAActive & TPX2 & AURKAPresent) | (! PP1 & AURKAPresent & AJUBA & BORA) | (! PP1 & TPX2 & AURKAPresent) | (! PP1 & AURKAPresent & AJUBA & NEDD9) | (! AURKAActive & AURKAPresent & AJUBA & BORA)
+CentrosomeMat, ! AURKAActive
+STMN, (CentrosomeMat & ! Cytokinesis)
+BORA, AURKAActive | (STMNCanAct & ! STMN) | (MT & MTCanAct)
+WEE1, (PP1 & ! ENSA)
+ENSA, ! STMN
+NEDD9, (! Cytokinesis & CDC25B) | (! WEE1 & ! Cytokinesis) | (! Cytokinesis & hCPEB)
+SpindleAssembly, ! PLK1
+PP2A, (PLK1 & ! Cytokinesis) | (AURKAActive & ! Cytokinesis)
+AURKAPresent, (! SpindleAssembly & CDK1CCNBComplex)
+CDC25B, GSK3B
+PP1, AJUBA
+MTCanAct, STMNCanAct
+TPX2, MTCanAct

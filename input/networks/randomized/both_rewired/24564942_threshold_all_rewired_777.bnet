@@ -1,0 +1,8 @@
+cdk2_cyclinE, (!cdc14_fzy1 & cul1_lin23) | (!cdc14_fzy1 & lin_35_efl_1_dpl_1) | (!cdc_25_1 & cdk1_cyclinB & cul1_lin23) | (!cdc_25_1 & cul1_lin23 & lin_35_efl_1_dpl_1) | (cdk1_cyclinB & lin_35_efl_1_dpl_1)
+cdc_25_1, !cdc14_fzy1 | cdk1_cyclinB
+cul1_lin23, fzr_1
+lin_35_efl_1_dpl_1, !cdc14_fzy1 | !fzr_1 | !lin_35_efl_1_dpl_1
+cdk1_cyclinB, (!cdc14_fzy1 & !fzr_1 & cki1 & lin_35_efl_1_dpl_1) | (!cdc_25_1 & cdk1_cyclinB) | (!cdc_25_1 & cki1)
+fzr_1, !cdc_25_1
+cdc14_fzy1, !cki1 | !fzr_1 | lin_35_efl_1_dpl_1
+cki1, !cdc14_fzy1 | cdc_25_1

@@ -1,0 +1,10 @@
+WNT5A, !HADHB | (!PHOC & !STC2)
+pirin, !MART1 | !synuclein | RET1
+S100P, !HADHB
+RET1, (!PHOC & MART1) | (MART1 & S100P)
+MMP3, (!MART1 & !MMP3)
+PHOC, (!MMP3 & !PHOC) | (!MMP3 & !pirin & synuclein) | (!PHOC & !pirin)
+MART1, STC2
+HADHB, (HADHB & MART1) | MMP3
+synuclein, !RET1 | !WNT5A | HADHB | synuclein
+STC2, !pirin

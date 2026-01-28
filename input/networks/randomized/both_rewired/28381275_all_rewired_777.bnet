@@ -1,0 +1,34 @@
+KRAS, IkB | PP2A
+c_Myc, (!BAX & !SLUG & !Snail & BRCA1 & Bcl_2 & ERK) | (!SLUG & !Snail & E2F1) | (!SLUG & Bcl_2 & E2F1) | (BRCA1 & E2F1) | (BRCA1 & ERK & MMP)
+APC, (!IkB & !MDM2) | (!IkB & !SLUG) | (!MDM2 & !SLUG) | BRCA1
+p53, !MDM2 | !MEK | !PP2A | GSK3beta
+Wnt, ARF
+ATM, !ARF | (!CyclinD & !MMP)
+ARF, (!KRAS & BAX & E2F1 & p53) | (BAX & Caspase_3 & E2F1) | (BAX & CyclinE & RAF)
+RAF, !Caspase_3 | !E2F1 | PTEN | Snail
+MEK, !EGF | !RAF | !SLUG | APC | E_cadherin
+PAK, !DNAdamage | PP2A
+PP2A, E_cadherin
+ERK, (!CyclinD & MEK) | (!E_cadherin & MEK)
+BRCA1, (!ATM & !SLUG & MDM2) | (!ATM & Rb) | (!SLUG & Rb)
+Akt, !CyclinD | !CyclinE | !Rb
+beta_catenin, (!Caspase_3 & !EGF) | (!Caspase_3 & E2F1 & MEK) | (!Caspase_3 & ERK) | (!EGF & !MMP) | (!MMP & E2F1 & ERK) | (!MMP & E2F1 & MEK)
+Rb, (!APC & !E2F1 & !SLUG) | (!Akt & Rb) | E_cadherin
+MDM2, (!CyclinD & !Rb & E_cadherin & Wnt) | (!CyclinD & APC & Wnt & beta_catenin) | (!Rb & APC & E_cadherin & Wnt) | (APC & E_cadherin & KRAS)
+Bcl_2, (!Bcl_2 & !p21 & E2F1) | (!Bcl_2 & !p53) | (!p21 & !p53) | (!p53 & CyclinE & MEK) | (CyclinE & E2F1)
+E2F1, (!KRAS & PP2A & Snail) | (!KRAS & Rb & Snail) | (Caspase_3 & PP2A)
+BAX, !CyclinD | MEK
+IkB, (!ATM & !PTEN & MEK) | (!PTEN & MEK & MMP)
+NFKB, (!Caspase_3 & !E_cadherin & !IkB & CyclinD & Wnt) | (!Caspase_3 & !IkB & !KRAS & !PAK & CyclinD & p21) | (!Caspase_3 & !PAK & Wnt & p21) | (!E_cadherin & !IkB & CyclinD & Wnt & p21) | (!E_cadherin & !KRAS & p21) | (!IkB & !KRAS & !PAK & CyclinD & Wnt & p21) | (!IkB & !PAK & !RAF & CyclinD & p21)
+PTEN, (!GSK3beta & BAX) | (!PP2A & BAX)
+GSK3beta, !ARF | !E_cadherin | !beta_catenin
+Snail, (!beta_catenin & !p21) | (!p21 & CyclinD) | Akt
+SLUG, (!MDM2 & !beta_catenin & Bcl_2) | (APC & Bcl_2) | (APC & RAF)
+MMP, (!ERK & !MMP) | PP2A | Wnt
+E_cadherin, (!APC & !PTEN & E2F1) | (!MDM2 & !PTEN) | (!MDM2 & E2F1)
+CyclinE, !NFKB | (PAK & Wnt)
+CyclinD, !CyclinD | !GSK3beta | (!MEK & IkB) | NFKB
+p21, !DNAdamage | (IkB & MEK)
+Caspase_3, (!GSK3beta & ERK) | !KRAS | (ERK & IkB) | Wnt
+EGF, !CyclinE
+DNAdamage, !ARF

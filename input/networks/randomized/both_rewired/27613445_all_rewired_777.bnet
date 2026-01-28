@@ -1,0 +1,25 @@
+Senescence, !FOXO | !Insulin | !MYC
+G1_S, !G1_S | !IRS_PIK3CA | CDK2 | mTORC1_S6K1
+MAPK, !CDK2 | GF
+p16, !AKT | (AMPK & PP1C) | MYC
+MDM2, (!FOXO & !IRS_PIK3CA & !PP1C & Metabolism) | (!FOXO & !IRS_PIK3CA & MYC) | (!IRS_PIK3CA & !PP1C & !RB1)
+p53, E2F1
+p21, (!AMPK & !p21 & p53) | (G1_S & p53)
+AKT, (!AMPK & Senescence) | !TSC | GF
+mTORC1_S6K1, !TSC | !mTORC1_S6K1
+ATP, G1_S
+IRS_PIK3CA, !AKT
+AMPK, ATP | CDK2
+PTEN, PP2A | Senescence
+TSC, (!Insulin & MDM2) | p21
+MYC, (!CDK2 & !p21) | (!CDK2 & PRC) | !RB1
+CDK2, (!IRS_PIK3CA & GF) | (!p21 & GF) | (ATP & GF)
+RB1, !GF
+E2F1, (!ATP & Senescence) | PP2A | TSC
+PRC, AMPK | PP1C
+Metabolism, (!ATP & !FOXO & !mTORC1_S6K1) | (!mTORC1_S6K1 & p21)
+PP2A, PP1C
+FOXO, (!AKT & !IRS_PIK3CA & !PP1C & AMPK) | (!AKT & !IRS_PIK3CA & Senescence) | (!AKT & AMPK & Senescence)
+PP1C, (!IRS_PIK3CA & CDK2)
+GF, FOXO
+Insulin, !p53

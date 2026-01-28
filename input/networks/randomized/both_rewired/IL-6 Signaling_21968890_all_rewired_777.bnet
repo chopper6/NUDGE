@@ -1,0 +1,86 @@
+mekk1, ras
+anti_apoptotic, (!cyt_ptpe & p38) | (fkhr & pkcd) | (p38 & pkcd)
+irs1_ps, !dum_mtorc1_or_pkcd_stat3_ta | nfkb
+gab1_mem_p, rac1 | raf1
+jak1, !dum_pkcd_camk24_stat1_ta | !il6rc | !irs1_py | p70s6k
+plcg, mtorc2
+gab1_mem, (!pro_proliferative & mtor) | dum_gab1_kin_or_jak1_gab1_mem_p
+il6rc, !cmyc | mek4
+raf1, !shp2_a
+tdum_socs3_shp2, ca
+cebpd, gp80s_a
+camk24, ras_gap
+pro_hgf, !mtor | vav
+p38, junb
+cmyc, tdum_socs1_vav
+fkhr, socs1
+gsk3, !jak1
+dum_gp80_a_il6rc, !mek4 | camk24
+grb2_sos, !pi3k | ros
+socs1, !a2m_gfbg
+dum_pkcd_camk24_stat1_ta, ship | sirp1a
+erk12, akt
+mtorc1, tdum_socs3_shp2
+mk2, a2m_gfbg
+gp80m_a, pi3k
+cam_ca, pdk1
+akt, (!anti_apoptotic & !pi3k) | (!bad & !pi3k) | (!bad & shp2_a) | (!pi3k & shp2_a) | (p38 & shp2_a)
+dum_cebp_saa, (saa & sirp1a)
+tdum_shp2_stat3_py, junb | phlpp
+cfos, !cebpb
+shp2_a, !a2m_gfbg | (!akt & pdk1) | !mek6
+a2m_gfbg, (!cfos & !tdum_shp2_stat1_py)
+cebpb, !anti_apoptotic | !gp80s_a
+junb, gab1_mem_p
+crp, !rac1 | gp80s_a | mek4
+pkcd, ros
+casp9, !pten
+var_app, !p38 | ir
+tdum_shp2_stat1_py, !il6rc_p | !stat1_py
+stat1_py, (!nfkb & grb2_sos) | (!ros & mek6) | (gsk3 & mek6)
+pip3, !ir | !irs1_py
+ras_gap, pro_proliferative | tdum_shp2_stat3_py
+p70s6k, !rac1 | cam_ca | pro_hgf
+tdum_shp2_il6rc_p, (gp130m & pip3)
+mek4, !mek6
+mek1, shp2_a
+saa, !pro_hgf | cebpb | irs1_ps
+rac1, !tdum_socs1_vav
+tdum_socs1_vav, stat1_py
+dum_mtorc1_or_pkcd_stat3_ta, (!a2m_gfbg & !ir)
+ras, !dum_pkcd_camk24_stat1_ta | !jak1
+dum_gab1_kin_or_jak1_gab1_mem_p, !gab1_mem_p | dum_mtorc1_or_pkcd_stat3_ta
+ca, !cam_ca
+socs3, (!pdk1 & !var_app & mtor) | (!var_app & akt & mtor)
+mtorc2, irs1_ps
+stat3_ta, (!saa & pip3) | dum_pkcd_camk24_stat1_ta | raf1
+il6rc_p, mekk1 | pi3k | pias1 | sirp1a
+pi3k, (!mekk1 & !pias3 & gp80m_a)
+bad, il6rc
+gp130s, !dum_pkcd_camk24_stat1_ta | !phlpp
+pro_proliferative, (!bad & !gab1_kin & !phlpp & jak1) | (!gab1_kin & mtorc1) | (!ip3 & jak1)
+irs1_py, dum_il6rc_p_or_grb2_vav | erk12 | jak1
+shp2, !akt | !gp130s | !pip3 | ros | stat1_ta
+gp80s_a, dum_cebp_saa | irs1_py
+dum_il6rc_p_or_grb2_vav, (!ca & !mek4)
+ir, !rac1 | cmyc
+ip3, !slim
+stat3_py, (!ca & !pi3k & !stat3_ta & !tdum_shp2_stat3_py) | (!slim & !stat3_ta)
+stat1_ta, !mek4 | junb | mekk1 | stat3_py
+vav, !mtor | grb2_sos
+mek6, !pro_hgf
+gp130m, !pip3
+mtor, !gsk3
+il6, rac1
+pdk1, !gab1_kin
+ship, jak1
+phlpp, dum_gab1_kin_or_jak1_gab1_mem_p
+ros, phlpp
+sirp1a, !cebpb
+nfkb, bad
+cyt_ptpe, slim
+pten, !var_app
+gab1_kin, !stat1_py
+slim, !cfos
+pias3, !tdum_socs1_vav
+pias1, gp130m

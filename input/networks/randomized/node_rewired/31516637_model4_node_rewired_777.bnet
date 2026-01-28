@@ -1,0 +1,10 @@
+Pyruvate, ! Glucose
+Acetyl_COA, ! Circ_FA
+Glucose, (Glucose & ! Circ_FA)
+AMPK, ! PDK
+PDK, (PDC & Pyruvate) | (Fatty_acids & ! Malonyl_CoA)
+Fatty_acids, Acetyl_COA
+Citrate, ! Acetyl_COA
+PDC, (! AMPK & Citrate)
+Circ_FA, Circ_FA | (Malonyl_CoA & Citrate)
+Malonyl_CoA, Fatty_acids | (! Pyruvate & Acetyl_COA)

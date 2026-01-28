@@ -1,0 +1,23 @@
+GADD45beta, !TGFbeta
+ATM_ATR, Damage
+CHEK1_CHEK2, !ATM_ATR
+p53, !CHEK1_CHEK2 | (!Mdm2 & p38MAPK)
+SMAD2_3, TGFbeta
+PTEN, SMAD2_3
+p15INK4b, SMAD2_3
+p14ARF, !p38MAPK | E2F1
+PI3K_AKT, (PTEN & TGFbeta)
+BCL2, PI3K_AKT
+Mdm2, !p14ARF | !p53
+p38MAPK, !GADD45beta | ATM_ATR
+p16INK4a, !p38MAPK
+p21, !PI3K_AKT | !SMAD2_3 | !p53
+pRB, CdkCyclin
+E2F1, !pRB | p53
+CdkCyclin, !Cdc25ABC | !p16INK4a | p15INK4b | p21
+Cdc25ABC, !CHEK1_CHEK2 | !p38MAPK
+Cell_Cycle_Arrest, !CdkCyclin | !E2F1
+Proliferation, (!E2F1 & CdkCyclin)
+Apoptosis, (!p53 & BCL2)
+TGFbeta, TGFbeta
+Damage, !Damage

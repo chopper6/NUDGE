@@ -1,0 +1,13 @@
+C, !Ge
+MS, !Araplus | C
+Araplus, !A | !Am | Araminus
+L, !Araminus | Araplus
+T, MT
+A, !Ae | T
+E, !MS
+Am, !T | Ae | Aem
+MT, !C | Araplus
+Ge, !Ge
+Araminus, Araminus
+Ae, !Ae
+Aem, Aem

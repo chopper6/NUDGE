@@ -1,0 +1,8 @@
+A, (T1 & B & H)
+S, H | S
+H, H | (T1 & S)
+T1, (T1 & H) | (B & H)
+T2, (T1 & H & ! S)
+TO, (! T1 & TO & ! T2)
+B, (T1 & ! B & ! H & ! TO & ! T2 & ! A & ! K)
+K, (! T1 & B & ! TO) | (! T1 & ! TO & T2) | (! T1 & ! TO & A) | (! T1 & H & ! TO)

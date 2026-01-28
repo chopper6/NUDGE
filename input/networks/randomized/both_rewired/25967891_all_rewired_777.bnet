@@ -1,0 +1,13 @@
+AG, (!EMF1 & !PI & WUS) | (!EMF1 & LFY & TFL1 & UFO) | (!PI & FUL & LFY & SEP) | (FUL & SEP & WUS)
+AP1, (!AP2 & !EMF1 & !SEP & AG) | (!PI & AG) | UFO
+AP2, !LFY
+AP3, (!AG & AP2) | !FUL | (!WUS & AP1) | (AP2 & LFY) | EMF1
+EMF1, !PI
+FT, !AP2
+FUL, AP2 | WUS
+LFY, AP2 | UFO
+PI, (!FUL & !WUS & SEP) | (AG & AP2) | AP1
+SEP, PI
+TFL1, (!FUL & PI) | EMF1
+WUS, (!AG & !LFY) | (!AG & EMF1)
+UFO, PI

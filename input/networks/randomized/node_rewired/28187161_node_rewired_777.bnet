@@ -1,0 +1,30 @@
+IAA, (! ARF & RRA)
+ENDO, CK
+RRA, (ARF & ! RRB)
+AHP6, (! RRA & AHK) | (AHK & ! AHP6)
+WOX4, IAA
+WRKY, ! BR | PXY
+BZR1, AHP
+RRB, (! BIN2 & ! DELLA)
+HB8, (! CKX & CK0 & LOG3) | (CK0 & LOG3 & IPT) | (! CKX & LOG3 & IPT) | (! CKX & CK0 & IPT)
+STM, (RRB & STM & ! WRKY) | (ARF & RRB & STM) | (ARF & STM & ! WRKY) | (ARF & RRB & ! WRKY)
+AHK, (! IAA & ! GA)
+GA, ! IAA
+IAA0, (WRKY & ETHL) | (RRB & ETHL)
+ERF, (BZR1 & ARF)
+LHW, (! PIN & IAA0) | (! PIN & GA)
+DELLA, ! ARF | RRB
+PXY, ! STM
+BIN2, TMO5
+PIN, (RRB & ! ENDO)
+CKX, (ARF & TDIF)
+TMO5, (! BR & ARF)
+CK, (ARF & LHW)
+ETHL, PXY | ERF
+CK0, BZR1
+LOG3, BR
+TDIF, CK0
+ARF, GA
+BR, ETHL
+IPT, IAA0
+AHP, TDIF

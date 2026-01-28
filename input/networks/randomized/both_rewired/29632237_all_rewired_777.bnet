@@ -1,0 +1,95 @@
+IL6, Apo
+gp130, BAX
+RIP, !CIAP | NIK | PIP3
+NIK, GSK3b
+JAK1, (!SHP1 & !Smac) | CLPARP
+JAK2, Cas9 | PRAS40 | STRESS
+IKK, !CAS3 | (AKT & P70S6K & XIAP) | (ROS & STAT3) | (STAT3 & XIAP)
+pIKB, MKK4
+pNFkB, (!BLIMP1 & pSTAT3) | !mTORC1
+FLIP, !DNAdam
+Prot, ATM
+XIAP, (Cdc25A & Fas & mTORC2) | (Cdc25A & p53)
+BclxL, BAD | (Cas3 & TSC) | ROS | pSTAT3
+Bcl2, !Cdc25BC | (DNAdam & RAS) | FasL
+CYCD, (!JAK2 & !cMAF) | (!JAK2 & MEKK2) | !SHP1 | (!p21 & MEKK2 & P90RSK)
+CYCE, !GSK3b
+MDM, (!ERK & Bcl6 & Rheb) | p21
+MYC, !ATR | (!CYCE & !MYC & FasL) | !p21
+STAT3, Viacel
+pSTAT3, (!CYCB & !FasL) | (!FasL & !gp130) | (!FasL & CDK2)
+AKT, !MKK4
+PI3K, !PRAS40 | !SGK1 | PTEN
+PIP3, BAD | MnSOD2
+pRB, (!BAX & IL6)
+CIAP, MDM
+RAS, (!ATR & !P90RSK) | !Fas | RIP
+RAF, !Apo
+MEK1, MnSOD2
+MEKK, MAPK
+MAPK, !PI3K
+ERK, IGF1R
+CDK2, (!AKT & !XIAP) | !p21 | Cas9
+CDK4, IL6 | (MEK1 & Prot) | STRESS
+CDK6, !Cas9
+Proliferation, !MDM
+DEPTOR, JNK
+mTORC2, !MnSOD2
+SGK1, IKK
+mTORC1, cMAF
+P70S6K, Bcl2
+IRS, !IKK | (!MITO & !MYC & !p21) | (!MITO & !p21 & !pIKB & IRS)
+Rheb, !P90RSK
+P90RSK, JAK2
+Cdc25BC, IRS | pSTAT3
+Cdc25A, !STRESS
+CDK1, (!Bcl6 & !MEKK2) | (!Bcl6 & Cdc25BC)
+CYCB, !DEPTOR
+cMAF, mTORC1
+IRF4, !ERK | GSK3b | gp130
+Bcl6, !MEKK
+Viacel, !MEKK2 | !RAC
+PRAS40, Rheb
+TSC, (!Bcl6 & Viacel) | (!FLIP & MDM) | (!FLIP & SGK1 & Viacel) | (MDM & SGK1) | (MDM & Viacel)
+GSK3b, (!JAK2 & TRAF3) | (!JAK2 & mTORC2)
+ATR, !Apo
+Chk1, !CDK6
+Chk2, !Bort
+ROS, Bort | (DNAPK & SHP1)
+MnSOD2, !TNFaR | MDM
+BLIMP1, !P70S6K | !TSC
+FasL, !Smac | CDK4
+FasR, !BAX | IRF4
+BAD, !JNK | CDK6 | FasL | p27
+TRAF3, Cytc
+PTEN, TSC
+p27, (!FLIP & FasR & MEKK2) | (!FLIP & p53) | (FasR & p53) | SGK1
+p21, (!CYCD & !RAF) | (!CYCD & DEPTOR & p27) | (!CYCD & NIK & p27) | Chk2
+RAC, !MEK1
+MEKK2, !CDK6
+MKK4, TRAF3
+JNK, CAS3 | JAK1
+DNAdam, CAS3 | IKK | JAK1
+ATM, !P90RSK | IGF1
+DNAPK, !Bort | P70S6K
+p53, (!MITO & !gp130 & CYCB) | (!MITO & JAK2 & TRAF3) | (!gp130 & AKT & CYCB & TRAF3) | (!gp130 & AKT & JAK2 & TRAF3) | (!gp130 & Bcl2 & TRAF3) | (AKT & Bcl2 & JAK2) | (Bcl2 & CYCB & JAK2 & TRAF3)
+cJun, Viacel
+BAX, !IGF1 | CDK6 | FLIP | PTEN
+BID, (!FLIP & !MEK1) | (!FLIP & Cas8) | (Bcl6 & IGF1) | (Cas8 & IGF1)
+Cas8, !CDK6 | !Fas | !mTORC1
+MITO, !ATR | !RIP
+Smac, !RAF
+Cytc, !CDK4
+Cas9, !FLIP | !MEKK2
+Cas3, CDK2 | CIAP | Prot
+CLPARP, !p27
+STRESS, !BAD | CDK6 | Rheb
+Apo, Cas3
+Bort, !ATM
+TNFa, !Chk2
+TNFaR, cJun
+SHP1, pSTAT3
+CAS3, !cMAF
+IGF1, !Prot
+IGF1R, Cdc25A
+Fas, CLPARP

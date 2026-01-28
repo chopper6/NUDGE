@@ -1,0 +1,24 @@
+Meta2, (Glu & ! CellDens)
+PprA, (XylSh & RpoD & ! Crc) | (RpoD & ! Crc & m_xyl & Upper & XylS) | (XylSh & RpoS & ! Crc) | (RpoD & ! Crc & XylS & ThreeMBz) | (XylSh & RpoH & ! Crc) | (RpoH & ! Crc & m_xyl & Upper & XylS) | (RpoS & ! Crc & m_xyl & Upper & XylS) | (RpoH & ! Crc & XylS & ThreeMBz) | (RpoS & ! Crc & XylS & ThreeMBz)
+ProX, RpoD
+CellDens, (RpoS & ! Crc & XylS & ThreeMBz & ! ProX) | (RpoD & ! Crc & m_xyl & Upper & XylS & ! ProX) | (XylSh & RpoD & ! Crc & ! ProX) | (RpoD & ! Crc & XylS & ThreeMBz & ! ProX) | (XylSh & RpoS & ! Crc & ! ProX) | (RpoS & ! Crc & m_xyl & Upper & XylS & ! ProX) | (RpoH & ! Crc & XylS & ThreeMBz & ! ProX) | (XylSh & RpoH & ! Crc & ! ProX) | (RpoH & ! Crc & m_xyl & Upper & XylS & ! ProX)
+PtsN, (RpoN & ! Crc & m_xyl & HU & XylR & ! PtsN)
+Glu, Cold
+RpoS, (RpoD & ! Crc & ! ProX)
+RpoD, CellDens
+TurA, (! CellDens & CAA)
+Cold, Heat
+Heat, CellDens
+ThreeMBz, (Glu & ! CellDens)
+Meta, Cold
+CAA, (RpoN & IHF & ! Crc & m_xyl & XylR & ! PtsN & ! TurA & ! PprA)
+RpoN, Glu
+Crc, CellDens
+XylR, RpoD
+XylSh, m_xyl
+IHF, ThreeMBz
+HU, RpoN
+m_xyl, HU
+Upper, Cold
+XylS, CAA
+RpoH, Heat

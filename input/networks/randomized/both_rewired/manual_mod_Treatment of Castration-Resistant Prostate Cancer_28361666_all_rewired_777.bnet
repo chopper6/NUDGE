@@ -1,0 +1,42 @@
+IGFR1A_B, !IGFR1A_B
+RP6SKB1, AKT | Lapatinib | RHEB | Raf
+p21, !NRG1
+mTOR, Temsirolimus
+Ras, !PTEN
+TMPRSS2, CDK2_CyclinE | SP1
+CDK2_CyclinE, Lapatinib
+Raf, !EFGR | EGF | PIK3CA
+AR_AR, !Androgens | PIK3CA
+EGFR_ERBB2, !AR_AR
+SRF_ELK1, !IGFR1A_B | SRF_ELK1
+MEK1, !HBEGF
+AR_HSP, Enzalutamide
+AKT, !AKT | AR_HSP | CDK2_CyclinE
+PDPK1, !ERBB2_3
+GRB2_SOS, (!AR_HSP & !PIK3CA) | (!AR_HSP & NKX3_1) | !mTOR | AZD6244
+PIK3CA, !Lapatinib | BKM120 | Temsirolimus
+ERK1_2, !RHEB | TSC1_2
+SP1, !EGF
+ERBB2_3, !BCL2
+PSA, BAD | Temsirolimus
+TSC1_2, !BCL2 | !p21
+PIP3, PDPK1 | PTEN
+BCL2, !Androgens
+RHEB, !EFGR
+EFGR, !IGF | EFGR
+IRS1, (!PSA & p21)
+BAD, !GRB2_SOS | !NKX3_1
+IGF, !SP1
+Temsirolimus, Cixutumumab
+Enzalutamide, EGF
+BKM120, TMPRSS2
+EGF, !IGF
+Androgens, !Raf
+PTEN, GRB2_SOS
+NKX3_1, !BAD
+Lapatinib, EGFR_ERBB2
+AZD6244, !Temsirolimus
+NRG1, EGFR_ERBB2
+AZD5363, !NRG1
+HBEGF, mTOR
+Cixutumumab, AZD5363

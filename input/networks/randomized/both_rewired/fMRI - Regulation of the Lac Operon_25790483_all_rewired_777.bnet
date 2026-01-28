@@ -1,0 +1,11 @@
+lac_mRNA, !cAMP
+lactose_breakdown, !lac_enzymes | !lac_repressor
+lac_repressor, !lactose_breakdown
+allolactose, !lactose_breakdown
+CAP, lac_repressor
+lac_operon, !CAP | lac_repressor
+cAMP, !CAP | !lac_repressor
+lac_enzymes, !lactose_breakdown
+betaGal_LOF_mutation, lac_mRNA
+lactose, !lactose_breakdown
+glucose, glucose

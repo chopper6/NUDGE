@@ -1,0 +1,31 @@
+dma1, CK1 | sid4
+plo1, !cdk_H | !cdk_L | dma1 | sid4
+pom1, !pak1
+sid2, !cdc7
+Rga4, !pom1
+fin1, !cdk_H
+SIP, !cdk_0 | !cdk_H | !ppc89
+byr4_cdc16, byr4 | cdc16
+byr4, (cdc42 & plo1) | cdk_H | cdk_L
+cdc11, !cdc7 | !sid4 | cdc16
+cdc7, cdc11 | spg1
+sid4, !ppc89
+flp1, !sid2_mob1 | (cdk_0 & cdk_H)
+scd1, !ras1
+spg1, !byr4_cdc16 | !etd1 | cdc11
+gef1, orb6
+cdc16, fin1
+cdc42, (!Rga4 & scd1) | gef1
+pak1, cdc42
+orb6, !pak1 | nak1
+pmo25, !cdc14_sid1 | !cdc7
+nak1, (!cdk_H & !sid2_mob1) | pmo25
+cdc14_sid1, cdc7
+CK1, CK1
+cdk_H, cdk_H
+cdk_L, cdk_L
+ppc89, ppc89
+cdk_0, cdk_0
+sid2_mob1, !sid2_mob1
+ras1, ras1
+etd1, etd1

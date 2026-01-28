@@ -1,0 +1,20 @@
+AKT1, (!DNAdamage & !Invasion & !Migration & AKT1 & CCA) | (!GF & !Invasion & !Migration) | (!GF & !Migration & AKT1 & CCA) | (!Invasion & AKT1 & ECMicroenv) | !TGFb_pthw
+AKT2, !Metastasis | !WNT_pthw | Invasion
+Ecadh, (AKT2 & p53)
+WNT_pthw, (!AKT2 & !EMT & !EMTreg & !ERK_pthw & Metastasis) | (!AKT2 & !miRNA & p63_73) | (!Apoptosis & !EMTreg & !miRNA & Metastasis & p63_73) | (!EMT & Metastasis & p63_73)
+ERK_pthw, (!CCA & !Notch_pthw & ERK_pthw) | (!CCA & !TGFb_pthw & Apoptosis & ERK_pthw)
+GF, !GF | !TGFb_pthw | !miRNA
+miRNA, (!p63_73 & AKT2 & Ecadh & Migration) | WNT_pthw
+Notch_pthw, (!WNT_pthw & ERK_pthw & TGFb_pthw & miRNA)
+p53, (!Notch_pthw & !TGFb_pthw & ERK_pthw) | (!Notch_pthw & !WNT_pthw & !miRNA & DNAdamage & EMT) | (!TGFb_pthw & !miRNA & EMT)
+p63_73, (!AKT2 & !GF & ECMicroenv) | (!AKT2 & ECMicroenv & p53) | (!GF & ECMicroenv & Migration & p53) | Invasion
+TGFb_pthw, (!TGFb_pthw & Ecadh) | EMTreg | Notch_pthw
+EMTreg, !EMT | !EMTreg | !Metastasis | !Notch_pthw | Migration
+CCA, (!AKT1 & !DNAdamage & !ERK_pthw & CCA) | (!AKT1 & !DNAdamage & !TGFb_pthw & Migration & WNT_pthw) | (!AKT1 & !EMT & WNT_pthw) | (!AKT1 & !ERK_pthw & !TGFb_pthw & Migration) | (!AKT1 & !ERK_pthw & CCA & Migration & WNT_pthw) | (!DNAdamage & !EMT & !TGFb_pthw & !miRNA) | (!EMT & !ERK_pthw & WNT_pthw) | (!EMT & !TGFb_pthw & !miRNA & CCA & WNT_pthw) | (!EMT & Migration)
+Apoptosis, !EMTreg | (!GF & !p63_73 & ECMicroenv) | Apoptosis | ERK_pthw
+EMT, EMT | WNT_pthw
+Invasion, !ERK_pthw | Invasion | Migration
+Migration, (!DNAdamage & AKT2 & EMTreg) | (!Invasion & !Notch_pthw & !miRNA) | (!Notch_pthw & !miRNA & p53) | (!Notch_pthw & AKT2)
+Metastasis, WNT_pthw
+ECMicroenv, !GF
+DNAdamage, !DNAdamage

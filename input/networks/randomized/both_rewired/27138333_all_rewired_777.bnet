@@ -1,0 +1,43 @@
+EGFR, Rap1A
+Shc, !RasGap
+Grb2, !Mtor | !RhoA
+Pi3k, !Nck | !Pten
+Gab1, (Csrc & RacGap1)
+Nck, !Ralgds
+Sos1, Abi | (Hras & Pip2)
+Pi34p2, (!Abi & !Ship2 & Mekk1) | (!Ship2 & Gab1 & Mekk1)
+Pip3, (!Pak1 & Ralb & Ralgds) | !Rac1
+Vav2, (!Rap1A & Pi3k) | !RasGap
+Rac1, (!Grb2 & Pi34p2) | (!Mekk1 & Gab1 & Pi34p2 & p90rsk)
+Sos1E, (!RhoA & Pak1) | (IQGap1 & Pak1) | Raf1
+Akt, (!Akt & !Shp2) | !Rac1 | (!Ras & RasGap) | (!Shp2 & RasGap)
+RacGap1, Mtor
+IQGap1, (!Grb2 & !Pdk1)
+pRacGap1, RhoA | Vav2
+RhoA, !Akt | RhoA
+Shp2, !Abi
+RasGap, (!Pip3 & EGF)
+Ras, !RhoA | Gab1
+Raf1, !Abi | !Grb2 | Ralb
+Mek12, !Ralb | Shp2
+Erk12, Shp2
+P90rsk, !Mek12 | !RalbP1
+Pak1, !Pi34p2 | EGFR
+Abi, pRacGap1
+Eps8, Ralgds
+Hras, Eps8
+Ralgds, RacGap1
+Rap1a, !Shc
+Ralb, RasGap
+RalbP1, !Ralgds
+Mekk1, Akt
+EGF, Shp2
+p90rsk, !Csrc
+Ship2, !Grb2
+Pip2, !Csrc
+Pten, !Gab1
+Pdk1, IQGap1
+Mtor, !Pi3k
+Pp2a, Erk12
+Csrc, RhoA
+Rap1A, !Pip3

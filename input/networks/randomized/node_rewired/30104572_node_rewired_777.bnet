@@ -1,0 +1,5 @@
+Snail, (Input & ! mu34) | (! Snail & Input)
+Input, (! Snail & ! Zeb)
+mu200, ! mu200 | (Snail & Zeb)
+Zeb, ! Snail | (Zeb & mu200)
+mu34, Input

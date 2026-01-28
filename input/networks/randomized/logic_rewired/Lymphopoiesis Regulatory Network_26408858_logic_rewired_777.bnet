@@ -1,0 +1,81 @@
+Helios, !NFkB
+IL12R, IL12 | STAT6
+Foxp3, (!GATA3 & !SMAD3 & Foxp3 & RORgt & STAT3) | (!GATA3 & Tbet) | (Foxp3 & SMAD2 & Tbet) | (RORgt & SMAD2 & STAT3)
+ERK, BCR | Flt3
+NFAT, !TCR
+PU1, Irf4
+EOMES, (IL27R & Tbet) | Runx3
+STAT3, (!IL10R & IL23R) | (IL21R & JAK3)
+Ebf1, !Runx1 | Runx3
+AKT, !TNFR2
+IL21R, IL21
+TNFa, RORgt
+Gfi1, !Ikaros
+SMAD3, !AKT | !TGFbR
+IL4, GATA3 | STAT1
+JAK1, !IFNgR
+IL27R, IL27
+IFNg, (!EOMES & STAT3) | (!EOMES & Tbet) | (!IRAK & STAT3 & Tbet) | (STAT3 & STAT4 & Tbet)
+IL23R, !IL23
+Notch1, !Dll1
+Irf4, !Blimp1 | !NFkB | Ebf1 | Flt3
+GATA3, (!GATA3 & !HEB & !STAT6 & TCF1) | (!GATA3 & !HEB & Runx1 & TCF1) | (!GATA3 & !RORgt & !STAT6) | (!GATA3 & !STAT6 & Runx1) | (!GATA3 & !STAT6 & Tbet) | (!HEB & !STAT6 & Runx1 & TCF1) | (!HEB & Foxp3 & TCF1) | (!RORgt & !STAT6 & TCF1) | (!RORgt & Runx1) | (!STAT6 & Foxp3 & TCF1)
+HEB, Notch1
+IFNbR, IFNb
+IL10R, IL10
+Gzmb, EOMES
+RORgt, (!Foxp3 & !STAT3 & !Tbet & RORgt) | (!Foxp3 & SMAD2) | (!STAT3 & !Tbet & GATA3)
+FR4, !B9 | Foxp3
+Bcl2, !STAT5 | FR4
+IFNgR, !IFNg
+IRAK, IL18R
+Runx3, !CD4 | !CD8 | STAT5 | ThPOK
+Blimp1, (!Bcl6 & !Irf4 & !Pax5) | (!Bcl6 & !Irf4 & Bach2)
+IL6, RORgt
+TCF1, Notch1
+Bcl6, (!Blimp1 & IL21R) | (!Blimp1 & Irf4) | Ebf1
+Runx1, (!Runx3 & Runx1) | Notch1 | (Runx1 & TCR) | (Runx1 & ThPOK) | (TCR & ThPOK)
+IL17, RORgt
+STAT5, (!IL2R & JAK3) | (JAK3 & SOCS1)
+CD8, (!TCR & Ebf1 & Runx3) | (CD8 & Notch1 & ThPOK)
+IL18R, IL18 | STAT6
+Pax5, (!Blimp1 & Ebf1 & Flt3 & Irf4 & ThPOK) | (Ebf1 & Flt3 & STAT5) | (Irf4 & STAT5)
+Bach2, !Bcl6 | Pax5
+STAT6, !IL4R
+SMAD2, TGFbR
+Prf1, !EOMES
+TGFbR, !TGFb
+NFkB, !BCR
+IL7R, (!IL7 & !TCR)
+ThPOK, (!Foxp3 & !GATA3 & !ThPOK & CD8 & RORgt & TCR) | (!Foxp3 & !Runx3 & CD4 & CD8) | (!GATA3 & !Runx3) | (!Runx3 & TCR) | (CD8 & Tbet) | (TCR & Tbet)
+STAT4, GATA3 | IL12R
+IL2R, !IL2
+IL6R, IL6
+Flt3, Flt3L | Hoxa9 | Pax5
+CD4, (!CD4 & !Ebf1 & ThPOK) | (!Ebf1 & Runx3) | Notch1
+IL4R, !IL4 | SOCS1
+STAT1, !IFNbR | !IL27R | JAK1
+XBP1, !Blimp1
+Ikaros, !PU1
+TNFR2, TNFa
+JAK3, !IL6R | !IL7R | Notch1
+CD19, !Pax5
+TGFb, !Foxp3
+Bcl11b, !Notch1 | !TCF1
+SOCS1, !STAT1 | !Tbet
+Tbet, (!Tbet & STAT1) | (Foxp3 & GATA3 & STAT1) | RORgt
+IL10, GATA3
+IL12, !IL12
+BCR, BCR
+TCR, !TCR
+IL21, IL21
+IL27, IL27
+IL23, !IL23
+Dll1, !Dll1
+IFNb, !IFNb
+B9, !B9
+IL18, !IL18
+IL7, !IL7
+IL2, !IL2
+Hoxa9, Hoxa9
+Flt3L, Flt3L

@@ -1,0 +1,30 @@
+lasR, !rhlI
+LasR, !lasl
+RsaL, pqsA_E
+lasl, !pqsH | (!rhlR & rhlREG)
+Lasl, !three_oxo
+three_oxo, !IN5 | !rhlI
+LasRp, !IN6 | RhlR
+lasREG, !PqsR
+rhlR, (!PqsRp & three_oxo)
+RhlR, !IN6
+rhlI, IN7 | PQS | RhlR | RsaL
+RhlI, !lasREG
+C4_HSL, RhlI | RsaL
+RhlRp, (!IN1 & !pqsA_E)
+rhlREG, RhlR
+pqsR, !PqsRp | RsaL
+PqsR, !lasR
+pqsH, IN5
+pqsA_E, LasR
+phnAB, !pqsR
+PQS, !PqsR | !lasREG | rhlI
+PqsRp, (!C4_HSL & !PqsRp)
+pqsRREG, !lasR
+IN1, !lasR
+IN2, IN1
+IN4, RhlRp
+IN3, three_oxo
+IN5, !pqsH
+IN6, !pqsH
+IN7, rhlREG

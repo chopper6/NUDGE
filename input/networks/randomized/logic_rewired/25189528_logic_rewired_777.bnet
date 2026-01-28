@@ -1,0 +1,69 @@
+AKT, ILK | PI3K
+Dest_compl, (!AXIN2 & !Dest_compl) | (!AXIN2 & !b_catenin_nuc) | !GSK3b
+AXIN2, AXIN2 | TCF_LEF
+b_catenin_memb, !E_cadherin | !b_catenin_nuc
+b_catenin_nuc, (!Dest_compl & E_cadherin & SUFU) | b_catenin_memb
+bTrCP, !Csn
+CD44, !TCF_LEF
+CDC42, !CHD1L | TGFbR
+c_fos, !ERK
+cMet, (!CD44 & HGF)
+Csl, !NOTCH_ic
+Csn, !NFkB
+DELTA, RAS
+DSH, !Frizzled
+E_cadherin, (!FOXC2 & !SNAI1 & HEY1) | (!FOXC2 & !SNAI1 & TWIST1) | (!FOXC2 & !b_catenin_memb & TWIST1) | (!SNAI1 & !SNAI2) | (!SNAI1 & !ZEB2 & !b_catenin_memb & HEY1) | (!SNAI1 & !b_catenin_memb & HEY1 & TWIST1 & ZEB1) | (!SNAI2 & !ZEB2 & !b_catenin_memb & ZEB1) | (!SNAI2 & TWIST1)
+EGFR, EGF
+EGR1, !c_fos
+EMT, !EMT | E_cadherin
+ERK, MEK
+FGFR, FGF
+FOXC2, !SNAI1 | !TWIST1 | Goosecoid
+Frizzled, Wnt
+FUS, SMO
+GLI, SUFU | TCF_LEF
+GSK3b, (!AKT & !Csn) | (!Csn & !DSH) | (!DSH & Dest_compl) | (Dest_compl & ERK)
+HEY1, !SMAD | Csl
+HIF1a, !Hypoxia
+IGF1R, !IGF1
+IKKa, !AKT
+ILK, SMAD
+Jagged, SMAD | TCF_LEF
+LIV1, !STAT
+LOXL23, HIF1a
+MEK, !RAF | !RKIP
+miR200, !ZEB2 | (SNAI1 & ZEB1)
+NFkB, IKKa
+NOTCH, DELTA | Jagged
+NOTCH_ic, !NOTCH
+PAK1, !CDC42
+Patched, SHH
+PDGFR, PDGF
+PI3K, RAS
+RAF, !RAS
+RAS, (!SOS_GRB2 & SRC) | (GSK3b & SRC) | (GSK3b & TCF_LEF)
+RKIP, (!ERK & !SNAI1)
+SHH, GLI | SMAD
+SNAI2, !ERK | !SNAI2 | !TWIST1 | !b_catenin_nuc
+SMAD, !ERK | !TGFbR | (!ZEB1 & !ZEB2)
+SMO, Patched
+SNAI1, (!EGR1 & !Goosecoid & Csl & GSK3b & LIV1 & SMAD) | (!EGR1 & !bTrCP & GLI & GSK3b & LOXL23 & SMAD) | (!Goosecoid & !bTrCP & LIV1 & LOXL23 & SMAD) | (!bTrCP & Csl & GSK3b & LIV1 & SMAD) | (GSK3b & PAK1 & SMAD) | (LIV1 & PAK1) | (LOXL23 & PAK1)
+SOS_GRB2, (!FGFR & EGFR & ERK & PDGFR & TGFbR) | (!FGFR & IGF1R) | (!cMet & EGFR & IGF1R & PDGFR) | (!cMet & EGFR & TGFbR)
+SRC, !EGFR | !FGFR | !PDGFR | (IGF1R & cMet)
+STAT, !SRC
+SUFU, !FUS
+TCF_LEF, !b_catenin_nuc
+TGFb, (!Goosecoid & !SNAI1 & GLI) | (!SNAI1 & !TWIST1)
+TGFbR, !TGFb
+TWIST1, (!NFkB & Goosecoid & SNAI1) | (!NFkB & HIF1a) | (HIF1a & TCF_LEF) | (SNAI1 & TCF_LEF)
+Wnt, GLI
+ZEB1, (!Goosecoid & SNAI1) | !miR200 | (HIF1a & SNAI1)
+ZEB2, !Goosecoid | !SNAI1 | HIF1a | miR200
+CHD1L, CHD1L
+HGF, !HGF
+EGF, !EGF
+FGF, !FGF
+Goosecoid, Goosecoid
+Hypoxia, Hypoxia
+IGF1, IGF1
+PDGF, !PDGF

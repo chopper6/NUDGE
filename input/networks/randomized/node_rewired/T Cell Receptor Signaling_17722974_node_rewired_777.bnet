@@ -1,0 +1,99 @@
+p21c, tcrlig
+cd45, xx | (zap70 & sh3bp2)
+mlk3, zap70
+cre, (xx & ! cblb) | (! cblb & lckp2)
+gap, unknown_input3
+cdc42, unknown_input
+card11a, (zap70 & plcgb & vav1 & itk & slp76 & ! ccblp2)
+ccblr, ip3
+nfkb, pdk1
+bclxl, ! ikb
+vav3, (! shp1 & cd45 & lckr & cd4 & ! csk)
+fos, calcin
+gads, ! bad
+rasgrp, unknown_input
+raf, ! pkb
+ship1, (fyn & ! tcrb)
+csk, (fyn & ccblr)
+tcrp, ! gsk3
+lckr, sh3bp2
+p27k, cdc42 | rac1p2
+ikkg, (card11a & pkcth)
+abl, (cam & ! calpr1 & ! akap79 & ! cabin1)
+jnk, ! camk4
+malt1, lat
+dgk, unknown_input2
+ikkab, (zap70 & plcgb & vav1 & itk & slp76 & ! ccblp2)
+sh3bp2, (zap70 & lat)
+creb, gab2
+rac1p2, unknown_input2
+lckp1, hpk1 | rac1p1
+rlk, ! pkb
+grb2, unknown_input
+fkhr, (plcga & ! dgk)
+pip3, unknown_input2
+xx, (grb2 & zap70 & lat) | (zap70 & lat & gads)
+bcat, mek
+jun, (fos & jun)
+pdk1, erk
+cblb, ! cd28
+pkcth, lat
+tcrlig, pip3
+pten, (pip3 & zap70 & slp76)
+tcrb, (sos & rasgrp & ! gap)
+cd4, ! ikkab
+hpk1, (zap70 & ccblr)
+mek, ! pkb
+sos, (fyn & tcrb) | (tcrb & lckp1)
+ca, (rac1r & vav3)
+itk, erk
+rsk, (cd45 & lckp1) | (lckr & tcrb)
+cam, lat
+p70s, ca
+pkb, creb
+pi3k, unknown_input2
+unknown_input2, pdk1
+rac1p1, (zap70 & ! gadd45)
+ikb, (malt1 & card11 & bcl10)
+akap79, (pi3k & ! pten & ! ship1)
+gadd45, unknown_input
+bad, unknown_input
+mkk4, rsk
+slp76, (tcrp & abl & ! ccblp1)
+shp1, jnk
+bcl10, cam
+Dummy, mekk1 | mkk4
+rac1r, grb2
+camk2, (zap70 & ! gab2 & gads)
+plcga, mlk3 | mekk1
+plcgb, unknown_input2
+gab2, (lckr & tcrb)
+sre, cdc42 | rac1p2 | hpk1
+ccblp2, lckr_input
+gsk3, lat
+unknown_input, plcga
+ap1, ras
+vav1, (ikkg & camk2)
+ip3, lckp1
+unknown_input3, ! pkb
+calcin, cd28
+fyn, unknown_input
+erk, (pdk1 & dag & vav1)
+ccblp1, ! pkb
+pag, dag
+cyc1, raf
+p38, (vav1 & rac1r)
+dag, (tcrlig & ! ccblp1)
+card11, fyn | lckp1
+ras, pag
+cabin1, cd28
+lckp2, (! erk & lckp1)
+lat, tcrb
+lckr_input, ! gsk3
+shp2, unknown_input2
+calpr1, cam
+zap70, unknown_input3
+camk4, unknown_input
+cd28, cd4
+nfat, unknown_input2
+mekk1, lckr_input

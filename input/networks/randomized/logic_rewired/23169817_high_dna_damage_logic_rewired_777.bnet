@@ -1,0 +1,16 @@
+atm, (!atm & !wip1) | !e2f1 | cycg
+p53, (atm & mdm2 & mdmx) | (atm & p53)
+wip1, !p53
+cycg, p53
+pten, !p53
+p21, !mdm2 | !p21 | akt | p53
+akt, pten
+cyce, p21
+rb, !atm | (!mdm2 & cyce) | casp | rb
+e2f1, !mdm2 | (!rb & atm) | (!rb & e2f1) | arf
+arf, (arf & p53 & wip1) | e2f1
+bcl2, !bcl2 | (!casp & !p53) | (!casp & akt) | (!p53 & akt)
+bax, (!p53 & bcl2) | bax
+casp, (!akt & !casp & bcl2) | (!akt & !e2f1) | (!akt & !p21) | !bax | (!e2f1 & !p21) | (!e2f1 & bcl2)
+mdmx, (!akt & mdmx) | (!mdm2 & !wip1) | (!wip1 & arf) | (arf & mdmx) | atm
+mdm2, (!arf & !wip1 & akt) | (!arf & akt & atm & cyce & mdmx & p53) | (!arf & cyce & cycg & mdm2 & mdmx) | (!rb & akt & cycg & mdm2 & mdmx & p53) | (!wip1 & akt & atm & cycg & p53) | (atm & cycg & mdmx) | (atm & mdm2 & mdmx)

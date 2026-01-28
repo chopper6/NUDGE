@@ -1,0 +1,36 @@
+Activin_A_Nodal, (!Gbx2 & !SignalACT) | (!Gbx2 & !Sox2) | (!Gbx2 & Lefty1) | (!SignalACT & Lefty1) | Oct4
+BMP4, (!Gbx2 & !SignalBMP & !Tbx3) | (!Myc & !SignalBMP & !Tbx3)
+Dnmt3b, (!Klf4 & !Tcf3 & EpiTFs) | (!Klf4 & Cdx2) | (!Klf4 & Mycn)
+EpiTFs, (!Dusp6 & !Sox2 & Cdx2) | (!Pitx2 & Cdx2) | (!SignalBMP & !Sox2 & Cdx2) | (!Sox2 & Klf4) | (Cdx2 & Klf4)
+Esrrb, (!Klf2 & Tcf3) | (EpiTFs & Klf4 & Nanog) | (EpiTFs & Klf4 & Tcf3) | (Klf4 & Nanog & SignalWNT & Tcf3)
+Fgfr2, !Cdx2 | !Nanog | !SignalFGF | Gcnf | Oct4
+Gata6, !Fgf4 | !Klf2 | !Nanog | !SignalERK | Gata6
+Gbx2, (!Esrrb & Jarid2 & SignalLIF) | (!Esrrb & SignalLIF & SignalWNT & Tcf3) | (Tbx3 & Tcf3)
+Gcnf, (!EpiTFs & !Gata6) | (!EpiTFs & Cdx2) | (!Gata6 & Cdx2)
+Jarid2, (!Klf4 & Oct4)
+Klf4, (!EpiTFs & !Esrrb & !Klf2 & !Klf4 & !SignalLIF) | (!EpiTFs & !Esrrb & !Klf2 & !Oct4 & !Sox2) | (!EpiTFs & !Klf2 & !Klf4 & Nanog) | (!EpiTFs & !Klf2 & !Oct4 & !SignalLIF & Nanog)
+Nanog, (!Lrh1 & !Nanog & !Tbx3 & Gata6 & Klf4) | (!Lrh1 & Gata6 & SignalACT & Sox2 & Tcf3) | (!Lrh1 & Klf4 & SignalACT) | (!Nanog & !Tbx3 & Tcf3) | (!Nanog & Gata6 & SignalACT) | (!Nanog & Klf4 & Oct4)
+Oct4, (!Dnmt3b & !Klf4 & Lrh1 & Oct4) | (!Dnmt3b & !Nanog & Sox2) | (!Dnmt3b & Cdx2) | (!Gcnf & !Klf2 & !Klf4 & Sox2) | (!Gcnf & !Klf4 & Lrh1) | (!Gcnf & Oct4) | (!Klf2 & !Klf4 & Oct4 & Sox2) | (!Klf2 & !Nanog & Cdx2) | (!Klf2 & Lrh1 & Oct4)
+Smad6, !Gata6 | !Oct4 | SignalBMP
+Smad7, (!Klf4 & Esrrb & Gbx2) | (!Klf4 & Oct4) | (!Nanog & !Tbx3 & Jarid2 & Oct4) | (!Nanog & Esrrb) | (Gbx2 & Jarid2 & Oct4)
+Sox2, (!Nanog & Oct4) | !Sox2
+Tcf3, !Nanog | !SignalWNT | Oct4
+Cdx2, Cdx2 | Oct4 | SignalBMP
+Dusp6, SignalERK
+Fgf4, (!Esrrb & Nanog & SignalWNT) | (!Esrrb & Tcf3) | (Nanog & Tcf3)
+Klf2, !Dusp6 | !Mycn | !Pitx2 | !Sox2 | Klf4
+Lefty1, (!Jarid2 & !Mycn & !Oct4 & SignalACT) | (!Jarid2 & !Mycn & !Tcf3 & Fgf4 & SignalWNT) | (!Jarid2 & !Oct4 & !Tcf3 & SignalACT) | (!Jarid2 & !Oct4 & Fgf4 & SignalACT & Sox2) | (!Mycn & !Oct4 & Fgf4 & Sox2) | (!Mycn & SignalACT & SignalWNT) | (!Oct4 & !Tcf3 & SignalWNT) | (!Oct4 & !Tcf3 & Sox2)
+Lrh1, !Oct4 | (!Tbx3 & !Tcf3 & Sox2) | (!Tcf3 & Klf4)
+Mycn, !Nanog | !Oct4 | Sox2
+Pitx2, !Jarid2 | (!Sox2 & SignalACT) | (SignalACT & SignalWNT & Tcf3)
+Tbx3, (!Esrrb & !Klf4 & !SignalERK & Nanog) | (!Esrrb & !Klf4 & !Tbx3 & Tcf3) | (!SignalERK & Nanog & SignalPI3K) | (!Tbx3 & Nanog & SignalPI3K)
+Myc, !Gbx2 | !Nanog | (!SignalERK & !SignalWNT) | (!SignalERK & Tcf3) | (!SignalWNT & SignalLIF & Tcf3)
+Pecam1, !EpiTFs | !Klf2 | Nanog
+Rex1, !EpiTFs | !Esrrb | (!Nanog & !Sox2) | (!Sox2 & Klf2) | (!Sox2 & Lrh1)
+SignalACT, !SignalACT
+SignalBMP, !SignalBMP
+SignalWNT, !SignalWNT
+SignalFGF, SignalFGF
+SignalERK, !SignalERK
+SignalLIF, !SignalLIF
+SignalPI3K, !SignalPI3K

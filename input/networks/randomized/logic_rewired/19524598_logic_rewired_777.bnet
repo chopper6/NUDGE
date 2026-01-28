@@ -1,0 +1,12 @@
+T2, !FLIP | !TNF
+IKKa, (!A20a & !TNF) | (!C3a & !TNF)
+NFkB, !IkB
+NFkBnuc, !IkB | !NFkB
+IkB, !IKKa | !TNF | NFkBnuc
+A20a, (NFkBnuc & TNF)
+IAP, (!C3a & !NFkBnuc) | (!C3a & !TNF)
+FLIP, NFkBnuc
+C3a, (!C8a & !IAP)
+C8a, !C3a | CARP | T2
+CARP, C3a | NFkBnuc | TNF
+TNF, TNF

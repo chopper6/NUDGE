@@ -1,0 +1,12 @@
+Start, Cig1_Cdc2
+Cig1_Cdc2, (Rum1 & Ste9)
+Cig2_Cdc2, !Cdc2_Tyr15 | Wee1
+Puc1_Cdc2, Puc1_Cdc2 | Wee1
+Rum1, (!Cdc25 & !Rum1 & Cdc2_Tyr15) | (!Cdc25 & !Rum1 & Cig2_Cdc2 & Wee1) | !Slp1 | (Cdc2_Tyr15 & Cig2_Cdc2)
+Cdc2_Cdc13, !Puc1_Cdc2 | !Rum1 | !Wee1
+Ste9, (!Cig1_Cdc2 & !Ste9 & Wee1) | (!Cig1_Cdc2 & Slp1) | (!Ste9 & Cdc25 & Slp1) | (!Ste9 & Cig2_Cdc2 & Slp1) | (Cig2_Cdc2 & Wee1) | (Slp1 & Wee1)
+PP, (!Cdc2_Tyr15 & Cig1_Cdc2)
+Cdc25, (!Rum1 & Start)
+Slp1, !Cdc2_Cdc13
+Wee1, Cdc25 | Cdc2_Cdc13 | Start
+Cdc2_Tyr15, Cig1_Cdc2 | Wee1

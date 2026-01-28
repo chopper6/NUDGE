@@ -1,0 +1,34 @@
+Mlc, !YfhA
+HilE, !TSSS
+HilD, (!Osmolarity & MviA) | (!PmrA & SirA_BarA) | !YfhA | CsrA | CsrBC
+HilC, !Iron | !SciG | HilC
+RtsA, (!CsrBC & Fur) | (!SsrAB & Fur)
+HilA, (!Fur & Fis) | (!RcsB & !SlyA & !YfhA) | (!RcsB & !SlyA & SciG) | (!RcsB & !YfhA & SciG) | (!RcsB & CsrBC) | (!SlyA & !YfhA & Fis)
+IHF, Calcium | RcsB
+SirA_BarA, !VrgS | SciG
+CsrBC, Magnesium
+CsrA, !CsrBC
+Fur, Fur
+H_NS, (!CsrA & MviA & SsrAB) | (!RcsB & H_NS) | (H_NS & SsrAB)
+PhoP, !Iron
+SlyA, !SlyA | !TSSS
+SsrAB, (!Calcium & Osmolarity) | (!EnvZ & !IHF) | CsrBC
+Fis, PhoP
+EnvZ, HilA
+OmpR, !YfhA
+YfhA, !YfhA
+MviA, !EnvZ | !HilC
+RcsB, Fur | HilE
+PmrA, SlyA
+SciS, !SciS | PmrA
+VrgS, !HilE
+SciG, HilD | SPI_1
+SPI_1, !HilA
+SPI_2, !SciS | CsrBC | PhoP
+TSSS, !RtsA | (!SPI_1 & !SciG)
+Glucose, !Magnesium
+Osmolarity, SirA_BarA
+Stationary_phase, PmrA
+Iron, !SlyA
+Magnesium, YfhA
+Calcium, RcsB

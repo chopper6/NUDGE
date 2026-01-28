@@ -1,0 +1,16 @@
+atm, (!rb & bax & mdmx) | !wip1
+p53, (!e2f1 & mdmx) | (casp & cyce) | (casp & mdmx)
+wip1, !wip1
+cycg, !atm
+pten, p53
+p21, (!cyce & akt & cycg) | (!cyce & akt & e2f1) | (akt & cycg & e2f1)
+akt, !bcl2
+cyce, rb
+rb, (!casp & e2f1) | (!p53 & e2f1 & rb) | bax
+e2f1, (!p21 & atm & casp) | !rb | !wip1
+arf, (!bcl2 & !casp & !mdm2) | (!mdm2 & mdmx)
+bcl2, !e2f1 | !mdm2 | !pten | akt
+bax, (!arf & !wip1) | (!pten & !wip1)
+casp, (!arf & !rb) | (!arf & e2f1 & mdmx) | (!arf & wip1) | (!bcl2 & !rb) | (!rb & e2f1)
+mdmx, (!atm & !bax & !mdm2 & casp) | (!mdm2 & wip1) | !p21
+mdm2, (!p21 & !pten & !rb & mdmx) | (!p21 & !pten & arf & bcl2 & mdmx) | (!p21 & !pten & arf & cycg) | (!p21 & arf & bcl2 & mdmx & p53) | (!p21 & arf & cycg & e2f1 & mdmx & p53) | (!pten & cycg & e2f1 & mdmx & p53) | (akt & p53)

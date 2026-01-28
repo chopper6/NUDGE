@@ -1,0 +1,26 @@
+Nemo, Proteasome
+Pan, APC | Sgg
+Dlp, (!Dally & Pygo)
+Arr, !Hyx
+Sgg, Nkd
+Targets, (!Boca & !Nemo & Arm & Gro & Wg) | (!Boca & Arm & Arr) | (!Boca & Arr & Gro) | (!Nemo & Arm & Arr & Wg) | (Arm & Arr & Gro & Wg)
+Dsh, !APC | (Pygo & Wg)
+Arm, (!Nemo & !Sgg & Dlp & Dsh) | (!Nemo & !Sgg & Dlp & Hyx) | (!Nemo & Dlp & Gro) | (!Sgg & !Targets & Hyx) | (!Sgg & Dsh & Gro & Hyx) | (!Targets & Gro)
+Axin, Proteasome
+APC, CK1alpha
+Dally, (!Pygo & Sgg)
+Fz, !Wf | Lgs
+Ttv, Boca
+Wf, Dally
+Wg, !Proteasome
+Pygo, !Arr
+Nej, Ttv
+Lgs, Gro
+Hyx, Proteasome
+Gro, Gro
+Nkd, Pygo
+Slmb, !Arm
+Hipk, !Nkd
+CK1alpha, Arm
+Proteasome, Wg
+Boca, !Nemo

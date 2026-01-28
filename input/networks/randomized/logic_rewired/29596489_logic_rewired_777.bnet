@@ -1,0 +1,23 @@
+axin, ERK | Wnt
+GSK3beta, (!Wnt & Akt) | (Akt & ERK)
+DC, GSK3beta | axin
+beta_catenin, !DC
+TCF, (!FoxO & !JNK) | !beta_catenin
+FoxO, !Akt | beta_catenin
+Rho, (!mTORC2 & PI3K & Rac) | (!mTORC2 & PKC & Rac & Wnt)
+Rac, (!PI3K & !Rho & mTORC2) | (!Rho & !Wnt & mTORC2)
+MEKK1, !Rac | Rho
+JNK, (MEKK1 & Rac)
+PKC, (!mTORC2 & Wnt) | (Rho & Wnt)
+IRS, (!S6K & JNK) | IGF
+PI3K, !IRS | Ras | Rho
+Akt, !PI3K | !mTORC2
+TSC2, (Akt & GSK3beta) | ERK
+mTORC1, TSC2
+S6K, GSK3beta | mTORC1
+Ras, IGF | Wnt
+Raf, (Akt & PKC) | Ras
+ERK, !Raf
+mTORC2, (!GSK3beta & !PI3K & S6K) | (!PI3K & TSC2) | (S6K & TSC2)
+Wnt, !Wnt
+IGF, IGF

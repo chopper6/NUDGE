@@ -1,0 +1,9 @@
+MGP, ARF
+SHR, AUXINS
+WOX, ! AUXINS
+ARF, ! IAA
+SCR, SHR
+JKD, (SHR & SCR & ! MGP) | (SHR & SCR & JKD)
+PLT, (SHR & SCR)
+IAA, (SHR & SCR & ! WOX)
+AUXINS, (ARF & SHR & SCR & WOX) | (ARF & SHR & SCR & ! MGP)

@@ -1,0 +1,34 @@
+KRAS, (EGF & ERK)
+c_Myc, (!APC & !BRCA1 & ARF & p53) | (!BRCA1 & ARF & Akt) | (!MEK & Akt & p53) | (!beta_catenin & Akt & ERK & p53)
+APC, (!p53 & GSK3beta) | (PTEN & Wnt)
+p53, !APC | !BRCA1 | !MDM2 | ATM
+Wnt, p53
+ATM, !DNAdamage | !E2F1 | p53
+ARF, (!DNAdamage & !E2F1 & !beta_catenin & !c_Myc & !p53 & Rb) | (!E2F1 & !c_Myc & KRAS) | (!beta_catenin & !c_Myc & KRAS & Rb) | (!beta_catenin & !p53 & KRAS) | (!p53 & KRAS & Rb)
+RAF, (!Akt & KRAS) | ERK | PAK
+MEK, (!PAK & !RAF) | (!PAK & EGF & PP2A) | (!RAF & PP2A) | (EGF & ERK & PP2A)
+PAK, !Akt | !KRAS
+PP2A, EGF
+ERK, (!PP2A & IkB) | MEK
+BRCA1, (!Snail & ATM) | (!Snail & E2F1) | (ATM & E2F1 & SLUG)
+Akt, !KRAS | !PP2A | PTEN
+beta_catenin, (!APC & !GSK3beta & IkB) | (!GSK3beta & !p53 & IkB) | (!GSK3beta & Akt & Wnt) | (!p53 & Akt)
+Rb, (!ATM & !CyclinD & !MDM2 & Caspase_3) | (!ATM & !p21) | (!ATM & CyclinE) | (!CyclinD & !MDM2 & !p21) | (!CyclinD & CyclinE) | (!p21 & CyclinE)
+MDM2, (!Rb & ATM) | (!Rb & NFKB & p53) | (ARF & ATM & Akt) | (ARF & p53) | (ATM & p53) | CyclinE
+Bcl_2, (!Akt & !p53) | (!Akt & Caspase_3) | !E2F1 | !c_Myc | NFKB
+E2F1, (!ARF & !Akt & Rb) | (!ARF & !MDM2 & Rb) | ATM
+BAX, Bcl_2 | p53
+IkB, !NFKB | Akt | PTEN | p53
+NFKB, (!CyclinD & !IkB & !Snail & E2F1 & GSK3beta) | (!CyclinD & !IkB & !beta_catenin & Akt & PTEN) | (!CyclinD & GSK3beta & PTEN) | (!Snail & !beta_catenin & !c_Myc) | (!Snail & Akt) | (!beta_catenin & Akt & E2F1 & GSK3beta & PTEN) | (!c_Myc & Akt & E2F1 & GSK3beta & PTEN)
+PTEN, (!GSK3beta & !Snail) | (!GSK3beta & !p53)
+GSK3beta, !Akt | !Wnt | ERK
+Snail, !NFKB | ATM | ERK | p53
+SLUG, (!ERK & !beta_catenin & !p53) | (!ERK & GSK3beta) | (!MDM2 & !beta_catenin) | (!MDM2 & GSK3beta)
+MMP, !ERK | (!NFKB & E_cadherin) | (E_cadherin & beta_catenin)
+E_cadherin, (MMP & PAK & Snail) | (MMP & SLUG & Snail)
+CyclinE, !Rb | !p21 | E2F1
+CyclinD, (!NFKB & !c_Myc & beta_catenin) | (!c_Myc & !p21 & ERK) | (ERK & beta_catenin)
+p21, (Akt & c_Myc) | p53
+Caspase_3, (!Akt & !BAX & !E2F1) | (!BAX & !E2F1 & Bcl_2) | !p21
+EGF, !EGF
+DNAdamage, DNAdamage

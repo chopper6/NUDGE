@@ -1,0 +1,19 @@
+ARE, (!Bad & !Nrf2) | ATM | Mdm2
+Ras, !PI3K
+PTEN, !PIP2
+Akt, ATM
+p53, !ARE | GSK3b
+Bad, !Nrf2
+PI3K, ARE
+Nrf2, !Mdm2 | Nrf2 | PIP2
+Keap1, !Nrf2 | GSK3b | Stress
+PIP3, !Bad | !Stress
+Mdm2, !Keap1 | !Ras | Bach1
+ROS, ATM | Akt
+GSK3b, !Akt
+Bach1, !Nrf2
+PIP2, PTEN
+PKC, (!Akt & Mdm2)
+Bcl2, Nrf2 | PTEN
+ATM, Stress
+Stress, !Bcl2

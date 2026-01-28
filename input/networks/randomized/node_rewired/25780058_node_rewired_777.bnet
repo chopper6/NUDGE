@@ -1,0 +1,33 @@
+ARHGAP22, (PIP3 & ! Src & RhoA & ROCK)
+p190RhoGEF, (Ras & ! Src)
+RhoGAP1, (EGF & ! PTP_EGFR)
+GEFH1, (EGFR & ! Integrins)
+betaPix, (PI3K & EGFR)
+Shc, (FAK & EGFR) | (FAK & Src) | (EGFR & Src) | (! PTEN & Src) | (! PTEN & FAK) | (! PTEN & EGFR)
+Integrins, (! CSK & FAK) | (! CSK & EGFR)
+CSK, (FAK & Src)
+Stathmin, Ras | FAK | EGFR | Src
+Rac, (! PTEN & FAK & Src) | (Src & Integrins & Trio) | (! PTEN & Src & Trio) | (! PTEN & Src & Integrins) | (FAK & Src & Integrins) | (FAK & Src & Trio)
+Ras, (! Erk & PIP3 & EGFR & Shc)
+RhoGDI, Sos
+EGFR, (! Erk & Ras & Src & PAK)
+EGF, Raf
+ROCK, Mek
+PAK, (PI3K & ! PTEN)
+FAK, (! PIP3 & ! Src)
+Sos, PI3K | Cdc42 | Rac
+RhoA, PAK
+Mek, (! Erk & ! PAK)
+PTEN, FAK | Stathmin
+LARG, FAK | Src
+p190RhoGAP, RhoA
+PTP_EGFR, ROCK
+PIP3, PI3K | Src
+PI3K, FAK
+Raf, FAK
+Erk, PI3K
+Trio, FAK | Fyn
+Src, (Trio & ! RhoGDI & ! RhoGAP1 & VAV2) | (Trio & ! p190RhoGAP & LARG & VAV2) | (! RhoGDI & ! p190RhoGAP & p190RhoGEF & GEFH1) | (! RhoGAP1 & LARG & VAV2 & GEFH1) | (Trio & ! RhoGDI & ! p190RhoGAP & LARG) | (Trio & ! RhoGDI & LARG & VAV2) | (Trio & ! RhoGAP1 & ! p190RhoGAP & GEFH1) | (Trio & ! p190RhoGAP & LARG & GEFH1) | (! RhoGDI & ! p190RhoGAP & LARG & VAV2) | (! p190RhoGAP & LARG & VAV2 & GEFH1) | (Trio & ! RhoGAP1 & VAV2 & p190RhoGEF) | (Trio & ! p190RhoGAP & VAV2 & p190RhoGEF) | (Trio & ! RhoGAP1 & ! p190RhoGAP & LARG) | (! RhoGAP1 & ! p190RhoGAP & p190RhoGEF & GEFH1) | (! RhoGAP1 & ! p190RhoGAP & LARG & p190RhoGEF) | (LARG & VAV2 & p190RhoGEF & GEFH1) | (Trio & ! RhoGAP1 & LARG & GEFH1) | (Trio & ! p190RhoGAP & LARG & p190RhoGEF) | (Trio & ! p190RhoGAP & VAV2 & GEFH1) | (Trio & ! RhoGDI & LARG & p190RhoGEF) | (! RhoGDI & ! p190RhoGAP & LARG & p190RhoGEF) | (Trio & ! RhoGAP1 & VAV2 & GEFH1) | (Trio & ! RhoGDI & ! p190RhoGAP & p190RhoGEF) | (! RhoGAP1 & ! p190RhoGAP & VAV2 & p190RhoGEF) | (! RhoGDI & ! RhoGAP1 & LARG & p190RhoGEF) | (! RhoGDI & ! RhoGAP1 & ! p190RhoGAP & p190RhoGEF) | (! RhoGDI & ! RhoGAP1 & LARG & VAV2) | (! RhoGDI & ! RhoGAP1 & ! p190RhoGAP & VAV2) | (! RhoGDI & ! p190RhoGAP & VAV2 & GEFH1) | (! RhoGDI & LARG & p190RhoGEF & GEFH1) | (! p190RhoGAP & LARG & VAV2 & p190RhoGEF) | (! RhoGDI & ! p190RhoGAP & LARG & GEFH1) | (Trio & ! RhoGDI & ! RhoGAP1 & ! p190RhoGAP) | (Trio & ! RhoGDI & LARG & GEFH1) | (Trio & ! RhoGDI & p190RhoGEF & GEFH1) | (Trio & ! RhoGAP1 & LARG & p190RhoGEF) | (! RhoGAP1 & ! p190RhoGAP & LARG & GEFH1) | (! RhoGDI & ! RhoGAP1 & VAV2 & GEFH1) | (! RhoGDI & VAV2 & p190RhoGEF & GEFH1) | (Trio & ! RhoGDI & VAV2 & p190RhoGEF) | (Trio & ! RhoGAP1 & ! p190RhoGAP & p190RhoGEF) | (Trio & ! RhoGDI & ! RhoGAP1 & GEFH1) | (Trio & VAV2 & p190RhoGEF & GEFH1) | (Trio & ! p190RhoGAP & p190RhoGEF & GEFH1) | (! RhoGDI & ! p190RhoGAP & VAV2 & p190RhoGEF) | (Trio & ! RhoGAP1 & p190RhoGEF & GEFH1) | (! p190RhoGAP & LARG & p190RhoGEF & GEFH1) | (! RhoGAP1 & VAV2 & p190RhoGEF & GEFH1) | (! p190RhoGAP & VAV2 & p190RhoGEF & GEFH1) | (Trio & ! RhoGDI & ! p190RhoGAP & GEFH1) | (! RhoGAP1 & LARG & VAV2 & p190RhoGEF) | (Trio & LARG & VAV2 & GEFH1) | (! RhoGAP1 & ! p190RhoGAP & LARG & VAV2) | (Trio & LARG & VAV2 & p190RhoGEF) | (! RhoGDI & ! RhoGAP1 & LARG & GEFH1) | (! RhoGDI & ! RhoGAP1 & VAV2 & p190RhoGEF) | (Trio & ! RhoGDI & ! RhoGAP1 & LARG) | (Trio & ! RhoGDI & ! RhoGAP1 & p190RhoGEF) | (Trio & ! RhoGAP1 & ! p190RhoGAP & VAV2) | (! RhoGDI & ! RhoGAP1 & p190RhoGEF & GEFH1) | (! RhoGAP1 & ! p190RhoGAP & VAV2 & GEFH1) | (! RhoGDI & ! RhoGAP1 & ! p190RhoGAP & LARG) | (! RhoGAP1 & LARG & p190RhoGEF & GEFH1) | (Trio & ! RhoGDI & VAV2 & GEFH1) | (! RhoGDI & LARG & VAV2 & GEFH1) | (Trio & ! RhoGDI & ! p190RhoGAP & VAV2) | (! RhoGDI & ! RhoGAP1 & ! p190RhoGAP & GEFH1) | (! RhoGDI & LARG & VAV2 & p190RhoGEF) | (Trio & LARG & p190RhoGEF & GEFH1) | (Trio & ! RhoGAP1 & LARG & VAV2)
+Fyn, (! RhoGAP1 & VAV2 & ! ARHGAP22 & betaPix) | (! RhoA & Trio & ! RhoGDI & ! RhoGAP1 & betaPix) | (! RhoA & Trio & ! RhoGDI & VAV2 & ! ARHGAP22) | (! RhoGDI & ! RhoGAP1 & VAV2 & betaPix) | (! RhoGDI & ! RhoGAP1 & VAV2 & ! ARHGAP22) | (! RhoA & Trio & ! RhoGDI & VAV2 & betaPix) | (! RhoGDI & ! RhoGAP1 & ! ARHGAP22 & betaPix) | (! RhoA & Trio & ! RhoGAP1 & VAV2 & ! ARHGAP22) | (! RhoA & Trio & ! RhoGAP1 & VAV2 & betaPix) | (! RhoA & Trio & ! RhoGDI & ! ARHGAP22 & betaPix) | (! RhoGDI & VAV2 & ! ARHGAP22 & betaPix) | (! RhoA & Trio & ! RhoGDI & ! RhoGAP1 & VAV2) | (! RhoA & Trio & VAV2 & ! ARHGAP22 & betaPix) | (! RhoA & Trio & ! RhoGDI & ! RhoGAP1 & ! ARHGAP22) | (! RhoA & Trio & ! RhoGAP1 & ! ARHGAP22 & betaPix)
+Cdc42, (! RhoGAP1 & VAV2 & betaPix) | (! RhoGDI & ! RhoGAP1 & betaPix) | (! RhoGDI & VAV2 & betaPix) | (! RhoGDI & ! RhoGAP1 & VAV2)
+VAV2, EGF

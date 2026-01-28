@@ -1,0 +1,26 @@
+PI3KAkt_H, (!ERK_M & !GCSF) | (!ERK_M & !PI3KAkt_M & TLR_H & VCAM1_M) | (!ERK_M & CXCR7_H) | (!GCSF & !PI3KAkt_M & TLR_H) | (!GCSF & CXCR7_H) | (CXCR7_H & VCAM1_M) | ROS_H
+CXCR4_H, (!FoxO3a_H & PI3KAkt_H) | !ROS_M | PI3KAkt_M
+TLR_M, !GSK3B_M
+GSK3B_M, !FoxO3a_M
+ROS_H, !PI3KAkt_H | Bcatenin_H | TLR_H
+FoxO3a_H, (!Cx43_M & ROS_M & VLA4_H) | !VCAM1_M
+ROS_M, !TLR_H | !lTLR | NfkB_H
+ERK_H, (!Bcatenin_M & !GSK3B_H & Cx43_M) | (!Bcatenin_M & !ROS_M & CXCR7_H & Cx43_M) | (!ERK_H & !PI3KAkt_M & Bcatenin_H & CXCR7_H & Cx43_M) | (!GSK3B_H & !PI3KAkt_H & !ROS_M & Cx43_M) | (!GSK3B_H & !PI3KAkt_M & Bcatenin_H) | (!GSK3B_H & CXCR7_H) | (!PI3KAkt_H & !PI3KAkt_M) | (!PI3KAkt_H & Bcatenin_H) | (!PI3KAkt_M & !ROS_M) | (!ROS_M & Bcatenin_H)
+lTLR, !Gfi1_H
+VCAM1_M, (!Bcatenin_H & GSK3B_M) | !TLR_M
+NfkB_H, (!ROS_M & !VLA4_H & CXCR7_H) | (!ROS_M & CXCR7_H & FoxO3a_M) | (!ROS_M & ERK_M & FoxO3a_M) | (!VLA4_H & CXCR7_H & ERK_M)
+FoxO3a_M, !ERK_M | !Gfi1_H | !NfkB_H | !TLR_M
+Cx43_M, IL1
+VLA4_H, (!FoxO3a_M & Cx43_M)
+NfkB_M, (!VCAM1_M & FoxO3a_H & ROS_H) | (GCSF & NfkB_H)
+CXCR7_H, !Bcatenin_H | !PI3KAkt_H
+Bcatenin_H, NfkB_H
+GSK3B_H, VCAM1_M
+Gfi1_H, !TLR_H | Bcatenin_H | FoxO3a_M
+ERK_M, !CXCR4_H | !FoxO3a_H | !PI3KAkt_H
+GCSF, FoxO3a_H
+IL1, (!Cx43_M & ERK_M) | (!TLR_H & !VCAM1_M & ERK_M & NfkB_H) | (NfkB_H & PI3KAkt_M)
+TLR_H, NfkB_H
+CXCL12_M, !Bcatenin_M | !ERK_M | (!Gfi1_H & ROS_M)
+PI3KAkt_M, (!lTLR & GSK3B_H & TLR_M)
+Bcatenin_M, !GSK3B_H | !IL1 | !PI3KAkt_M

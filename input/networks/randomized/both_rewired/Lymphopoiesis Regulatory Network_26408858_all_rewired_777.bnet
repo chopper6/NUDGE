@@ -1,0 +1,81 @@
+Helios, !IL27
+IL12R, IRAK | JAK3
+Foxp3, (!Hoxa9 & !IL21R & PU1 & RORgt) | (!IL21R & SOCS1) | (IL6 & RORgt) | (SOCS1 & XBP1)
+ERK, IL23R | TCF1
+NFAT, IL2R
+PU1, !TCR
+EOMES, (!CD4 & IL17) | IL18R
+STAT3, !Bcl2 | (!ERK & TNFR2) | Foxp3
+Ebf1, !Ebf1 | !PU1
+AKT, !B9
+IL21R, !Gfi1
+TNFa, TNFa
+Gfi1, !IL21
+SMAD3, (!CD4 & IL18R)
+IL4, IL4 | Prf1
+JAK1, IL7R
+IL27R, JAK1
+IFNg, (!HEB & Blimp1 & TGFbR) | (!IL6R & Blimp1) | (!IL6R & TGFbR) | (Blimp1 & IL7)
+IL23R, !IFNg
+Notch1, EOMES
+Irf4, Bcl11b | Bcl2 | Foxp3 | Runx1
+GATA3, (!NFkB & IL4) | (!NFkB & Runx1) | (!NFkB & TNFR2) | (Gzmb & Notch1 & TNFR2) | HEB | (IL4 & Notch1 & Runx1 & TNFR2) | (IL4 & TCF1 & TNFR2)
+HEB, !IL27R
+IFNbR, IL23
+IL10R, !IL10R
+Gzmb, !Bcl2
+RORgt, (!Flt3L & !IL10R & NFAT) | (!Flt3L & !IL10R & TCF1) | (!IL10R & IFNbR & TCF1) | Blimp1
+FR4, !Bcl2 | Prf1
+Bcl2, !IL4R | RORgt
+IFNgR, !Pax5
+IRAK, IL2R
+Runx3, Dll1 | STAT6 | TCF1 | TNFa
+Blimp1, (!IL12R & !SMAD2 & IL6R) | STAT4
+IL6, !JAK1
+TCF1, JAK1
+Bcl6, (!IFNg & Bcl11b) | (!IFNg & Gfi1) | (Gfi1 & PU1)
+Runx1, !Foxp3 | !IL4 | (!IL7R & IL18) | (Bach2 & IL18)
+IL17, !Bach2
+STAT5, (!Foxp3 & !IL6) | IL27R
+CD8, !GATA3 | (!IL17 & JAK1) | (AKT & JAK1) | (Bcl2 & JAK1) | IL10
+IL18R, (!IL4R & IFNbR)
+Pax5, (!Irf4 & !STAT1 & BCR & IFNb) | (!Irf4 & !STAT1 & BCR & NFAT) | (!Irf4 & BCR & IFNb & IL2 & NFAT) | (!STAT1 & IFNb & NFAT)
+Bach2, !IFNb | STAT4
+STAT6, IL2
+SMAD2, IL7R
+Prf1, TNFR2
+TGFbR, IL17
+NFkB, IL21
+IL7R, !IL27R | CD8
+ThPOK, (!Bcl6 & !CD8) | (!CD8 & !ERK & !Gfi1 & !Prf1 & IL4 & PU1) | (!CD8 & !ERK & B9 & IL4 & PU1) | (!CD8 & !Runx3 & B9 & PU1) | (!ERK & !Runx3 & B9) | (!Prf1 & !Runx3)
+STAT4, IL4R | SMAD2
+IL2R, IFNg
+IL6R, !Flt3
+Flt3, (!Ebf1 & SMAD2 & TCR)
+CD4, (!Foxp3 & IL7R) | (!Tbet & IL7R) | IL2R | (IL7R & TNFR2)
+IL4R, (!CD4 & IL27)
+STAT1, CD8 | IL7R | Tbet
+XBP1, !TGFb
+Ikaros, !Gzmb
+TNFR2, !GATA3
+JAK3, (!CD8 & Dll1) | (!IL23R & Dll1)
+CD19, !Ikaros
+TGFb, NFkB
+Bcl11b, !IFNbR | !RORgt
+SOCS1, !IL6R | !TGFb
+Tbet, (!IL6 & !Runx3 & TGFb) | (!IL6 & !TNFa & CD19 & TGFb) | (!Runx3 & !TNFa)
+IL10, TGFbR
+IL12, !Bcl6
+BCR, !IL18
+TCR, IL17
+IL21, !Prf1
+IL27, HEB
+IL23, IL7
+Dll1, IL10R
+IFNb, !IL10R
+B9, IL2
+IL18, IFNg
+IL7, STAT4
+IL2, !IL4
+Hoxa9, Bach2
+Flt3L, Ebf1

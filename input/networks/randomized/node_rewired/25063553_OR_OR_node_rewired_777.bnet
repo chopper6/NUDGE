@@ -1,0 +1,56 @@
+pygl, ins
+lpk_g, (ir & ! irs1_pst)
+ir, irs1_py
+gcgr, (ir & npkcd_g)
+pgc1a, (ir & irs1_py)
+irs1_pst, (pdk1 & ! pp2a & ! trb3)
+pdhp2, (! akt & ! pka & basal_act)
+ppara_g, (ir & pdk1)
+pyruvate, cpkca | erk12 | npkcd
+npkcd_g, x5p
+hnf4a, gcg
+lxra_g, (! akt & gcgr)
+lpin1, cpkca
+ppara, ! pdk1
+npkcd, (gcgr & ! sik1)
+basal_exp, (creb & torc2) | (creb & cbp)
+insig2a, (! akt & pgc1a_g)
+lgk, ir | pka
+pgc1a_g, (creb & torc2)
+lxra, (! pka & basal_act)
+trb3, basal_exp | ppara
+f26p2, (lxra_g & g6p) | (lxra_g & gluc_in)
+pchrebp, (! ir & lxra) | (! ir & basal_exp)
+gys2_g, basal_exp | lxra
+pdk1, (pp2a & ! pka & pchrebp)
+lpk, nsrebp1c | (! ppara & sp1) | (! ppara & lxra)
+pfk2_fbp2_g, (! gsk3 & ! insig2a & psrebp1c)
+basal_act, (ppara & pgc1a & lpin1) | (hnf4a & pgc1a & lpin1)
+gys2, (erk12 & ppara_g)
+sik1, sp1
+g6pc, (ppara & pgc1a)
+pdhk2, (creb & cbp) | (creb & torc2) | (nchrebp & f26p2)
+ins, ppara | hnf4a
+pka, nsrebp1c | hnf4a
+sp1, (cbp & hnf4a & nchrebp)
+pp2a, pgc1a
+erk12, (creb & torc2 & ! nsrebp1c) | (creb & cbp & ! nsrebp1c)
+pepck_c, lxra | nsrebp1c
+akt, nsrebp1c | pgc1a
+gluc_in, (pp2a & ! pka & pfk2_fbp2_g)
+gcg, (! pp2a & pka & pfk2_fbp2_g)
+pfk2, (! pka & lpk_g)
+nsrebp1c, (! pyruvate & pdhk2_g)
+creb, npkcd
+x5p, (! pdhk2 & pdhp2)
+pdhc, (! pp2a & pka)
+cpkca, (pp2a & ! pka & ! gsk3 & gys2_g)
+gsk3, ins
+nchrebp, basal_act
+cbp, x5p
+psrebp1c, gcg
+torc2, basal_exp
+g6p, g6p
+irs1_py, gluc_in
+pdhk2_g, f26p2
+fbp2, pyruvate

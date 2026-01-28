@@ -1,0 +1,69 @@
+AKT, !ILK | !NOTCH_ic
+Dest_compl, !HGF | (!NOTCH & !b_catenin_nuc) | FGF
+AXIN2, !Dest_compl | DELTA
+b_catenin_memb, (!IGF1 & FOXC2)
+b_catenin_nuc, (!LIV1 & !STAT) | (!STAT & SHH) | !Wnt
+bTrCP, !AKT
+CD44, !miR200
+CDC42, !PI3K | Wnt
+c_fos, !PDGF
+cMet, (!b_catenin_nuc & GLI)
+Csl, !PAK1
+Csn, !Csn
+DELTA, CDC42
+DSH, LIV1
+E_cadherin, (!IGF1 & !TGFbR & !bTrCP & !cMet & Patched & ZEB1) | (!TGFbR & !bTrCP & !cMet & RKIP) | (!TGFbR & !bTrCP & PDGFR & ZEB1) | (!TGFbR & !cMet & PDGFR & RKIP & ZEB1) | (!TGFbR & !cMet & Patched & RKIP) | (!bTrCP & Patched & RKIP & ZEB1)
+EGFR, Csn
+EGR1, Patched
+EMT, (!GLI & !MEK)
+ERK, !PDGF
+FGFR, LOXL23
+FOXC2, (!CDC42 & !SNAI1) | ERK
+Frizzled, Patched
+FUS, IKKa
+GLI, (!HGF & LOXL23)
+GSK3b, (!HEY1 & !SMO & SNAI1) | !LOXL23 | (!SMO & !ZEB2) | (!ZEB2 & SNAI1)
+HEY1, !Csn | bTrCP
+HIF1a, !STAT
+IGF1R, SHH
+IKKa, bTrCP
+ILK, NOTCH_ic
+Jagged, !Goosecoid | E_cadherin
+LIV1, !MEK
+LOXL23, Csn
+MEK, !PAK1 | TGFb
+miR200, !LIV1 | !SMAD | NFkB
+NFkB, HGF
+NOTCH, !CDC42 | !EGR1
+NOTCH_ic, FGF
+PAK1, !NFkB
+Patched, PDGFR
+PDGFR, !c_fos
+PI3K, !PDGFR
+RAF, !GSK3b
+RAS, !EMT | !FGFR | (ILK & PAK1)
+RKIP, (!TWIST1 & Frizzled)
+SHH, !Jagged | ZEB1
+SNAI2, (!Dest_compl & MEK) | !Frizzled | (Jagged & MEK)
+SMAD, (CHD1L & FOXC2) | Csl | (FOXC2 & GLI)
+SMO, SMAD
+SNAI1, (!NOTCH_ic & !PDGF & !PI3K & !miR200 & AKT & TCF_LEF) | (!NOTCH_ic & !PDGF & !SOS_GRB2 & !miR200 & MEK) | (!NOTCH_ic & !PDGF & !SOS_GRB2 & AKT & TCF_LEF) | (!NOTCH_ic & !SOS_GRB2 & !miR200 & AKT & Hypoxia & b_catenin_nuc) | (!PDGF & !PI3K & !SOS_GRB2 & !miR200 & Hypoxia & MEK) | (!PDGF & !PI3K & !SOS_GRB2 & AKT & MEK & TCF_LEF) | (!PDGF & !miR200 & Hypoxia & MEK & TCF_LEF) | (!miR200 & AKT & MEK & TCF_LEF)
+SOS_GRB2, !FGF | (!Goosecoid & EMT & LOXL23) | (!Goosecoid & EMT & TGFb) | (!Goosecoid & NFkB) | (HGF & NFkB & TGFb)
+SRC, (!ERK & !SRC) | !Jagged | !ZEB1 | GLI
+STAT, E_cadherin
+SUFU, !SMAD
+TCF_LEF, STAT
+TGFb, !CHD1L | (!HEY1 & TWIST1) | !SNAI1
+TGFbR, RKIP
+TWIST1, (!AKT & !CDC42 & Jagged) | SRC | c_fos
+Wnt, miR200
+ZEB1, (!FOXC2 & !Wnt) | !PDGFR | EGF
+ZEB2, !ERK | !HEY1 | !b_catenin_memb | PDGF
+CHD1L, LIV1
+HGF, !Wnt
+EGF, !MEK
+FGF, !Frizzled
+Goosecoid, E_cadherin
+Hypoxia, GLI
+IGF1, !Patched
+PDGF, GSK3b

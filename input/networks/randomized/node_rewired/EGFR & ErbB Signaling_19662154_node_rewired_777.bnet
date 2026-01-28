@@ -1,0 +1,104 @@
+pip3, mlk3 | mekk1 | mekk4
+limk1, mekk1
+mekk1, (erbb1 & erbb2 & ! shp1d & egf) | (erbb1 & erbb2 & ! shp1d & hbegf) | (btc & erbb1 & erbb2 & ! shp1d) | (erbb1 & erbb2 & ! shp1d & tgfa) | (erbb1 & erbb2 & ! shp1d & epr) | (erbb1 & erbb2 & ! shp1d & bir)
+pro_apoptotic, (ras & csrc & ! aktd) | (ras & ! aktd & pak1)
+rasgap, vav2 | sos1esp8e3b1
+ptend, p90rsk | mk2
+plcg, (csrc & erbb11)
+cfos, mlk3
+pten, (erbb11 & esp8r)
+mkk4, mekk1 | raf1
+tgfa, (ras & pi3kr) | (pi3kr & gab1) | (pi3kr & erbb34) | (erbb13 & pi3kr) | (pi3kr & erbb23)
+sos1r, ! akt
+bir, ship2
+p70s6_1, (erbb11 & pip3) | (erbb11 & pi34p2)
+endocyt_degrad, erbb11 | pip3 | grb2
+nrg3, (rheb & mtorr)
+erbb2, ! akt | ! p90rsk
+mkk6, (grb2 & sos1r & ! p90rskerk12d)
+erbb34, ! tsc1_tsc2
+grb2, erbb11
+mkk3, (erbb2 & erbb3 & nrg1a) | (erbb2 & bir & erbb3) | (erbb2 & erbb3 & nrg2b) | (erbb2 & epr & erbb3) | (btc & erbb2 & erbb3) | (erbb2 & erbb3 & nrg1b)
+mkk7, raccdc42
+nrg1b, raccdc42
+gab1, (pdk1 & mtor_rap & p70s6_1)
+cmyc, erbb11 | erbb44 | erbb14
+erbb13, mlk3
+mek12, (grb2 & raccdc42) | (raccdc42 & nck)
+rheb, bad
+erbb44, (! erbb2 & erbb3 & nrg2b & erbb4) | (! erbb2 & erbb3 & nrg1a & erbb4) | (! erbb2 & erbb3 & nrg1b & erbb4) | (! erbb2 & erbb3 & erbb4 & nrg2a)
+nck, raccdc42
+stat5, shp1
+akt, mek12
+p90rsk, pak1
+elk1, (rin1 & ! rntre)
+actinreorg, (nucerk12 & ! pp2b)
+rntre, (pi3k & ! ship2d & ! ptend)
+hsp27, ! endocyt_degrad | (erbb1 & ! shp1d & epr) | (erbb1 & ! shp1d & bir) | (erbb1 & ! shp1d & egf) | (erbb1 & ! shp1d & hbegf) | (btc & erbb1 & ! shp1d) | (erbb1 & ! shp1d & ar) | (erbb1 & ! shp1d & tgfa)
+mekk4, (nrg1a & erbb4) | (btc & erbb4) | (nrg1b & erbb4) | (bir & erbb4) | (erbb4 & nrg4) | (erbb4 & nrg3) | (nrg2b & erbb4)
+pi3kr, (pdk1 & dag & ca)
+creb, erbb11 | erbb13 | erbb34 | erbb23 | erbb44 | erbb14 | erbb24 | erbb12
+jnk, (cjun & cfos)
+nucerk12, erbb11
+pi3k, (btc & erbb1 & ! erbb2 & ! shp1d & erbb3) | (erbb1 & ! erbb2 & ! shp1d & erbb3 & nrg1b) | (erbb1 & ! erbb2 & ! shp1d & erbb3 & nrg1a) | (erbb1 & ! erbb2 & ! shp1d & erbb3 & nrg2a) | (erbb1 & ! shp1d & erbb3 & ar) | (erbb1 & ! erbb2 & ! shp1d & tgfa & erbb3) | (erbb1 & ! erbb2 & ! shp1d & egf & erbb3) | (erbb1 & ! erbb2 & ! shp1d & epr & erbb3)
+ccbl, (csrc & erbb24) | (csrc & erbb11)
+erbb24, (erk12 & p90rsk)
+ap1, (csrc & erbb11)
+mlk3, akt
+tsc1_tsc2, erk12 | jnk
+raccdc42, gab1
+pi34p2, (! gsk3 & nucerk12)
+mtor_rap, (ccbl & rab5a)
+ca, erbb11 | erbb13 | erbb34 | erbb23 | erbb44 | erbb14 | erbb24 | erbb12 | shc
+gsk3, ras
+erbb1, (! pp2a & erk12 & p90rsk) | (! pp2a & jnk)
+bad, (pdk1 & ! pp2a & pi34p2 & mtor_ric) | (pdk1 & ! pp2a & pip3 & mtor_ric)
+rin1, (erk12 & ! mkp)
+pp2a, p38
+btc, pten
+ip3, (gab1 & ! shp2)
+shp2, limk1
+erbb4, mkk4 | mkk3 | mkk6
+erbb14, (erbb2 & tgfa & erbb4) | (erbb2 & nrg1b & erbb4) | (erbb2 & nrg2b & erbb4) | (erbb2 & erbb4 & nrg4) | (btc & erbb2 & erbb4) | (erbb2 & erbb4 & nrg3) | (erbb2 & nrg1a & erbb4) | (erbb2 & bir & erbb4) | (erbb2 & erbb4 & nrg2a) | (erbb2 & egf & erbb4) | (erbb2 & hbegf & erbb4) | (erbb2 & epr & erbb4)
+stat3, plcg
+erbb23, ! akt | ! pak1
+shp1, plcg
+erk12, jnk
+ar, (pdk1 & erk12)
+stat1, mtorr
+mk2, (mkk4 & mkk7)
+pkc, (esp8r & pi3kr & pip3 & sos1r)
+ship2, mk2
+raf1, erbb11
+pp2b, (pi3k & ship2d & ! ptend)
+esp8r, ip3
+ship2d, (erbb1 & ! erbb2 & ! shp1d & nrg2b & erbb4) | (erbb1 & ! erbb2 & ! shp1d & nrg1a & erbb4) | (erbb1 & ! erbb2 & ! shp1d & epr & erbb4) | (erbb1 & ! erbb2 & ! shp1d & erbb4 & nrg2a) | (erbb1 & ! erbb2 & ! shp1d & tgfa & erbb4) | (erbb1 & ! erbb2 & ! shp1d & nrg1b & erbb4) | (erbb1 & ! erbb2 & ! shp1d & egf & erbb4) | (erbb1 & ! erbb2 & ! shp1d & erbb4 & nrg4)
+mtorr, (sos1 & ! rasgap)
+vav2, erbb1
+erbb3, erbb2
+sos1, egf
+shc, hbegf
+epr, btc
+p38, tgfa
+dag, epr
+sos1esp8e3b1, bir
+mkp, csrc
+csrc, esp8r
+erbb12, pi3kr
+nrg2b, ship2
+nrg2a, mtorr
+pak1, sos1r
+shp1d, erbb3
+erbb11, nrg1a
+egf, nrg2b
+p70s6_2, nrg1b
+mtor_ric, pdk1
+rab5a, erbb4
+aktd, nrg2a
+cjun, pp2b
+nrg4, ar
+hbegf, nrg4
+p90rskerk12d, nrg3
+pdk1, pp2a
+nrg1a, mkp
+ras, pten

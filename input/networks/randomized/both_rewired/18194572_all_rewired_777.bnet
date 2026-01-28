@@ -1,0 +1,55 @@
+HGF_c_Met, (!Shc1 & Talin)
+Gab1, Talin
+SHP2, !RAC1 | PI3K | SHP2
+Grb2, (!HGF & Grb2)
+PI3K, HGF | Ras
+c_Cbl, !PAK1
+Crk_CrkL, !c_JUN | (AKT1 & FAK)
+Shc1, !CagA_c_Met
+DOCK180, !PI3K
+Rac1, !Rac1
+STAT3, !CSK | PLCgamma1
+ILK, !ERK1_2
+PIP3, FYN | HGF_c_Met | MKK4
+PDK1, c_SRC
+AKT1, ELK1 | Rac1
+RAC1, DAG
+PAK1, !c_Myc | MKK4
+IQGAP_1, !HGF_c_Met | PLCgamma1
+MKK4, !ETS
+JNK, !Calpain2
+c_JUN, SHP2
+ELK1, !HGF_c_Met | DAG
+ATF2, !PI3K
+IKK, !NF_kB
+IkBalpha, Ca2p
+NF_kB, !Calmodulin
+RasGAP, !ILK | alpha_catenin_beta_catenin_E_cadherin
+SOS1, H_pylori
+Ras, !ETS | !RAC1
+Raf1, !HGF_c_Met | CagA_c_Met
+MEK, PKCalpha
+ERK1_2, !AKT1
+c_Myc, !IP3
+ETS, CagA_c_Met
+PLCgamma1, !HGF_c_Met | !NF_kB
+IP3, !Rac1 | Shc1
+DAG, Calmodulin | Gab1
+Ca2p, DOCK180
+PKCalpha, !NF_kB | Gab1
+Calmodulin, ERK1_2
+alpha_catenin_beta_catenin_E_cadherin, !Raf1
+CagA, (!alpha_catenin_beta_catenin_E_cadherin & CagA_c_Met) | HGF_c_Met
+CSK, !AKT1 | !RasGAP
+c_SRC, !PI3K
+FYN, c_JUN
+FAK, c_Met
+PIPKIgamma661, !HGF_c_Met
+Talin, !MKK4
+Calpain2, !NF_kB | ETS
+CagA_c_Met, !HGF | ILK
+HGF, !alpha_catenin_beta_catenin_E_cadherin
+c_Met, !PIPKIgamma661
+PTEN, IQGAP_1
+PIP2, c_Myc
+H_pylori, SHP2

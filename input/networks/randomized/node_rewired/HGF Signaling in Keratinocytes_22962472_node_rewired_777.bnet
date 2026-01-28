@@ -1,0 +1,68 @@
+C3G, EGF | HBEGF
+Fak, ETS | Elk1
+ECM, PLC_g
+uPA, Cdc42_Rac1
+Ras, uPAR
+HGF, MLK3 | Mekk1 | Mekk4
+Ca, PAK1 | (Mkk3 & Mkk6 & ! DUSP1)
+uPAR, ATF2 | (cJUN & cFOS)
+Rap1, PAK2 | (Mekk7 & Mkk4)
+MMP1_10, Mekk1
+STAT3, STAT3
+CellMigration, ECM
+HBEGF, RSK
+Mek, Cdc42_Rac1
+MLK3, (PI3K & ! PTEN)
+Mekk7, Erk
+cMYC, Erk
+CRKL, CRKL
+PAK1, Grb2
+EGR1, MLK3
+PKC, ATF2 | Elk1
+PTGS2, Erk
+DUSP1, Mek
+Mekk4, PLC_g
+PAK2, Cdc42_Rac1
+Grb2, (CDK2 & CyclinD)
+cFOS, (uPA & PAI_1)
+Plasmin, IP3
+CDKN2A, (cJUN & cFOS)
+p38, Grb2
+IL8, SOS
+CDKN1A, Erk
+CyclinD, (IL8 & PTGS2 & CTGF & CCL20)
+Integrins, Cdc42_Rac1
+Mekk1, (DOCK180 & Ras & Akt)
+CDK2, Mekk1 | Raf
+cJUN, EGFR | MET
+Proliferation, Cdc42_Rac1
+PTEN, (! PTEN & Rap1 & Integrins)
+Cdc42_Rac1, Erk | JNK
+ETS, MET | (EGFR & Fak)
+EGF, Erk
+PAK3, MLK3
+PI3K, AP1
+Shc, MMP1_10
+DOCK180, Erk
+EGFR, (JNK & p38)
+CREB, Cdc42_Rac1
+Mkk4, Shc
+CTGF, HGF
+AP1, (Ras & PKC & PAK3)
+CCL20, Erk | p38
+SOS, EGFR | MET | Fak
+AKAP12, C3G
+MET, (DAG & Ca & ! AKAP12)
+PLC_g, Erk | p38
+Mkk6, Erk | p38
+Elk1, (JNK & p38)
+ATF2, (CyclinD & ! CDKN1A) | (CyclinD & ! CDKN2A)
+Erk, Erk
+Raf, Plasmin
+JNK, CRKL
+Mkk3, EGF
+IP3, DUSP1
+Akt, PTEN
+DAG, PAI_1
+RSK, HGF
+PAI_1, AKAP12

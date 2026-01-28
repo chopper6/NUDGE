@@ -1,0 +1,26 @@
+ICL, !NHEJ | ATR | DSB
+FAcore, (!ATM & CycB_CDK1) | (!CDK1_AurA & ATR & CycB_CDK1) | !RNF4
+FANCD2I, (!CDC25 & ATM) | (ATM & CycB_CDK1) | (ATM & PARP_1)
+NUC1, !HRR | (MYT1 & NHEJ & WIP1)
+RNF4, !KU_53BP1 | HRR
+NUC2, !DSB | (PARP_1 & PP2A_B55) | Plk1 | R_DSB
+DSB, !ATM | !DSB | (!PLK1 & PARP_1) | p53
+PARP_1, (!CDK1_AurA & !PLK1 & PARP_1) | p21
+R_DSB, (!CycB_CDK1 & !WIP1) | (!KU_53BP1 & !WIP1) | (PARP_1 & R_DSB)
+HRR, (!HRR & !Plk1) | (!HRR & !RNF4) | !PARP_1 | NUC1
+KU_53BP1, !DSB | FANCD2I
+NHEJ, (!HRR & !Plk1) | (!Plk1 & DSB & WEE1 & p53)
+gH2AX, (!CDK1_AurA & !p53 & FAcore & p21) | (!NHEJ & !p53 & CDC25 & FAcore) | (MYT1 & WIP1)
+ATR, !FAcore | (!ICL & !p21 & WEE1) | !p53
+ATM, (!ATM & !FANCD2I & !MYT1 & PLK1 & RNF4) | (!ATM & !FANCD2I & R_DSB & gH2AX) | (!ATM & !PARP_1 & NHEJ & PLK1 & RNF4) | (!ATM & NHEJ & PLK1 & RNF4 & gH2AX) | (!FANCD2I & !PARP_1 & NHEJ) | (!MYT1 & !PARP_1 & RNF4) | (!MYT1 & NHEJ & PLK1 & R_DSB)
+MYT1, !HRR | !WEE1 | !gH2AX | FANCD2I | p53
+WEE1, !CDC25 | (!CDK1_AurA & !KU_53BP1 & NHEJ) | !PP2A_B55 | CycB_CDK1
+p53, (!HRR & !PLK1) | (!HRR & gH2AX) | !Plk1 | PP2A_B55
+p21, !PP2A_B55
+PP2A_B55, !ATR | !FAcore | !NUC2
+WIP1, !CycB_CDK1
+CDK1_AurA, (!FANCD2I & !ICL & !WEE1 & ATR & HRR & Plk1) | (!ICL & !WEE1 & ATM & HRR & R_DSB)
+PLK1, (!ATM & gH2AX) | (!CDC25 & HRR & RNF4 & p53) | (!CDC25 & gH2AX & p53) | (!R_DSB & HRR & RNF4 & gH2AX & p53) | (HRR & ICL & gH2AX) | (ICL & RNF4 & gH2AX)
+CDC25, (!FANCD2I & ATR & CDC25 & ICL & PLK1) | (!FANCD2I & ATR & Plk1 & gH2AX) | (!FANCD2I & CDC25 & ICL & Plk1 & R_DSB) | (CDC25 & Plk1 & R_DSB & gH2AX) | (PLK1 & R_DSB & gH2AX)
+CycB_CDK1, ATM | (HRR & WIP1) | KU_53BP1 | NUC2
+Plk1, !NUC1

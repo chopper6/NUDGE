@@ -1,0 +1,11 @@
+Growth_factor, (Growth_factor & ! S_phase_genes)
+Erk, (Erk & ! p27)
+X, X | ! Mitosis
+p27, (Growth_factor & spread)
+Mitosis, ! p27 | E2F
+Cyclin_E, (Cyclin_E & ! pRb)
+E2F, ! Cyclin_E | ! Cyclin_D1
+Cyclin_D1, (E2F & ! pRb)
+spread, (S_phase_genes & ! Mitosis)
+pRb, Growth_factor
+S_phase_genes, spread

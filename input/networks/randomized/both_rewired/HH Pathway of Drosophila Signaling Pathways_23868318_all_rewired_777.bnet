@@ -1,0 +1,24 @@
+Dally, !iHog
+Ci_rep, !Sgg | (!SuFu & Ci_rep & Ptc) | (Ci_rep & Ptc & Targets) | Gprk2
+Smo, !Ci_act | Dally | Slmb
+Targets, !Cos | !Hh
+Hh, !Boi | (!Fu & Dally & Ttv) | (!Fu & Lipophorin & Tow) | (!Fu & Tow & Ttv) | (!Rasp & CK1a & Dally & Lipophorin & Tow) | (CK1a & Ttv)
+SuFu, !Gprk2
+Dlp, Fu
+Ci_act, (!Ci_act & !Fu & !Sgg & Hh & iHog) | (!Fu & !Sgg & Ttv) | (Hh & Ttv)
+Ptc, !Pka
+Cos, !Shf | Cos
+Fu, Ci_rep
+Ttv, Dally
+CK1a, !Dally
+Slmb, !Hh
+Sgg, !Hh
+Pka, Hh
+Gprk2, !Targets
+Tow, !Shf
+iHog, !Rasp
+Rasp, !Disp
+Boi, !Fu
+Lipophorin, !Sgg
+Shf, Pka
+Disp, Ptc

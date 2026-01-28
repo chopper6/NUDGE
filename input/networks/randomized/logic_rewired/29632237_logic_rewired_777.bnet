@@ -1,0 +1,95 @@
+IL6, pNFkB
+gp130, Cas3
+RIP, Bort | TNFa | TNFaR
+NIK, TRAF3
+JAK1, (!IL6 & SHP1) | !gp130
+JAK2, !SHP1 | !gp130 | IL6
+IKK, (!AKT & ROS) | (!NIK & !RIP & ATM & DNAdam) | (DNAdam & ROS)
+pIKB, IKK
+pNFkB, (!pSTAT3 & GSK3b) | pIKB
+FLIP, pNFkB
+Prot, !Bort
+XIAP, (!pSTAT3 & pNFkB) | (Smac & p53 & pNFkB)
+BclxL, !pSTAT3 | BAD | BAX | p53 | pNFkB
+Bcl2, !BAD | !pNFkB | p53 | pSTAT3
+CYCD, !ERK | (!GSK3b & AKT) | (AKT & MYC & cMAF) | (P90RSK & cMAF)
+CYCE, MYC
+MDM, (!ATM & !p53) | (!ATM & ATR) | (!p53 & AKT & ATR)
+MYC, (!ERK & !IRF4 & !pSTAT3 & BLIMP1) | !MEKK
+STAT3, !CAS3
+pSTAT3, !JAK1 | !JAK2 | !JNK | STAT3
+AKT, !mTORC2
+PI3K, !IL6 | !gp130 | IRS
+PIP3, PI3K | PTEN
+pRB, (CDK4 & CDK6)
+CIAP, TNFaR
+RAS, !SHP1 | !gp130 | IL6 | IRS
+RAF, !RAS
+MEK1, RAF
+MEKK, MEK1
+MAPK, MEK1
+ERK, MAPK
+CDK2, !p21 | CYCE | Cdc25A | p27
+CDK4, (!CYCD & !p27 & p21) | !Cdc25A
+CDK6, CYCD
+Proliferation, pRB
+DEPTOR, cMAF
+mTORC2, PI3K
+SGK1, mTORC2
+mTORC1, Rheb
+P70S6K, mTORC1
+IRS, (!IGF1 & !JNK & IL6) | (!IGF1 & gp130) | (!JNK & IL6 & gp130) | (IGF1R & P70S6K) | (IL6 & P70S6K)
+Rheb, !TSC
+P90RSK, ERK
+Cdc25BC, (!Chk1 & !Chk2)
+Cdc25A, !Chk2
+CDK1, !p27 | Cdc25BC | p21
+CYCB, CDK1
+cMAF, !GSK3b
+IRF4, !MYC | IRF4 | pNFkB
+Bcl6, pSTAT3
+Viacel, !Apo | Proliferation
+PRAS40, !AKT
+TSC, !P90RSK | (AKT & ERK) | GSK3b | STRESS
+GSK3b, !AKT | P70S6K | P90RSK
+ATR, !DNAdam
+Chk1, !ATR
+Chk2, ATM
+ROS, !STRESS | MITO | MnSOD2
+MnSOD2, ROS | pNFkB
+BLIMP1, !Bcl6 | IRF4
+FasL, !FasR | !cJun
+FasR, FasL | p53
+BAD, (!P70S6K & AKT) | (!P70S6K & P90RSK) | JNK
+TRAF3, CIAP
+PTEN, p53
+p27, (!CDK4 & !p53) | (!p53 & AKT & Bcl6) | MYC
+p21, (!AKT & !p53 & MYC) | (!CDK4 & !p53 & Bcl6 & MDM & MYC)
+RAC, STRESS
+MEKK2, !RAC
+MKK4, !MEKK2
+JNK, !MKK4 | Prot
+DNAdam, !ROS | !STRESS | Cas3
+ATM, !DNAdam | Cas3
+DNAPK, (ATM & ATR)
+p53, (!Chk1 & !Chk2 & Prot) | (!Chk1 & DNAPK & MDM & Prot) | (!Chk2 & Bcl6) | (!JNK & Bcl6 & Prot) | (Bcl6 & DNAPK & MDM)
+cJun, !JNK
+BAX, !BID | !p53 | Bcl6 | BclxL
+BID, !BclxL | (!STRESS & Bcl2) | (Bcl2 & Fas) | Cas8
+Cas8, !FLIP | FasL | FasR
+MITO, (BAX & ROS)
+Smac, !MITO
+Cytc, MITO
+Cas9, !Cytc | XIAP
+Cas3, (!Cas8 & Cas9) | XIAP
+CLPARP, !Cas3
+STRESS, !DNAdam | Prot | ROS
+Apo, CLPARP
+Bort, Bort
+TNFa, TNFa
+TNFaR, TNFaR
+SHP1, SHP1
+CAS3, CAS3
+IGF1, !IGF1
+IGF1R, !IGF1R
+Fas, !Fas

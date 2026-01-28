@@ -1,0 +1,28 @@
+RIP1, (!IKK & !cFLIP & RIP1k)
+NonACD, !ROS
+XIAP, (!CASP3 & !cFLIP)
+NFkB, !ATP | !cIAP
+RIP1ub, !IKK | MOMP
+cFLIP, ATP
+BCL2, CASP8
+BAX, NFkB | ROS
+MPT, !BCL2 | NonACD
+DISC_TNF, ATP | FASL
+RIP1k, !CASP3
+apoptosome, (!CASP3 & !RIP1) | cFLIP
+survival, !DISC_TNF
+IKK, !BCL2
+ATP, survival
+apoptosis, CASP8
+MOMP, !DISC_TNF | apoptosome
+Cyt_c, DISC_FAS
+CASP8, DISC_TNF | FASL | RIP1ub | TNFR
+TNFR, !CASP8
+ROS, !BCL2 | !SMAC | !apoptosome
+cIAP, (!RIP1 & FADD) | (!RIP1 & MPT)
+SMAC, BCL2
+DISC_FAS, CASP8 | cFLIP
+CASP3, !CASP8 | RIP1ub
+FADD, !FASL
+TNF, !TNFR
+FASL, ROS

@@ -1,0 +1,69 @@
+VEGF, (!FGFRs & CyclinDp) | !Prop
+EGF, AKTp
+bFGF, Apop | cJUNp
+PDGFBB, !CyclinEp | IFNgamma
+TGFb1, !Apop | !IFNgamma
+VEGFRs, !cJUNp
+EGFRs, !P21p
+FGFRs, !MDM2p
+TNFRs, mTORp
+PDGFBBRs, MEKs
+PPARgammas, Prop
+TGFRs, !P38s
+IFNGRs, !Pros
+RASs, !P21s | CyclinDp | TGFRs
+PI3Ks, !P21p | P38s
+SMADs, P53s
+STATs, SMADs
+RAFs, Autp
+NFkappaBs, (!JAK1p & !TGFRp)
+P38s, (PI3Ks & STATp)
+MEKs, !P21p
+PIP3s, !IFNGRs | !P38s
+P53s, (!IFNGRs & PIP3s)
+PTENs, EGFRp
+AKTs, !STATp
+ERKs, !PI3Kp | TNFalpha
+AP1s, EGFRs
+P21s, !STATs
+MDM2s, !HER2p | !PPARgammas
+Apos, NFkappaBp
+Pros, !Migs | !PDGFBBRs
+Migs, !PPARgammas | Apos | mTORp
+Acts, (!Prop & P53s & cJUNp) | (AP1s & P53s) | IFNGRs
+EGFRp, (!CyclinDp & Prop)
+FGFRp, !NFkappaBp
+TGFRp, !AKTp
+JAK1p, !mTORp
+PI3Kp, !TGFRs | Prop
+RASp, !Beclin1p | PTENs
+SMADp, P53p
+STATp, Pros
+PIP3p, !JAK1p | TNFalpha
+RAFp, EGFRs
+P21p, Beclin1p | RBp | TNFalpha
+MEKp, P38s
+NFkappaBp, IFNGRs
+AKTp, EGFRp
+PTENp, cJUNp
+ERKp, !Thiazolidinedione
+E2Fp, !VEGF
+cJUNp, PPARgammas | PTENp
+CyclinDp, !PIP3p | RAFs
+RBp, HER2p
+BCLXLp, (!FGFRs & P53s) | (BCLXLp & P21p & P53s) | STATp
+JNKp, Prop
+mTORp, Apos | RAFp
+BAXp, !Pros
+Beclin1p, !ERKp | !SMADp
+MDM2p, !CyclinDp | !P21p | !cJUNp
+P53p, RAFp
+CyclinEp, !P53p | !Prop
+CASPp, !Acts | !HER2p | !IFNGRs | FGFRp
+Autp, (Apos & VEGF) | P53p
+Apop, PIP3s
+Prop, (!Apop & !CyclinDp) | (!CyclinDp & !PIP3s)
+TNFalpha, PI3Ks
+Thiazolidinedione, !CASPp
+IFNgamma, CyclinDp
+HER2p, RASs

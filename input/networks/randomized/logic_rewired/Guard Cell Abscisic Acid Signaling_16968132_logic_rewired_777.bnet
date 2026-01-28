@@ -1,0 +1,44 @@
+ROS, !Atrboh
+PEPC, ABA
+PLD, !GPA1
+HTPase, !pH | Ca2_c | ROS
+Ca2_c, !Ca2_ATPase | CIS | CaIM
+ROP10, !ERA1
+RAC1, (!ABA & !ABI1)
+OST1, !ABA
+ROP2, !PA
+InsP6, InsPK
+SphK, ABA
+Depolar, (!AnionEM & !HTPase & !KEV) | (!AnionEM & !HTPase & !KOUT) | (!AnionEM & !KEV & !KOUT & Ca2_c) | (!HTPase & !KEV & Ca2_c)
+RCN1, !ABA
+Ca2_ATPase, Ca2_c
+NOS, Ca2_c
+GPA1, !S1P | (AGB1 & GCR1)
+Atrboh, (!ABI1 & OST1) | (!ABI1 & ROP2) | (!pH & ROP2) | (OST1 & ROP2)
+Malate, (!ABA & PEPC) | !AnionEM
+AnionEM, (!Ca2_c & !pH & ABI1)
+KAP, (!Ca2_c & !Depolar) | (!Depolar & !pH)
+pH, !ABA
+CIS, !InsP3 | (!cADPR & InsP6) | (!cGMP & InsP6)
+InsP3, PLC
+PA, PLD
+ABI1, PA | (ROS & pH)
+CaIM, (!ABH1 & !ERA1) | (!ABH1 & ROS) | Depolar
+S1P, SphK
+NIA12, !RCN1
+cGMP, GC
+PLC, (ABA & Ca2_c)
+cADPR, !ADPRc
+ADPRc, !NO
+Actin, (!RAC1 & Ca2_c)
+AGB1, !GPA1
+Closure, (!KAP & !Malate) | (!KOUT & !Malate & AnionEM) | Actin
+InsPK, !ABA
+KEV, Ca2_c
+KOUT, (!ROS & NO) | (!pH & Depolar) | (!pH & NO) | (Depolar & NO)
+GC, !NO
+NO, !NOS | NIA12
+ABA, !ABA
+ERA1, !ERA1
+GCR1, !GCR1
+ABH1, !ABH1

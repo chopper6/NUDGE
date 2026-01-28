@@ -1,0 +1,55 @@
+MEK, (HGF & c_Met)
+PKCalpha, HGF_c_Met
+Grb2, HGF_c_Met | Gab1 | CagA
+c_SRC, HGF_c_Met | Shc1
+CagA_c_Met, Gab1 | c_Cbl
+ERK1_2, HGF_c_Met
+Crk_CrkL, Gab1 | CagA | c_Cbl
+IQGAP_1, HGF_c_Met
+HGF_c_Met, Crk_CrkL
+Calpain2, DOCK180
+Raf1, HGF_c_Met | RAC1
+NF_kB, PI3K
+Ca2p, (PI3K & ! PTEN & PIP2)
+SHP2, PIP3
+ELK1, (PDK1 & ILK)
+CSK, AKT1
+alpha_catenin_beta_catenin_E_cadherin, AKT1 | Rac1
+Ras, (Rac1 & Calmodulin)
+STAT3, PAK1
+PLCgamma1, MKK4
+ETS, JNK
+Shc1, JNK | ERK1_2
+Rac1, JNK
+c_Myc, PAK1
+PIP3, ! IKK
+JNK, ! IkBalpha
+MKK4, (Gab1 & ! SHP2)
+RAC1, Grb2
+Calmodulin, (! RasGAP & SOS1)
+HGF, Ras | PKCalpha
+PTEN, Raf1
+IKK, MEK
+PIPKIgamma661, ERK1_2
+H_pylori, ERK1_2
+PI3K, Gab1 | CagA_c_Met
+c_Met, (PIP2 & PLCgamma1)
+c_Cbl, (PIP2 & PLCgamma1)
+CagA, IP3
+c_JUN, (DAG & Ca2p)
+RasGAP, Ca2p
+PIP2, ! IQGAP_1
+FYN, (c_SRC & FYN & H_pylori)
+PDK1, CagA | ! H_pylori
+SOS1, ! CSK
+IkBalpha, ! CSK
+ATF2, ! SHP2
+Talin, FAK
+ILK, PIPKIgamma661
+FAK, (ERK1_2 & FAK)
+DOCK180, (c_Met & CagA)
+IP3, HGF
+Gab1, c_Met
+AKT1, PTEN
+PAK1, PIP2
+DAG, H_pylori

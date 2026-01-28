@@ -1,0 +1,33 @@
+PTEN, !Erk | !ROCK | Fyn | Ras
+Integrins, ARHGAP22 | Sos
+EGFR, Shc | Stathmin
+PTP_EGFR, !PTEN | !RhoA
+VAV2, EGF | Rac
+Shc, !PTP_EGFR | !RhoGDI | Erk | p190RhoGAP
+Src, !Integrins | !Ras | RhoGAP1
+CSK, Shc | betaPix
+PI3K, (!FAK & !Integrins) | EGF | PTP_EGFR
+FAK, (!Cdc42 & PTP_EGFR) | !PTEN | Shc | p190RhoGAP
+Sos, !PTP_EGFR | !RhoA | CSK | Mek
+Ras, PTEN
+Raf, !Ras | (!Trio & Rac & Stathmin)
+Mek, RhoGAP1
+Erk, !Mek
+PIP3, !CSK | Shc
+RhoGDI, PAK | betaPix
+PAK, (!Trio & GEFH1) | Mek
+betaPix, !VAV2
+Stathmin, (!Stathmin & Rac)
+GEFH1, !RhoA | !RhoGDI
+p190RhoGAP, !PTP_EGFR | Mek
+ROCK, !Ras
+ARHGAP22, !RhoA
+RhoGAP1, !Cdc42 | !Rac
+Trio, !EGF
+p190RhoGEF, !VAV2
+Fyn, !Shc
+LARG, Fyn | Rac
+RhoA, (!PAK & !PIP3 & !RhoGDI & ARHGAP22) | (!PAK & !Shc & RhoA) | (!PIP3 & p190RhoGEF) | (!RhoGDI & ARHGAP22 & p190RhoGEF) | (!Shc & Sos)
+Rac, (!Integrins & Trio) | (!PIP3 & ROCK & RhoGDI & Src) | (GEFH1 & ROCK & Src)
+Cdc42, (!Rac & FAK) | (!RhoGAP1 & ARHGAP22) | (!RhoGAP1 & FAK)
+EGF, ROCK

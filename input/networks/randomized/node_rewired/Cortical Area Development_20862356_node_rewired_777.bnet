@@ -1,0 +1,5 @@
+Fgf8, (Fgf8 & ! Emx2)
+Pax6, (! Fgf8 & ! Sp8)
+Emx2, (! Emx2 & Sp8 & ! Coup_fti)
+Coup_fti, (Fgf8 & ! Emx2 & Sp8)
+Sp8, (! Fgf8 & ! Sp8 & Coup_fti & ! Pax6)

@@ -1,0 +1,188 @@
+FYN, !RORGT | IL27RA | Profilin
+PKA, !IL4_e
+MEK3, !IL4RA_HIGH
+FOXP3, (!IL23R & !SMAD3 & !STAT1 & !STAT5 & Sos) | (!IL23R & !STAT1 & !STAT5 & IL2RA) | (!SMAD3 & IL2RA & Lck & Sos) | (!STAT5 & IL2RA & Sos) | (!STAT5 & Lck & Sos)
+IL17, !IFNG | (!IFNGR & !IL15RA & !IL21_e & !rac1 & AKT & IL12RB1) | (!IL15RA & !IL21_e & !ZAP_70 & !rac1 & AKT & STAT1) | (!IL15RA & !ZAP_70 & AKT & IL12RB1 & STAT1)
+Lck, (!P38 & Galpha_QL & RORGT) | JAK2
+IL4, (!ATF2 & Arp2_3 & BCL10_Malt1) | (!ATF2 & BCL10_Malt1 & CAV1_scaffold & IFNG & MLC & proliferation) | (!GADD45G & BCL10_Malt1 & IFNG) | (Arp2_3 & CAV1_scaffold & MLC)
+IL23, !IL2RA | !RhoA | ZAP_70
+TGFB, (!Cdc42 & IKB & PLCg)
+Vav, STAT5_HIGH
+IL4R_HIGH, (!Galpha_iL & !MHC_II) | Crk | SMAD3
+GSK_3b, GalphaS_L
+was, TCR
+IL2, !BCL10_Malt1 | (!IFNB_e & APC) | !P38 | (APC & NIK) | ICOS
+C3G, Grb2
+IL9R, !TGFB | C3G
+Nck, !Tyk2
+FAK_Tyr397, !TCR
+PDK1, !FAK_576_577
+MKK7, !G_Actin
+STAT3, (!Ca2plus & !GADD45B & C3G) | (!Ca2plus & !Gads & !ZAP_70) | (!Gads & !ZAP_70 & C3G)
+SMAD3, !RhoA
+Profilin, IKKcomplex
+Calcineurin, MLC
+IFNBR, MEKK4
+IL2RA, !IL15R | !Nck | (!ROCK & !TBET) | PAK
+HLX, IL10_e
+Shc1, (!cAMP & SOCS3) | Profilin
+Cdc42, !TBET | Crk
+IL4RA, IL22_e
+Tyk2, !IL4RA | !SHP2
+IL2R_HIGH, (!MHC_II & !TAK1) | (!MHC_II & APC & IL4_e) | (!MHC_II & APC & SMAD3) | (!TAK1 & APC & IL4_e)
+N_WASP, Calcineurin | MEKK4 | STAT1
+IL22, (!IL6_e & IL4_e) | (!Sos & IL4_e) | !adenyl_cyclase
+RhoA, !Cas | !IL23
+PKC, !IL27RA
+JAK3, Rap1
+CD28, !IL22_e | IL2RB
+IL4RA_HIGH, IL15R
+NFKB, !IL23_e | BCL10_Malt1
+IL12RB2, STAT6
+F_Actin, !EPAC | !TGFB
+ROCK, !IP3
+MEKK4, GADD45G | IL4
+CARMA1, IFNBR | Shc1
+ERM, !Crk
+Galpha_Q, !Dec2
+IL10, (!RhoGEF & IL2_e) | FOXP3 | (IL2_e & SYK)
+ATF2, !TGFBR
+IKB, FOXP3
+MEK1_2, !IRAK1 | !MEK6 | !Shc1
+GalphaS_R, !IL2RB
+GATA3, !AKT | (IL12_e & IRAK1)
+rac1, (!CD3 & !ICOS) | (!CD3 & PDK1) | (!ICOS & !JAK3 & !TRAF6) | (!JAK3 & PDK1)
+CD4, (!Dec2 & FAK_576_577) | MHC_II
+Src, IRSp53 | PKA
+IL23R, (!IFNGR2 & !PLCg & Grb2 & IFNB_e) | !NIK | (!TCR & IFNB_e)
+NOS2A, !IL2RA
+TRAF6, !proliferation
+GFI1, !CD4 | RUNX3
+Dec2, RhoA
+Cas, !Galpha_iR | G_Actin
+Arp2_3, IL4R_HIGH | cAMP
+SLP_76, !CGC | !IL15RA
+Gads, !PLCg
+IFNGR, (!RhoGEF & IL10RB) | (CD28 & ZAP_70)
+Grb2, !IL4_e | GalphaS_L
+IL4R, IL15_e | MEK4 | PLCg | TGFBR
+PI3K, (!IL10RB & CD28 & JAK2 & PIP3_345) | (!IRAK1 & CD28 & RASgrp) | (!MEK1_2 & CD28 & RASgrp) | (!MEK1_2 & JAK2 & PIP3_345) | (CD28 & PIP3_345 & RASgrp)
+LIMK, !ERK | RUNX3
+SOCS1, IRSp53 | JNK
+ERK, !cAMP
+SOCS3, !AKT
+RASgrp, !IL22R
+NFAT, (!DAG & !G_Actin & !MLC & FOXP3 & IL10R)
+IL21R, (!IL18_e & F_Actin) | (!IL18_e & IL15_e) | (!SYK & F_Actin)
+IL6R, !JNK | IL6RA | IRF4
+AKT, !IL6R
+RAF1, !STAT6
+Paxillin, IL10_e
+LAT, !STAT5_HIGH
+ITAMS, !IL15RA
+PIP3_345, !Lck
+Sos, !IL12_e
+CAV1_scaffold, !PAK | MEK1_2 | RORGT
+MEK4, SYK
+BCL10_Malt1, IL2RA
+STAT4, (!ICOS & !SOCS1) | (!ICOS & IL15RA) | !NIK
+G_Actin, FAK_Tyr397
+JNK, !AKT | !GADD45B | PDK1 | PKC
+CD26, !MKK7
+ITK, RhoA
+IRF4, Ca2plus
+adenyl_cyclase, P38
+GAB2, !IL12_e | IL4R
+proliferation, !IRAK1 | CD28
+IRSp53, !RhoA
+IL21, !Cdc42 | !SMAD3 | Galpha12_13R
+PAK, (!Galpha12_13R & !SMAD3) | (!RUNX3 & !SMAD3)
+MEK6, !IRF4
+FAK_576_577, !Bintegrin | SOCS1
+Galpha_iR, IL2_e
+IL12RB1, !MEK6 | !STAT5
+GADD45G, !AKT | GADD45G
+IFNG, (!IL15_e & !Nck & GATA3 & IL2 & Tyk2) | (!IL15_e & GATA3 & adenyl_cyclase) | (!IL15_e & GalphaS_R & IFNGR & IRSp53 & Ras) | (!Nck & GATA3 & Ras) | (GATA3 & GalphaS_R & adenyl_cyclase) | (IFNGR & IL2 & Tyk2)
+IL15R, !IL18R1 | (!NIK & STAT6) | (IP3 & STAT6)
+TBET, CAV1_scaffold | GADD45B | MEK6
+EPAC, !Cas
+RhoGEF, !RASgrp | JNK
+IL2R, (!IFNB_e & Crk & JAK2) | (!IFNB_e & Rap1) | (!Shc1 & JAK2)
+STAT6, !IL21_e
+STAT5_HIGH, !LIMK | Lck
+TCR, !IL4R_HIGH | FOXP3
+STAT1, !Galpha_Q | !IFNG | !IFNGR2 | GAB2
+DAG, !RASgrp | CARMA1
+JAK1, (!BRAF & !Lck & IL2) | (!IL12_e & !Lck & IL2) | (IL2 & N_WASP)
+IL10R, (!IL22R & !RUNX3) | !IL4R_HIGH | IL23_e
+Ras, !IL23_e | !IL6_e
+IP3, !Ras
+BRAF, SMAD3
+RIAM, !IL10RB
+Ca2plus, NIK
+IRAK1, ATF2
+Cofilin, !TCR
+IL18R1, Galpha12_13R
+ZAP_70, IL17 | ZAP_70
+Rap1, !IFNBR | (CD26 & GADD45G) | Galpha_iR
+IRF1, !IL23R
+AP1, !ICOS | Galpha_iR | IL15R
+Bintegrin, (!Dec2 & !IFNGR2)
+PLCb, !IRF4
+MLC, !MEK6
+cAMP, Tyk2
+SYK, !FAK_576_577
+ICOS, IL27RA
+RUNX3, !Cas | IL6RA
+RORGT, !FAK_576_577 | !GATA3 | !PDK1
+Galpha12_13R, IL10_e
+PLCg, (!Bintegrin & !RhoGEF & IL23)
+NIK, Galpha_iL
+CD3, Ras
+WAVE_2, !MEK3 | TGFBR
+Bcl10_Carma1_MALTI, IL21_e | ROCK
+GADD45B, !Galpha_QL | Cdc42
+IL27R, !MEK1_2 | FAK_Tyr397 | Tyk2
+JAK2, (ERM & PAK)
+IL22R, !STAT1
+Crk, JAK2 | ZAP_70
+P38, !GalphaS_L | !IFNGR1
+IKKcomplex, !IL23 | (G_Actin & PI3K)
+SHP2, (!IL10R & !ITAMS)
+STAT5, (!HLX & PLCb & Shc1) | (!NIK & Grb2) | IL6_e
+TAK1, !MEK1_2
+TGFBR, !Galpha_iR | MEK3
+IL2RB, !IP3
+IL4_e, SLP_76
+CGC, !GalphaS_L
+IL9_e, !LIMK
+IFNB_e, STAT6
+IL2_e, WAVE_2
+APC, IL6_e
+B7, !IL2R_HIGH
+IL12_e, !IL2R
+Galpha_QL, DAG
+GalphaS_L, !MEK6
+MHC_II, !CD26
+GP130, !was
+IL23_e, !PIP3_345
+IFNG_e, !AP1
+IFNGR2, IL9R
+IFNGR1, !IL2R_HIGH
+IL21_e, CAV1_scaffold
+IL6_e, !N_WASP
+IL6RA, !Vav
+CAV1_ACTIVATOR, IL23R
+Galpha_iL, IL4R_HIGH
+IL15RA, SOCS3
+IL15_e, ECM
+IL10_e, !IFNGR2
+IL10RB, !adenyl_cyclase
+IL10RA, !PDK1
+IL18_e, !PDK1
+ECM, JAK2
+alpha_13L, !CD4
+IL27_e, !Nck
+IL27RA, !Galpha_QL
+IL22_e, PI3K
+TGFB_e, !C3G

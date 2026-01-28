@@ -1,0 +1,99 @@
+tcrlig, !nfat
+vav1, ap1 | pkb | rac1p1
+lat, mek
+pi3k, !pten | !xx | shp2
+gap, shp1
+rac1r, rac1p2
+Dummy, (!ip3 & jnk & slp76) | (!pag & ccblp2) | (!pag & lckp1 & slp76) | (ccblp2 & jnk & slp76)
+ca, malt1
+pkb, grb2
+nfkb, !fkhr
+lckp1, (!camk4 & !p21c) | (!camk4 & !pag & !ship1) | (!p21c & !pag) | vav3
+nfat, !creb
+bclxl, !ca
+gadd45, !lat
+bad, !bad
+pag, (!csk & !p70s)
+ccblp2, (pag & tcrp)
+cyc1, !fyn
+vav3, !cd45
+sre, (rasgrp & rlk)
+ikkg, !ap1 | sh3bp2
+calcin, (!gadd45 & !ip3) | (!ip3 & gads) | (gads & rac1r)
+cabin1, camk2
+grb2, !unknown_input2
+ship1, unknown_input3
+plcga, (!cabin1 & !lckr_input) | (!cabin1 & card11a) | (!cabin1 & rsk) | !jnk | (!lckr_input & card11a) | (card11a & rsk & shp1)
+sh3bp2, !gab2 | sos
+shp2, shp1
+pten, !cd28
+mlk3, !creb | !fkhr
+gsk3, Dummy
+cd45, lckr_input
+dag, calcin | gadd45
+bcl10, bclxl
+gab2, (!itk & zap70) | !ship1 | (bcat & zap70)
+erk, !csk
+ap1, card11a | pkb
+fos, mkk4
+cblb, !calcin
+gads, cam
+pdk1, !tcrb
+itk, !pip3 | ap1 | gsk3
+ras, !dgk | mekk1 | rasgrp
+ikb, !cd45
+ccblp1, !vav3 | jun
+p21c, !cd4
+tcrp, (!jun & !tcrb) | (!jun & pten)
+rac1p2, !Dummy | !pdk1
+rsk, cd4
+fyn, (!mekk1 & creb) | (creb & rasgrp) | xx
+hpk1, gab2
+cam, !ca
+cre, !fyn
+akap79, p21c
+p70s, !ras
+p38, (!plcga & jun)
+card11a, !cd45 | !ikb | !unknown_input3
+pip3, !nfat | erk | rlk
+card11, !lckp2
+ccblr, !slp76
+creb, !ikkab
+zap70, !cam | bad | rsk
+jun, !bclxl
+camk2, bcat
+jnk, !shp1 | fkhr
+sos, pkcth
+slp76, !p70s | ccblp2 | ip3
+mkk4, !p70s | slp76
+cdc42, ccblp1
+lckp2, !hpk1 | tcrb
+mekk1, (!rac1r & !vav1) | (!rac1r & mek)
+lckr, akap79
+plcgb, shp2
+ip3, !itk
+raf, !nfat
+ikkab, !erk | !p21c
+rlk, calcin
+fkhr, itk
+cd28, !akap79
+malt1, !lckp2
+pkcth, !ikb | (cam & pi3k)
+p27k, !p70s
+rasgrp, !vav1
+mek, !lckp1
+rac1p1, !abl | !ikkg
+tcrb, !bcat | !fyn
+abl, bcat | unknown_input2
+csk, p70s
+xx, plcgb
+shp1, ccblp1 | slp76
+dgk, tcrb
+bcat, !cdc42
+calpr1, lckp1
+camk4, dgk
+unknown_input3, !ship1
+unknown_input, unknown_input3
+cd4, !gsk3
+unknown_input2, rsk
+lckr_input, lckp1
