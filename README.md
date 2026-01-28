@@ -75,5 +75,7 @@ Output: pickle file (.pkl) of deleterious effects and emergence of de novo attra
 
 If you prefer to view the results from a Jupyter notebook, we have provided two notebooks that were used to generate our results for Fig. 4, 5, and 6:
 
-1. Figure4to6.ipynb generates Fig. 4A to 4D, Fig. 5A to 5D , and Fig. 6A to 6C
-2. WrappedDynamicsExample_Figure4to6.ipynb generates Fig. 4E, Fig. 5E , and Fig. 6D 
+1. Figure4to6.ipynb generates Fig. 4A to 4D, Fig. 5A to 5D , and Fig. 6A to 6C.
+2. WrappedDynamicsExample_Figure4to6.ipynb generates Fig. 4E, Fig. 5E , and Fig. 6D.
+3. Guideline_analysis.ipynb generates the guidelines for when approximation is required.
+4. Heterogeneous_path.ipynb generates the comparison between heterogeneous paths in biological and randomized networks.
