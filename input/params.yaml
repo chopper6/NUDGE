@@ -9,10 +9,11 @@ verbose_rsc: false                            # print extra information about te
 print_freq: 10                                # how many time steps between prints, if verbose
 max_recursion: 100                            # maximum RSC steps before there is assumed to be no controller
 
+logic_backend: "sympy"                        # logic reduction: "sympy" (default, exact) or "pyeda" (faster espresso heuristic, requires pyeda and python <= 3.9)
 approx: true                                  # approximate RSC, otherwise exact RSC
-max_variables: 12                             # if recursion would have more than max_variables, remove a variable (if approx is True)
+max_variables: 10                             # if recursion would have more than max_variables, remove a variable (if approx is True)
 approx_init_fns: true                         # nodes with more variables will have their functions approximated before RSC begins (if approx is True)
-max_init_variables: 12                         # max_variables specifically for original functions (if approx_init_fns is True and approx is True)
+max_init_variables: 10                        # max_variables specifically for original functions (if approx_init_fns is True and approx is True)
 activity_samples: 100                         # number of rows of truth table to use to estimate activity (if approx is True)
 seed: 0                                       # random seed for approximation and simulation, set to null for unseeded runs
 
@@ -21,8 +22,8 @@ seed: 0                                       # random seed for approximation an
 verbose_nudge: true                           # print extra information about controllers
 ensemble_repeats: 2                           # conjunction of multiple RSC runs to increase approximation confidence
 analysis_order: 2                             # highest order considered for robustness and mechanism
-measure_robustness: true                       # compare all NUDGE controllers vs robust controllers, instead of comparing to other methods
-find_mechanism: true                           # find the mechanism behind the chosen or most robust controller
+measure_robustness: true                      # compare all NUDGE controllers vs robust controllers, instead of comparing to other methods
+find_mechanism: true                          # find the mechanism behind the chosen or most robust controller
 plot_mechanism: true                          # visualize the mechanism (if find_mechanism is True)
 controller: 'A'                               # chosen controller (only for analyze.py), can be a single node 'A' or '!A' or multiple like 'A & B', but '|' (or) is not supported
 

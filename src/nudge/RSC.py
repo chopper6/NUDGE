@@ -44,12 +44,14 @@ def step(params, F, fn, fn_prev, r):
 
 def init(params, F=None):
 	tstart = timer()
+	logic.backend_from_params(params)
 	if F is None:
 		F, reduced = load_F(params)
 	fn, fn_prev = build_target_function(params, F)
 	return tstart, F, fn, fn_prev
 
 def load_F(params):
+	logic.backend_from_params(params)
 	F = {}
 	reduced = False
 	rules, params['original_names'] = colomoto_io.read_bnet(params['network_file'])
@@ -153,7 +155,7 @@ def build_final_logic(fn, fn_prev, params):
 	return [logic.to_pyEda([['0']])] # hit max recursion without solution # should have found final logic
 
 def substitute_mutants(params, fn):
-	# uses pyeda.compose instead of explicitly use F[!x] since only constants
+	# uses compose instead of explicitly use F[!x] since only constants
 	if params['use_mutations']:
 		keys = [k for k in fn.support if str(k) in params['mutations'].keys()]
 		fn = fn.compose({k:params['mutations'][str(k)] for k in keys})

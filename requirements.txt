@@ -1,7 +1,8 @@
 numpy
-pyeda
+sympy
 pyyaml
 networkx
 matplotlib
 colomoto-jupyter
 algorecell_types
+# optional: pyeda (faster logic reduction backend, python <= 3.9 only)

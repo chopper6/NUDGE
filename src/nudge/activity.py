@@ -3,7 +3,6 @@ Activity approximation, and its use to trim Boolean functions
 '''
 import re, random, math
 from . import logic
-from pyeda.boolalg.expr import Variable, expr, exprvar
 
 ######################################################################
 
@@ -18,10 +17,10 @@ def randomly_assign_var(f, var):
 	return f.compose({var: random.choice([0,1])})  
 
 def get_variables(fn):
-	if isinstance(fn,Variable):
-		return [fn]
-	else:
-		return list(fn.support)
+	variables = list(fn.support)
+	if logic.get_backend() == 'sympy':
+		variables.sort(key=str) # sets of names are ordered differently in each python process, so sort for reproducibility
+	return variables
 
 def get_sample(params, variables):
 	return {v:random.randint(0,1) for v in variables} 

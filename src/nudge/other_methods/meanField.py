@@ -16,7 +16,6 @@ PARAMS = {
 
 import sys, os, itertools, math
 from timeit import default_timer as timer
-from pyeda.inter import exprvars
 from .. import util, logic, RSC, colomoto_io
 from copy import deepcopy
 
@@ -168,7 +167,7 @@ def init(params, Fstr=None):
 		F, K, n, kmax, nodes = convert_from_F(params, Fstr)
 	else:
 		F, K, n, kmax, nodes = read_bnet(params) # dict of functions, num nodes, max-indegree, ordered node names
-	# note that F is a pyeda function, whereas in RSC F is a string (for easier replacement)
+	# note that F is a function object (see logic.py), whereas in RSC F is a string (for easier replacement)
 	A = build_A0(params,n,nodes,F)  # estimated Average of each node, begins as 1/2 unless specified in params['init']
 	TT = cp.array(list(itertools.product([0, 1], repeat=kmax)), dtype=cp.int8)[:, ::-1] # all possible input strings for a node
 	# note TT is ordered sT earlier cols change more frequently

@@ -4,10 +4,16 @@ Identifies single-time interventions from Boolean network models to ensure a des
 
 ## Installation
 
-This package was designed in python 3.9 and should be compatible between python 3.7 and 3.9. Unfortunately the library that implements logic reduction, PyEDA, is no longer maintained and breaks with later versions of python.
+This package requires python 3.7 or later.
 
 ```bash
 pip install -e .
+```
+
+Logic reduction uses SymPy by default (`logic_backend: "sympy"` in the parameter file). Optionally, PyEDA can be used instead (`logic_backend: "pyeda"`), which is more optimized, but can be difficult to install since it is no longer actively maintained and only supports python 3.9 or earlier:
+
+```bash
+pip install -e ".[pyeda]"
 ```
 
 For GPU acceleration, one can optionally install cupy, which requires CUDA drivers (see https://cupy.dev/). Without cupy installed, numpy will automatically be used. If one want to run numpy even though cupy is installed, set TURN_CUPY_OFF_OVERRIDE=1 at the top of src/nudge/util.py. GPU accelerates monte carlo simulation, LDOI, and mean-field methods, but is not used in the primary NUDGE method.
