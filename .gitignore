@@ -10,8 +10,8 @@ ENV/
 venv/
 .env/
 env/
-nudge/
-nudge-env/
+/nudge/
+/nudge-env/
 
 
 # Jupyter notebooks
@@ -29,3 +29,16 @@ output/
 
 # Params files
 input/*.yaml
+
+# Claude Code
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Notes
+notes/

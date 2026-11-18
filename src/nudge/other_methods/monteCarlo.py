@@ -4,7 +4,7 @@ Optionally parallized with the Cupy library on GPU.
 '''
 
 import itertools
-import util
+from .. import util
 from . import simulate
 
 CUPY, cp = util.import_cp_or_np(try_cupy=1)

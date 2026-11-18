@@ -2,22 +2,22 @@
 Find the mechanism responsible for the effect of each controller
 
 '''
-import RSC, logic, plot, util
+from . import RSC, logic, plot, util
 import networkx as nx
 import sys, itertools
 import numpy as np
 
-def find_mechanism(params, F, all_controllers, controller, cnt_fns, drives_self_driven, self_driven, plot_it=False):
+def find_mechanism(params, F, all_controllers, controller, cnt_fns, drives_self_reinforced, self_reinforced, plot_it=False):
 
 	if (all_controllers[0] == ['0']):
 		print("No mechanism as desired attractor is not possible (terminal logic conjunction = False)")
 		return 'NA' # no mechanism desired attractor is not possible
 
-	data, mech_graph, self_driven_by_controller, original_target = init_mechanism(params, F, all_controllers, controller, cnt_fns, drives_self_driven, self_driven)
+	data, mech_graph, self_reinforced_by_controller, original_target = init_mechanism(params, F, all_controllers, controller, cnt_fns, drives_self_reinforced, self_reinforced)
 
-	controller_to_self_driven(params, F, self_driven_by_controller, controller, data, mech_graph)
-	self_driven_to_self_driven(params, F,self_driven_by_controller, data, mech_graph)
-	self_driven_to_target(params, F,self_driven_by_controller, original_target, data, mech_graph)
+	controller_to_self_reinforced(params, F, self_reinforced_by_controller, controller, data, mech_graph)
+	self_reinforced_to_self_reinforced(params, F,self_reinforced_by_controller, data, mech_graph)
+	self_reinforced_to_target(params, F,self_reinforced_by_controller, original_target, data, mech_graph)
 
 	data['graph'] = mech_graph
 	if plot_it:
@@ -37,77 +37,77 @@ def print_edge_details(G):
 
 #####################################################################################################
 
-def init_mechanism(params, F, all_controllers, controller, cnt_fns, drives_self_driven, self_driven):
+def init_mechanism(params, F, all_controllers, controller, cnt_fns, drives_self_reinforced, self_reinforced):
 
 	assert(controller in all_controllers)
 	mech_graph = nx.DiGraph()
 	controller.sort()
 	
-	data = {'graph':mech_graph, 'controller -> self-driven':[],'self-driven -> self-driven':[],'self-driven -> target':[]}
+	data = {'graph':mech_graph, 'controller -> self-reinforced':[],'self-reinforced -> self-reinforced':[],'self-reinforced -> target':[]}
 	name, label = get_name_and_label([controller])
-	mech_graph.add_node(name,label=label,target=False, controller=True, self_driven=False)
+	mech_graph.add_node(name,label=label,target=False, controller=True, self_reinforced=False)
 
-	indx = drives_self_driven[all_controllers.index(controller)] & self_driven 
-	self_driven_by_controller=[cnt_fns[i] for i in range(len(indx)) if indx[i]]
-	self_driven_by_controller = only_subspaces(params, self_driven_by_controller)
+	indx = drives_self_reinforced[all_controllers.index(controller)] & self_reinforced 
+	self_reinforced_by_controller=[cnt_fns[i] for i in range(len(indx)) if indx[i]]
+	self_reinforced_by_controller = only_subspaces(params, self_reinforced_by_controller)
 	
 	original_target = params['target']
 
-	return data, mech_graph, self_driven_by_controller, original_target 
+	return data, mech_graph, self_reinforced_by_controller, original_target 
 
-def controller_to_self_driven(params, F, self_driven_by_controller, controller, data, mech_graph):
-	for self_driven_fn in self_driven_by_controller:
-		self_driven = logic.from_pyEda(self_driven_fn)
-		params['target'] = logic.F_to_str(self_driven).replace('(','').replace(')','')
-		for clause in self_driven:
+def controller_to_self_reinforced(params, F, self_reinforced_by_controller, controller, data, mech_graph):
+	for self_reinforced_fn in self_reinforced_by_controller:
+		self_reinforced = logic.from_pyEda(self_reinforced_fn)
+		params['target'] = logic.F_to_str(self_reinforced).replace('(','').replace(')','')
+		for clause in self_reinforced:
 			name, label = get_name_and_label([clause])
 			if (name in mech_graph):
-				mech_graph.nodes[name]['self_driven']=True
+				mech_graph.nodes[name]['self_reinforced']=True
 			else:
-				mech_graph.add_node(name,label=label,target=False, controller=False, self_driven=True)
-		name, label = get_name_and_label(self_driven)
+				mech_graph.add_node(name,label=label,target=False, controller=False, self_reinforced=True)
+		name, label = get_name_and_label(self_reinforced)
 		seq = get_rsc_seq(params, F)
-		if self_driven != controller:
+		if self_reinforced != controller:
 			if not is_found(params, [controller], seq[-1]):
-				data['controller -> self-driven'] += [(name, 0)]
+				data['controller -> self-reinforced'] += [(name, 0)]
 			else:
 				max_order_seen, finished = multipath(params,  F, mech_graph, [controller], seq, 0)
-				data['controller -> self-driven'] += [(name, max_order_seen)]
+				data['controller -> self-reinforced'] += [(name, max_order_seen)]
 		
-def self_driven_to_self_driven(params, F, self_driven_by_controller, data, mech_graph):
-	for self_driven_fn in self_driven_by_controller:
-		self_driven = logic.from_pyEda(self_driven_fn)
-		params['target'] = logic.F_to_str(self_driven).replace('(','').replace(')','')
-		name, label = get_name_and_label(self_driven)
+def self_reinforced_to_self_reinforced(params, F, self_reinforced_by_controller, data, mech_graph):
+	for self_reinforced_fn in self_reinforced_by_controller:
+		self_reinforced = logic.from_pyEda(self_reinforced_fn)
+		params['target'] = logic.F_to_str(self_reinforced).replace('(','').replace(')','')
+		name, label = get_name_and_label(self_reinforced)
 		seq = get_rsc_seq(params, F)
 
-		if not is_found(params, self_driven, seq[-1]):
-			data['self-driven -> self-driven'] += [(name, 0)]
+		if not is_found(params, self_reinforced, seq[-1]):
+			data['self-reinforced -> self-reinforced'] += [(name, 0)]
 		else:
-			max_order_seen, finished = multipath(params,  F, mech_graph, self_driven, seq, 0)
-			data['self-driven -> self-driven'] += [(name, max_order_seen)]
+			max_order_seen, finished = multipath(params,  F, mech_graph, self_reinforced, seq, 0)
+			data['self-reinforced -> self-reinforced'] += [(name, max_order_seen)]
 
-def self_driven_to_target(params, F, self_driven_by_controller, original_target, data, mech_graph):
+def self_reinforced_to_target(params, F, self_reinforced_by_controller, original_target, data, mech_graph):
 
 	params['target'] = original_target
 	name, label = get_name_and_label(logic.str_to_F(original_target))
 	if (name in mech_graph): 
 		mech_graph.nodes[name]['target']=True
 	else:
-		mech_graph.add_node(name,label=label,target=True, controller=False, self_driven=False)
+		mech_graph.add_node(name,label=label,target=True, controller=False, self_reinforced=False)
 	seq = get_rsc_seq(params, F)
 	#for i in range(len(seq)):
 	#	print("step",i,':',seq[i],'\n')
 	
-	for self_driven_fn in self_driven_by_controller:
-		self_driven = logic.from_pyEda(self_driven_fn)
-		name, label = get_name_and_label(self_driven)
+	for self_reinforced_fn in self_reinforced_by_controller:
+		self_reinforced = logic.from_pyEda(self_reinforced_fn)
+		name, label = get_name_and_label(self_reinforced)
 
-		if not is_found(params, self_driven, seq[-1]):
-			data['self-driven -> target'] += [(name, 0)]
+		if not is_found(params, self_reinforced, seq[-1]):
+			data['self-reinforced -> target'] += [(name, 0)]
 		else:
-			max_order_seen, finished = multipath(params,  F, mech_graph, self_driven, seq, 0) #trim via seq[:-1*period]?
-			data['self-driven -> target'] += [(name, max_order_seen)]
+			max_order_seen, finished = multipath(params,  F, mech_graph, self_reinforced, seq, 0) #trim via seq[:-1*period]?
+			data['self-reinforced -> target'] += [(name, max_order_seen)]
 
 
 #####################################################################################################
@@ -227,9 +227,9 @@ def add_an_edge(G, curr, nextt, order, detail):
 	curr_name, curr_label = get_name_and_label([curr])
 	next_name, next_label = get_name_and_label([nextt])
 	if curr_name not in G:
-		G.add_node(curr_name,label=curr_label,target=False, controller=False, self_driven=False)
+		G.add_node(curr_name,label=curr_label,target=False, controller=False, self_reinforced=False)
 	if next_name not in G:
-		G.add_node(next_name,label=next_label,target=False, controller=False, self_driven=False)
+		G.add_node(next_name,label=next_label,target=False, controller=False, self_reinforced=False)
 	if (curr_name, next_name) not in G.edges():
 		G.add_edge(curr_name, next_name,value=order, detail=detail)
 

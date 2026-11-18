@@ -5,7 +5,7 @@ Yang, Gang, Jorge Gómez Tejeda Zañudo, and Réka Albert. "Target control in lo
 The implementation optionally parallelizes many runs of LDOI with the Cupy library on GPU.
 '''
 
-import util, RSC, logic
+from .. import util, RSC, logic
 CUPY, cp = util.import_cp_or_np(try_cupy=1)
 
 def find_controllers(params, Forig):

@@ -5,14 +5,12 @@ most important for uses purposes is the ability to turn Cupy off for ALL files w
 '''
 
 
-import os, math, pickle, sys, itertools, csv, yaml
+import os, math, pickle, sys, itertools, csv, yaml, random
 from datetime import datetime, date
 import numpy as np
 from string import ascii_uppercase
 
-TURN_CUPY_OFF_OVERRIDE = 0 #turns off CUPY for everything if True
-if (TURN_CUPY_OFF_OVERRIDE):
-	print("\nWARNING: Cupy is off, see util.py\n")
+TURN_CUPY_OFF_OVERRIDE = 1 #turns off CUPY for everything if True
 
 
 def import_cp_or_np(try_cupy = True, np_warnings = False):
@@ -37,10 +35,18 @@ def import_cp_or_np(try_cupy = True, np_warnings = False):
 
 # unfortunately this has to be after import_cp_or_np() definition
 CUPY, cp = import_cp_or_np(try_cupy=1) #should import numpy as cp if cupy not installed
-# need to import here for copy_to_larger_dim
 
 
 #############################################################################################
+
+def set_seed(params):
+	seed = params.get('seed')
+	if seed is None:
+		return
+	random.seed(seed)
+	np.random.seed(seed)
+	if CUPY:
+		cp.random.seed(seed)
 
 def load_yaml(yaml_file):
 	with open(yaml_file, "r") as f:
@@ -83,18 +89,10 @@ def append_csv(filename, row):
 		writer = csv.writer(f)
 		writer.writerow(row)
 
-def str2list(string):
-	# assumes int
-	l = []
-	for s in string:
-		if s not in ['[',']',',',' ']:
-			l+=[int(s)]
-	return l
-
 def loop_debug(N, loop, expo=4, parent_fn=None):
 	if loop > max(N**expo,N*(expo**expo)): # N*expo^2 in case N is very small like 1
 		if parent_fn is not None:
-			sys.exit("ERROR: infinite loop in",parent_fn,"!")
+			sys.exit("ERROR: infinite loop in " + str(parent_fn) + "!")
 		else:
 			sys.exit("ERROR: infinite loop!")
 	return loop+1
@@ -104,12 +102,6 @@ def get_node_dtype(params):
 		return float 
 	else:
 		return 'bool' 
-
-def infinite_loop_checker(current_loop, max_loops):
-	if current_loop > max_loops:
-		print("\nERROR: infinite loop inferred after exceeding",max_loops,'loops.\n')
-		assert(0)
-	return current_loop+1
 
 def get_uint_dtype(max_val):
 	# renamed from 'get_np_int_dtype'
@@ -143,37 +135,6 @@ def int_to_bool(num, num_nodes):
    #print('2bool:',num,bin_str, [x == '1' for x in bin_str[::-1]])
    return [x == '1' for x in bin_str[::-1]]
 
-def copy_to_larger_dim(x, num_copies):
-	# array will be 1 dim larger, with num_copies of the original array
-	# for example, copying array of shape (4,5) with 3 copies would result in an array of shape (3,4,5)
-	# could also try cp.newaxis?
-	return cp.tile(x,num_copies).reshape(tuple([num_copies])+x.shape)
-
-
-def char_in_str(strg,indx,new):
-	tmp = list(strg)
-	tmp[indx]=str(new)
-	return "".join(tmp)
-
-def unique_axis0(X):
-	# cupy version shamelessly ripped from: https://stackoverflow.com/questions/58662085/is-there-a-cupy-version-supporting-axis-option-in-cupy-unique-function-any
-	if not CUPY:
-		return cp.unique(X,axis=0)
-	else: # unique with axis not implemented in cupy yet
-		if len(X.shape) != 2:
-			raise ValueError("Input array must be 2D.")
-		sortarr     = X[cp.lexsort(X.T[::-1])]
-		mask        = cp.empty(X.shape[0], dtype=cp.bool_)
-		mask[0]     = True
-		mask[1:]    = cp.any(sortarr[1:] != sortarr[:-1], axis=1)
-		return sortarr[mask]
-
-def print_rows(X,title=None):
-	if title is not None:
-		print(title)
-	for x in X:
-		print(x)
-
 def alphabet_labels(n):
 	alphabet = list(ascii_uppercase)
 	power = math.ceil(math.log(n,26)) 
@@ -183,26 +144,6 @@ def alphabet_labels(n):
 
 ###### FROM LIGHT SIMULATION #########
 
-
-
-def true_in_dict(d,key):
-	if key in d and d[key]:
-		return True
-	else:
-		return False
-
-
-def none(x):
-	if x in [None,'none','None',0,'0','False',False,'',' ']:
-		return 1
-	else:
-		return 0
-
-def bool_true(x):
-	if x in [0,'0','False',False,'false','noway','gtfofh']:
-		return False
-	elif x in [1,'1','True',True,'true','fosho','nodoubt']:
-		return True
 
 def timestamp():
 	now = datetime.now()
@@ -233,21 +174,4 @@ def check_build_dir(dirr):
 	if not os.path.exists(dirr):
 		print("\nCreating new directory for output at: " + str(dirr) + '\n')
 		os.makedirs(dirr)
-
-def safe_div_array(A,B):
-	# a is numerator, b is divisor
-	assert(len(A) == len(B))
-	z=[]
-	for i in rng(A):
-		if B[i] == 0: z+=[0]
-		else: z+=[A[i]/B[i]]
-	return z
-
-
-def get_timestamp():
-	now = datetime.now()
-	curr_date = str(date.today()).strip('2020-')
-	curr_time = str(datetime.now().strftime("%H-%M-%S"))
-	tstamp = curr_date+'_'+curr_time
-	return tstamp
 

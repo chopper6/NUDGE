@@ -17,7 +17,7 @@ PARAMS = {
 import sys, os, itertools, math
 from timeit import default_timer as timer
 from pyeda.inter import exprvars
-import util, logic, RSC
+from .. import util, logic, RSC, colomoto_io
 from copy import deepcopy
 
 CUPY, cp = util.import_cp_or_np(try_cupy=1)
@@ -189,17 +189,10 @@ def convert_from_F(params, Fstr):
 
 def read_bnet(params):
 	F, kmax = {}, 0
-	with open(params['network_file'], 'r') as file:
-		for line in file:
-			line = line.strip() 
-			if not line:
-				continue 
-			k, fn_str = line.split(',', 1)
-			fn_str = fn_str.replace('\t','')
-			assert(k not in F.keys() and '!' + k not in F.keys())
-			F[k] = logic.str_to_fn(fn_str)
-			count = len(F[k].support)
-			kmax = max(kmax, count)
+	rules, _ = colomoto_io.read_bnet(params['network_file'])
+	for k, fn_str in rules.items():
+		F[k] = logic.str_to_fn(fn_str)
+		kmax = max(kmax, len(F[k].support))
 	K, n, nodes = build_nodes_n_degs(F, kmax)
 	return F, K, n, kmax, nodes
 

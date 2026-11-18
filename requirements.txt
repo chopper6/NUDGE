@@ -3,3 +3,5 @@ pyeda
 pyyaml
 networkx
 matplotlib
+colomoto-jupyter
+algorecell_types

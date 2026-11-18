@@ -13,9 +13,9 @@ MAX_NODES = 20
 MAX_SCC = 10
 SORT_BY = 'scc'
 
-TARGET_INPUT_DIR = './input/networks/large11SCC/'
-TARGET_OUTPUT_CSV = './input/targets_large11SCC_4targets2.csv'
-TARGETS_PER_NET = 4
+TARGET_INPUT_DIR = './input/networks/cancer_score_ensemble_models/'
+TARGET_OUTPUT_CSV = './input/targets_cancer_score_ensemble_models.csv'
+TARGETS_PER_NET = 1
 INCLUDE_NON_OUTPUTS = True
 
 #############################################################################################

@@ -34,7 +34,6 @@ Notes:
 """
 
 import sys
-sys.path.append("src")
 
 import os
 import glob
@@ -46,8 +45,8 @@ from copy import deepcopy
 import numpy as np
 import matplotlib.pyplot as plt
 
-import util
-from other_methods import simulate, net
+from . import util
+from .other_methods import simulate, net
 
 # Use cp (cupy or numpy)
 CUPY, cp = util.import_cp_or_np(try_cupy=1)

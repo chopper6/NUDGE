@@ -12,38 +12,39 @@ max_recursion: 100                            # maximum RSC steps before there i
 approx: true                                  # approximate RSC, otherwise exact RSC
 max_variables: 12                             # if recursion would have more than max_variables, remove a variable (if approx is True)
 approx_init_fns: true                         # nodes with more variables will have their functions approximated before RSC begins (if approx is True)
-max_init_variables: 8                         # max_variables specifically for original functions (if approx_init_fns is True and approx is True)
+max_init_variables: 12                         # max_variables specifically for original functions (if approx_init_fns is True and approx is True)
 activity_samples: 100                         # number of rows of truth table to use to estimate activity (if approx is True)
+seed: 0                                       # random seed for approximation and simulation, set to null for unseeded runs
 
 
 # NUDGE parameters
 verbose_nudge: true                           # print extra information about controllers
-ensemble_repeats: 8                           # conjunction of multiple RSC runs to increase approximation confidence
+ensemble_repeats: 2                           # conjunction of multiple RSC runs to increase approximation confidence
 analysis_order: 3                             # highest order considered for robustness and mechanism
-measure_robustness: true                      # compare all NUDGE controllers vs robust controllers, instead of comparing to other methods
-find_mechanism: true                          # find the mechanism behind the chosen or most robust controller
+measure_robustness: false                      # compare all NUDGE controllers vs robust controllers, instead of comparing to other methods
+find_mechanism: false                          # find the mechanism behind the chosen or most robust controller
 plot_mechanism: true                          # visualize the mechanism (if find_mechanism is True)
 controller: 'A'                               # chosen controller (only for analyze.py), can be a single node 'A' or '!A' or multiple like 'A & B', but '|' (or) is not supported
 
 # BATCH parameters
-network_dir: "./input/networks/large/"              # path to networks folder, overrides 'network_file'
-targets_csv: "./input/targets_large_4targets.csv"   # path to targets file, overrides 'target'
+network_dir: "./input/networks/cancer_score_ensemble_models/"              # path to networks folder, overrides 'network_file'
+targets_csv: "./input/targets_cancer_score_ensemble_models.csv"   # path to targets file, overrides 'target'
 output_folder: "./output/"                          # path to output folder
 skip_reduced_networks: False                        # skip networks with in-degree > max_initial_variables
 cutoff: 0                                           # max of this many nets from network_dir, set to 0 to ignore
 
 include_NUDGE: 1                                    # include NUDGE method (for batch run)
 
-include_MONTE_CARLO: 1                              # include monte carlo method (for batch run; direct simulation)
+include_MONTE_CARLO: 0                              # include monte carlo method (for batch run; direct simulation)
 max_monte_carlo_controllers: 1                      # max number of nodes to consider (may be exceedingly slow if > 1)
 monte_carlo_samples: 1000                           # number of samples (initial random states) used for monte_carlo method
 monte_carlo_time_steps: 1000                        # time steps used for monte_carlo method
 
-include_LDOI: 1                                     # include LDOI method (for batch run)
+include_LDOI: 0                                     # include LDOI method (for batch run)
 trim_ldoi: 1                                        # use NUDGE to trim the initial functions for LDOI
 ldoi_pair_cap: 64                                   # maximum nodes to check pairs in parallel, otherwise sequentially checks pairs
 
-include_MEAN-FIELD: 1                               # include meanfield method (for batch run)
+include_MEAN-FIELD: 0                               # include meanfield method (for batch run)
 trim_mf: 1                                          # use NUDGE to trim the initial functions for LDOI
 mf_pair_cap: 100                                    # maximum nodes to consider all pairs with meanfield
 meanfield_epsilon: .001                             # stop if all nodes change by less than this in one iteration

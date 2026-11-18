@@ -2,24 +2,31 @@
 Finds controllers and optionally analyzes their robustness and mechanism, as specified in params.yaml
 '''
 
-import RSC, ensemble, analyze, util
+from . import RSC, ensemble, analyze, util, colomoto_io
 import sys
 
 #################################################################################
 
 def control(params, F=None):
+	'''
+	Returns (strategies, details):
+		strategies: the best controllers as algorecell_types reprogramming strategies, using the original node names
+		details: dict with all controllers, relative distances, minimal controllers, mechanism data and best controllers
+	'''
+	util.set_seed(params)
 
 	tstart, F, fn, fn_prev = RSC.init(params, F=F)
 	terminal_logic = ensemble.terminal_logic_predicate(params, F)
-	result = analyze.robustness_and_mechanism(params, F, terminal_logic)
-	return result
+	details = analyze.robustness_and_mechanism(params, F, terminal_logic)
+	strategies = colomoto_io.to_strategies(details['best controllers'], params.get('original_names'))
+	return strategies, details
 
 def main(param_file):
 
 	params = util.load_yaml(param_file)
-	results = control(params)
+	strategies, details = control(params)
 	if params['verbose_nudge']:
-		util.pretty_print(results)
+		util.pretty_print(details)
 
 #################################################################################
 

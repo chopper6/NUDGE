@@ -3,7 +3,7 @@
 
 import csv, sys, ast, os, math
 from collections import defaultdict
-import util
+from . import util
 import numpy as np
 from matplotlib import rcParams, cm, pyplot as plt
 from matplotlib.patches import Patch
@@ -464,12 +464,12 @@ def mechanism_graph(params, G):
         "rad": params.get("rad", 0.22),
         "higher": params.get("higher_order_edge_color", "blue"),
         "ct_edge": params.get("controller_target_edge_color", "red"),
-        "self_fill": params.get("self_driven_fill_color", "pink"),
+        "self_fill": params.get("self_reinforced_fill_color", "pink"),
         "font": params.get("font_size", 10),
         "bbox": params.get("label_box", dict(boxstyle="round,pad=0.2", fc="white", ec="none", alpha=0.8)),
     }
     plt.figure(figsize=(14, 10))
-    pos = nx.spring_layout(G)
+    pos = nx.spring_layout(G, seed=params.get("seed"))
 
     # (unchanged) edge coloring logic if you still draw edges elsewhere
     for u, v, d in G.edges(data=True):
@@ -485,16 +485,34 @@ def mechanism_graph(params, G):
 
     nx.draw_networkx_labels(G, pos, font_color="black", font_size=cfg["font"], font_family="serif")
     draw_edge_detail_labels(G, pos, bidir, cfg["rad"], cfg["font"], cfg["bbox"])
+    draw_mechanism_legend(cfg)
     plt.axis("off"); plt.tight_layout(); plt.show()
 
 
+def draw_mechanism_legend(cfg):
+    from matplotlib.lines import Line2D
+    handles = [
+        Line2D([], [], marker="o", linestyle="none", markersize=18, markerfacecolor="none",
+               markeredgecolor=cfg["ct_edge"], markeredgewidth=3, label="controller or target"),
+        Line2D([], [], marker="o", linestyle="none", markersize=18, markerfacecolor=cfg["self_fill"],
+               markeredgecolor="none", label="self-reinforced motif driven by the controller"),
+        Line2D([], [], marker="o", linestyle="none", markersize=18, markerfacecolor="none",
+               markeredgecolor="black", markeredgewidth=2, label="clause (& = AND)"),
+        Line2D([], [], color="black", lw=4, label="homogeneous path: active at t guarantees target at t+1"),
+        Line2D([], [], color=cfg["higher"], lw=4,
+               label="heterogeneous path (order > 1): guarantees at least one of several\ntargets at t+1, which one depends on noncontrolled nodes"),
+    ]
+    plt.legend(handles=handles, loc="upper left", bbox_to_anchor=(1.0, 1.0), fontsize=cfg["font"] + 2,
+               frameon=False, labelspacing=1.4, borderpad=1)
+
+
 def draw_nodes(G, pos, cfg):
-    # First draw fills for self-driven nodes (so outline renders above)
-    self_driven_nodes = [n for n, d in G.nodes(data=True) if d.get("self_driven", False)]
-    if self_driven_nodes:
+    # First draw fills for self-reinforced nodes (so outline renders above)
+    self_reinforced_nodes = [n for n, d in G.nodes(data=True) if d.get("self_reinforced", False)]
+    if self_reinforced_nodes:
         nx.draw_networkx_nodes(
             G, pos,
-            nodelist=self_driven_nodes,
+            nodelist=self_reinforced_nodes,
             node_size=4000,
             node_color=cfg["self_fill"],
             edgecolors="none",

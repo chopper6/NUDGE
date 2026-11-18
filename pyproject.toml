@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nudge"
+version = "0.1.0"
+description = "Natural dynamics control of gene regulatory networks"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7,<3.10"
+dependencies = [
+    "numpy",
+    "pyeda",
+    "pyyaml",
+    "networkx",
+    "matplotlib",
+    "colomoto-jupyter",
+    "algorecell_types",
+]
+
+[project.optional-dependencies]
+gpu = ["cupy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -3,7 +3,7 @@ Simulate dynamics of networks into steady states
 and calculates averages of each node in those steady states
 
 '''
-import util
+from .. import util
 CUPY, cp = util.import_cp_or_np(try_cupy=1)
 
 ################################################################################################

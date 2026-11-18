@@ -9,7 +9,7 @@ pyeda function object
 '''
 from pyeda import inter as eda
 import numpy as np
-import activity
+from . import activity
 
 ################################################################################
 

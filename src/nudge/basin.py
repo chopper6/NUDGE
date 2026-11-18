@@ -11,9 +11,9 @@ Attractors are detected by first-repeat (mu, lambda). STG edges are optional.
 """
 
 import itertools
-import util
+from . import util
 import numpy as np
-from other_methods.simulate import apply_setting_to_x0
+from .other_methods.simulate import apply_setting_to_x0
 CUPY, cp = util.import_cp_or_np(try_cupy=1)
 
 # ---- packing helpers (reuse logic from stg.py if you added it) ----
@@ -51,7 +51,7 @@ def _decode_cycle_to_dicts(cycle_bytes, G):
 # ---- core: simulate until repeat (per-stg), record edges optionally ----
 
 def _simulate_until_repeat(params, G, x0, max_steps=10000, record_edges=False):
-    from other_methods.simulate import step_core, apply_update_rule
+    from .other_methods.simulate import step_core, apply_update_rule
 
     num_samples, n = x0.shape
     node_dtype = util.get_node_dtype(params)
@@ -296,7 +296,7 @@ def bias_under_transient_control(
     Returns:
       {node_name: bias_float}
     """
-    from other_methods.simulate import step_core, apply_update_rule
+    from .other_methods.simulate import step_core, apply_update_rule
 
     # Copy params and ensure an update rule
     params = dict(params)

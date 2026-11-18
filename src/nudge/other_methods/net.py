@@ -3,7 +3,7 @@ contructs Net objects that include graph structure and the associated logic func
 
 '''
 
-import util
+from .. import util, logic, colomoto_io
 import os, sys, itertools
 
 CUPY, cp = util.import_cp_or_np(try_cupy=1)
@@ -34,6 +34,20 @@ class Net:
     def read_from_file(self, net_file):
         if not os.path.isfile(net_file):
             sys.exit("Can't find network file: " + str(net_file))
+        if net_file.endswith('.bnet'):
+            self.read_bnet(net_file)
+        else:
+            self.read_legacy(net_file)
+        self.add_hidden_inputs()
+        self.build_negative_nodes()
+
+    def read_bnet(self, net_file):
+        rules, _ = colomoto_io.read_bnet(net_file)
+        for node_name, fn_str in rules.items():
+            self.add_node(node_name)
+            self.F[node_name] = logic.from_pyEda(logic.str_to_fn(fn_str).to_dnf())
+
+    def read_legacy(self, net_file):
         with open(net_file, 'r', encoding='utf-8') as f:
             format_name = get_encoding(f, net_file)
             node_fn_split, clause_split, literal_split, not_str, strip_from_clause, strip_from_node = get_file_format(format_name)
@@ -51,8 +65,6 @@ class Net:
                 else:
                     self.F[node_name] = read_in_function(parts[1], format_name)
                 loop += 1
-        self.add_hidden_inputs()
-        self.build_negative_nodes()
 
     def add_node(self, nodeName, isNegative=False):
         newNode = Node(self, nodeName, self.n_neg, isNegative=isNegative)

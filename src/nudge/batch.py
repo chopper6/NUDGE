@@ -2,8 +2,8 @@
 Compares NUDGE to other methods on a batch of networks
 '''
 
-import NUDGE, RSC, logic, util
-from other_methods import meanField, ldoi, monteCarlo, simulate, net
+from . import NUDGE, RSC, logic, util
+from .other_methods import meanField, ldoi, monteCarlo, simulate, net
 import random, sys, os, csv
 from timeit import default_timer as timer
 CUPY, cp = util.import_cp_or_np(try_cupy=1)
@@ -32,6 +32,7 @@ def main(param_file, run_title):
 
 def init(params, run_title):
 	tstart = timer()
+	util.set_seed(params)
 	data = {}
 	params['measure_robustness'] = False 
 	params['find_mechanism'] = False
@@ -88,7 +89,8 @@ def assign_inputs_from_F(params, F):
 	params['inputs'] = []
 	for k in F.keys():
 		if '!' not in k:
-			if F[k] in [k, '0','1','(' + k + ')']:
+			fn = logic.str_to_fn(F[k])
+			if fn.is_one() or fn.is_zero() or str(fn) == k:
 				params['inputs'] += [k]
 
 def assign_outputs_from_F(params, F):
@@ -125,8 +127,9 @@ def find_controllers(params, name, G, F, data):
 	name = name.upper()
 	tstart = timer()
 	if name == 'NUDGE':
-		result = NUDGE.control(params, F=F)
-		controllers = result['best controllers']
+		strategies, details = NUDGE.control(params, F=F)
+		print("\tbatch.py NUDGE details:",details)
+		controllers = details['best controllers']
 		skip = (controllers[0] == ['0'])
 		#has_no_inputs = any(all(inp not in ctrl for inp in params['inputs'])for ctrl in controllers)
 	elif name == 'LDOI':

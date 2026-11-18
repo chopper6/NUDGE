@@ -2,7 +2,7 @@
 Implementation of Recursive Self-Composite (RSC) and its approximation to find terminal logic
 '''
 
-import activity, logic, util
+from . import activity, logic, util, colomoto_io
 import sys
 from timeit import default_timer as timer
 
@@ -50,24 +50,17 @@ def init(params, F=None):
 	return tstart, F, fn, fn_prev
 
 def load_F(params):
-	F =  {}
-	reduced=False
-	with open(params['network_file'], 'r') as file:
-		for line in file:
-			line = line.strip() 
-			if not line:
-				continue 
-			k, val = line.split(',', 1)
-			val = val.replace('\t','')
-			assert(k not in F.keys() and '!' + k not in F.keys())
-			
-			if params['approx'] and params['approx_init_fns']:
-				fn = logic.str_to_fn(val)
-				if logic.fn_too_complex(params, fn, max_vars=params['max_init_variables']):
-					reduced = True
-				fn = logic.reduce(params, fn, max_vars=params['max_init_variables'])
-				val = logic.fn_to_str(fn)
-			update_F(params, F, k, val)
+	F = {}
+	reduced = False
+	rules, params['original_names'] = colomoto_io.read_bnet(params['network_file'])
+	for k, val in rules.items():
+		if params['approx'] and params['approx_init_fns']:
+			fn = logic.str_to_fn(val)
+			if logic.fn_too_complex(params, fn, max_vars=params['max_init_variables']):
+				reduced = True
+			fn = logic.reduce(params, fn, max_vars=params['max_init_variables'])
+			val = logic.fn_to_str(fn)
+		update_F(params, F, k, val)
 
 	apply_mutations(params, F)
 	return F, reduced
@@ -85,13 +78,13 @@ def build_target_function(params, F):
 	return fn, fn_prev
 
 def update_F(params, F,  k, fn_str):
-	F[k] = '('+fn_str+')'
-	#compl_fn= logic.str_to_fn('!'+'(' + fn_str + ')')
 	fn = logic.str_to_fn(fn_str)
+	if not fn.is_dnf():
+		fn = fn.to_dnf()
+		fn_str = logic.fn_to_str(fn)
+	F[k] = '('+fn_str+')'
 	compl_fn = logic.not_to_dnf(params, fn)
-	compl_fn_str = logic.fn_to_str(compl_fn)
-	F['!' + k] = compl_fn_str
-	fn_list = logic.str_to_F(fn_str)
+	F['!' + k] = logic.fn_to_str(compl_fn)
 
 def apply_mutations(params, F):
 	if params['use_mutations']:
@@ -177,6 +170,7 @@ def finish(params, tstart, fn, final_logics):
 
 def main(param_file):
 	params = util.load_yaml(param_file)
+	util.set_seed(params)
 	terminal_logic = find_terminal_logic(params)[0]
 	print("Terminal logic of",params['target'],"= ",terminal_logic)
 

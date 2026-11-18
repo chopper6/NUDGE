@@ -7,10 +7,10 @@ Identifies single-time interventions from Boolean network models to ensure a des
 This package was designed in python 3.9 and should be compatible between python 3.6 and 3.9. Unfortunately the library that implements logic reduction, PyEDA, is no longer maintained and breaks with later versions of python.
 
 ```bash
-pip install -r requirements.txt
+pip install -e .
 ```
 
-For GPU acceleration, one can optionally install cupy, which requires CUDA drivers (see https://cupy.dev/). Without cupy installed, numpy will automatically be used. If one want to run numpy even though cupy is installed, set TURN_CUPY_OFF_OVERRIDE=1 at the top of src/util.py. GPU accelerates monte carlo simulation, LDOI, and mean-field methods, but is not used in the primary NUDGE method.
+For GPU acceleration, one can optionally install cupy, which requires CUDA drivers (see https://cupy.dev/). Without cupy installed, numpy will automatically be used. If one want to run numpy even though cupy is installed, set TURN_CUPY_OFF_OVERRIDE=1 at the top of src/nudge/util.py. GPU accelerates monte carlo simulation, LDOI, and mean-field methods, but is not used in the primary NUDGE method.
 
 ## Usage
 
@@ -20,7 +20,7 @@ There are several primary use cases where this package can be called from the co
 
 Prints terminal logic of a node, which maps initial states to the state of that node in all attractors.
 
-Usage: `python src/RSC.py PARAM_FILE`
+Usage: `python -m nudge.RSC PARAM_FILE`
 
 example PARAM_FILE: /input/params.yaml
 
@@ -31,7 +31,7 @@ Only the "RSC parameters" are used. These parameters will specify the target net
 
 Finds ephemeral controllers for a node, distinguishes minimal robust controllers, and highlights the mechanisms of the controllers.
 
-Usage: `python src/NUDGE.py PARAM_FILE`
+Usage: `python -m nudge.NUDGE PARAM_FILE`
 
 Parameter file is the same as the previous case, except both "RSC parameters" and "NUDGE parameters" are used.
 
@@ -40,14 +40,14 @@ Parameter file is the same as the previous case, except both "RSC parameters" an
 
 Detailed analysis of a controller specified in PARAM_FILE 'controller', in terms of robustness ('include_robustness' is true), and its mechanism of action (if 'find_mechanism' is true). Optionally a visualization of the mechanism, although visual clarity is limited for large networks.
 
-Usage: `python src/analyze.py PARAM_FILE`
+Usage: `python -m nudge.analyze PARAM_FILE`
 
 
 ### Batch comparison
 
 Compares NUDGE with other methods on a batch of networks. 
 
-Usage: `python src/batch.py PARAM_FILE RUN_TITLE`
+Usage: `python -m nudge.batch PARAM_FILE RUN_TITLE`
 
 Output: csv for the controllers found by each method in output folder, and a pickle of all objects from the run. Example output can be seen in the `output/` folder.
 
@@ -58,7 +58,7 @@ Parameter file is the same as the previous cases, and all parameters are used. R
 
 Plots images corresponding to the output of a batch comparison run (Figure 3 and S3 in original paper), specifically violin plots of error and time, and venn diagram of the controllers found.
 
-Usage: `python src/plot.py`
+Usage: `python -m nudge.plot`
 
 Parameters corresponding to the input and output files are hard-coded at the top of `plot.py`. Average values for errors and times are printed output, along with p-values between NUDGE and other methods for errors.
 
@@ -66,10 +66,22 @@ Parameters corresponding to the input and output files are hard-coded at the top
 
 Analyze deleterious effects and emergence of de novo attractors on a batch of networks
 
-Usage: `python src/batch_scan.py --params PARAM_FILE --bnet_folder FOLDER_OF_NETWORKS`
+Usage: `python -m nudge.batch_scan --params PARAM_FILE --bnet_folder FOLDER_OF_NETWORKS`
 
 Output: pickle file (.pkl) of deleterious effects and emergence of de novo attractors for each network in `/output/` and a corresponding scatter plot in `/output/img/`.
 
+
+### CoLoMoTo compatibility
+
+Networks are read with `colomoto.minibn`, so any CoLoMoTo bnet file works (headers, comments, `<-` separators, non-DNF functions). Node names are sanitized for PyEDA and the originals are kept in `params['original_names']`. `nudge.control` returns the best controllers as `algorecell_types` strategies, along with the full details:
+
+```python
+import nudge
+strategies, details = nudge.control(params)
+strategies.as_table()
+# any other controller list can be converted the same way:
+nudge.to_strategies(details['all controllers'], params['original_names'])
+```
 
 ### Information on Notebooks
 

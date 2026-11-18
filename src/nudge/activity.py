@@ -2,7 +2,7 @@
 Activity approximation, and its use to trim Boolean functions
 '''
 import re, random, math
-import logic
+from . import logic
 from pyeda.boolalg.expr import Variable, expr, exprvar
 
 ######################################################################

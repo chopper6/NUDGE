@@ -6,8 +6,8 @@ random network generation
 import numpy as np
 import sys, math
 import networkx as nx, random as rd
-import logic
-import util, plot
+from . import logic
+from . import util, plot
 from time import time
 from copy import deepcopy
 

@@ -2,7 +2,7 @@
 Builds ensemble of terminal logic and takes their conjunction to find controllers and increase confidence
 '''
 
-import logic, activity, RSC, util
+from . import logic, activity, RSC, util
 import sys, os
 CUPY, cp = util.import_cp_or_np(try_cupy=1)
 
