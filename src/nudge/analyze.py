@@ -117,7 +117,7 @@ def main(param_file):
 	results = {}
 	if params['measure_robustness']:
 		print("Measuring robustness...")
-		results['relative distance'] = robustness.calc_relative_distances(params, controller_index, cnt_fns, drives_self_reinforced)[0]
+		results['relative distance'] = int(robustness.calc_relative_distances(params, controller_index, cnt_fns, drives_self_reinforced)[0])
 	
 	if params['find_mechanism']:
 		print("Finding mechanism...")

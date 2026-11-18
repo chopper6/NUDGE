@@ -4,7 +4,7 @@ Identifies single-time interventions from Boolean network models to ensure a des
 
 ## Installation
 
-This package was designed in python 3.9 and should be compatible between python 3.6 and 3.9. Unfortunately the library that implements logic reduction, PyEDA, is no longer maintained and breaks with later versions of python.
+This package was designed in python 3.9 and should be compatible between python 3.7 and 3.9. Unfortunately the library that implements logic reduction, PyEDA, is no longer maintained and breaks with later versions of python.
 
 ```bash
 pip install -e .
@@ -27,9 +27,9 @@ example PARAM_FILE: /input/params.yaml
 Only the "RSC parameters" are used. These parameters will specify the target network, the target node, and parameters for RSC and its approximation. Note that nodes being mutated (fixed to a certain state), can also be specified in the params file.
 
 
-### NUDGE: Phenotype Kernel for Ephemeral Control
+### NUDGE: Natural Dynamics Control
 
-Finds ephemeral controllers for a node, distinguishes minimal robust controllers, and highlights the mechanisms of the controllers.
+Finds single-time controllers for a node, distinguishes minimal robust controllers, and highlights the mechanisms of the controllers.
 
 Usage: `python -m nudge.NUDGE PARAM_FILE`
 

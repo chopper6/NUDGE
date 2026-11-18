@@ -242,7 +242,7 @@ def scan_single_controllers_for_network(
     params_base = util.load_yaml(params_file)
     params2 = deepcopy(params_base)
     params2["network_file"] = network_file
-    params2["verbose_poke"] = False
+    params2["verbose_nudge"] = False
 
     sim_params = simulate.get_sim_params(params2)
     params_global = {**sim_params, **params2}

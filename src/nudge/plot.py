@@ -377,7 +377,7 @@ def min_size_sets(S, force_min_size=None):
     return {to_fset(s) for s in cleaned if set_size(s) == target}
 
 
-def venn_method_vs_poke(controllers, errors, title, output_dir, method, color_indices=(0, 1), only_solo_controllers=ONLY_SOLO_CONTROLLERS):
+def venn_method_vs_nudge(controllers, errors, title, output_dir, method, color_indices=(0, 1), only_solo_controllers=ONLY_SOLO_CONTROLLERS):
 
     counts_A_only = 0  # unique to `method`
     counts_B_only = 0  # unique to NUDGE

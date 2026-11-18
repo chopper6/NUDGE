@@ -20,15 +20,15 @@ seed: 0                                       # random seed for approximation an
 # NUDGE parameters
 verbose_nudge: true                           # print extra information about controllers
 ensemble_repeats: 2                           # conjunction of multiple RSC runs to increase approximation confidence
-analysis_order: 3                             # highest order considered for robustness and mechanism
-measure_robustness: false                      # compare all NUDGE controllers vs robust controllers, instead of comparing to other methods
-find_mechanism: false                          # find the mechanism behind the chosen or most robust controller
+analysis_order: 2                             # highest order considered for robustness and mechanism
+measure_robustness: true                       # compare all NUDGE controllers vs robust controllers, instead of comparing to other methods
+find_mechanism: true                           # find the mechanism behind the chosen or most robust controller
 plot_mechanism: true                          # visualize the mechanism (if find_mechanism is True)
 controller: 'A'                               # chosen controller (only for analyze.py), can be a single node 'A' or '!A' or multiple like 'A & B', but '|' (or) is not supported
 
 # BATCH parameters
-network_dir: "./input/networks/cancer_score_ensemble_models/"              # path to networks folder, overrides 'network_file'
-targets_csv: "./input/targets_cancer_score_ensemble_models.csv"   # path to targets file, overrides 'target'
+network_dir: "./input/networks/large/"              # path to networks folder, overrides 'network_file'
+targets_csv: "./input/targets_large_4targets.csv"   # path to targets file, overrides 'target'
 output_folder: "./output/"                          # path to output folder
 skip_reduced_networks: False                        # skip networks with in-degree > max_initial_variables
 cutoff: 0                                           # max of this many nets from network_dir, set to 0 to ignore

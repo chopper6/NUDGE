@@ -38,7 +38,7 @@ def pick_min_robust_controllers(params, controllers, cnt_fns, drives_self_reinfo
 		elif relative_distances[i] == max_distance:
 			min_robust_controllers += [min_controllers[i]]
 
-	return min_controllers, min_robust_controllers, list(relative_distances)
+	return min_controllers, min_robust_controllers, [int(d) for d in relative_distances]
 
 ##########################################################################################
 
